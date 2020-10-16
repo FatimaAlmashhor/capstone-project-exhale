@@ -14,7 +14,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "precommit": "pretty-quick --staged",
+    "postcommit": "git update-index -g",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
   },
   "eslintConfig": {
     "extends": "react-app"
