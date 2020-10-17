@@ -18,7 +18,7 @@
     "eject": "react-scripts eject",
     "precommit": "pretty-quick --staged",
     "postcommit": "git update-index -g",
-    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\""
+    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\"",
     "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
     "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css"
   },
@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^0.1.3",
+    "autoprefixer": "^9.8.6",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-import": "^2.22.1",
@@ -46,9 +47,8 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.4",
     "eslint-plugin-react-hooks": "^4.1.2",
+    "postcss-cli": "^8.1.0",
     "prettier": "^2.1.2",
-    "postcss": "^8.1.1",
-    "autoprefixer": "^9.8.6",
-    "postcss-cli": "^8.1.0"
+    "postcss": "^8.1.1"
   }
 }
