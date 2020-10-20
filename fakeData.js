@@ -1,6 +1,7 @@
 const psychiarists = [
     {
-       name: "Dr. Nabeel No'man",
+        doctorImg: "https://images.all-free-download.com/images/graphiclarge/doctor_work_painting_colored_cartoon_character_sketch_6847622.jpg",
+        name: "Dr. Nabeel No'man",
         specialtyies: "Anxiety, Bipolar Disorder, Depression, General Adult Psychiatry, Personality Disorders",
         workplace: "Azal Hospital",
         address: "60th street",
@@ -8,7 +9,17 @@ const psychiarists = [
         phone: "+967770000000"
     },
 {
-       name: "Dr. Nabeel No'man",
+        doctorImg: "https://images.all-free-download.com/images/graphiclarge/doctor_work_painting_colored_cartoon_character_sketch_6847622.jpg",
+        name: "Dr. Nabeel No'man",
+        specialtyies: "Anxiety, Bipolar Disorder, Depression, General Adult Psychiatry, Personality Disorders",
+        workplace: "Azal Hospital",
+        address: "60th street",
+        email: "example@gmail.com"
+        phone: "+967770000000"
+    },
+  {     
+        doctorImg: "https://images.all-free-download.com/images/graphiclarge/doctor_work_painting_colored_cartoon_character_sketch_6847622.jpg",
+        name: "Dr. Nabeel No'man",
         specialtyies: "Anxiety, Bipolar Disorder, Depression, General Adult Psychiatry, Personality Disorders",
         workplace: "Azal Hospital",
         address: "60th street",
@@ -16,7 +27,8 @@ const psychiarists = [
         phone: "+967770000000"
     },
   {
-       name: "Dr. Nabeel No'man",
+        doctorImg: "https://images.all-free-download.com/images/graphiclarge/doctor_work_painting_colored_cartoon_character_sketch_6847622.jpg",
+        name: "Dr. Nabeel No'man",
         specialtyies: "Anxiety, Bipolar Disorder, Depression, General Adult Psychiatry, Personality Disorders",
         workplace: "Azal Hospital",
         address: "60th street",
@@ -24,15 +36,8 @@ const psychiarists = [
         phone: "+967770000000"
     },
   {
-       name: "Dr. Nabeel No'man",
-        specialtyies: "Anxiety, Bipolar Disorder, Depression, General Adult Psychiatry, Personality Disorders",
-        workplace: "Azal Hospital",
-        address: "60th street",
-        email: "example@gmail.com"
-        phone: "+967770000000"
-    },
-  {
-       name: "Dr. Nabeel No'man",
+        doctorImg: "https://images.all-free-download.com/images/graphiclarge/doctor_work_painting_colored_cartoon_character_sketch_6847622.jpg",
+        name: "Dr. Nabeel No'man",
         specialtyies: "Anxiety, Bipolar Disorder, Depression, General Adult Psychiatry, Personality Disorders",
         workplace: "Azal Hospital",
         address: "60th street",
