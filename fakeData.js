@@ -5,7 +5,7 @@ const psychiarists = [
         specialtyies: "Anxiety, Bipolar Disorder, Depression, General Adult Psychiatry, Personality Disorders",
         workplace: "Azal Hospital",
         address: "60th street",
-        email: "example@gmail.com"
+        email: "example@gmail.com",
         phone: "+967770000000"
     },
 {
@@ -14,7 +14,7 @@ const psychiarists = [
         specialtyies: "Anxiety, Bipolar Disorder, Depression, General Adult Psychiatry, Personality Disorders",
         workplace: "Azal Hospital",
         address: "60th street",
-        email: "example@gmail.com"
+        email: "example@gmail.com",
         phone: "+967770000000"
     },
   {     
@@ -23,7 +23,7 @@ const psychiarists = [
         specialtyies: "Anxiety, Bipolar Disorder, Depression, General Adult Psychiatry, Personality Disorders",
         workplace: "Azal Hospital",
         address: "60th street",
-        email: "example@gmail.com"
+        email: "example@gmail.com",
         phone: "+967770000000"
     },
   {
@@ -32,7 +32,7 @@ const psychiarists = [
         specialtyies: "Anxiety, Bipolar Disorder, Depression, General Adult Psychiatry, Personality Disorders",
         workplace: "Azal Hospital",
         address: "60th street",
-        email: "example@gmail.com"
+        email: "example@gmail.com",
         phone: "+967770000000"
     },
   {
@@ -41,7 +41,7 @@ const psychiarists = [
         specialtyies: "Anxiety, Bipolar Disorder, Depression, General Adult Psychiatry, Personality Disorders",
         workplace: "Azal Hospital",
         address: "60th street",
-        email: "example@gmail.com"
+        email: "example@gmail.com",
         phone: "+967770000000"
     }
 ];
