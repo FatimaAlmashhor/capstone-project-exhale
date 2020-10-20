@@ -15,6 +15,7 @@
     "ecmaVersion": 11,
     "sourceType": "module"
   },
+  "ignorePatterns": ["i18next.js", "**/node_modules/*.js"],
   "plugins": ["react", "prettier"],
   "rules": {
     "prettier/prettier": "error",
