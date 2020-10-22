@@ -12,10 +12,17 @@ function App() {
   }
   return (
     <div>
-      <button className='bg-blue mr-10' onClick={() => handleLang('ar')} >Arabic </button>
-      <button className='bg-blue-400 mr-10 from-red-800' onClick={() => handleLang('en')}>English </button>
+      <button className="bg-blue mr-10" onClick={() => handleLang('ar')}>
+        Arabic{' '}
+      </button>
+      <button
+        className="bg-blue-400 mr-10 from-red-800"
+        onClick={() => handleLang('en')}
+      >
+        English{' '}
+      </button>
       <h1 className="text-3xl text-red-300">{t('Hello.1')}</h1>
-      <p>{t("Learn.1")}</p>
+      <p>text</p>
     </div>
   );
 }
