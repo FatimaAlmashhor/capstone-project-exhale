@@ -12,7 +12,7 @@ import {
   SIGNUP_ROUTE,
   NOT_FOUND_ROUTE,
 } from './routes';
-import Home from './containers/Home'
+import Home from './containers/Home';
 import Login from './containers/Login';
 import Signup from './containers/Signup';
 import Doctors from './containers/Doctors';
@@ -23,13 +23,6 @@ import About from './containers/About';
 import SelfAssessment from './containers/SelfAssessment';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
-
-//Edit API key and authDomain from our firebase
-firebase.initializeApp({
-  apiKey: "AIzaSyCIsm5BgxDnP1xWnUL0sz5YRtCBU7uPHvI",
-  authDomain: "exhale-mental-health.firebaseapp.com"
-})
- 
 function App() {
   return (
     <Router>
