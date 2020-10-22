@@ -24,7 +24,7 @@ import SelfAssessment from './containers/SelfAssessment';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 
-//Edit API key and authDomain from firebase
+//Edit API key and authDomain from our firebase
 firebase.initializeApp({
   apiKey: "AIzaSyCIsm5BgxDnP1xWnUL0sz5YRtCBU7uPHvI",
   authDomain: "exhale-mental-health.firebaseapp.com"
