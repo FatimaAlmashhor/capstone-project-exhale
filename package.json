@@ -11,7 +11,12 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+<<<<<<< HEAD
     "firebase": "^7.24.0",
+||||||| parent of aec05a7... Feat: add formik package
+=======
+    "formik": "^2.2.0",
+>>>>>>> aec05a7... Feat: add formik package
     "i18next": "^19.8.2",
     "i18next-browser-languagedetector": "^6.0.1",
     "i18next-http-backend": "^1.0.21",
@@ -22,7 +27,8 @@
     "react-i18next": "^11.7.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.4",
-    "tailwindcss": "^1.9.2"
+    "tailwindcss": "^1.9.2",
+    "yup": "^0.29.3"
   },
   "scripts": {
     "start": "npm run watch:css && react-scripts start",
