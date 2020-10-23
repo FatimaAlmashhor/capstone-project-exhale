@@ -3,20 +3,17 @@ import { Formik } from 'formik';
 import PropType from 'prop-types';
 
 function Input(props) {
-  const { handleSubmit, handleChange, name, errors, labelText, type, value } = props;
+  const { handleChange, name, errors, labelText, type, value } = props;
   return (
     <Formik>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor={name}>{labelText}</label>
-        <input type={type} onChange={handleChange} name={name} value={value} />
-        {errors && <div className="input-feedback">{errors}</div>}
-      </form>
+      <label htmlFor={name}>{labelText}</label>
+      <input type={type} onChange={handleChange} name={name} value={value} />
+      {errors && <div className="input-feedback">{errors}</div>}
     </Formik>
   );
 }
 
 Input.propTypes = {
-  handleSubmit: PropType.func.isRequired,
   handleChange: PropType.func.isRequired,
   name: PropType.string.isRequired,
   errors: PropType.string.isRequired,
