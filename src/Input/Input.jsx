@@ -16,8 +16,8 @@ function Input(props) {
 }
 
 Input.propTypes = {
-  handleSubmit: PropType.string.isRequired,
-  handleChange: PropType.string.isRequired,
+  handleSubmit: PropType.func.isRequired,
+  handleChange: PropType.func.isRequired,
   name: PropType.string.isRequired,
   errors: PropType.string.isRequired,
   labelText: PropType.string.isRequired,
