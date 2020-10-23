@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Button from '../components/Button/index';
+import Button from './index';
 
 it('renders correctly', () => {
-  const tree = renderer.create(<Button />).toJSON();
+  const tree = renderer.create(<Button text={' '} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
