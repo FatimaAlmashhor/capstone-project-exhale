@@ -11,7 +11,6 @@ ReactDOM.render(
     <React.StrictMode>
       <App />
     </React.StrictMode>
-    ,
   </Suspense>,
   document.getElementById('root')
 );
