@@ -25,6 +25,7 @@ import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 function App() {
   return (
+    
     <Router>
       <Navbar />
       <Switch>

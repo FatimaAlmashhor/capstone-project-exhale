@@ -1,5 +1,4 @@
 import React from 'react';
-import PropType from 'prop-types';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 
@@ -8,13 +7,13 @@ const RegisterForm = () => (
     initialValues={{ name: '', email: '', password: '', confirmPassword: '' }}
     validationSchema={Yup.object().shape({
       name: Yup.string().required('Name is Required '),
-      email: Yup.string().email().required('Required'),
+      email: Yup.string().email().required('Email is Required'),
       password: Yup.string()
         .min(8, 'Password must be at least 8 characters')
-        .required('Password is required'),
+        .required('Password is Required'),
       confirmPassword: Yup.string()
         .oneOf([Yup.ref('password'), null], 'Passwords must match')
-        .required('Confirm Password is required'),
+        .required('Confirm Password is Required'),
     })}
   >
     {(props) => {
@@ -25,7 +24,7 @@ const RegisterForm = () => (
             onSubmit={handleSubmit}
             className="bg-white shadow-md  rounded px-8 pt-6 pb-8 mb-4"
           >
-            <label
+            <label 
               htmlFor="name"
               className="block text-gray-700 text-sm font-bold mb-2"
             >
@@ -116,11 +115,5 @@ const RegisterForm = () => (
     }}
   </Formik>
 );
-
-RegisterForm.propTypes = {
-  errors: PropType.string.isRequired,
-  handleChange: PropType.func.isRequired,
-  handleSubmit: PropType.func.isRequired,
-};
 
 export default RegisterForm;
