@@ -1,12 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-export default function Plant({ width, height }) {
+export default function Plant() {
   return (
     <div>
       <svg
-        width={width}
-        height={height}
+        width="180"
+        height="260"
         viewBox="0 0 180 260"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -50,11 +49,3 @@ export default function Plant({ width, height }) {
     </div>
   );
 }
-Plant.defaultProps = {
-  width: '180',
-  height: '260',
-};
-Plant.propTypes = {
-  width: PropTypes.string,
-  height: PropTypes.string,
-};

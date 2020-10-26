@@ -1,12 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-export default function Eggs({ width, height }) {
+export default function Eggs() {
   return (
     <div>
       <svg
-        width={width}
-        height={height}
+        width="291"
+        height="264"
         viewBox="0 0 291 264"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -191,11 +190,3 @@ export default function Eggs({ width, height }) {
     </div>
   );
 }
-Eggs.defaultProps = {
-  width: '291',
-  height: '264',
-};
-Eggs.propTypes = {
-  width: PropTypes.string,
-  height: PropTypes.string,
-};

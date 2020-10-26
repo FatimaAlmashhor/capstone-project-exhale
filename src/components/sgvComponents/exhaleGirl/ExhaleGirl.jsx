@@ -1,12 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-export default function ExhaleGirl({ width, height }) {
+export default function ExhaleGirl() {
   return (
     <div>
       <svg
-        width={width}
-        height={height}
+        width="659"
+        height="1355"
         viewBox="0 0 659 1355"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -373,11 +372,3 @@ export default function ExhaleGirl({ width, height }) {
     </div>
   );
 }
-ExhaleGirl.defaultProps = {
-  width: '659',
-  height: '1355',
-};
-ExhaleGirl.propTypes = {
-  width: PropTypes.string,
-  height: PropTypes.string,
-};

@@ -1,12 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-export default function MainCloud({ width, height }) {
+export default function MainCloud() {
   return (
     <div>
       <svg
-        width={width}
-        height={height}
+        width="1179"
+        height="889"
         viewBox="0 0 1179 889"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -81,11 +80,3 @@ export default function MainCloud({ width, height }) {
     </div>
   );
 }
-MainCloud.defaultProps = {
-  width: '1179',
-  height: '889',
-};
-MainCloud.propTypes = {
-  width: PropTypes.string,
-  height: PropTypes.string,
-};
