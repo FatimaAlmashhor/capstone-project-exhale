@@ -4,8 +4,8 @@ export default function Plant() {
   return (
     <div>
       <svg
-        width="180"
-        height="260"
+        width="100%"
+        height="auto"
         viewBox="0 0 180 260"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

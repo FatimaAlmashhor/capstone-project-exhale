@@ -5,8 +5,8 @@ export default function Circle({ color }) {
   return (
     <div>
       <svg
-        width="421"
-        height="443"
+        width="100%"
+        height="auto"
         viewBox="0 0 421 443"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
