@@ -1,12 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-export default function SecondaryCloud({ width, height }) {
+export default function SecondaryCloud() {
   return (
     <div>
       <svg
-        width={width}
-        height={height}
+        width="907"
+        height="536"
         viewBox="0 0 907 536"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -67,11 +66,3 @@ export default function SecondaryCloud({ width, height }) {
     </div>
   );
 }
-SecondaryCloud.defaultProps = {
-  width: '907',
-  height: '536',
-};
-SecondaryCloud.propTypes = {
-  width: PropTypes.string,
-  height: PropTypes.string,
-};

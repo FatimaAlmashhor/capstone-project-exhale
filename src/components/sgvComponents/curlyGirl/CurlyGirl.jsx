@@ -1,12 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-export default function CurlyGirl({ width, height }) {
+export default function CurlyGirl() {
   return (
     <div>
       <svg
-        width={width}
-        height={height}
+        width="399"
+        height="368"
         viewBox="0 0 399 368"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -238,11 +237,3 @@ export default function CurlyGirl({ width, height }) {
     </div>
   );
 }
-CurlyGirl.defaultProps = {
-  width: '399',
-  height: '368',
-};
-CurlyGirl.propTypes = {
-  width: PropTypes.string,
-  height: PropTypes.string,
-};

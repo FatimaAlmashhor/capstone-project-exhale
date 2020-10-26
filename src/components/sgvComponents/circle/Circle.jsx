@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Circle({ width, height, color }) {
+export default function Circle({ color }) {
   return (
     <div>
       <svg
-        width={width}
-        height={height}
+        width="421"
+        height="443"
         viewBox="0 0 421 443"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -19,11 +19,7 @@ export default function Circle({ width, height, color }) {
 
 Circle.defaultProps = {
   color: '#99E1E5',
-  width: '421',
-  height: '443',
 };
 Circle.propTypes = {
   color: PropTypes.string,
-  width: PropTypes.string,
-  height: PropTypes.string,
 };
