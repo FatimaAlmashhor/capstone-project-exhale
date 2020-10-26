@@ -4,8 +4,8 @@ export default function Eggs() {
   return (
     <div>
       <svg
-        width="291"
-        height="264"
+        width="100%"
+        height="auto"
         viewBox="0 0 291 264"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

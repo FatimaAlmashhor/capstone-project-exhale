@@ -4,8 +4,8 @@ export default function CurlyGirl() {
   return (
     <div>
       <svg
-        width="399"
-        height="368"
+        width="100%"
+        height="auto"
         viewBox="0 0 399 368"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
