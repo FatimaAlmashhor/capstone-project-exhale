@@ -25,7 +25,6 @@ import SelfAssessment from './containers/SelfAssessment';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 
-
 function App() {
   return (
     <Router>
