@@ -1,14 +1,9 @@
-import member1 from './teamImgs/member1.jpg';
-import member2 from './teamImgs/member2.jpg';
-import member3 from './teamImgs/member3.jpg';
-import member4 from './teamImgs/member4.jpg';
-import member5 from './teamImgs/member5.jpg';
-import member6 from './teamImgs/member6.jpg';
+import personImage from '../asset/images/placeholder-image.jpg';
 
 export const members = [
   {
     id: 1,
-    img: { member1 },
+    img: { personImage },
     name: 'Member Name',
     major: 'Front End Developer',
     email: 'example.exam@gmail.com',
@@ -19,7 +14,7 @@ export const members = [
   },
   {
     id: 2,
-    img: { member2 },
+    img: { personImage },
     name: 'Member Name',
     major: 'Front End Developer',
     email: 'example.exam@gmail.com',
@@ -30,7 +25,7 @@ export const members = [
   },
   {
     id: 3,
-    img: { member3 },
+    img: { personImage },
     name: 'Member Name',
     major: 'Front End Developer',
     email: 'example.exam@gmail.com',
@@ -41,7 +36,7 @@ export const members = [
   },
   {
     id: 4,
-    img: { member4 },
+    img: { personImage },
     name: 'Member Name',
     major: 'Front End Developer',
     email: 'example.exam@gmail.com',
@@ -52,7 +47,7 @@ export const members = [
   },
   {
     id: 5,
-    img: { member5 },
+    img: { personImage },
     name: 'Member Name',
     major: 'Front End Developer',
     email: 'example.exam@gmail.com',
@@ -63,7 +58,7 @@ export const members = [
   },
   {
     id: 6,
-    img: { member6 },
+    img: { personImage },
     name: 'Member Name',
     major: 'Front End Developer',
     email: 'example.exam@gmail.com',

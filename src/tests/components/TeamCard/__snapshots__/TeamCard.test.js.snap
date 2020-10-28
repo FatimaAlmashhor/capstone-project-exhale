@@ -7,7 +7,7 @@ exports[`renders correctly 1`] = `
   <img
     alt="team member"
     className="w-32 h-auto mx-auto border-4 border-red-400 border-solid rounded-full"
-    src="defaultImg.PNG"
+    src="default-image.PNG"
   />
   <div
     className="px-6"

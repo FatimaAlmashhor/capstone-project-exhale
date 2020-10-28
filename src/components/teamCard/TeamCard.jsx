@@ -1,8 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../../fontawesome';
 import PropType from 'prop-types';
-import defaultImg from './teamImgs/defaultImg.PNG';
+import defaultImg from '../../asset/images/default-image.PNG';
 
 export default function TeamCard({
   name,
