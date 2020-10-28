@@ -21,7 +21,7 @@
     "**/node_modules/*.js",
     "App.js",
     "index.js",
-    "/src/tests"
+    "/src/__test__"
   ],
   "plugins": ["react", "prettier"],
   "rules": {

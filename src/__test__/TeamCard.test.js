@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import TeamCard from '../../../components/TeamCard/TeamCard.jsx';
-import '../../../fontawesome';
+import '../fontawesome';
+import TeamCard from './../components/TeamCard';
 
 it('renders correctly', () => {
   const tree = renderer.create(<TeamCard />).toJSON();
