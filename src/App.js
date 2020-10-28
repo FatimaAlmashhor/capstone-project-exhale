@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import {
@@ -24,7 +23,6 @@ import About from './containers/About';
 import SelfAssessment from './containers/SelfAssessment';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
-
 
 function App() {
   return (
