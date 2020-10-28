@@ -2,9 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="max-w-screen-sm md:max-w-xs lg:max-w-xs rounded overflow-hidden border  "
-  onMouseEnter={[Function]}
-  onMouseLeave={[Function]}
+  className="max-w-screen-sm md:max-w-xs lg:max-w-xs rounded overflow-hidden border hover:shadow-md"
 >
   <div>
     Hello
