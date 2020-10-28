@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import TeamCard from '../../../components/TeamCard/TeamCard.jsx';
+import TeamCard from '../../../components/TeamCard';
 import '../../../fontawesome';
 
 it('renders correctly', () => {
