@@ -1,5 +1,5 @@
-module.exports = async () => {
-  return {
-    snapshotSerializers: ['jest-snapshot-serializer-ansi'],
-  };
-};
+// module.exports = async () => {
+//   return {
+//     snapshotSerializers: ['jest-snapshot-serializer-ansi'],
+//   };
+// };
