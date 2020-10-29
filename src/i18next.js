@@ -19,21 +19,6 @@ i18n
     // init i18next
     // for all options read: https://www.i18next.com/overview/configuration-options
     .init({
-        resources: {
-            en: {
-              translation: {
-                "Email": "Email",
-                "Message":"Message"
-              }
-            }
-            
-          },
-          ar: {
-            translation: {
-              "Email": "البريد الالكتروني",
-              "Message":"رساله"
-            }
-          },
         languages,
         fallbackLng: 'en',
         debug: true,
