@@ -2,16 +2,9 @@
 
 exports[`renders correctly 1`] = `
 <div>
-  <div
-    className="h-3 relative max-w-xl rounded-full overflow-hidden m-auto"
-  >
-    <div
-      className="w-full h-full bg-red-300 absolute"
-    />
-    <div
-      className="h-full bg-blue-400 absolute"
-      style={Object {}}
-    />
-  </div>
+  <progress
+    max={100}
+    value={0}
+  />
 </div>
 `;

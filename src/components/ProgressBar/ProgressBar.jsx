@@ -1,31 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function ProgressBar({ done }) {
-  const [style, setStyle] = React.useState({});
-
-  setTimeout(() => {
-    const newStyle = {
-      opacity: 1,
-      width: `${done}%`,
-      transition: '1s',
-    };
-    setStyle(newStyle);
-  }, 1000);
+export default function ProgressBar({ now, max, showLabel }) {
   return (
     <div>
-      <div className="h-3 relative max-w-xl rounded-full overflow-hidden m-auto">
-        <div className="w-full h-full bg-red-300 absolute" />
-        <div className="h-full bg-blue-400 absolute" style={style} />
-      </div>
+      {showLabel && <p>{`${now}\\${max}`}</p>}
+      <progress value={now} max={max} />
     </div>
   );
 }
 
 ProgressBar.propTypes = {
-  done: PropTypes.number,
+  now: PropTypes.number,
+  max: PropTypes.number,
+  showLabel: PropTypes.bool,
 };
 
 ProgressBar.defaultProps = {
-  done: 0,
+  now: 0,
+  max: 100,
+  showLabel: false,
 };
