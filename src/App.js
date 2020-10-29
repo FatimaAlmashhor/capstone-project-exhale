@@ -12,7 +12,7 @@ import {
   SIGNUP_ROUTE,
   NOT_FOUND_ROUTE,
 } from './routes';
-import Home from './containers/Home'
+import Home from './containers/Home';
 import Login from './containers/Login';
 import Signup from './containers/Signup';
 import Doctors from './containers/Doctors';
@@ -23,7 +23,6 @@ import About from './containers/About';
 import SelfAssessment from './containers/SelfAssessment';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
-
 function App() {
   return (
     <Router>
