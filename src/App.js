@@ -23,10 +23,11 @@ import About from './containers/About';
 import SelfAssessment from './containers/SelfAssessment';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
-
+import TeamCard from './components/teamCard/TeamCard'
 function App() {
   return (
     <Router>
+    <TeamCard />
       <Navbar />
       <Switch>
         <Route path={LOGIN_ROUTE} component={Login} />
