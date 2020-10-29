@@ -1,11 +1,14 @@
 import React from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
+import { useTranslation } from 'react-i18next';
 
 const ReviewError = Yup.object().shape({
   email: Yup.string().email().required('Email is Required'),
   message: Yup.string().required('Message is Required'),
 });
+
+const { t } = useTranslation();
 const ContactUsForm = () => (
   <Formik initialValues={{ email: '', message: '' }} validationSchema={ReviewError}>
     {(props) => {
@@ -21,8 +24,9 @@ const ContactUsForm = () => (
               htmlFor="email"
               className="block text-gray-700 text-sm font-bold mb-2"
             >
-              Email
+              {t('Email')}
             </label>
+
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="email"
@@ -39,7 +43,7 @@ const ContactUsForm = () => (
               htmlFor="message"
               className="block text-gray-700 text-sm font-bold mb-2"
             >
-              Message
+              {t('Message')}
             </label>
             <textarea
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
