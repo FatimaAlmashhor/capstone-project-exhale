@@ -1,6 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 exports[`renders correctly 1`] = `
 <section
   className="blog text-gray-700 body-font"
@@ -63,13 +64,16 @@ exports[`renders correctly 1`] = `
 </section>
 =======
 exports[`artical card 1`] = `
+=======
+exports[`renders correctly 1`] = `
+>>>>>>> 6998fc1... Test: Edit ArticleCard
 <div
-  class="max-w-screen-sm md:max-w-sm lg:max-w-sm rounded overflow-hidden "
+  className="max-w-screen-sm md:max-w-sm lg:max-w-sm rounded overflow-hidden "
 >
   <div
     className="px-6 pt-4 pb-2 text-gray-500"
   >
-    1604069949456
+    10/30/2020
   </div>
   <div
     className="px-6 py-4"
@@ -90,6 +94,7 @@ exports[`artical card 1`] = `
   >
     <button
       className=" border py-2 px-3 text-white hover:border-1 hover: border-green-400 hover:text-green-400 hover:bg-transparent rounded bg-green-400"
+      type="button"
     >
       Read Full
     </button>
