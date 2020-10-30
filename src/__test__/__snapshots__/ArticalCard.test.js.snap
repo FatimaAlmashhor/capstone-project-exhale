@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`artical card 1`] = `
+<div
+  class="max-w-screen-sm md:max-w-sm lg:max-w-sm rounded overflow-hidden "
+>
+  <div
+    className="px-6 pt-4 pb-2 text-gray-500"
+  >
+    time
+  </div>
+  <div
+    className="px-6 py-4"
+  >
+    <div
+      className="font-bold text-xl mb-5"
+    >
+       
+    </div>
+    <p
+      className="text-gray-700 text-base"
+    >
+       
+    </p>
+  </div>
+  <div
+    className="px-6 pt-4 pb-5 mt-20"
+  >
+    <button
+      className=" border p-3"
+    >
+      JUST FAKE
+    </button>
+  </div>
+</div>
+`;
