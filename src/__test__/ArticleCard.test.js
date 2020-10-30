@@ -1,10 +1,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Card from '../components/ArticleCard';
-
-it('artical card', () => {
+import Article from '../components/ArticleCard';
+it('renders correctly', () => {
   const tree = renderer
-    .create(<Card header = {' '} paragraph = {' '}/>)
+    .create(<Article header = {' '} paragraph = {' '}/>)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
