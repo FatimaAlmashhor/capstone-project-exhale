@@ -1,4 +1,8 @@
 {
   "Email": "Email",
-  "Message": "Message"
+  "Message": "Message",
+  "Name":"Name",
+  "Password":"Password",
+  "confirmPassword":"Confirm Password"
+ 
 }
