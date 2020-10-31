@@ -18,9 +18,9 @@ function Navbar() {
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
       <div class="lg:w-0 lg:flex-1">
-        <Link to={HOME_ROUTE} class="flex">
+         <Link to={HOME_ROUTE} class="flex">
           <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt="Workflow" />
-       </Link>
+         </Link>
       </div>
       <div class="-mr-2 -my-2 md:hidden">
         <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
@@ -34,7 +34,6 @@ function Navbar() {
         <NavLink to={HOME_ROUTE} class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
          HOME
         </NavLink>
-
         
         <NavLink to={DOCTORS_ROUTE} class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
          Doctors
