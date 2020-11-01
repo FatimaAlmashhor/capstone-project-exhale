@@ -6,6 +6,7 @@ import {
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faTwitter, faFacebook, faLinkedin, faInstagram);
+import {faCheck ,faChevronLeft} from '@fortawesome/free-solid-svg-icons' ;
+library.add(faTwitter, faFacebook, faLinkedin, faInstagram ,faCheck , faChevronLeft);
 
 // Import example:<FontAwesomeIcon icon={['fab', 'twitter']} />

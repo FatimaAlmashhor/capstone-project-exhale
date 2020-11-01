@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="flex-auto py-10 "
+  >
+    <h1
+      className=" text-4xl  text-center font-sans transition duration-500  "
+    />
+  </div>
+  <div
+    className="flex-auto "
+  >
+    <div
+      className=" flex mt-8 mx-auto justify-center transition duration-500"
+    >
+      <div
+        className=" flex flex-col justify-center self-center flex-1"
+      >
+        <button
+          className=" p-6  mt-6 mx-auto md:p-10 bg-transparent border-4 border-gray-600 rounded-full focus:outline-none transition duration-500 "
+          data-rate="20"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          type="button"
+        />
+        <p
+          className="mx-auto text-gray-500  mt-3"
+        >
+          NEVER
+        </p>
+      </div>
+      <div
+        className="flex justify-center self-center flex-1 "
+      >
+        <button
+          className=" p-4  md:p-8 bg-transparent border-4 border-gray-600 rounded-full focus:outline-none transition duration-500 "
+          data-rate="40"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          type="button"
+        />
+      </div>
+      <div
+        className=" flex justify-center self-center flex-1 "
+      >
+        <button
+          className=" p-3  md:p-6 bg-transparent border-4 border-gray-600 rounded-full focus:outline-none transition duration-500"
+          data-rate="60"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          type="button"
+        />
+      </div>
+      <div
+        className="flex justify-center self-center flex-1 "
+      >
+        <button
+          className=" p-4  md:p-8 bg-transparent border-4 border-gray-600 rounded-full focus:outline-none transition duration-500 "
+          data-rate="80"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          type="button"
+        />
+      </div>
+      <div
+        className=" flex flex-col justify-center self-center  flex-1"
+      >
+        <button
+          className="p-6  mt-6 mx-auto md:p-10 bg-transparent border-4 border-gray-600 rounded-full focus:outline-none transition duration-500  "
+          data-rate="100"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          type="button"
+        />
+        <p
+          className="mx-auto mt-3 text-gray-500"
+        >
+          ALWAYS
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
