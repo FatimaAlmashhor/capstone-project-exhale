@@ -6,8 +6,8 @@ import { useTranslation } from 'react-i18next';
 export default function ContactUsForm() {
   const { t } = useTranslation();
   const ReviewError = Yup.object().shape({
-    email: Yup.string().email().required('Email is Required'),
-    message: Yup.string().required('Message is Required'),
+    email: Yup.string().email().required(t('EmailRequired')),
+    message: Yup.string().required(t('MassageRequierd')),
   });
   return (
     <Formik
@@ -30,7 +30,7 @@ export default function ContactUsForm() {
                 id="email"
                 name="email"
                 type="text"
-                placeholder="Enter your Email"
+                placeholder={t('yourEmail')}
                 onChange={formik.handleChange}
               />
             </label>
@@ -51,7 +51,7 @@ export default function ContactUsForm() {
                 id="message"
                 name="message"
                 rows="5"
-                placeholder="Enter your Message"
+                placeholder={t('YourMessage')}
                 onChange={formik.handleChange}
               />
             </label>
@@ -64,7 +64,7 @@ export default function ContactUsForm() {
               className="bg-red-500 mt-4 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
-              SEND
+              {t('Send')}
             </button>
           </form>
         </div>

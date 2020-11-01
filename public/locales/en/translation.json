@@ -14,5 +14,8 @@
   "MuchPass": "Passwords must match",
   "PassRequired": "Password is Required",
   "confirmPasswordRequierd": "Confirm Password is Required",
-  "PassCharacters": "Password must be at least 8 characters"
+  "PassCharacters": "Password must be at least 8 characters",
+  "MassageRequierd": "Message is Required",
+  "YourMessage": "Enter your Message",
+  "Send": "SEND"
 }
