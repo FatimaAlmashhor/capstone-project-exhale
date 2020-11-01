@@ -1,8 +1,12 @@
 {
   "Email": "Email",
   "Message": "Message",
-  "Name":"Name",
-  "Password":"Password",
-  "confirmPassword":"Confirm Password"
- 
+  "Name": "Name",
+  "Password": "Password",
+  "confirmPassword": "Confirm Password",
+  "SignUP": "Sign UP",
+  "yourNam": "Enter your Name",
+  "yourEmail": "Enter your Email",
+  "yourPassword": "Enter your password",
+  "confirmYourPassword": "Confirm your password"
 }

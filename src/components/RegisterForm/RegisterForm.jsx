@@ -36,7 +36,7 @@ export default function RegisterForm() {
                 id="name"
                 name="name"
                 type="text"
-                placeholder="Enter your Name"
+                placeholder={t('yourNam')}
                 onChange={formik.handleChange}
               />
             </label>
@@ -55,7 +55,7 @@ export default function RegisterForm() {
                 id="email"
                 name="email"
                 type="text"
-                placeholder="Enter your email"
+                placeholder={t('yourEmail')}
                 onChange={formik.handleChange}
               />
             </label>
@@ -74,7 +74,7 @@ export default function RegisterForm() {
                 id="password"
                 name="password"
                 type="password"
-                placeholder="Enter your password"
+                placeholder={t('yourPassword')}
                 onChange={formik.handleChange}
               />
             </label>
@@ -93,7 +93,7 @@ export default function RegisterForm() {
                 id="confirmPassword"
                 name="confirmPassword"
                 type="password"
-                placeholder="Confirm your password"
+                placeholder={t('confirmYourPassword')}
                 onChange={formik.handleChange}
               />
             </label>
@@ -106,7 +106,7 @@ export default function RegisterForm() {
               className="bg-red-500 mt-4 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
-              Sign UP
+              {t('SignUP')}
             </button>
           </form>
         </div>

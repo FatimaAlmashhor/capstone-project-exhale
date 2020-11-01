@@ -1,7 +1,12 @@
 {
   "Email": "البريد الالكتروني",
   "Message": "رساله",
-  "Name":"الأسم",
-  "Password":"كلمه لمرور",
-  "confirmPassword":"تأكيد كلمه المرور"
+  "Name": "الأسم",
+  "Password": "كلمه لمرور",
+  "confirmPassword": "تأكيد كلمه المرور",
+  "SignUP": "انشاء حساب",
+  "yourNam": "ادخل اسمك",
+  "yourEmail": "ادخل حقك الايميل",
+  "yourPassword": "ادخل كلمه المرور",
+  "confirmYourPassword": "تأكد من كلمه المرور"
 }
