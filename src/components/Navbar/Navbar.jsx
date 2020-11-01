@@ -77,7 +77,7 @@ function Navbar() {
             <span className="inline-flex rounded-md shadow-sm">
               <NavLink
                 to={SIGNUP_ROUTE}
-                class="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150"
+                class="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-800 hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
               >
                 Signup
               </NavLink>
@@ -92,11 +92,10 @@ function Navbar() {
             <div className="pt-5 pb-6 px-5 space-y-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg"
-                    alt="Workflow"
-                  />
+                  <h1 className="font-medium text-3xl text-black-500 transition ease-in-out duration-150">
+                    <span className="text-4xl text-blue-800 font-black">EX</span>
+                    hale
+                  </h1>
                 </div>
                 <div className="-mr-2">
                   <button
@@ -168,7 +167,7 @@ function Navbar() {
                     <span className="w-full flex rounded-md shadow-sm">
                       <NavLink
                         to={SIGNUP_ROUTE}
-                        className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150"
+                        className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-800 hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
                       >
                         Sign up
                       </NavLink>
@@ -177,7 +176,7 @@ function Navbar() {
                       Existing User?
                       <NavLink
                         to={LOGIN_ROUTE}
-                        className="text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150"
+                        className="text-blue-700 hover:text-blue-500 transition ease-in-out duration-150"
                       >
                         Sign in
                       </NavLink>
