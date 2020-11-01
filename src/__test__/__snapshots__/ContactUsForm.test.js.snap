@@ -18,7 +18,7 @@ exports[`renders correctly 1`] = `
         id="email"
         name="email"
         onChange={[Function]}
-        placeholder="Enter your Email"
+        placeholder="yourEmail"
         type="text"
       />
     </label>
@@ -32,7 +32,7 @@ exports[`renders correctly 1`] = `
         id="message"
         name="message"
         onChange={[Function]}
-        placeholder="Enter your Message"
+        placeholder="YourMessage"
         rows="5"
       />
     </label>
@@ -40,7 +40,7 @@ exports[`renders correctly 1`] = `
       className="bg-red-500 mt-4 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
       type="submit"
     >
-      SEND
+      Send
     </button>
   </form>
 </div>
