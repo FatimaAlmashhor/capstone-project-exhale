@@ -8,5 +8,11 @@
   "yourNam": "ادخل اسمك",
   "yourEmail": "ادخل حقك الايميل",
   "yourPassword": "ادخل كلمه المرور",
-  "confirmYourPassword": "تأكد من كلمه المرور"
+  "confirmYourPassword": "تأكد من كلمه المرور",
+  "EmailRequired": "ادخل البريد الالكتروني",
+  "NamRequired": "ادخل اسمك",
+  "MuchPass": "لازم من تطابق كلمه المرور",
+  "PassRequired": "ادخل كلمه المرور",
+  "confirmPasswordRequierd": " ادخل تاكيد كلمه المرور ",
+  "PassCharacters": "كلمه المرور اقل شي تحتوي على 8 حروف"
 }

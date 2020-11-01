@@ -6,14 +6,12 @@ import { useTranslation } from 'react-i18next';
 export default function RegisterForm() {
   const { t } = useTranslation();
   const ReviewError = Yup.object().shape({
-    name: Yup.string().required('Name is Required '),
-    email: Yup.string().email().required('Email is Required'),
-    password: Yup.string()
-      .min(8, 'Password must be at least 8 characters')
-      .required('Password is Required'),
+    name: Yup.string().required(t('NamRequired')),
+    email: Yup.string().email().required(t('EmailRequired')),
+    password: Yup.string().min(8, t('PassCharacters')).required(t('PassRequired')),
     confirmPassword: Yup.string()
-      .oneOf([Yup.ref('password'), null], 'Passwords must match')
-      .required('Confirm Password is Required'),
+      .oneOf([Yup.ref('password'), null], t('MuchPass'))
+      .required(t('confirmPasswordRequierd')),
   });
   return (
     <Formik

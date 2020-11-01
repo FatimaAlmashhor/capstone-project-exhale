@@ -8,5 +8,11 @@
   "yourNam": "Enter your Name",
   "yourEmail": "Enter your Email",
   "yourPassword": "Enter your password",
-  "confirmYourPassword": "Confirm your password"
+  "confirmYourPassword": "Confirm your password",
+  "EmailRequired": "Email is Required",
+  "NamRequired": "Name is Required",
+  "MuchPass": "Passwords must match",
+  "PassRequired": "Password is Required",
+  "confirmPasswordRequierd": "Confirm Password is Required",
+  "PassCharacters": "Password must be at least 8 characters"
 }
