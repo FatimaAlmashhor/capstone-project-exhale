@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import {
   HOME_ROUTE,
@@ -12,6 +12,7 @@ import {
 } from '../../routes';
 
 function Navbar() {
+  const [isExpanded, toggleExpansion] = useState(false);
   return (
     // bg-gray-800
     <div className="relative bg-white">
@@ -124,6 +125,7 @@ function Navbar() {
                 <div className="-mr-2">
                   <button
                     type="button"
+                    onClick={() => toggleExpansion(!isExpanded)}
                     className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
                   >
                     <svg
@@ -137,13 +139,13 @@ function Navbar() {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth="2"
-                        d="M6 18L18 6M6 6l12 12"
+                        d="M4 6h16M4 12h16M4 18h16"
                       />
                     </svg>
                   </button>
                 </div>
               </div>
-              <div>
+              <div className={`${isExpanded ? `block` : `hidden`}  font-medium`}>
                 <nav className="grid gap-y-8">
                   <NavLink
                     to={HOME_ROUTE}
@@ -164,12 +166,6 @@ function Navbar() {
                     className="-m-3 p-3 flex font-medium items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
                   >
                     Articles
-                  </NavLink>
-                  <NavLink
-                    href="#"
-                    className="-m-3 p-3 flex font-medium items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
-                  >
-                    Home
                   </NavLink>
                   <NavLink
                     to={ABOUT_ROUTE}
@@ -202,7 +198,7 @@ function Navbar() {
                       </NavLink>
                     </span>
                     <p className="text-center text-base leading-6 font-medium text-gray-500">
-                      Existing customer?
+                      Existing User?
                       <NavLink
                         to={LOGIN_ROUTE}
                         className="text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150"
