@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <footer
-  className="bg-gray-100 py-8 w-full"
+  className="bg-white border-t-2 mt-8 pt-8 pb-4 w-full"
 >
   <div
     className="container mx-auto px-8"
@@ -23,7 +23,7 @@ exports[`renders correctly 1`] = `
         className="inline container z-10"
       >
         <ul
-          className="flex flex-row"
+          className="flex flex-col md:flex-row"
         >
           <li
             className="flex-1 text-center text-gray-600"

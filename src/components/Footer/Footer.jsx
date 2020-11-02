@@ -6,10 +6,9 @@ import {
     CONTACT_ROUTE,
     SELF_ASSESSMENT_ROUTE,
   } from '../../routes';
-
 const Footer = () => {
     return (
-        <footer className="bg-gray-100 py-8 w-full">
+        <footer className="bg-white border-t-2 mt-8 pt-8 pb-4 w-full">
             <div className="container mx-auto px-8">
                 <div className=" w-full">
                     <div class="block ">
@@ -18,7 +17,7 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className='inline container z-10' >
-                        <ul className ='flex flex-row'>
+                        <ul className ='flex flex-col md:flex-row'>
                             <li  className = 'flex-1 text-center text-gray-600'>
                                 <Link 
                                     to = {SELF_ASSESSMENT_ROUTE}>SELF ASSESSMENT</Link>
@@ -29,6 +28,7 @@ const Footer = () => {
                             <li  className = 'flex-1 text-center text-gray-600'>
                                 <Link to ={CONTACT_ROUTE}>CONTACT US</Link>
                             </li>
+
                         </ul>
                     </div>
                     <div className = 'block flex flex-row mt-8' >
@@ -39,6 +39,7 @@ const Footer = () => {
                             <ul className ='flex flex-row-reverse'>
                                 <li className = 'mx-3 cursor-pointer'>
                                     <a href=''>
+
                                         <FontAwesomeIcon className ='text-gray-500 text-lg hover:text-green-300' icon={['fab', 'twitter']} />
                                     </a>
                                 </li>
