@@ -1,1 +1,21 @@
-{}
+{
+  "Email": "البريد الالكتروني",
+  "Message": "رساله",
+  "Name": "الأسم",
+  "Password": "كلمه لمرور",
+  "confirmPassword": "تأكيد كلمه المرور",
+  "SignUP": "انشاء حساب",
+  "yourNam": "ادخل اسمك",
+  "yourEmail": "ادخل حقك الايميل",
+  "yourPassword": "ادخل كلمه المرور",
+  "confirmYourPassword": "تأكد من كلمه المرور",
+  "EmailRequired": "ادخل البريد الالكتروني",
+  "NamRequired": "ادخل اسمك",
+  "MuchPass": "لازم من تطابق كلمه المرور",
+  "PassRequired": "ادخل كلمه المرور",
+  "confirmPasswordRequierd": " ادخل تاكيد كلمه المرور ",
+  "PassCharacters": "كلمه المرور اقل شي تحتوي عكتلى 8 حروف",
+  "MassageRequierd": "اكتب رساله",
+  "YourMessage": "ادخل رسالتك",
+  "Send": "ارسل"
+}
