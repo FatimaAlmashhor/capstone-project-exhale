@@ -19,7 +19,7 @@ import PropTypes from 'prop-types';
                 <div className="category-badge flex-1  h-4 w-4 m rounded-full m-1 bg-green-100">
                   <div className="h-2 w-2 rounded-full m-1 bg-green-500"></div>
                 </div>
-                <div className="category-title flex-1 text-sm text-gray-400"> {time}</div>
+                <div className="category-title flex-1 text-sm text-gray-400">{time}</div>
               </div>
               <div className="title-post font-medium">{title}</div>
               <div className="summary-post text-base text-justify">{paragraph}. 
@@ -43,7 +43,7 @@ ArticleCard.propTypes = {
   onClick : PropTypes.func.isRequired,
   time: PropTypes.string,
   img : PropTypes.string,
-};
+}
 ArticleCard.defaultProps = {
   time: new Date().toLocaleDateString('en-US'),
 };
