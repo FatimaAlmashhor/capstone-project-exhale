@@ -3,7 +3,11 @@ module.exports = {
   future: {},
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      width : {
+        70 : '20rem'
+      }
+    },
   },
   variants: {},
   plugins: [],
