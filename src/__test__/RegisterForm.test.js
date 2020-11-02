@@ -1,6 +1,5 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import '../fontawesome';
 import RegisterForm from '../components/RegisterForm';
 
 it('renders correctly', () => {
