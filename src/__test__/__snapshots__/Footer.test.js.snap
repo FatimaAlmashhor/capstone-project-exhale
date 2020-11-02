@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<footer
+  className="bg-gray-100 py-8 w-full"
+>
+  <div
+    className="container mx-auto px-8"
+  >
+    <div
+      className=" w-full"
+    >
+      <div
+        class="block "
+      >
+        <p
+          class="uppercase text-grey text-2xl sm:mb-6"
+        >
+          LOGO
+        </p>
+      </div>
+      <div
+        className="inline container z-10"
+      >
+        <ul
+          className=" flex flex-row "
+        >
+          <li
+            className="flex-1 text-center text-gray-600"
+          >
+            SELF ASSESSMENT
+          </li>
+          <li
+            className="flex-1 text-center text-gray-600"
+          >
+            ABOUT US
+          </li>
+          <li
+            className="flex-1 text-center text-gray-600"
+          >
+            CONTACT US
+          </li>
+        </ul>
+      </div>
+      <div
+        className="block flex flex-row mt-8"
+      >
+        <div
+          className="flex-1 text-gray-400 text-sm"
+        >
+          Copyright @Exhale All right Reserved.
+        </div>
+        <div
+          className="flex-auto "
+        >
+          <ul
+            className="flex flex-row-reverse "
+          >
+            <li
+              className="mx-3 cursor-pointer"
+            >
+              <a />
+            </li>
+            <li
+              className="mx-3 cursor-pointer"
+            >
+              <a />
+            </li>
+            <li
+              className="mx-3 cursor-pointer"
+            >
+              <a />
+            </li>
+            <li
+              className="mx-3  cursor-pointer "
+            >
+              <a />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+`;
