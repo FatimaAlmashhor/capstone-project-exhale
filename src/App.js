@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import {
   HOME_ROUTE,
@@ -24,10 +24,19 @@ import SelfAssessment from './containers/SelfAssessment';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 import SendDataToDB from './database/SendDataToDB';
+import fire from './firebase'
+
 function App() {
+  //User sign in?
+ const [user, setUser]=useState(null);
+ useEffect(() => {
+    fire.auth().onAuthStateChanged((user) => {
+      setUser(!!user);
+    });
+  });
   return (
     <Router>
-    <SendDataToDB />
+    {user ? <SelfAssessment />: <SendDataToDB />}
       <Navbar />
       <Switch>
         <Route path={LOGIN_ROUTE} component={Login} />

@@ -6,29 +6,20 @@ export default function SendDataToDB() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const login = () => {
-    fire
-      .auth()
-      .signInWithEmailAndPassword(email, password)
-      .then((u) => {
-        // console.log(u);
-      })
-      .catch((error) => {
-        // console.log(error);
-      });
-    // console.log('logged in!');
+    fire.auth().signInWithEmailAndPassword(email, password);
   };
-
   const signup = () => {
     fire
       .auth()
       .createUserWithEmailAndPassword(email, password)
-      .then((u) => {
-        // console.log(u);
-      })
-      .catch((error) => {
-        // console.log(error);
+      .then(() => {
+        fire.database().ref('name').orderByKey().limitToLast(100);
+        fire.database().ref('name').push(name);
+        fire.database().ref('email').orderByKey().limitToLast(100);
+        fire.database().ref('email').push(email);
+        fire.database().ref('password').orderByKey().limitToLast(100);
+        fire.database().ref('password').push(password);
       });
-    // console.log('Signed up');
   };
   return (
     <div className="w-full max-w-xs px-8 pt-6 pb-8 mx-auto mt-10 mb-4 bg-white rounded shadow-md">
@@ -54,15 +45,7 @@ export default function SendDataToDB() {
       />
       <br />
       <button
-        onClick={() => {
-          signup();
-          // const nameRef =
-          fire.database().ref('name').orderByKey().limitToLast(100);
-          fire.database().ref('name').push(name);
-          // const emailRef =
-          fire.database().ref('email').orderByKey().limitToLast(100);
-          fire.database().ref('email').push(email);
-        }}
+        onClick={() => signup()}
         type="button"
         className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
       >
