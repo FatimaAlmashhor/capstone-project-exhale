@@ -7,6 +7,7 @@ import {
     SELF_ASSESSMENT_ROUTE,
   } from '../../routes';
 
+
 const Footer = () => {
     return (
         <footer className="bg-gray-100 py-8 w-full">
@@ -54,6 +55,11 @@ const Footer = () => {
                                 </li>
                                 <li className = 'mx-3  cursor-pointer '>
                                     <a href=''>
+                                        <FontAwesomeIcon className ='text-gray-500 text-lg hover:text-green-300' icon={['fab', 'linkedin']} />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
                                         <FontAwesomeIcon className ='text-gray-500 text-lg hover:text-green-300' icon={['fab', 'linkedin']} />
                                     </a>
                                 </li>
