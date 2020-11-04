@@ -13,7 +13,6 @@ import {
 
 const Navbar = () => {
   let location = useLocation();
-  console.log(location);
   return (
     <ul>
       <li>

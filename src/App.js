@@ -9,12 +9,10 @@ import {
   ARTICLES_BASE_ROUTE,
   ARTICLE_ROUTE,
   LOGIN_ROUTE,
-  SIGNUP_ROUTE,
   NOT_FOUND_ROUTE,
 } from './routes';
 import Home from './containers/Home';
 import Login from './containers/Login';
-import Signup from './containers/Signup';
 import Doctors from './containers/Doctors';
 import Articles from './containers/Articles';
 import Article from './containers/Articles/Article';
@@ -37,7 +35,6 @@ export default App;
 
 export const Routing = () => {
   let location = useLocation();
-  // console.log(location);
   let modal = location.state && location.state.modal;
   console.log(modal);
   return (

@@ -29,7 +29,6 @@ function Modal() {
                 }
                 break ;
         }
-        console.log(filling);
     } , [id])
 
     let handleClosing = (e) =>{
