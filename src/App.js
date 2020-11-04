@@ -25,7 +25,7 @@ import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 import SendDataToDB from './database/SendDataToDB';
 import fire from './firebase'
-
+import RegisterForm from './database/RegisterForm'
 function App() {
   //User sign in?
  const [user, setUser]=useState(null);
@@ -37,6 +37,7 @@ function App() {
   return (
     <Router>
     {user ? <SelfAssessment />: <SendDataToDB />}
+    <RegisterForm />
       <Navbar />
       <Switch>
         <Route path={LOGIN_ROUTE} component={Login} />
