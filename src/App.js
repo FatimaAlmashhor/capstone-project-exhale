@@ -23,10 +23,11 @@ import About from './containers/About';
 import SelfAssessment from './containers/SelfAssessment';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
-import SendDataToDB from './database/SendDataToDB';
 import fire from './firebase'
-import RegisterForm from './database/RegisterForm'
+import RegisterForm from './components/RegisterForm/RegisterForm'
+
 function App() {
+  //Test Register form with Firebase
   //User sign in?
  const [user, setUser]=useState(null);
  useEffect(() => {
@@ -36,8 +37,7 @@ function App() {
   });
   return (
     <Router>
-    {user ? <SelfAssessment />: <SendDataToDB />}
-    <RegisterForm />
+    {user ? <SelfAssessment />: <RegisterForm />}
       <Navbar />
       <Switch>
         <Route path={LOGIN_ROUTE} component={Login} />
