@@ -3,6 +3,16 @@
 exports[`renders correctly 1`] = `
 <div>
   <div
+    className="w-full mb-4 border-b-2 pb-2"
+  >
+    <div>
+      <div
+        id="firebaseui_container"
+      />
+    </div>
+  </div>
+  <div />
+  <div
     className="w-full max-w-md mx-auto"
   >
     <form
