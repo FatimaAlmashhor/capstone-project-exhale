@@ -11,6 +11,9 @@ module.exports = {
       },
       animation: {
         'bounce' : 'bounce 1s finite' ,
+      },
+      width : {
+        70 : '20rem'
       }
     },
   },
