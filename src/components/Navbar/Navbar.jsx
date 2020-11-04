@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink , useLocation } from 'react-router-dom';
 import {
   HOME_ROUTE,
   DOCTORS_ROUTE,
@@ -12,16 +12,30 @@ import {
 } from '../../routes';
 
 const Navbar = () => {
+  let location = useLocation();
+  console.log(location);
   return (
     <ul>
       <li>
         <Link to={HOME_ROUTE}>LOGO</Link>
       </li>
       <li>
-        <NavLink to={LOGIN_ROUTE}>Login</NavLink>
+      <NavLink 
+          to = {{
+            pathname : LOGIN_ROUTE ,
+            state : { modal: location }
+          }}>
+            Login
+        </NavLink>
       </li>
       <li>
-        <NavLink to={SIGNUP_ROUTE}>Signup</NavLink>
+        <NavLink 
+          to = {{
+            pathname : SIGNUP_ROUTE ,
+            state : { modal: location }
+          }}>
+            Signup
+        </NavLink>
       </li>
       <li>
         <NavLink to={DOCTORS_ROUTE}>Doctors</NavLink>

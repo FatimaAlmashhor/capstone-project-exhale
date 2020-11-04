@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect ,useLocation} from 'react-router-dom';
 import {
   HOME_ROUTE,
   DOCTORS_ROUTE,
@@ -23,15 +23,27 @@ import About from './containers/About';
 import SelfAssessment from './containers/SelfAssessment';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
-import SendDataToDB from './database/SendDataToDB';
+import Modal from './components/common/Modal';
 function App() {
+  
   return (
     <Router>
-    <SendDataToDB />
       <Navbar />
-      <Switch>
+      <Routing />
+    </Router>
+  );
+}
+export default App;
+
+export const Routing = () => {
+  let location = useLocation();
+  // console.log(location);
+  let modal = location.state && location.state.modal;
+  console.log(modal);
+  return (
+    <div>
+      <Switch location={modal || location}>
         <Route path={LOGIN_ROUTE} component={Login} />
-        <Route path={SIGNUP_ROUTE} component={Signup} />
         <Route path={DOCTORS_ROUTE} component={Doctors} />
         <Route path={ARTICLE_ROUTE} component={Article} />
         <Route path={ARTICLES_BASE_ROUTE} component={Articles} />
@@ -42,7 +54,7 @@ function App() {
         <Route exact path={HOME_ROUTE} component={Home} />
         <Redirect to={NOT_FOUND_ROUTE} />
       </Switch>
-    </Router>
+      {modal && <Route path='/:id' children={<Modal />} />}
+    </div>
   );
 }
-export default App;
