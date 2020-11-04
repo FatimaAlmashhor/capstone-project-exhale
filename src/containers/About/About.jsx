@@ -22,6 +22,15 @@ const About = () => {
         <div className="mb-4 bg-gray-400 sm:w-1  md:w-1/3 ">
           <TeamCard />
         </div>
+        <div className="mb-4 bg-gray-500 sm:w-1  md:w-1/3 ">
+          <TeamCard />
+        </div>
+        <div className="mb-4 bg-gray-400 sm:w-1  md:w-1/3 ">
+          <TeamCard />
+        </div>
+        <div className="mb-4 bg-gray-500 sm:w-1  md:w-1/3 ">
+          <TeamCard />
+        </div>
       </div>
     </div>
   );
