@@ -1,10 +1,9 @@
 import React from 'react';
-import DoctorCard from '../../components/DoctorCard/DoctorCard';
 
 const Doctors = () => {
   return (
     <div>
-      <DoctorCard name="Someone" />
+      <h1>Doctors</h1>
     </div>
   );
 };
