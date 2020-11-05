@@ -13,7 +13,6 @@ export default function RegisterForm() {
       .oneOf([Yup.ref('password'), null], t('MuchPass'))
       .required(t('confirmPasswordRequierd')),
   });
-
   return (
     <Formik
       initialValues={{ name: '', email: '', password: '', confirmPassword: '' }}
