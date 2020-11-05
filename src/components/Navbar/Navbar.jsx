@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import {
   HOME_ROUTE,
   DOCTORS_ROUTE,
@@ -12,6 +13,7 @@ import {
 } from '../../routes';
 
 function Navbar() {
+  const { t } = useTranslation();
   const [isExpanded, toggleExpansion] = useState(false);
   return (
     <div className="relative bg-white">
@@ -28,58 +30,58 @@ function Navbar() {
           <nav className="hidden md:flex space-x-10">
             <NavLink
               to={HOME_ROUTE}
-              class="text-base leading-6 font-medium text-blue-900 hover:text-gray-500 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+              className="text-base leading-6 font-medium text-blue-900 hover:text-gray-500 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
             >
-              HOME
+              {t('HOME')}
             </NavLink>
             <NavLink
               to={DOCTORS_ROUTE}
-              class="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+              className="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
             >
-              Doctors
+              {t('Doctors')}
             </NavLink>
 
             <NavLink
               to={ARTICLES_BASE_ROUTE}
-              class="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+              className="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
             >
-              Articles
+              {t('Articles')}
             </NavLink>
 
             <NavLink
               to={ABOUT_ROUTE}
-              class="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+              className="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
             >
-              AboutUs
+              {t('AboutUs')}
             </NavLink>
 
             <NavLink
               to={CONTACT_ROUTE}
-              class="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+              className="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
             >
-              ContactUs
+              {t('ContactUs')}
             </NavLink>
 
             <NavLink
               to={SELF_ASSESSMENT_ROUTE}
-              class="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+              className="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
             >
-              Checkup
+              {t('Signup')}
             </NavLink>
           </nav>
           <div className="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
             <NavLink
               to={LOGIN_ROUTE}
-              class="whitespace-no-wrap text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900"
+              className="whitespace-no-wrap text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900"
             >
-              Login
+              {t('Login')}
             </NavLink>
             <span className="inline-flex rounded-md shadow-sm">
               <NavLink
                 to={SIGNUP_ROUTE}
-                class="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-800 hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
+                className="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-800 hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
               >
-                Signup
+                {t('Checkup')}
               </NavLink>
             </span>
           </div>
@@ -126,41 +128,41 @@ function Navbar() {
                     to={HOME_ROUTE}
                     className="-m-3 p-3 flex font-medium items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
                   >
-                    Home
+                    {t('HOME')}
                   </NavLink>
 
                   <NavLink
                     to={DOCTORS_ROUTE}
                     className="-m-3 p-3 flex font-medium items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
                   >
-                    Doctors
+                    {t('Doctors')}
                   </NavLink>
 
                   <NavLink
                     to={ARTICLES_BASE_ROUTE}
                     className="-m-3 p-3 flex font-medium items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
                   >
-                    Articles
+                    {t('Articles')}
                   </NavLink>
                   <NavLink
                     to={ABOUT_ROUTE}
                     className="-m-3 p-3 flex font-medium items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
                   >
-                    AboutUs
+                    {t('AboutUs')}
                   </NavLink>
 
                   <NavLink
                     to={CONTACT_ROUTE}
                     className="-m-3 p-3 flex font-medium items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
                   >
-                    ContactUs
+                    {t('ContactUs')}
                   </NavLink>
 
                   <NavLink
                     to={SELF_ASSESSMENT_ROUTE}
                     className="-m-3 p-3 flex font-medium items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
                   >
-                    Checkup
+                    {t('Signup')}
                   </NavLink>
 
                   <div className="space-y-6">
@@ -169,7 +171,7 @@ function Navbar() {
                         to={SIGNUP_ROUTE}
                         className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-800 hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
                       >
-                        Sign up
+                        {t('Checkup')}
                       </NavLink>
                     </span>
                     <p className="text-center text-base leading-6 font-medium text-gray-500">
@@ -178,7 +180,7 @@ function Navbar() {
                         to={LOGIN_ROUTE}
                         className="text-blue-700 hover:text-blue-500 transition ease-in-out duration-150"
                       >
-                        Sign in
+                        {t('Login')}
                       </NavLink>
                     </p>
                   </div>
