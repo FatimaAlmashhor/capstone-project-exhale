@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import {
   HOME_ROUTE,
@@ -23,21 +23,10 @@ import About from './containers/About';
 import SelfAssessment from './containers/SelfAssessment';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
-import fire from './firebase'
-import RegisterForm from './components/RegisterForm/RegisterForm'
 
 function App() {
-  //Test Register form with Firebase
-  //User sign in?
- const [user, setUser]=useState(null);
- useEffect(() => {
-    fire.auth().onAuthStateChanged((user) => {
-      setUser(!!user);
-    });
-  });
   return (
     <Router>
-    {user ? <SelfAssessment />: <RegisterForm />}
       <Navbar />
       <Switch>
         <Route path={LOGIN_ROUTE} component={Login} />
