@@ -14,10 +14,7 @@ const Login = () => {
     <div>
       {isSignedIn ? (
         <span>
-          <div className="text-red-600">Signed In!</div>
-          <button type="button" onClick={() => firebase.auth().signOut()}>
-            Sign out!
-          </button>
+          <div className="text-red-600">Logged In!</div>
         </span>
       ) : (
         <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
