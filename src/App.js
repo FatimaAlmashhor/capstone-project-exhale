@@ -23,11 +23,10 @@ import About from './containers/About';
 import SelfAssessment from './containers/SelfAssessment';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
-import SendDataToDB from './database/SendDataToDB';
+
 function App() {
   return (
     <Router>
-    <SendDataToDB />
       <Navbar />
       <Switch>
         <Route path={LOGIN_ROUTE} component={Login} />

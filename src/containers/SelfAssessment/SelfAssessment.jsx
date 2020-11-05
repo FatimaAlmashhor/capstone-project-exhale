@@ -26,20 +26,20 @@ const SelfAssessment = () => {
     </div>
   ));
   return (
-    <div className="flex flex-col mx-auto w-4/5 md:w-8/12 lg:w-6/12 mt-10">
+    <div className="flex flex-col w-4/5 mx-auto mt-10 md:w-8/12 lg:w-6/12">
       <ProgressBar showLabel max={Tasks.length} now={displayIndex} />
       {TasksBicker}
-      <div className="  mt-16  ">
+      <div className="mt-16 ">
         <button
           type="button"
-          className="  self-start focus:outline-none"
+          className="self-start focus:outline-none"
           onClick={handleBackStep}
         >
           <FontAwesomeIcon
-            className="text-lg md:text-xl pt-1 text-green-400"
+            className="pt-1 text-lg text-green-400 md:text-xl"
             icon={['fas', 'chevron-left']}
           />
-          <span className="text-gray-500 text-base ml-5">BACK</span>
+          <span className="ml-5 text-base text-gray-500">BACK</span>
         </button>
       </div>
     </div>

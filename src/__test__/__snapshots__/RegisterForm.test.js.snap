@@ -5,16 +5,16 @@ exports[`renders correctly 1`] = `
   className="w-full max-w-xs mx-auto"
 >
   <form
-    className="bg-white shadow-md  rounded px-8 pt-6 pb-8 mb-4"
+    className="px-8 pt-6 pb-8 mb-4 bg-white rounded shadow-md"
     onSubmit={[Function]}
   >
     <label
-      className="block text-gray-700 text-sm font-bold mb-2"
+      className="block mb-2 text-sm font-bold text-gray-700"
       htmlFor="name"
     >
       Name
       <input
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
         id="name"
         name="name"
         onChange={[Function]}
@@ -23,12 +23,12 @@ exports[`renders correctly 1`] = `
       />
     </label>
     <label
-      className="block text-gray-700 text-sm font-bold mb-2"
+      className="block mb-2 text-sm font-bold text-gray-700"
       htmlFor="email"
     >
       Email
       <input
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
         id="email"
         name="email"
         onChange={[Function]}
@@ -37,12 +37,12 @@ exports[`renders correctly 1`] = `
       />
     </label>
     <label
-      className="block text-gray-700 text-sm font-bold mb-2"
+      className="block mb-2 text-sm font-bold text-gray-700"
       htmlFor="password"
     >
       Password
       <input
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
         id="password"
         name="password"
         onChange={[Function]}
@@ -51,12 +51,12 @@ exports[`renders correctly 1`] = `
       />
     </label>
     <label
-      className="block text-gray-700 text-sm font-bold mb-2"
+      className="block mb-2 text-sm font-bold text-gray-700"
       htmlFor="confirmPassword"
     >
       confirmPassword
       <input
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
         id="confirmPassword"
         name="confirmPassword"
         onChange={[Function]}
@@ -65,11 +65,16 @@ exports[`renders correctly 1`] = `
       />
     </label>
     <button
-      className="bg-red-500 mt-4 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+      className="px-4 py-2 mt-4 font-bold text-white bg-red-500 rounded hover:bg-red-700 focus:outline-none focus:shadow-outline"
       type="submit"
     >
       SignUP
     </button>
+    <div
+      className="text-lg text-red-500"
+    >
+      
+    </div>
   </form>
 </div>
 `;
