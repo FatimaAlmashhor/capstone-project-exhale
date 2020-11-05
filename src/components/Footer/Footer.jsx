@@ -92,7 +92,7 @@ export const DropdownButton = () => {
     i18n.changeLanguage(lng);
     setShow(false);
     if (lng === 'en') setLanguage('English');
-    setLanguage('العربيه');
+    else setLanguage('العربيه');
   };
 
   return (
