@@ -28,7 +28,6 @@ const Footer = () => {
                             <li  className = 'flex-1 text-center text-gray-600'>
                                 <Link to ={CONTACT_ROUTE}>CONTACT US</Link>
                             </li>
-
                         </ul>
                     </div>
                     <div className = 'block flex flex-row mt-8' >
@@ -39,7 +38,6 @@ const Footer = () => {
                             <ul className ='flex flex-row-reverse'>
                                 <li className = 'mx-3 cursor-pointer'>
                                     <a href=''>
-
                                         <FontAwesomeIcon className ='text-gray-500 text-lg hover:text-green-300' icon={['fab', 'twitter']} />
                                     </a>
                                 </li>
