@@ -1,4 +1,3 @@
-/* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -86,7 +85,6 @@ const Footer = () => {
 export default Footer;
 
 export const DropdownButton = () => {
-  const { t } = useTranslation();
   const [show, setShow] = useState(false);
   const [Language, setLanguage] = useState('English');
 
@@ -94,7 +92,7 @@ export const DropdownButton = () => {
     i18n.changeLanguage(lng);
     setShow(false);
     if (lng === 'en') setLanguage('English');
-    setLanguage('العربيه');
+    else setLanguage('العربيه');
   };
 
   return (
@@ -136,12 +134,14 @@ export const DropdownButton = () => {
             aria-labelledby="options-menu"
           >
             <button
+              type="button"
               onClick={() => changeLanguage('ar')}
               className="block w-full text-left px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
             >
               العربية
             </button>
             <button
+              type="button"
               onClick={() => changeLanguage('en')}
               className="block w-full text-left px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
             >
