@@ -63,7 +63,7 @@ function Navbar() {
             </NavLink>
 
             <NavLink
-              to={SELF_ASSESSMENT_ROUTE}
+              to={SIGNUP_ROUTE}
               className="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
             >
               {t('Signup')}
@@ -78,7 +78,7 @@ function Navbar() {
             </NavLink>
             <span className="inline-flex rounded-md shadow-sm">
               <NavLink
-                to={SIGNUP_ROUTE}
+                to={SELF_ASSESSMENT_ROUTE}
                 className="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-800 hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
               >
                 {t('Checkup')}
@@ -159,7 +159,7 @@ function Navbar() {
                   </NavLink>
 
                   <NavLink
-                    to={SELF_ASSESSMENT_ROUTE}
+                    to={SIGNUP_ROUTE}
                     className="-m-3 p-3 flex font-medium items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
                   >
                     {t('Signup')}
@@ -168,7 +168,7 @@ function Navbar() {
                   <div className="space-y-6">
                     <span className="w-full flex rounded-md shadow-sm">
                       <NavLink
-                        to={SIGNUP_ROUTE}
+                        to={SELF_ASSESSMENT_ROUTE}
                         className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-800 hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
                       >
                         {t('Checkup')}
