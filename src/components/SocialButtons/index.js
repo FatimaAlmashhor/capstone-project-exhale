@@ -1,1 +1,1 @@
-export {default} from './SoicailButton'
+export {default} from './SocialButtons'
