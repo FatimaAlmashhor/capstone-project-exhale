@@ -23,25 +23,33 @@ import About from './containers/About';
 import SelfAssessment from './containers/SelfAssessment';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
-import SendDataToDB from './database/SendDataToDB';
+import Footer from './components/Footer'
 function App() {
   return (
     <Router>
-    <SendDataToDB />
-      <Navbar />
-      <Switch>
-        <Route path={LOGIN_ROUTE} component={Login} />
-        <Route path={SIGNUP_ROUTE} component={Signup} />
-        <Route path={DOCTORS_ROUTE} component={Doctors} />
-        <Route path={ARTICLE_ROUTE} component={Article} />
-        <Route path={ARTICLES_BASE_ROUTE} component={Articles} />
-        <Route path={CONTACT_ROUTE} component={Contact} />
-        <Route path={ABOUT_ROUTE} component={About} />
-        <Route path={SELF_ASSESSMENT_ROUTE} component={SelfAssessment} />
-        <Route path={NOT_FOUND_ROUTE} component={NotFound} />
-        <Route exact path={HOME_ROUTE} component={Home} />
-        <Redirect to={NOT_FOUND_ROUTE} />
-      </Switch>
+    <div className = 'flex flex-col min-h-screen'>
+       <div className = 'flex-auto'>
+         <Navbar />
+       </div>
+        <div className ='flex-grow'>
+          <Switch>
+            <Route path={LOGIN_ROUTE} component={Login} />
+            <Route path={SIGNUP_ROUTE} component={Signup} />
+            <Route path={DOCTORS_ROUTE} component={Doctors} />
+            <Route path={ARTICLE_ROUTE} component={Article} />
+            <Route path={ARTICLES_BASE_ROUTE} component={Articles} />
+            <Route path={CONTACT_ROUTE} component={Contact} />
+            <Route path={ABOUT_ROUTE} component={About} />
+            <Route path={SELF_ASSESSMENT_ROUTE} component={SelfAssessment} />
+            <Route path={NOT_FOUND_ROUTE} component={NotFound} />
+            <Route exact path={HOME_ROUTE} component={Home} />
+            <Redirect to={NOT_FOUND_ROUTE} />
+          </Switch>
+        </div>
+        <div className ='flex-initial'>
+          <Footer />
+        </div>
+      </div>
     </Router>
   );
 }
