@@ -36,8 +36,7 @@ Array [
         >
           <a
             aria-current="page"
-            class="text-base leading-6 font-medium text-blue-900 hover:text-gray-500 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
-            className="active"
+            className="text-base leading-6 font-medium text-blue-900 hover:text-gray-500 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 active"
             href="/"
             onClick={[Function]}
             style={Object {}}
@@ -46,7 +45,7 @@ Array [
           </a>
           <a
             aria-current={null}
-            class="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            className="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
             href="/doctors"
             onClick={[Function]}
           >
@@ -54,7 +53,7 @@ Array [
           </a>
           <a
             aria-current={null}
-            class="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            className="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
             href="/articles"
             onClick={[Function]}
           >
@@ -62,7 +61,7 @@ Array [
           </a>
           <a
             aria-current={null}
-            class="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            className="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
             href="/about"
             onClick={[Function]}
           >
@@ -70,7 +69,7 @@ Array [
           </a>
           <a
             aria-current={null}
-            class="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            className="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
             href="/contact"
             onClick={[Function]}
           >
@@ -78,11 +77,11 @@ Array [
           </a>
           <a
             aria-current={null}
-            class="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            className="text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
             href="/self-assessment"
             onClick={[Function]}
           >
-            Checkup
+            Signup
           </a>
         </nav>
         <div
@@ -90,7 +89,7 @@ Array [
         >
           <a
             aria-current={null}
-            class="whitespace-no-wrap text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900"
+            className="whitespace-no-wrap text-base leading-6 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900"
             href="/login"
             onClick={[Function]}
           >
@@ -101,11 +100,11 @@ Array [
           >
             <a
               aria-current={null}
-              class="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-800 hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
+              className="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-800 hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
               href="/signup"
               onClick={[Function]}
             >
-              Signup
+              Checkup
             </a>
           </span>
         </div>
@@ -176,7 +175,7 @@ Array [
                   onClick={[Function]}
                   style={Object {}}
                 >
-                  Home
+                  HOME
                 </a>
                 <a
                   aria-current={null}
@@ -216,7 +215,7 @@ Array [
                   href="/self-assessment"
                   onClick={[Function]}
                 >
-                  Checkup
+                  Signup
                 </a>
                 <div
                   className="space-y-6"
@@ -230,7 +229,7 @@ Array [
                       href="/signup"
                       onClick={[Function]}
                     >
-                      Sign up
+                      Checkup
                     </a>
                   </span>
                   <p
@@ -243,7 +242,7 @@ Array [
                       href="/login"
                       onClick={[Function]}
                     >
-                      Sign in
+                      Login
                     </a>
                   </p>
                 </div>
