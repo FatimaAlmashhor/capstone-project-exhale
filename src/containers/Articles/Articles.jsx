@@ -1,7 +1,26 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import Article from '../../components/ArticleCard';
+import { articles } from '../../services/fakeArticleService';
 
+const articlesDives = () => {
+  return (
+    <div className="flex flex-wrap -mb-4">
+      {articles.map((article) => {
+        return (
+          <div className="w-1/3">
+            <Article
+              title={article.title}
+              img={article.articleImg}
+              paragraph={article.text.substring(1, 100)}
+              time={article.date}
+            />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 const Articles = () => {
   return (
     <div>
@@ -39,52 +58,8 @@ const Articles = () => {
             paragraph="Susanna Harris was sitting in her lab class for her graduate program at the University of North Carolina at Chapel Hill when she received an email that told her she had failed ."
           />
         </div>
-        <div className="w-full flex">
-          <div className="w-1/2 flex-grow">
-            <Article
-              title="Coming Out About Mental Health On Social Media"
-              img="https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851"
-              paragraph="Susanna Harris was sitting in her lab class for her graduate program at the University of North Carolina at Chapel Hill when she received an email that told her she had failed ."
-            />
-          </div>
-          <div className="w-1/2 flex-grow">
-            <Article
-              title="Coming Out About Mental Health On Social Media"
-              img="https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851"
-              paragraph="Susanna Harris was sitting in her lab class for her graduate program at the University of North Carolina at Chapel Hill when she received an email that told her she had failed ."
-            />
-          </div>
-          <div className="w-1/2 flex-grow">
-            <Article
-              title="Coming Out About Mental Health On Social Media"
-              img="https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851"
-              paragraph="Susanna Harris was sitting in her lab class for her graduate program at the University of North Carolina at Chapel Hill when she received an email that told her she had failed ."
-            />
-          </div>
-        </div>
-        <div className="w-full flex ">
-          <div className="w-1/2 flex-grow">
-            <Article
-              title="Coming Out About Mental Health On Social Media"
-              img="https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851"
-              paragraph="Susanna Harris was sitting in her lab class for her graduate program at the University of North Carolina at Chapel Hill when she received an email that told her she had failed ."
-            />
-          </div>
-          <div className="w-1/2 flex-grow">
-            <Article
-              title="Coming Out About Mental Health On Social Media"
-              img="https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851"
-              paragraph="Susanna Harris was sitting in her lab class for her graduate program at the University of North Carolina at Chapel Hill when she received an email that told her she had failed ."
-            />
-          </div>
-          <div className="w-1/2 flex-grow">
-            <Article
-              title="Coming Out About Mental Health On Social Media"
-              img="https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851"
-              paragraph="Susanna Harris was sitting in her lab class for her graduate program at the University of North Carolina at Chapel Hill when she received an email that told her she had failed ."
-            />
-          </div>
-        </div>
+        <div className="w-full flex " />
+        {articlesDives()}
       </div>
     </div>
   );
