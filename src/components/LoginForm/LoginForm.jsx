@@ -23,7 +23,7 @@ export default function LoginForm() {
             className="bg-white shadow-md  rounded px-8 pt-6 pb-8 mb-4"
           >
             <div className="text-blue-800 text-2xl flex justify-center border-b-2 py-2 mb-4">
-              Login
+              {t('Login')}
             </div>
             <label
               htmlFor="email"
