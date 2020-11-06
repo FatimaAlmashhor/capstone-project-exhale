@@ -17,5 +17,14 @@
   "PassCharacters": "كلمه المرور اقل شي تحتوي عكتلى 8 حروف",
   "MassageRequierd": "اكتب رساله",
   "YourMessage": "ادخل رسالتك",
-  "Send": "ارسل"
+  "Send": "ارسل",
+  "HOME": "الصفحه الرئيسية",
+  "Doctors": "الأطباء",
+  "Articles": "المقالات",
+  "AboutUs": "من نحن",
+  "ContactUs": "التواصل معنا",
+  "Checkup": "اختبر",
+  "Login": "تسجيل الدخول",
+  "Logout": "تسجيل الخروج",
+  "Signup": "انشاء حساب"
 }

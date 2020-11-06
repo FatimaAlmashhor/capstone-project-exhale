@@ -1,0 +1,258 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="relative bg-white"
+  >
+    <div
+      className="px-4 mx-auto max-w-7xl sm:px-6"
+    >
+      <div
+        className="flex items-center justify-between py-6 border-b-2 border-gray-100 md:justify-start md:space-x-10"
+      >
+        <div
+          className="lg:w-0 lg:flex-1"
+        >
+          <a
+            class="flex"
+            href="/"
+            onClick={[Function]}
+          >
+            <h1
+              className="text-3xl font-medium transition duration-150 ease-in-out text-black-500"
+            >
+              <span
+                className="text-4xl font-black text-blue-800"
+              >
+                EX
+              </span>
+              hale
+            </h1>
+          </a>
+        </div>
+        <nav
+          className="hidden space-x-10 md:flex"
+        >
+          <a
+            aria-current="page"
+            className="text-base font-medium leading-6 text-blue-900 transition duration-150 ease-in-out hover:text-gray-500 focus:outline-none focus:text-gray-900 active"
+            href="/"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            HOME
+          </a>
+          <a
+            aria-current={null}
+            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
+            href="/doctors"
+            onClick={[Function]}
+          >
+            Doctors
+          </a>
+          <a
+            aria-current={null}
+            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
+            href="/articles"
+            onClick={[Function]}
+          >
+            Articles
+          </a>
+          <a
+            aria-current={null}
+            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
+            href="/about"
+            onClick={[Function]}
+          >
+            AboutUs
+          </a>
+          <a
+            aria-current={null}
+            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
+            href="/contact"
+            onClick={[Function]}
+          >
+            ContactUs
+          </a>
+          <a
+            aria-current={null}
+            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
+            href="/signup"
+            onClick={[Function]}
+          >
+            Signup
+          </a>
+        </nav>
+        <div
+          className="items-center justify-end hidden space-x-8 md:flex md:flex-1 lg:w-0"
+        >
+          <a
+            aria-current={null}
+            className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap hover:text-gray-900 focus:outline-none focus:text-gray-900"
+            href="/login"
+            onClick={[Function]}
+          >
+            Login
+          </a>
+          <span
+            className="inline-flex rounded-md shadow-sm"
+          >
+            <a
+              aria-current={null}
+              className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
+              href="/self-assessment"
+              onClick={[Function]}
+            >
+              Checkup
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden"
+    >
+      <div
+        className="rounded-lg shadow-lg"
+      >
+        <div
+          className="bg-white divide-y-2 rounded-lg shadow-xs divide-gray-50"
+        >
+          <div
+            className="px-5 pt-5 pb-6 space-y-6"
+          >
+            <div
+              className="flex items-center justify-between"
+            >
+              <div>
+                <h1
+                  className="text-3xl font-medium transition duration-150 ease-in-out text-black-500"
+                >
+                  <span
+                    className="text-4xl font-black text-blue-800"
+                  >
+                    EX
+                  </span>
+                  hale
+                </h1>
+              </div>
+              <div
+                className="-mr-2"
+              >
+                <button
+                  className="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 6h16M4 12h16M4 18h16"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              className="hidden  font-medium"
+            >
+              <nav
+                className="grid gap-y-8"
+              >
+                <a
+                  aria-current="page"
+                  className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 active"
+                  href="/"
+                  onClick={[Function]}
+                  style={Object {}}
+                >
+                  HOME
+                </a>
+                <a
+                  aria-current={null}
+                  className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50"
+                  href="/doctors"
+                  onClick={[Function]}
+                >
+                  Doctors
+                </a>
+                <a
+                  aria-current={null}
+                  className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50"
+                  href="/articles"
+                  onClick={[Function]}
+                >
+                  Articles
+                </a>
+                <a
+                  aria-current={null}
+                  className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50"
+                  href="/about"
+                  onClick={[Function]}
+                >
+                  AboutUs
+                </a>
+                <a
+                  aria-current={null}
+                  className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50"
+                  href="/contact"
+                  onClick={[Function]}
+                >
+                  ContactUs
+                </a>
+                <a
+                  aria-current={null}
+                  className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50"
+                  href="/signup"
+                  onClick={[Function]}
+                >
+                  Signup
+                </a>
+                <div
+                  className="space-y-6"
+                >
+                  <span
+                    className="flex w-full rounded-md shadow-sm"
+                  >
+                    <a
+                      aria-current={null}
+                      className="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
+                      href="/self-assessment"
+                      onClick={[Function]}
+                    >
+                      Checkup
+                    </a>
+                  </span>
+                  <p
+                    className="text-base font-medium leading-6 text-center text-gray-500"
+                  >
+                    Existing User?
+                    <a
+                      aria-current={null}
+                      className="text-blue-700 transition duration-150 ease-in-out hover:text-blue-500"
+                      href="/login"
+                      onClick={[Function]}
+                    >
+                      Login
+                    </a>
+                  </p>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  " ",
+]
+`;

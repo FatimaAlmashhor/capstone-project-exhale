@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { useTranslation } from 'react-i18next';
+import fire from '../../firebase';
 
 export default function RegisterForm() {
   const { t } = useTranslation();
@@ -13,24 +14,44 @@ export default function RegisterForm() {
       .oneOf([Yup.ref('password'), null], t('MuchPass'))
       .required(t('confirmPasswordRequierd')),
   });
+  const [errMessage, setErrMessage] = useState('');
   return (
     <Formik
       initialValues={{ name: '', email: '', password: '', confirmPassword: '' }}
       validationSchema={ReviewError}
+      onSubmit={(values, { setSubmitting }) => {
+        setTimeout(() => {
+          fire
+            .auth()
+            .createUserWithEmailAndPassword(values.email, values.password)
+            .then(() => {
+              fire.database().ref('name').orderByKey().limitToLast(100);
+              fire.database().ref('name').push(values.name);
+              fire.database().ref('email').orderByKey().limitToLast(100);
+              fire.database().ref('email').push(values.email);
+              fire.database().ref('password').orderByKey().limitToLast(100);
+              fire.database().ref('password').push(values.password);
+            })
+            .catch((err) => {
+              setErrMessage(err.message);
+            });
+          setSubmitting(false);
+        }, 500);
+      }}
     >
       {(formik) => (
         <div className="w-full max-w-xs mx-auto">
           <form
             onSubmit={formik.handleSubmit}
-            className="bg-white shadow-md  rounded px-8 pt-6 pb-8 mb-4"
+            className="px-8 pt-6 pb-8 mb-4 bg-white rounded shadow-md"
           >
             <label
               htmlFor="name"
-              className="block text-gray-700 text-sm font-bold mb-2"
+              className="block mb-2 text-sm font-bold text-gray-700"
             >
               {t('Name')}
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                 id="name"
                 name="name"
                 type="text"
@@ -39,17 +60,17 @@ export default function RegisterForm() {
               />
             </label>
             {formik.errors.name && (
-              <div className="text-red-500 text-sm font-bold">
+              <div className="text-sm font-bold text-red-500">
                 {formik.errors.name}
               </div>
             )}
             <label
               htmlFor="email"
-              className="block text-gray-700 text-sm font-bold mb-2"
+              className="block mb-2 text-sm font-bold text-gray-700"
             >
               {t('Email')}
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                 id="email"
                 name="email"
                 type="text"
@@ -58,17 +79,17 @@ export default function RegisterForm() {
               />
             </label>
             {formik.errors.email && (
-              <div className="text-red-500 text-sm font-bold">
+              <div className="text-sm font-bold text-red-500">
                 {formik.errors.email}
               </div>
             )}
             <label
               htmlFor="password"
-              className="block text-gray-700 text-sm font-bold mb-2"
+              className="block mb-2 text-sm font-bold text-gray-700"
             >
               {t('Password')}
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                 id="password"
                 name="password"
                 type="password"
@@ -77,17 +98,17 @@ export default function RegisterForm() {
               />
             </label>
             {formik.errors.password && (
-              <div className="text-red-500 text-sm font-bold">
+              <div className="text-sm font-bold text-red-500">
                 {formik.errors.password}
               </div>
             )}
             <label
               htmlFor="confirmPassword"
-              className="block text-gray-700 text-sm font-bold mb-2"
+              className="block mb-2 text-sm font-bold text-gray-700"
             >
               {t('confirmPassword')}
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                 id="confirmPassword"
                 name="confirmPassword"
                 type="password"
@@ -96,16 +117,17 @@ export default function RegisterForm() {
               />
             </label>
             {formik.errors.confirmPassword && (
-              <div className="text-red-500 text-sm font-bold">
+              <div className="text-sm font-bold text-red-500">
                 {formik.errors.confirmPassword}
               </div>
             )}
             <button
-              className="bg-red-500 mt-4 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="px-4 py-2 mt-4 font-bold text-white bg-red-500 rounded hover:bg-red-700 focus:outline-none focus:shadow-outline"
               type="submit"
             >
               {t('SignUP')}
             </button>
+            <div className="text-lg text-red-500">{errMessage}</div>
           </form>
         </div>
       )}

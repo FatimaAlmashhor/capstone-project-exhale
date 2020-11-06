@@ -17,5 +17,14 @@
   "PassCharacters": "Password must be at least 8 characters",
   "MassageRequierd": "Message is Required",
   "YourMessage": "Enter your Message",
-  "Send": "SEND"
+  "Send": "SEND",
+  "HOME": "HOME",
+  "Doctors": "Doctors",
+  "Articles": "Articles",
+  "AboutUs": "AboutUs",
+  "ContactUs": "ContactUs",
+  "Checkup": "Checkup",
+  "Login": "Login",
+  "Logout": "Log out",
+  "Signup": "Signup"
 }

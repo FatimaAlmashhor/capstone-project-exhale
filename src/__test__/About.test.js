@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import SelfAssessmentPanel from '../components/SelfAssessmentPanle';
+import About from '../containers/About/About';
 
 it('renders correctly', () => {
-  let fun = function(){ }
+  const Test = <div>Hello</div>
   const tree = renderer
-    .create(<SelfAssessmentPanel task = {' '} onClick = {fun}/> )
+    .create(<About>{Test}</About> )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
