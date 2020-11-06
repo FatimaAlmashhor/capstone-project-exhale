@@ -80,6 +80,7 @@
     "postcss": "^8.1.1",
     "postcss-cli": "^8.1.0",
     "prettier": "^2.1.2",
+    "react-lottie": "^1.2.3",
     "react-test-renderer": "^17.0.0"
   }
 }
