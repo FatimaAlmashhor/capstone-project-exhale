@@ -20,6 +20,9 @@ export default function LoginForm() {
             onSubmit={formik.handleSubmit}
             className="bg-white shadow-md  rounded px-8 pt-6 pb-8 mb-4"
           >
+            <div className="text-blue-800 text-2xl flex justify-center border-b-2 py-2 mb-4">
+              Login
+            </div>
             <label
               htmlFor="email"
               className="block text-gray-700 text-sm font-bold mb-2"
@@ -58,12 +61,21 @@ export default function LoginForm() {
                 {formik.errors.password}
               </div>
             )}
-            <button
-              className="bg-blue-800 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="submit"
-            >
-              {t('Login')}
-            </button>
+            <div className="flex items-center justify-between">
+              <button
+                className="px-4 py-2 rounded text-white inline-block shadow-lg bg-blue-800 hover:bg-blue-600 focus:bg-blue-700"
+                type="submit"
+              >
+                {t('Login')}
+              </button>
+
+              <a
+                className="inline-block align-baseline font-normal text-sm text-blue-600 hover:text-blue-800"
+                href="www.com"
+              >
+                Forgot Password?
+              </a>
+            </div>
           </form>
         </div>
       )}
