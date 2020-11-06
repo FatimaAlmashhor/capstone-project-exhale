@@ -1,7 +1,9 @@
 import React from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
+import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { SIGNUP_ROUTE } from '../../routes';
 
 export default function LoginForm() {
   const { t } = useTranslation();
@@ -61,21 +63,26 @@ export default function LoginForm() {
                 {formik.errors.password}
               </div>
             )}
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mb-6">
               <button
                 className="px-4 py-2 rounded text-white inline-block shadow-lg bg-blue-800 hover:bg-blue-600 focus:bg-blue-700"
                 type="submit"
               >
                 {t('Login')}
               </button>
-
-              <a
+              <NavLink
                 className="inline-block align-baseline font-normal text-sm text-blue-600 hover:text-blue-800"
-                href="www.com"
+                to={SIGNUP_ROUTE}
               >
                 Forgot Password?
-              </a>
+              </NavLink>
             </div>
+            <p className=" text-center text-md  text-gray-600 ">
+              Do not have an account?
+              <NavLink to={SIGNUP_ROUTE} className="text-md text-blue-600">
+                Create
+              </NavLink>
+            </p>
           </form>
         </div>
       )}
