@@ -74,13 +74,13 @@ export default function LoginForm() {
                 className="inline-block align-baseline font-normal text-sm text-blue-600 hover:text-blue-800"
                 to={SIGNUP_ROUTE}
               >
-                Forgot Password?
+                {t('forgetpassword')}
               </NavLink>
             </div>
             <p className=" text-center text-md  text-gray-600 ">
-              Do not have an account?
+              {t('haveAccount')}
               <NavLink to={SIGNUP_ROUTE} className="text-md text-blue-600">
-                Create
+                {t('Create')}
               </NavLink>
             </p>
           </form>

@@ -26,5 +26,8 @@
   "Checkup": "Checkup",
   "Login": "Login",
   "Logout": "Log out",
-  "Signup": "Signup"
+  "Signup": "Signup",
+  "forgetpassword": "Forgot Password ?",
+  "haveAccount": " Do not have an account?",
+  "Create": " Create"
 }
