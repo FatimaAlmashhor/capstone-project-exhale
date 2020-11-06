@@ -42,7 +42,7 @@ exports[`renders correctly 1`] = `
       />
     </label>
     <div
-      className="flex items-center justify-between"
+      className="flex items-center justify-between mb-6"
     >
       <button
         className="px-4 py-2 rounded text-white inline-block shadow-lg bg-blue-800 hover:bg-blue-600 focus:bg-blue-700"
@@ -51,12 +51,27 @@ exports[`renders correctly 1`] = `
         Login
       </button>
       <a
+        aria-current={null}
         className="inline-block align-baseline font-normal text-sm text-blue-600 hover:text-blue-800"
-        href="www.com"
+        href="/signup"
+        onClick={[Function]}
       >
-        Forgot Password?
+        forgetpassword
       </a>
     </div>
+    <p
+      className=" text-center text-md  text-gray-600 "
+    >
+      haveAccount
+      <a
+        aria-current={null}
+        className="text-md text-blue-600"
+        href="/signup"
+        onClick={[Function]}
+      >
+        Create
+      </a>
+    </p>
   </form>
 </div>
 `;
