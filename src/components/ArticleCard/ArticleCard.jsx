@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link, Route, useRouteMatch } from 'react-router-dom';
+import Article from '../FullArticle/Article';
 
-const ArticleCard = ({ title, paragraph, time, img, onClick }) => {
-  const handleCLick = () => {
-    // on click code
-    onClick();
-  };
+const ArticleCard = ({ id, title, paragraph, time, img }) => {
+  const { url } = useRouteMatch();
   return (
     <section className="blog ">
       <div className="container px-5 py-24 mx-auto">
@@ -34,25 +33,28 @@ const ArticleCard = ({ title, paragraph, time, img, onClick }) => {
 
                 <button
                   type="button"
-                  onClick={handleCLick}
                   className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
                 >
-                  <span className="">Full Read</span>
+                  <li key={id}>
+                    <Link to={`${url}/${id}`}>{title}</Link>
+                  </li>
                 </button>
               </div>
             </div>
           </div>
+          <Route path={`${url}/:Id`}>
+            <Article id={id} />
+          </Route>
         </div>
       </div>
     </section>
   );
 };
-
 export default ArticleCard;
 ArticleCard.propTypes = {
+  id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   paragraph: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
   time: PropTypes.string,
   img: PropTypes.string,
 };
