@@ -1,9 +1,10 @@
 import React from 'react';
+import FullArticle from '../../components/FullArticle/Article';
 
-const Article = () => {
+const Article = (artId) => {
   return (
     <div>
-      <h1>Signle Article container</h1>
+      <FullArticle id={artId} />
     </div>
   );
 };
