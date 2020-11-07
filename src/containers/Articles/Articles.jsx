@@ -9,6 +9,7 @@ const articlesDives = () => {
         return (
           <div className="w-1/3">
             <Article
+              id={article.id}
               title={article.title}
               img={article.articleImg}
               paragraph={article.text.substring(1, 100)}
