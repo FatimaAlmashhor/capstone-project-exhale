@@ -24,9 +24,8 @@ import SelfAssessment from './containers/SelfAssessment';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer'
-import Step1 from "./asset/svg/TestProcess/Step1/Step1"
-import Step2 from "./asset/svg/TestProcess/Step2/Step2"
-import Step3 from "./asset/svg/TestProcess/Step3/Step3"
+import TestCarousel from "./components/TestCarousel/TestCarousel"
+
 function App() {
   return (
     <Router>
@@ -49,9 +48,8 @@ function App() {
             <Redirect to={NOT_FOUND_ROUTE} />
           </Switch>
         </div>
-        <Step1 />
-        <Step2 />
-        <Step3 />
+        
+        
         <div className ='flex-initial'>
           <Footer />
         </div>
