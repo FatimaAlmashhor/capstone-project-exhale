@@ -75,26 +75,24 @@ Array [
           >
             ContactUs
           </a>
-          <a
-            aria-current={null}
+          <button
             className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
-            href="/signup"
             onClick={[Function]}
+            type="button"
           >
             Signup
-          </a>
+          </button>
         </nav>
         <div
           className="items-center justify-end hidden space-x-8 md:flex md:flex-1 lg:w-0"
         >
-          <a
-            aria-current={null}
+          <button
             className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap hover:text-gray-900 focus:outline-none focus:text-gray-900"
-            href="/login"
             onClick={[Function]}
+            type="button"
           >
             Login
-          </a>
+          </button>
           <span
             className="inline-flex rounded-md shadow-sm"
           >
