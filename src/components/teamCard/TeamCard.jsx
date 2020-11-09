@@ -16,7 +16,7 @@ export default function TeamCard({
   return (
     <div className="p-3 text-center">
       <img
-        className="w-32 h-auto mx-auto border-4 border-red-400 border-solid rounded-full"
+        className="w-32 h-auto mx-auto border-4 border-green-400 border-solid rounded-full"
         src={image}
         alt="team member"
       />
