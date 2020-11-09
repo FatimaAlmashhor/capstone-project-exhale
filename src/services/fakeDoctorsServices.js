@@ -91,7 +91,3 @@ export const doctors = [
 export function getDoctors() {
   return doctors.map((obj) => obj);
 }
-export function getNthRow(n) {
-  const newDoctors = doctors.slice(n - 1, n + 2);
-  return newDoctors.map((doctor) => doctor);
-}

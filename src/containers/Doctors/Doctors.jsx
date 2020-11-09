@@ -1,8 +1,6 @@
 import React from 'react';
 import FirstDoctorCard from '../../components/DoctorCard/FirstDoctorCard';
 import RowHolder from '../../components/common/rowHolder/RowHolder';
-import Image from '../../components/common/Image/Image';
-import MainCloud from '../../asset/svg/MainCloud/MainCloud';
 
 const Doctors = () => {
   return (
@@ -15,15 +13,11 @@ const Doctors = () => {
           <br />
           not alone. Meet our experienced psychiatrists to seek the counsel you need.
         </p>
-        {/* <div className="bg-blue-100">
-          <Image width="1/2">
-            <MainCloud />
-          </Image>
-        </div> */}
       </div>
       <FirstDoctorCard name="Dr. Mohammad Al-Khulaidi" specialty="Sleep Disorder" />
-      <RowHolder num="5" />
-      <RowHolder />
+      <RowHolder num={1} />
+      <RowHolder num={4} />
+      <RowHolder num={7} />
     </div>
   );
 };
