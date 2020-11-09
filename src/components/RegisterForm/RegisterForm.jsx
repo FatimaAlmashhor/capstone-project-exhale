@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useState } from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
@@ -40,89 +42,61 @@ export default function RegisterForm() {
       }}
     >
       {(formik) => (
-        <div className="w-full max-w-xs mx-auto">
+        <div className="w-full max-w-md mx-auto">
           <form
             onSubmit={formik.handleSubmit}
-            className="px-8 pt-6 pb-8 mb-4 bg-white rounded shadow-md"
+            className=" pt-6 pb-8 mb-4 bg-white rounded w-full"
           >
-            <label
-              htmlFor="name"
-              className="block mb-2 text-sm font-bold text-gray-700"
-            >
-              {t('Name')}
-              <input
-                className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                id="name"
-                name="name"
-                type="text"
-                placeholder={t('yourNam')}
-                onChange={formik.handleChange}
-              />
-            </label>
+            <input
+              className="w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
+              id="name"
+              name="name"
+              type="text"
+              placeholder={t('yourNam')}
+              onChange={formik.handleChange}
+            />
             {formik.errors.name && (
-              <div className="text-sm font-bold text-red-500">
-                {formik.errors.name}
-              </div>
+              <div className="text-sm  mt-2 text-red-400">{formik.errors.name}</div>
             )}
-            <label
-              htmlFor="email"
-              className="block mb-2 text-sm font-bold text-gray-700"
-            >
-              {t('Email')}
-              <input
-                className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                id="email"
-                name="email"
-                type="text"
-                placeholder={t('yourEmail')}
-                onChange={formik.handleChange}
-              />
-            </label>
+            <input
+              className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
+              id="email"
+              name="email"
+              type="text"
+              placeholder={t('yourEmail')}
+              onChange={formik.handleChange}
+            />
             {formik.errors.email && (
-              <div className="text-sm font-bold text-red-500">
-                {formik.errors.email}
-              </div>
+              <div className="text-sm  mt-2 text-red-400">{formik.errors.email}</div>
             )}
-            <label
-              htmlFor="password"
-              className="block mb-2 text-sm font-bold text-gray-700"
-            >
-              {t('Password')}
-              <input
-                className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                id="password"
-                name="password"
-                type="password"
-                placeholder={t('yourPassword')}
-                onChange={formik.handleChange}
-              />
-            </label>
+            <input
+              className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
+              id="password"
+              name="password"
+              type="password"
+              placeholder={t('yourPassword')}
+              onChange={formik.handleChange}
+            />
             {formik.errors.password && (
-              <div className="text-sm font-bold text-red-500">
+              <div className="text-sm  mt-2 text-red-400">
                 {formik.errors.password}
               </div>
             )}
-            <label
-              htmlFor="confirmPassword"
-              className="block mb-2 text-sm font-bold text-gray-700"
-            >
-              {t('confirmPassword')}
-              <input
-                className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                id="confirmPassword"
-                name="confirmPassword"
-                type="password"
-                placeholder={t('confirmYourPassword')}
-                onChange={formik.handleChange}
-              />
-            </label>
+            <input
+              className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
+              id="confirmPassword"
+              name="confirmPassword"
+              type="password"
+              placeholder={t('confirmYourPassword')}
+              onChange={formik.handleChange}
+            />
             {formik.errors.confirmPassword && (
-              <div className="text-sm font-bold text-red-500">
+              <div className="text-sm  mt-2 text-red-400">
                 {formik.errors.confirmPassword}
               </div>
             )}
             <button
-              className="px-4 py-2 mt-4 font-bold text-white bg-red-500 rounded hover:bg-red-700 focus:outline-none focus:shadow-outline"
+              className="w-full px-4 py-3 mt-4 font-bold text-white bg-blue-800 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
               type="submit"
             >
               {t('SignUP')}

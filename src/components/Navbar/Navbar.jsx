@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {
   HOME_ROUTE,
@@ -16,8 +16,9 @@ import fire from '../../firebase';
 function Navbar() {
   const { t } = useTranslation();
   const [isExpanded, toggleExpansion] = useState(false);
-
   const [isSignedIn, setisSignedIn] = useState(false);
+  const location = useLocation();
+
   useEffect(() => {
     fire.auth().onAuthStateChanged((user) => {
       setisSignedIn(!!user);
@@ -71,8 +72,11 @@ function Navbar() {
             </NavLink>
 
             <NavLink
-              to={SIGNUP_ROUTE}
-              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
+              className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50"
+              to={{
+                pathname: SIGNUP_ROUTE,
+                state: { modal: location },
+              }}
             >
               {t('Signup')}
             </NavLink>
@@ -88,8 +92,11 @@ function Navbar() {
               </button>
             ) : (
               <NavLink
-                to={LOGIN_ROUTE}
                 className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap hover:text-gray-900 focus:outline-none focus:text-gray-900"
+                to={{
+                  pathname: LOGIN_ROUTE,
+                  state: { modal: location },
+                }}
               >
                 {t('Login')}
               </NavLink>
@@ -177,8 +184,11 @@ function Navbar() {
                   </NavLink>
 
                   <NavLink
-                    to={SIGNUP_ROUTE}
                     className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50"
+                    to={{
+                      pathname: SIGNUP_ROUTE,
+                      state: { modal: location },
+                    }}
                   >
                     {t('Signup')}
                   </NavLink>

@@ -1,6 +1,5 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable no-undef */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -13,7 +12,10 @@ const Modal = ({ show, onClick, children }) => {
             className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
             onClick={onClick}
           >
-            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+            <div
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-auto my-6 mx-auto max-w-5xl"
+            >
               {/* content */}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {children}
@@ -36,9 +38,6 @@ Modal.propTypes = {
 };
 
 export const Header = ({ onClick, title }) => {
-  const handleClick = () => {
-    onClick();
-  };
   return (
     <>
       {/* header */}
@@ -47,7 +46,7 @@ export const Header = ({ onClick, title }) => {
         <button
           type="button"
           className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-          onClick={() => handleClick}
+          onClick={onClick}
         >
           <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
             ×
@@ -74,9 +73,6 @@ Body.propTypes = {
   children: PropTypes.element.isRequired,
 };
 export const Footer = ({ onClick, text }) => {
-  const handleClick = () => {
-    onClick();
-  };
   return (
     <>
       {/* footer */}
@@ -85,7 +81,7 @@ export const Footer = ({ onClick, text }) => {
           className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
           type="button"
           style={{ transition: 'all .15s ease' }}
-          onClick={handleClick}
+          onClick={onClick}
         >
           Close
         </button>
@@ -93,7 +89,7 @@ export const Footer = ({ onClick, text }) => {
           className="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
           type="button"
           style={{ transition: 'all .15s ease' }}
-          onClick={handleClick}
+          onClick={onClick}
         >
           {text}
         </button>

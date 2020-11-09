@@ -2,70 +2,46 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="w-full max-w-xs mx-auto"
+  className="w-full max-w-md mx-auto"
 >
   <form
-    className="px-8 pt-6 pb-8 mb-4 bg-white rounded shadow-md"
+    className=" pt-6 pb-8 mb-4 bg-white rounded w-full"
     onSubmit={[Function]}
   >
-    <label
-      className="block mb-2 text-sm font-bold text-gray-700"
-      htmlFor="name"
-    >
-      Name
-      <input
-        className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-        id="name"
-        name="name"
-        onChange={[Function]}
-        placeholder="yourNam"
-        type="text"
-      />
-    </label>
-    <label
-      className="block mb-2 text-sm font-bold text-gray-700"
-      htmlFor="email"
-    >
-      Email
-      <input
-        className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-        id="email"
-        name="email"
-        onChange={[Function]}
-        placeholder="yourEmail"
-        type="text"
-      />
-    </label>
-    <label
-      className="block mb-2 text-sm font-bold text-gray-700"
-      htmlFor="password"
-    >
-      Password
-      <input
-        className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-        id="password"
-        name="password"
-        onChange={[Function]}
-        placeholder="yourPassword"
-        type="password"
-      />
-    </label>
-    <label
-      className="block mb-2 text-sm font-bold text-gray-700"
-      htmlFor="confirmPassword"
-    >
-      confirmPassword
-      <input
-        className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-        id="confirmPassword"
-        name="confirmPassword"
-        onChange={[Function]}
-        placeholder="confirmYourPassword"
-        type="password"
-      />
-    </label>
+    <input
+      className="w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
+      id="name"
+      name="name"
+      onChange={[Function]}
+      placeholder="yourNam"
+      type="text"
+    />
+    <input
+      className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
+      id="email"
+      name="email"
+      onChange={[Function]}
+      placeholder="yourEmail"
+      type="text"
+    />
+    <input
+      className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
+      id="password"
+      name="password"
+      onChange={[Function]}
+      placeholder="yourPassword"
+      type="password"
+    />
+    <input
+      className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
+      id="confirmPassword"
+      name="confirmPassword"
+      onChange={[Function]}
+      placeholder="confirmYourPassword"
+      type="password"
+    />
     <button
-      className="px-4 py-2 mt-4 font-bold text-white bg-red-500 rounded hover:bg-red-700 focus:outline-none focus:shadow-outline"
+      className="w-full px-4 py-3 mt-4 font-bold text-white bg-blue-800 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
       type="submit"
     >
       SignUP
