@@ -1,4 +1,3 @@
-/* eslint-disable react/button-has-type */
 import React from 'react';
 import Article from '../../components/ArticleCard';
 
@@ -23,7 +22,10 @@ const Articles = () => {
               placeholder="Search"
             />
             <div className="p-4">
-              <button className="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center">
+              <button
+                type="button"
+                className="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center"
+              >
                 icon
               </button>
             </div>
