@@ -3,13 +3,13 @@
 exports[`renders correctly 1`] = `
 Array [
   <div
-    className="relative bg-white"
+    className="relative bg-white z-50"
   >
     <div
       className="px-4 mx-auto max-w-7xl sm:px-6"
     >
       <div
-        className="flex items-center justify-between py-6 border-b-2 border-gray-100 md:justify-start md:space-x-10"
+        className="flex items-center justify-between py-6 border-b-2 border-gray-100 lg:justify-start lg:space-x-10"
       >
         <div
           className="lg:w-0 lg:flex-1"
@@ -32,7 +32,7 @@ Array [
           </a>
         </div>
         <nav
-          className="hidden space-x-10 md:flex"
+          className="hidden space-x-10 lg:flex"
         >
           <a
             aria-current="page"
@@ -85,7 +85,7 @@ Array [
           </a>
         </nav>
         <div
-          className="items-center justify-end hidden space-x-8 md:flex md:flex-1 lg:w-0"
+          className="items-center justify-end hidden space-x-8 lg:flex lg:flex-1 lg:w-0"
         >
           <a
             aria-current={null}
@@ -96,11 +96,11 @@ Array [
             Login
           </a>
           <span
-            className="inline-flex rounded-md shadow-sm"
+            className="inline-flex rounded-lg shadow-sm"
           >
             <a
               aria-current={null}
-              className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
+              className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-lg hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
               href="/self-assessment"
               onClick={[Function]}
             >
@@ -111,7 +111,7 @@ Array [
       </div>
     </div>
     <div
-      className="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden"
+      className="absolute inset-x-0 top-0 p-2 transition origin-top-right transform lg:hidden"
     >
       <div
         className="rounded-lg shadow-lg"
