@@ -13,105 +13,109 @@ exports[`renders correctly 1`] = `
       <div
         className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none"
       >
-        <div
-          className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t"
-        >
-          <h3
-            className="text-3xl font-semibold"
-          >
-            SING UP
-          </h3>
-          <button
-            className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-            onClick={[Function]}
-            type="button"
-          >
-            <span
-              className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none"
-            >
-              ×
-            </span>
-          </button>
-        </div>
-        <div
-          className="relative p-6 flex-auto"
-        >
+        <div>
           <div
-            className="my-2 border-b text-center"
+            className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t"
           >
-            <div
-              className="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2"
+            <h3
+              className="text-3xl font-semibold"
             >
-              with email
-            </div>
+              SING UP
+            </h3>
+            <button
+              className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+              onClick={[Function]}
+              type="button"
+            >
+              <span
+                className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none"
+              >
+                ×
+              </span>
+            </button>
           </div>
           <div
-            className="w-full max-w-md mx-auto"
+            className="relative p-6 flex-auto"
           >
-            <form
-              className=" pt-6 pb-8 mb-4 bg-white rounded w-full"
-              onSubmit={[Function]}
-            >
-              <input
-                className="w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
-                id="name"
-                name="name"
-                onChange={[Function]}
-                placeholder="yourNam"
-                type="text"
-              />
-              <input
-                className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
-                id="email"
-                name="email"
-                onChange={[Function]}
-                placeholder="yourEmail"
-                type="text"
-              />
-              <input
-                className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
-                id="password"
-                name="password"
-                onChange={[Function]}
-                placeholder="yourPassword"
-                type="password"
-              />
-              <input
-                className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
-                id="confirmPassword"
-                name="confirmPassword"
-                onChange={[Function]}
-                placeholder="confirmYourPassword"
-                type="password"
-              />
-              <div>
-                <p
-                  className="mt-5 text-gray-500 text-sm"
-                >
-                  haveAccount
-                  <span>
-                     ?
-                  </span>
-                  <span
-                    className=" cursor-pointer text-blue-500"
-                    onClick={[Function]}
-                  >
-                    Login
-                  </span>
-                </p>
-              </div>
-              <button
-                className="w-full px-4 py-3 mt-4 font-bold text-white bg-blue-800 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
-                type="submit"
-              >
-                SignUP
-              </button>
+            <div>
               <div
-                className="text-lg text-red-500"
+                className="my-2 border-b text-center"
               >
-                
+                <div
+                  className="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2"
+                >
+                  with email
+                </div>
               </div>
-            </form>
+              <div
+                className="w-full max-w-md mx-auto"
+              >
+                <form
+                  className=" pt-6 pb-8 mb-4 bg-white rounded w-full"
+                  onSubmit={[Function]}
+                >
+                  <input
+                    className="w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
+                    id="name"
+                    name="name"
+                    onChange={[Function]}
+                    placeholder="yourNam"
+                    type="text"
+                  />
+                  <input
+                    className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
+                    id="email"
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="yourEmail"
+                    type="text"
+                  />
+                  <input
+                    className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
+                    id="password"
+                    name="password"
+                    onChange={[Function]}
+                    placeholder="yourPassword"
+                    type="password"
+                  />
+                  <input
+                    className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    onChange={[Function]}
+                    placeholder="confirmYourPassword"
+                    type="password"
+                  />
+                  <div>
+                    <p
+                      className="mt-5 text-gray-500 text-sm"
+                    >
+                      haveAccount
+                      <span>
+                         ?
+                      </span>
+                      <span
+                        className=" cursor-pointer text-blue-500"
+                        onClick={[Function]}
+                      >
+                        Login
+                      </span>
+                    </p>
+                  </div>
+                  <button
+                    className="w-full px-4 py-3 mt-4 font-bold text-white bg-blue-800 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+                    type="submit"
+                  >
+                    SignUP
+                  </button>
+                  <div
+                    className="text-lg text-red-500"
+                  >
+                    
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>

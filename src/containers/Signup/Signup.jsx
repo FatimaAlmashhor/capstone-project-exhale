@@ -23,15 +23,19 @@ const Signup = ({ show, onClick }) => {
       ) : (
         <>
           <Modal show={show} onClick={onClick}>
-            <Header title="SING UP" onClick={onClick} />
-            <Body>
-              <div className="my-2 border-b text-center">
-                <div className="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">
-                  {t('with email')}
+            <div>
+              <Header title="SING UP" onClick={onClick} />
+              <Body>
+                <div>
+                  <div className="my-2 border-b text-center">
+                    <div className="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">
+                      {t('with email')}
+                    </div>
+                  </div>
+                  <RegisterForm />
                 </div>
-              </div>
-              <RegisterForm />
-            </Body>
+              </Body>
+            </div>
           </Modal>
         </>
       )}

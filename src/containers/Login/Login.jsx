@@ -27,37 +27,41 @@ const Login = ({ show, onClick }) => {
       ) : (
         <>
           <Modal show={show} onClick={onClick}>
-            <Header title="SIGN IN" onClick={onClick} />
-            <Body>
-              <StyledFirebaseAuth
-                uiConfig={uiConfig}
-                firebaseAuth={firebase.auth()}
-              />
-              <div className="my-2 border-b text-center">
-                <div className="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">
-                  {t('with email')}
+            <div>
+              <Header title="SIGN IN" onClick={onClick} />
+              <Body>
+                <div>
+                  <StyledFirebaseAuth
+                    uiConfig={uiConfig}
+                    firebaseAuth={firebase.auth()}
+                  />
+                  <div className="my-2 border-b text-center">
+                    <div className="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">
+                      {t('with email')}
+                    </div>
+                  </div>
+                  <LoginForm />
+                  <button
+                    type="button"
+                    className="inline-block text-center w-full focus:outline-none  align-baseline font-normal text-sm text-blue-600 hover:text-blue-800"
+                  >
+                    {t('forgetpassword')}
+                  </button>
+                  <p className=" text-center text-md  text-gray-600 ">
+                    {t('haveAccount')}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setShowSignup(true);
+                      }}
+                      className="px-2 text-md text-blue-600 focus:outline-none"
+                    >
+                      {t('Create')}
+                    </button>
+                  </p>
                 </div>
-              </div>
-              <LoginForm />
-              <button
-                type="button"
-                className="inline-block text-center w-fullfocus:outline-none  align-baseline font-normal text-sm text-blue-600 hover:text-blue-800"
-              >
-                {t('forgetpassword')}
-              </button>
-              <p className=" text-center text-md  text-gray-600 ">
-                {t('haveAccount')}
-                <button
-                  type="button"
-                  onClick={() => {
-                    setShowSignup(true);
-                  }}
-                  className="px-2 text-md text-blue-600 focus:outline-none"
-                >
-                  {t('Create')}
-                </button>
-              </p>
-            </Body>
+              </Body>
+            </div>
           </Modal>
           {showSignup && (
             <Signup show={showSignup} onClick={() => setShowSignup(false)} />
