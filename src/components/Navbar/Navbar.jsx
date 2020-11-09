@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {
   HOME_ROUTE,
@@ -12,31 +12,21 @@ import {
   SIGNUP_ROUTE,
 } from '../../routes';
 import fire from '../../firebase';
-import Signup from '../../containers/Signup';
-import Login from '../../containers/Login';
 
 function Navbar() {
   const { t } = useTranslation();
   const [isExpanded, toggleExpansion] = useState(false);
-  const [ShowSignup, setShowSignup] = useState(false);
-  const [ShowLogin, setShowLogin] = useState(false);
   const [isSignedIn, setisSignedIn] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     fire.auth().onAuthStateChanged((user) => {
       setisSignedIn(!!user);
     });
   });
-  const handleClick = () => {
-    setShowSignup(true);
-  };
   return (
     <div className="relative bg-white">
       <div className="px-4 mx-auto max-w-7xl sm:px-6">
-        {ShowSignup && (
-          <Signup show={ShowSignup} onClick={() => setShowSignup(false)} />
-        )}
-        {ShowLogin && <Login show={ShowLogin} onClick={() => setShowLogin(false)} />}
         <div className="flex items-center justify-between py-6 border-b-2 border-gray-100 md:justify-start md:space-x-10">
           <div className="lg:w-0 lg:flex-1">
             <Link to={HOME_ROUTE} class="flex">
@@ -81,13 +71,15 @@ function Navbar() {
               {t('ContactUs')}
             </NavLink>
 
-            <button
-              type="button"
-              onClick={handleClick}
-              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
+            <NavLink
+              className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50"
+              to={{
+                pathname: SIGNUP_ROUTE,
+                state: { modal: location },
+              }}
             >
               {t('Signup')}
-            </button>
+            </NavLink>
           </nav>
           <div className="items-center justify-end hidden space-x-8 md:flex md:flex-1 lg:w-0">
             {isSignedIn ? (
@@ -99,13 +91,15 @@ function Navbar() {
                 {t('Logout')}
               </button>
             ) : (
-              <button
-                type="button"
+              <NavLink
                 className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap hover:text-gray-900 focus:outline-none focus:text-gray-900"
-                onClick={() => setShowLogin(true)}
+                to={{
+                  pathname: LOGIN_ROUTE,
+                  state: { modal: location },
+                }}
               >
                 {t('Login')}
-              </button>
+              </NavLink>
             )}
             <span className="inline-flex rounded-md shadow-sm">
               <NavLink
@@ -190,8 +184,11 @@ function Navbar() {
                   </NavLink>
 
                   <NavLink
-                    to={SIGNUP_ROUTE}
                     className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50"
+                    to={{
+                      pathname: SIGNUP_ROUTE,
+                      state: { modal: location },
+                    }}
                   >
                     {t('Signup')}
                   </NavLink>

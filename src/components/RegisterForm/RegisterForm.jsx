@@ -5,11 +5,9 @@ import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { useTranslation } from 'react-i18next';
 import fire from '../../firebase';
-import Login from '../../containers/Login';
 
 export default function RegisterForm() {
   const { t } = useTranslation();
-  const [showLogin, setShowLogin] = useState(false);
   const ReviewError = Yup.object().shape({
     name: Yup.string().required(t('NamRequired')),
     email: Yup.string().email().required(t('EmailRequired')),
@@ -97,27 +95,12 @@ export default function RegisterForm() {
                 {formik.errors.confirmPassword}
               </div>
             )}
-            <div>
-              <p className="mt-5 text-gray-500 text-sm">
-                {t('haveAccount')}
-                <span> ?</span>
-                <span
-                  onClick={() => setShowLogin(true)}
-                  className=" cursor-pointer text-blue-500"
-                >
-                  {t('Login')}
-                </span>
-              </p>
-            </div>
             <button
               className="w-full px-4 py-3 mt-4 font-bold text-white bg-blue-800 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
               type="submit"
             >
               {t('SignUP')}
             </button>
-            {showLogin && (
-              <Login show={showLogin} onClick={() => setShowLogin(false)} />
-            )}
             <div className="text-lg text-red-500">{errMessage}</div>
           </form>
         </div>

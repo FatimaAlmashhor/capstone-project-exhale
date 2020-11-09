@@ -86,22 +86,6 @@ exports[`renders correctly 1`] = `
                     placeholder="confirmYourPassword"
                     type="password"
                   />
-                  <div>
-                    <p
-                      className="mt-5 text-gray-500 text-sm"
-                    >
-                      haveAccount
-                      <span>
-                         ?
-                      </span>
-                      <span
-                        className=" cursor-pointer text-blue-500"
-                        onClick={[Function]}
-                      >
-                        Login
-                      </span>
-                    </p>
-                  </div>
                   <button
                     className="w-full px-4 py-3 mt-4 font-bold text-white bg-blue-800 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
                     type="submit"
@@ -114,6 +98,20 @@ exports[`renders correctly 1`] = `
                     
                   </div>
                 </form>
+              </div>
+              <div>
+                <p
+                  className="mt-5 text-gray-500 text-sm"
+                >
+                  haveAccount
+                  <a
+                    className=" cursor-pointer text-blue-500"
+                    href="/login"
+                    onClick={[Function]}
+                  >
+                    Login
+                  </a>
+                </p>
               </div>
             </div>
           </div>

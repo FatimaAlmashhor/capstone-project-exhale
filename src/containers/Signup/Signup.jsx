@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
+import { Link, useLocation } from 'react-router-dom';
 import fire from '../../firebase';
 import RegisterForm from '../../components/RegisterForm/RegisterForm';
 import Modal, { Header, Body } from '../../components/common/Modal';
+import { LOGIN_ROUTE } from '../../routes';
 
 const Signup = ({ show, onClick }) => {
   const [isSignedIn, setisSignedIn] = useState(false);
+  const location = useLocation();
   const { t } = useTranslation();
   useEffect(() => {
     fire.auth().onAuthStateChanged((user) => {
@@ -33,6 +36,20 @@ const Signup = ({ show, onClick }) => {
                     </div>
                   </div>
                   <RegisterForm />
+                  <div>
+                    <p className="mt-5 text-gray-500 text-sm">
+                      {t('haveAccount')}
+                      <Link
+                        className=" cursor-pointer text-blue-500"
+                        to={{
+                          pathname: LOGIN_ROUTE,
+                          state: { modal: location },
+                        }}
+                      >
+                        {t('Login')}
+                      </Link>
+                    </p>
+                  </div>
                 </div>
               </Body>
             </div>

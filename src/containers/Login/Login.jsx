@@ -3,16 +3,16 @@ import firebase from 'firebase';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
+import { Link, useLocation } from 'react-router-dom';
 import { uiConfig } from '../../firebase';
 import Modal, { Header, Body } from '../../components/common/Modal';
 import LoginForm from '../../components/LoginForm';
-import Signup from '../Signup';
+import { SIGNUP_ROUTE } from '../../routes';
 
 const Login = ({ show, onClick }) => {
   const [isSignedIn, setisSignedIn] = useState(false);
-  const [showSignup, setShowSignup] = useState(false);
   const { t } = useTranslation();
-
+  const location = useLocation();
   useEffect(() => {
     firebase.auth().onAuthStateChanged((user) => {
       setisSignedIn(!!user);
@@ -49,26 +49,22 @@ const Login = ({ show, onClick }) => {
                   </button>
                   <p className=" text-center text-md  text-gray-600 ">
                     {t('haveAccount')}
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setShowSignup(true);
-                      }}
+                    <Link
                       className="px-2 text-md text-blue-600 focus:outline-none"
+                      to={{
+                        pathname: SIGNUP_ROUTE,
+                        state: { modal: location },
+                      }}
                     >
                       {t('Create')}
-                    </button>
+                    </Link>
                   </p>
                 </div>
               </Body>
             </div>
           </Modal>
-          {showSignup && (
-            <Signup show={showSignup} onClick={() => setShowSignup(false)} />
-          )}
         </>
       )}
-      ;
     </div>
   );
 };
