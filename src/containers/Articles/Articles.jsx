@@ -54,7 +54,7 @@ const Articles = () => {
       </div>
 
       <div className="flex flex-col">
-        <div className="w-full flex-grow">
+        <div className="w-full mx-2 flex-grow">
           <Article
             id={99}
             title="Coming Out About Mental Health On Social Media"
