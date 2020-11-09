@@ -34,7 +34,7 @@ const Articles = () => {
       </div>
 
       <div className="flex flex-col">
-        <div className="w-full flex-grow">
+        <div className="w-full mx-2 flex-grow">
           <Article
             title="Coming Out About Mental Health On Social Media"
             img="https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851"
@@ -42,14 +42,14 @@ const Articles = () => {
           />
         </div>
         <div className="w-full flex">
-          <div className="w-1/2 flex-grow">
+          <div className="w-1/2 mx-2 flex-grow">
             <Article
               title="Coming Out About Mental Health On Social Media"
               img="https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851"
               paragraph="Susanna Harris was sitting in her lab class for her graduate program at the University of North Carolina at Chapel Hill when she received an email that told her she had failed ."
             />
           </div>
-          <div className="w-1/2 flex-grow">
+          <div className="w-1/2 mx-2 flex-grow">
             <Article
               title="Coming Out About Mental Health On Social Media"
               img="https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851"
