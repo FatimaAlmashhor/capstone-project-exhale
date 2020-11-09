@@ -23,8 +23,7 @@ export default function ContactUsForm() {
                 GET IN TOUCH
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                gentrify.
+                You can be in touch with us by filling this form.
               </p>
             </div>
             <form onSubmit={formik.handleSubmit}>
