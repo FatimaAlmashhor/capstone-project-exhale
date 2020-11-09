@@ -23,7 +23,7 @@ export default function ContactUsForm() {
                 GET IN TOUCH
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                You can be in touch with us by filling this form.
+                {t('contactus')}
               </p>
             </div>
             <form onSubmit={formik.handleSubmit}>
@@ -34,7 +34,7 @@ export default function ContactUsForm() {
                       htmlFor="name"
                       className="leading-7 text-sm text-gray-600"
                     >
-                      Name
+                      {t('Name')}
                       <input
                         type="text"
                         id="name"
@@ -54,7 +54,7 @@ export default function ContactUsForm() {
                       htmlFor="www.email"
                       className="leading-7 text-sm text-gray-600"
                     >
-                      Email
+                      {t('Email')}
                       <input
                         type="email"
                         id="email"
@@ -74,7 +74,7 @@ export default function ContactUsForm() {
                       htmlFor="message"
                       className="leading-7 text-sm text-gray-600"
                     >
-                      Message
+                      {t('Message')}
                       <textarea
                         id="message"
                         name="message"
@@ -93,7 +93,7 @@ export default function ContactUsForm() {
                       type="submit"
                       className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                     >
-                      Button
+                      {t('Send')}
                     </button>
                   </div>
                 </div>
