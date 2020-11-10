@@ -25,9 +25,9 @@ function Navbar() {
     });
   });
   return (
-    <div className="relative bg-white">
+    <div className="relative bg-white z-50">
       <div className="px-4 mx-auto max-w-7xl sm:px-6">
-        <div className="flex items-center justify-between py-6 border-b-2 border-gray-100 md:justify-start md:space-x-10">
+        <div className="flex items-center justify-between py-6 border-b-2 border-gray-100 lg:justify-start lg:space-x-10">
           <div className="lg:w-0 lg:flex-1">
             <Link to={HOME_ROUTE} class="flex">
               <h1 className="text-3xl font-medium transition duration-150 ease-in-out text-black-500">
@@ -36,7 +36,7 @@ function Navbar() {
               </h1>
             </Link>
           </div>
-          <nav className="hidden space-x-10 md:flex">
+          <nav className="hidden space-x-10 lg:flex">
             <NavLink
               to={HOME_ROUTE}
               className="text-base font-medium leading-6 text-blue-900 transition duration-150 ease-in-out hover:text-gray-500 focus:outline-none focus:text-gray-900"
@@ -81,7 +81,7 @@ function Navbar() {
               {t('Signup')}
             </NavLink>
           </nav>
-          <div className="items-center justify-end hidden space-x-8 md:flex md:flex-1 lg:w-0">
+          <div className="items-center justify-end hidden space-x-8 lg:flex lg:flex-1 lg:w-0">
             {isSignedIn ? (
               <button
                 className="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700 focus:outline-none focus:shadow-outline"
@@ -101,10 +101,10 @@ function Navbar() {
                 {t('Login')}
               </NavLink>
             )}
-            <span className="inline-flex rounded-md shadow-sm">
+            <span className="inline-flex rounded-lg shadow-sm">
               <NavLink
                 to={SELF_ASSESSMENT_ROUTE}
-                className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
+                className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-lg hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
               >
                 {t('Checkup')}
               </NavLink>
@@ -113,7 +113,7 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden">
+      <div className="absolute inset-x-0 top-0 p-2 transition origin-top-right transform lg:hidden">
         <div className="rounded-lg shadow-lg">
           <div className="bg-white divide-y-2 rounded-lg shadow-xs divide-gray-50">
             <div className="px-5 pt-5 pb-6 space-y-6">
