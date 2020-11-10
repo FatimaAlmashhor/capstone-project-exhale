@@ -24,25 +24,6 @@ const About = () => {
   return (
     <div>
       <section className="mt-40 pb-20 py-10 relative bg-gray-200">
-        <div
-          className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute"
-          style={{ height: '80px', transform: 'translateZ(0px)' }}
-        >
-          <svg
-            className="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              className="text-gray-200 fill-current"
-              points="2560 0 2560 100 0 100"
-            />
-          </svg>
-        </div>
         <div className="justify-center text-center flex flex-wrap py-8">
           <div className="w-full md:w-6/12 px-12 md:px-4">
             <h2 className="font-semibold text-4xl text-blue-700">About Us</h2>
@@ -107,26 +88,67 @@ const About = () => {
         </div>
       </section>
 
-      <div className="md:flex md:flex-wrap -mb-4">
-        <div className="mb-4  sm:w-1  md:w-1/3 ">
-          <TeamCard />
+      <section className="mt-40 pb-20 py-10 relative bg-gray-200">
+        <div className="justify-center text-center flex flex-wrap py-8">
+          <div className="w-full md:w-6/12 px-12 md:px-4">
+            <h2 className="font-semibold text-4xl text-blue-700">Our Values</h2>
+            <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+          </div>
         </div>
-        <div className="mb-4  sm:w-1  md:w-1/3 ">
-          <TeamCard />
+      </section>
+
+      <section className="mt-40 pb-20 py-10 relative bg-gray-200">
+        <div
+          className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute"
+          style={{ height: '80px', transform: 'translateZ(0px)' }}
+        >
+          <svg
+            className="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              className="text-gray-200 fill-current"
+              points="2560 0 2560 100 0 100"
+            />
+          </svg>
         </div>
-        <div className="mb-4  sm:w-1  md:w-1/3 ">
-          <TeamCard />
+        <div className="justify-center text-center flex flex-wrap py-8">
+          <div className="w-full md:w-6/12 px-12 md:px-4">
+            <h2 className="font-semibold text-4xl text-blue-700">Our Team</h2>
+            <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+          </div>
         </div>
-        <div className="mb-4  sm:w-1  md:w-1/3 ">
-          <TeamCard />
+
+        <div className="md:flex md:flex-wrap -mb-4">
+          <div className="mb-4  sm:w-1  md:w-1/3 ">
+            <TeamCard />
+          </div>
+          <div className="mb-4  sm:w-1  md:w-1/3 ">
+            <TeamCard />
+          </div>
+          <div className="mb-4  sm:w-1  md:w-1/3 ">
+            <TeamCard />
+          </div>
+          <div className="mb-4  sm:w-1  md:w-1/3 ">
+            <TeamCard />
+          </div>
+          <div className="mb-4  sm:w-1  md:w-1/3 ">
+            <TeamCard />
+          </div>
+          <div className="mb-4  sm:w-1  md:w-1/3 ">
+            <TeamCard />
+          </div>
         </div>
-        <div className="mb-4  sm:w-1  md:w-1/3 ">
-          <TeamCard />
-        </div>
-        <div className="mb-4  sm:w-1  md:w-1/3 ">
-          <TeamCard />
-        </div>
-      </div>
+      </section>
     </div>
   );
 };
