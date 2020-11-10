@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="w-auto rounded overflow-hidden border hover:shadow-md"
+  className="w-auto rounded overflow-hidden border hover:shadow-lg"
 >
   <div>
     Hello

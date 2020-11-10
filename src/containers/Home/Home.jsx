@@ -16,7 +16,7 @@ import Card from '../../components/common/Card';
 import DoctorCard from '../../components/DoctorCard';
 import { doctors } from '../../services/fakeDoctorsServices';
 import { articles } from '../../services/fakeArticleService';
-import ArticleCard from '../../components/ArticleCard';
+import { HorizontalArticleCard } from '../../components/ArticleCard';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -38,7 +38,7 @@ const Home = () => {
   ));
   const articleItem = articles.slice(0, 2).map((item) => (
     <div className=" flex md:w-1/2 md:px-4 mt-10 md:mt-0 justify-center">
-      <ArticleCard
+      <HorizontalArticleCard
         index={item.id}
         title={item.title}
         img={item.articleImg}
@@ -60,7 +60,7 @@ const Home = () => {
   return (
     <div className=" ">
       <section
-        className=" container header relative items-center flex h-screen my-32 md:py-16 md:my-0"
+        className=" header relative items-center flex h-screen my-32 md:py-16 md:my-0"
         style={{ maxHeight: '660px' }}
       >
         <div className="container mx-auto px-4 my-10 ">
@@ -161,9 +161,9 @@ const Home = () => {
             <div className="w-full mt-20  flex justify-center">
               <Link
                 to={DOCTORS_ROUTE}
-                className="text-center justify-center text-lg text-red-400 hover:text-red-600"
+                className="text-center p-2 justify-center text-lg text-yellow-500 border-t-2 rounded-lg border-b-2 border-yellow-500 hover:shadow-sm hover:text-yellow-600  transition-all duration-200"
               >
-                See more
+                See More
               </Link>
             </div>
           </div>
@@ -206,9 +206,9 @@ const Home = () => {
             <div className="w-full flex justify-center">
               <Link
                 to={ARTICLES_BASE_ROUTE}
-                className="text-center justify-center text-lg text-red-400 hover:text-red-600"
+                className="text-center p-2 justify-center text-lg text-yellow-500 border-t-2 rounded-lg border-b-2 border-yellow-500 hover:shadow-sm hover:text-yellow-600  transition-all duration-200"
               >
-                See more
+                See More
               </Link>
             </div>
           </div>
