@@ -18,7 +18,7 @@
   "MassageRequierd": "Message is Required",
   "YourMessage": "Enter your Message",
   "Send": "SEND",
-  "HOME": "HOME",
+  "HOME": "Home",
   "Doctors": "Doctors",
   "Articles": "Articles",
   "AboutUs": "AboutUs",
@@ -30,5 +30,7 @@
   "forgetpassword": "Forgot Password ?",
   "haveAccount": " Do not have an account?",
   "Create": " Create",
-  "with email ": "Or with e-mail"
+  "with email ": "Or with e-mail",
+  "contactus": "You can be in touch with us by filling this form.",
+  "GetInTouch": " GET IN TOUCH"
 }

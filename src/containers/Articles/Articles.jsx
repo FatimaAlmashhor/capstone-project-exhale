@@ -8,7 +8,7 @@ const articlesDives = () => {
     <div className="flex flex-wrap -mb-4">
       {articles.map((article) => {
         return (
-          <div className="w-1/3">
+          <div className="w-1/3" key={article.id}>
             <Article
               id={article.id}
               title={article.title}
@@ -57,6 +57,7 @@ const Articles = () => {
       <div className="flex flex-col">
         <div className="w-full flex-grow">
           <Article
+            id={99}
             title="Coming Out About Mental Health On Social Media"
             img="https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851"
             paragraph="Susanna Harris was sitting in her lab class for her graduate program at the University of North Carolina at Chapel Hill when she received an email that told her she had failed ."

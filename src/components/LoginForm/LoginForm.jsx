@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { useTranslation } from 'react-i18next';
+import fire from '../../firebase';
 
 export default function LoginForm() {
   const { t } = useTranslation();
@@ -9,19 +10,31 @@ export default function LoginForm() {
     email: Yup.string().email().required(t('EmailRequired')),
     password: Yup.string().required(t('PassRequired')),
   });
+  const [errMessage, setErrMessage] = useState('');
   return (
     <Formik
       initialValues={{ email: '', password: '' }}
       validationSchema={ReviewError}
+      onSubmit={(values, { setSubmitting }) => {
+        setTimeout(() => {
+          fire
+            .auth()
+            .signInWithEmailAndPassword(values.email, values.password)
+            .catch((err) => {
+              setErrMessage(err.message);
+            });
+          setSubmitting(false);
+        }, 500);
+      }}
     >
       {(formik) => (
         <div className="w-full max-w-xs mx-auto">
           <form
             onSubmit={formik.handleSubmit}
-            className="bg-white  rounded  pt-6 pb-3 mb-4"
+            className="pt-6 pb-3 mb-4 bg-white rounded"
           >
             <input
-              className=" appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="w-full p-3 leading-tight text-gray-700 border rounded appearance-none focus:outline-none focus:shadow-outline"
               id="email"
               name="email"
               type="text"
@@ -29,13 +42,13 @@ export default function LoginForm() {
               onChange={formik.handleChange}
             />
             {formik.errors.email && (
-              <div className="text-red-500 text-sm font-bold">
+              <div className="text-sm font-bold text-red-500">
                 {formik.errors.email}
               </div>
             )}
 
             <input
-              className=" mt-5 appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="w-full p-3 mt-5 leading-tight text-gray-700 border rounded appearance-none focus:outline-none focus:shadow-outline"
               id="password"
               name="password"
               type="password"
@@ -43,18 +56,19 @@ export default function LoginForm() {
               onChange={formik.handleChange}
             />
             {formik.errors.password && (
-              <div className="text-red-500 text-sm font-bold">
+              <div className="text-sm font-bold text-red-500">
                 {formik.errors.password}
               </div>
             )}
             <div className="flex items-center justify-between mb-6">
               <button
-                className="mt-5 px-4 py-3 w-full rounded text-white inline-block shadow-lg bg-blue-800 hover:bg-blue-600 focus:bg-blue-700"
+                className="inline-block w-full px-4 py-3 mt-5 text-white bg-blue-800 rounded shadow-lg hover:bg-blue-600 focus:bg-blue-700"
                 type="submit"
               >
                 {t('Login')}
               </button>
             </div>
+            <div className="text-lg text-red-500">{errMessage}</div>
           </form>
         </div>
       )}
