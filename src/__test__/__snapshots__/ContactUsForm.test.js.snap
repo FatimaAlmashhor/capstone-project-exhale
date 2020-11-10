@@ -1,47 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div
-  className="w-full max-w-xs  mx-auto"
+<section
+  className="text-gray-700 body-font "
 >
-  <form
-    className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
-    onSubmit={[Function]}
+  <div
+    className="container px-5 py-24 mx-auto"
   >
-    <label
-      className="block text-gray-700 text-sm font-bold mb-2"
-      htmlFor="email"
+    <div
+      className="flex flex-col text-center w-full mb-12"
     >
-      Email
-      <input
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        id="email"
-        name="email"
-        onChange={[Function]}
-        placeholder="yourEmail"
-        type="text"
-      />
-    </label>
-    <label
-      className="block text-gray-700 text-sm font-bold mb-2"
-      htmlFor="message"
+      <h1
+        className="sm:text-3xl text-2xl font-medium title-font mb-4 text-blue-800"
+      >
+        GetInTouch
+      </h1>
+      <p
+        className="lg:w-2/3 mx-auto leading-relaxed text-base"
+      >
+        contactus
+      </p>
+    </div>
+    <form
+      onSubmit={[Function]}
     >
-      Message
-      <textarea
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        id="message"
-        name="message"
-        onChange={[Function]}
-        placeholder="YourMessage"
-        rows="5"
-      />
-    </label>
-    <button
-      className="bg-red-500 mt-4 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-      type="submit"
-    >
-      Send
-    </button>
-  </form>
-</div>
+      <div
+        className="lg:w-1/2 md:w-2/3 mx-auto"
+      >
+        <div
+          className="flex flex-wrap -m-2"
+        >
+          <div
+            className="p-2 w-1/2"
+          >
+            <input
+              className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              id="name"
+              name="name"
+              onChange={[Function]}
+              placeholder="Name"
+              type="text"
+            />
+          </div>
+          <div
+            className="p-2 w-1/2"
+          >
+            <input
+              className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              id="email"
+              name="email"
+              onChange={[Function]}
+              placeholder="Email"
+              type="email"
+            />
+          </div>
+          <div
+            className="p-2 w-full"
+          >
+            <textarea
+              className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              id="message"
+              name="message"
+              onChange={[Function]}
+              placeholder="Message"
+            />
+          </div>
+          <div
+            className="p-2 w-full"
+          >
+            <button
+              className="mt-5 px-4 py-3 w-full rounded text-white inline-block shadow-lg bg-blue-800 hover:bg-blue-600 focus:bg-blue-700"
+              type="submit"
+            >
+              Send
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
 `;
