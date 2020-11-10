@@ -37,7 +37,7 @@ exports[`renders correctly 1`] = `
             <div
               className="category-title flex-1 text-sm text-gray-400"
             >
-              11/9/2020
+              11/10/2020
             </div>
           </div>
           <div
