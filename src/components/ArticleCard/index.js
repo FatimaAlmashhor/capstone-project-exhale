@@ -1,1 +1,1 @@
-export {default} from './ArticleCard'
+export {default , HorizontalArticleCard} from './ArticleCard'
