@@ -1,15 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { useTranslation } from 'react-i18next';
+import fire from '../../firebase';
 
 export default function ForgetPWForm() {
   const { t } = useTranslation();
   const ReviewError = Yup.object().shape({
     email: Yup.string().email().required(t('EmailRequired')),
   });
+  const [errMessage, setErrMessage] = useState('');
   return (
-    <Formik initialValues={{ email: '' }} validationSchema={ReviewError}>
+    <Formik
+      initialValues={{ email: '' }}
+      validationSchema={ReviewError}
+      onSubmit={(values, { setSubmitting }) => {
+        setTimeout(() => {
+          fire
+            .auth()
+            .signInWithEmailAndPassword(values.email, values.password)
+            .catch((err) => {
+              setErrMessage(err.message);
+            });
+          setSubmitting(false);
+        }, 500);
+      }}
+    >
       {(formik) => (
         <div className="w-full max-w-xs mx-auto">
           <form
@@ -38,6 +54,7 @@ export default function ForgetPWForm() {
                 {t('Reset')}
               </button>
             </div>
+            <div className="text-lg text-red-500">{errMessage}</div>
           </form>
         </div>
       )}

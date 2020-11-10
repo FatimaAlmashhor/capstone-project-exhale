@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 /* eslint-disable no-unused-expressions */
+||||||| parent of c106d8a... Fix: initial commit
+=======
+import { logDOM } from '@testing-library/react';
+>>>>>>> c106d8a... Fix: initial commit
 import React from 'react';
+<<<<<<< HEAD
 import Lottie from 'react-lottie';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -17,6 +23,11 @@ import DoctorCard from '../../components/DoctorCard';
 import { doctors } from '../../services/fakeDoctorsServices';
 import { articles } from '../../services/fakeArticleService';
 import { HorizontalArticleCard } from '../../components/ArticleCard';
+||||||| parent of c106d8a... Fix: initial commit
+=======
+import ForgetPWForm from '../../components/forgetPWForm/ForgetPWForm';
+import LoginForm from '../../components/LoginForm/LoginForm';
+>>>>>>> c106d8a... Fix: initial commit
 
 const Home = () => {
   const { t } = useTranslation();
@@ -58,6 +69,7 @@ const Home = () => {
     };
   };
   return (
+<<<<<<< HEAD
     <div className=" ">
       <section
         className=" header relative items-center flex h-screen my-32 md:py-16 md:my-0"
@@ -214,6 +226,14 @@ const Home = () => {
           </div>
         </div>
       </section>
+||||||| parent of c106d8a... Fix: initial commit
+    <div>
+      <h1>Home</h1>
+=======
+    <div>
+      <h1>Home</h1>
+      <ForgetPWForm />
+>>>>>>> c106d8a... Fix: initial commit
     </div>
   );
 };

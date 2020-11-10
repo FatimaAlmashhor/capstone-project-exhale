@@ -3,7 +3,7 @@ import firebase from 'firebase';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 import LoginForm from '../../components/LoginForm';
-import { SIGNUP_ROUTE } from '../../routes';
+import { SIGNUP_ROUTE, FORGETPASSWORD_ROUTE } from '../../routes';
 
 const Login = () => {
   const [isSignedIn, setisSignedIn] = useState(false);
