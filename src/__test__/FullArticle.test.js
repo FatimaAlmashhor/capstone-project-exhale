@@ -1,13 +1,16 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import '../fontawesome';
-import About from '../containers/About/About';
-
+import { BrowserRouter as Router } from 'react-router-dom';
+import Article from '../components/FullArticle';
 
 it('renders correctly', () => {
-  const Test = <div>Hello</div>
   const tree = renderer
-    .create(<About>{Test}</About> )
+    .create(
+      <Router>
+        <Article id={1} />
+      </Router>
+    )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
