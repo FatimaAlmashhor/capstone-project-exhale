@@ -1,28 +1,33 @@
 /* eslint-disable react/button-has-type */
-import React from 'react';
+import React, { useState } from 'react';
 import Article from '../../components/ArticleCard';
-import { articles } from '../../services/fakeArticleService';
+import articles from '../../services/fakeArticleService';
 
-const articlesDives = () => {
-  return (
-    <div className="flex flex-wrap -mb-4">
-      {articles.map((article) => {
-        return (
-          <div className="w-1/3">
-            <Article
-              id={article.id}
-              title={article.title}
-              img={article.articleImg}
-              paragraph={article.text.substring(1, 100)}
-              time={article.date}
-            />
-          </div>
-        );
-      })}
-    </div>
-  );
-};
 const Articles = () => {
+  const [artc, setstate] = useState([]);
+
+  const getData = () => {
+    articles.then((res) => {
+      setstate(res);
+    });
+    return (
+      <div className="flex flex-wrap -mb-4">
+        {artc.map((article) => {
+          return (
+            <div className="w-1/3">
+              <Article
+                id={article.id}
+                title={article.title}
+                img={article.articleImg}
+                paragraph={article.text.substring(1, 100)}
+                time={article.date}
+              />
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
   return (
     <div>
       <div className="text-center">
@@ -63,7 +68,7 @@ const Articles = () => {
           />
         </div>
         <div className="w-full flex " />
-        {articlesDives()}
+        {getData()}
       </div>
     </div>
   );

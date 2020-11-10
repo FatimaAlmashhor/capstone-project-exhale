@@ -36,7 +36,7 @@ const ArticleCard = ({ id, title, paragraph, time, img }) => {
                   className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
                 >
                   <li key={id}>
-                    <Link to={`${url}/${id}`}>{title}</Link>
+                    <Link to={`${url}/${id}`}>read more</Link>
                   </li>
                 </button>
               </div>
