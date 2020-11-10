@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
-import fire from '../../firebase';
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+import fire, { uiConfig } from '../../firebase';
 import RegisterForm from '../../components/RegisterForm/RegisterForm';
 import Modal, { Header, Body } from '../../components/common/Modal';
 import { LOGIN_ROUTE } from '../../routes';
@@ -29,18 +30,19 @@ const Signup = ({ show, onClick }) => {
             <div>
               <Header title="SING UP" onClick={onClick} />
               <Body>
+                <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={fire.auth()} />
                 <div>
-                  <div className="my-2 border-b text-center">
-                    <div className="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">
+                  <div className="my-2 text-center border-b">
+                    <div className="inline-block px-2 text-sm font-medium leading-none tracking-wide text-gray-600 transform translate-y-1/2 bg-white">
                       {t('with email')}
                     </div>
                   </div>
                   <RegisterForm />
                   <div>
-                    <p className="mt-5 text-gray-500 text-sm">
+                    <p className="mt-5 text-sm text-gray-500">
                       {t('haveAccount')}
                       <Link
-                        className=" cursor-pointer text-blue-500"
+                        className="text-blue-500 cursor-pointer "
                         to={{
                           pathname: LOGIN_ROUTE,
                           state: { modal: location },
