@@ -37,12 +37,15 @@ exports[`renders correctly 1`] = `
           <div
             className="relative p-6 flex-auto"
           >
+            <div
+              id="firebaseui_container"
+            />
             <div>
               <div
-                className="my-2 border-b text-center"
+                className="my-2 text-center border-b"
               >
                 <div
-                  className="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2"
+                  className="inline-block px-2 text-sm font-medium leading-none tracking-wide text-gray-600 transform translate-y-1/2 bg-white"
                 >
                   with email
                 </div>
@@ -101,11 +104,11 @@ exports[`renders correctly 1`] = `
               </div>
               <div>
                 <p
-                  className="mt-5 text-gray-500 text-sm"
+                  className="mt-5 text-sm text-gray-500"
                 >
                   haveAccount
                   <a
-                    className=" cursor-pointer text-blue-500"
+                    className="text-blue-500 cursor-pointer "
                     href="/login"
                     onClick={[Function]}
                   >
