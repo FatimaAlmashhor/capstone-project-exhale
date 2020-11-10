@@ -9,5 +9,6 @@ export const ARTICLE_ROUTE = `${ARTICLES_BASE_ROUTE}/:id`;
 
 export const LOGIN_ROUTE = '/login';
 export const SIGNUP_ROUTE = '/signup';
+export const FORGETPASSWORD_ROUTE = '/forgetpassword';
 
 export const NOT_FOUND_ROUTE = '/not-found';
