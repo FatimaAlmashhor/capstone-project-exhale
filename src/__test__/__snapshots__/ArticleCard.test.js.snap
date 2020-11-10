@@ -75,3 +75,106 @@ exports[`renders correctly 1`] = `
   </div>
 </section>
 `;
+
+exports[`renders correctly 2`] = `
+<section
+  className="blog w-full  shadow-sm"
+>
+  <div
+    className="container w-full px-5 py-24 mx-auto"
+  >
+    <div
+      className=" flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+    >
+      <div
+        className=" m-auto flex flex-col lg:flex-row "
+      >
+        <div
+          className="bg-gray-300 h-56 w-full flex w-auto lg:w-2/3 lg:h-auto shadow-sm bg-cover bg-center content-center "
+          style={
+            Object {
+              "backgroundImage": "url( ",
+            }
+          }
+        />
+        <div
+          className="w-auto rounded overflow-hidden border hover:shadow-lg"
+        >
+          <div
+            className="  shadow-sm bg-white -mt-10 m-auto rounded-lg overflow-hidden p-6"
+          >
+            <div
+              className="header-content "
+            >
+              <div
+                className="category-title mt-10 w-full  flex-1 text-sm text-gray-400"
+              >
+                11/10/2020
+              </div>
+            </div>
+            <div
+              className="title-post text-lg mt-5"
+            >
+              <h2
+                className="text-black "
+              >
+                 
+              </h2>
+            </div>
+            <div
+              className="summary-post text-base text-gray-500 pt-2 text-justify text-md "
+            >
+              <p>
+                 
+              </p>
+              <div
+                className="mt-2"
+              >
+                <a
+                  className="text-blue-400 hover:text-blue-900 text-sm transition duration-150 ease-in-out"
+                  href="/articles/1"
+                  onClick={[Function]}
+                >
+                  Read more
+                  <svg
+                    aria-hidden="true"
+                    className="chev inline-block ml-1 w-2 h-2 stroke-2 stroke-current"
+                    fill="none"
+                    viewBox="0 0 10 10"
+                  >
+                    <g
+                      fillRule="evenodd"
+                    >
+                      <path
+                        d="M1 1l4 4-4 4"
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    className="arr hidden hover:inline-block ml-1 w-2 h-2 stroke-2 stroke-current"
+                    fill="none"
+                    viewBox="0 0 10 10"
+                  >
+                    <g
+                      fillRule="evenodd"
+                    >
+                      <path
+                        d="M0 5h7"
+                      />
+                      <path
+                        d="M4 1l4 4-4 4"
+                      />
+                    </g>
+                  </svg>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
