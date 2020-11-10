@@ -13,12 +13,15 @@ const ArticleCard = ({ id, title, paragraph, time, img }) => {
           <div className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto">
             {img && (
               <div
-                className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                className="bg-gray-300 h-56 w-full rounded-lg shadow-md bg-cover bg-center "
                 style={{ backgroundImage: `url(${img}` }}
               />
             )}
             <div className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5">
               <div className="header-content inline-flex">
+                <div className="category-badge flex-1  h-4 w-4 m rounded-full m-1 bg-green-100">
+                  <div className="h-2 w-2 rounded-full m-1 bg-green-500" />
+                </div>
                 <div className="category-title flex-1 text-sm text-gray-400">
                   {time}
                 </div>
