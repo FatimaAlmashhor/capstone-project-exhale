@@ -10,7 +10,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-blue-800 text-white border-t-2 mt-8 pt-8 pb-4 w-full">
+    <footer className="bg-blue-800 text-white border-t-2  pt-12 pb-4 w-full">
       <div className="container mx-auto px-8">
         <div className=" w-full">
           <div className="block ">
@@ -19,7 +19,7 @@ const Footer = () => {
               hale
             </h1>
           </div>
-          <div className="inline container z-10">
+          <div className="inline container px-18 z-10">
             <ul className="flex flex-col md:flex-row">
               <li className="flex-1 text-center text-white">
                 <Link to={SELF_ASSESSMENT_ROUTE}>{t('Checkup')}</Link>
@@ -86,13 +86,11 @@ export default Footer;
 
 export const DropdownButton = () => {
   const [show, setShow] = useState(false);
-  const [Language, setLanguage] = useState('English');
-
+  const [Language, setLanguage] = useState(i18n.language);
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     setShow(false);
-    if (lng === 'en') setLanguage('English');
-    else setLanguage('العربيه');
+    setLanguage(lng);
   };
 
   return (
@@ -104,7 +102,7 @@ export const DropdownButton = () => {
             className="inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150"
             onClick={() => setShow(!show)}
           >
-            {Language}
+            {Language === 'en' ? 'English' : 'العربيه'}
             <svg
               className="-mr-1 ml-2 h-5 w-5"
               xmlns="http://www.w3.org/2000/svg"
