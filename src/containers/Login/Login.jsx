@@ -35,22 +35,22 @@ const Login = ({ show, onClick }) => {
                     uiConfig={uiConfig}
                     firebaseAuth={firebase.auth()}
                   />
-                  <div className="my-2 border-b text-center">
-                    <div className="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">
+                  <div className="my-2 text-center border-b">
+                    <div className="inline-block px-2 text-sm font-medium leading-none tracking-wide text-gray-600 transform translate-y-1/2 bg-white">
                       {t('with email')}
                     </div>
                   </div>
                   <LoginForm />
                   <button
                     type="button"
-                    className="inline-block text-center w-full focus:outline-none  align-baseline font-normal text-sm text-blue-600 hover:text-blue-800"
+                    className="inline-block w-full text-sm font-normal text-center text-blue-600 align-baseline focus:outline-none hover:text-blue-800"
                   >
                     {t('forgetpassword')}
                   </button>
-                  <p className=" text-center text-md  text-gray-600 ">
+                  <p className="text-center text-gray-600 text-md">
                     {t('haveAccount')}
                     <Link
-                      className="px-2 text-md text-blue-600 focus:outline-none"
+                      className="px-2 text-blue-600 text-md focus:outline-none"
                       to={{
                         pathname: SIGNUP_ROUTE,
                         state: { modal: location },
