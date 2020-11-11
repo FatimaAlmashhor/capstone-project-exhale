@@ -14,9 +14,9 @@ export default function TeamCard({
   instagram,
 }) {
   return (
-    <div className="p-3 text-center">
+    <div className="p-3 text-center ">
       <img
-        className="w-32 h-auto mx-auto border-4 border-red-400 border-solid rounded-full"
+        className="w-32 h-auto mx-auto border-4 border-green-500 border-solid rounded-full"
         src={image}
         alt="team member"
       />
@@ -29,7 +29,8 @@ export default function TeamCard({
         </div>
         <p className="pt-2 pb-4 text-xs text-gray-600">{email}</p>
       </div>
-      <div className="pt-4 border-t">
+      <hr className="w-1/2 m-auto " />
+      <div className="pt-4 ">
         <a href={twitter} rel="noreferrer noopener" target="_blank">
           <FontAwesomeIcon
             className="mx-3 text-lg text-gray-600 hover:text-blue-500"
