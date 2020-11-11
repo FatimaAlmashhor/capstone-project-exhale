@@ -30,7 +30,7 @@ exports[`renders correctly 1`] = `
             <div
               className="category-title flex-1 text-sm text-gray-400"
             >
-              11/10/2020
+              11/11/2020
             </div>
           </div>
           <div
@@ -102,7 +102,7 @@ exports[`renders correctly 2`] = `
               <div
                 className="category-title mt-10 w-full  flex-1 text-sm text-gray-400"
               >
-                11/10/2020
+                11/11/2020
               </div>
             </div>
             <div

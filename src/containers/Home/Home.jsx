@@ -161,7 +161,7 @@ const Home = () => {
             <div className="w-full mt-20  flex justify-center">
               <Link
                 to={DOCTORS_ROUTE}
-                className="text-center p-2 justify-center text-lg text-yellow-500 border-t-2 rounded-lg border-b-2 border-yellow-500 hover:shadow-sm hover:text-yellow-600  transition-all duration-200"
+                className="text-center p-2 justify-center text-lg text-yellow-500 border-t-2 rounded-lg border-2 border-yellow-500 hover:shadow-sm hover:text-white hover:bg-yellow-400 hover:border-white transition-all duration-200"
               >
                 See More
               </Link>
@@ -206,7 +206,7 @@ const Home = () => {
             <div className="w-full flex justify-center">
               <Link
                 to={ARTICLES_BASE_ROUTE}
-                className="text-center p-2 justify-center text-lg text-yellow-500 border-t-2 rounded-lg border-b-2 border-yellow-500 hover:shadow-sm hover:text-yellow-600  transition-all duration-200"
+                className="text-center p-2 justify-center text-lg text-yellow-500 border-t-2 rounded-lg border-2 border-yellow-500 hover:shadow-sm hover:text-white hover:bg-yellow-400 hover:border-white transition-all duration-200"
               >
                 See More
               </Link>
