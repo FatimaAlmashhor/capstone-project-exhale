@@ -152,40 +152,40 @@ function Navbar() {
                 <nav className="grid gap-y-8">
                   <NavLink
                     to={HOME_ROUTE}
-                    className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 border-b pb-2  hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-700"
+                    className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 border-b pb-2  hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('HOME')}
                   </NavLink>
 
                   <NavLink
                     to={DOCTORS_ROUTE}
-                    className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 border-b pb-2  hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-700"
+                    className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 border-b pb-2  hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('Doctors')}
                   </NavLink>
 
                   <NavLink
                     to={ARTICLES_BASE_ROUTE}
-                    className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 border-b pb-2  hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-700"
+                    className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 border-b pb-2  hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('Articles')}
                   </NavLink>
                   <NavLink
                     to={ABOUT_ROUTE}
-                    className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 border-b pb-2  hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-700"
+                    className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 border-b pb-2  hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('AboutUs')}
                   </NavLink>
 
                   <NavLink
                     to={CONTACT_ROUTE}
-                    className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 border-b pb-2  hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-700"
+                    className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 border-b pb-2  hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('ContactUs')}
                   </NavLink>
 
                   <NavLink
-                    className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 border-b pb-2  hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-700"
+                    className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 border-b pb-2  hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                     to={{
                       pathname: SIGNUP_ROUTE,
                       state: { modal: location },
