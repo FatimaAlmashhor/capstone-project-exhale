@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* eslint-disable no-unused-expressions */
 ||||||| parent of c106d8a... Fix: initial commit
 =======
 import { logDOM } from '@testing-library/react';
 >>>>>>> c106d8a... Fix: initial commit
+||||||| parent of 52e8f6e... Feat: add forget password component
+import { logDOM } from '@testing-library/react';
+=======
+>>>>>>> 52e8f6e... Feat: add forget password component
 import React from 'react';
+<<<<<<< HEAD
 <<<<<<< HEAD
 import Lottie from 'react-lottie';
 import { Link } from 'react-router-dom';
@@ -28,6 +34,11 @@ import { HorizontalArticleCard } from '../../components/ArticleCard';
 import ForgetPWForm from '../../components/forgetPWForm/ForgetPWForm';
 import LoginForm from '../../components/LoginForm/LoginForm';
 >>>>>>> c106d8a... Fix: initial commit
+||||||| parent of 52e8f6e... Feat: add forget password component
+import ForgetPWForm from '../../components/forgetPWForm/ForgetPWForm';
+import LoginForm from '../../components/LoginForm/LoginForm';
+=======
+>>>>>>> 52e8f6e... Feat: add forget password component
 
 const Home = () => {
   const { t } = useTranslation();
@@ -232,8 +243,13 @@ const Home = () => {
 =======
     <div>
       <h1>Home</h1>
+<<<<<<< HEAD
       <ForgetPWForm />
 >>>>>>> c106d8a... Fix: initial commit
+||||||| parent of 52e8f6e... Feat: add forget password component
+      <ForgetPWForm />
+=======
+>>>>>>> 52e8f6e... Feat: add forget password component
     </div>
   );
 };

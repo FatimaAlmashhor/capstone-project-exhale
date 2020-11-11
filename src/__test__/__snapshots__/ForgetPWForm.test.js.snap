@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="w-full max-w-xs mx-auto"
+>
+  <form
+    className="px-8 pt-6 pb-8 mb-4 bg-white rounded shadow-md"
+    onSubmit={[Function]}
+  >
+    <div
+      className="flex justify-center py-2 mb-4 text-2xl text-blue-800 border-b-2"
+    >
+      Reset
+    </div>
+    <div
+      className="text-lg text-green-500"
+    >
+      
+    </div>
+    <label
+      className="block mb-2 text-sm font-bold text-gray-700"
+      htmlFor="email"
+    >
+      Email
+      <input
+        className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+        id="email"
+        name="email"
+        onChange={[Function]}
+        placeholder="yourEmail"
+        type="text"
+      />
+    </label>
+    <div
+      className="flex items-center justify-between mb-6"
+    >
+      <button
+        className="inline-block px-4 py-2 text-white bg-blue-800 rounded shadow-lg hover:bg-blue-600 focus:bg-blue-700"
+        type="submit"
+      >
+        Reset
+      </button>
+      <a
+        className="inline-block text-sm font-normal text-blue-600 align-baseline hover:text-blue-800"
+        href="/login"
+        onClick={[Function]}
+      >
+        Login
+      </a>
+    </div>
+    <p
+      className="text-center text-gray-600 text-md"
+    >
+      haveAccount
+      <a
+        className="text-blue-600 text-md"
+        href="/signup"
+        onClick={[Function]}
+      >
+        Create
+      </a>
+    </p>
+    <div
+      className="text-lg text-red-500"
+    >
+      
+    </div>
+  </form>
+</div>
+`;
