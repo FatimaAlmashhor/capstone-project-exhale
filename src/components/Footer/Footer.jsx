@@ -94,14 +94,14 @@ export const DropdownButton = () => {
       <button
         type="button"
         onClick={() => changeLanguage('en')}
-        className="py-1 px-4 bg-indigo-500 text-white focus:outline-none"
+        className="py-1 px-4 bg-indigo-500 text-white hover:text-indigo-800 focus:text-indigo-800 focus:bg-indigo-300  focus:outline-none"
       >
         English
       </button>
       <button
         type="button"
         onClick={() => changeLanguage('ar')}
-        className="py-1 px-4 focus:outline-none"
+        className="py-1 px-4 hover:text-gray-500 focus:text-gray-500 focus:outline-none"
       >
         العربيه
       </button>
