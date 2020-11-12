@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -85,69 +85,26 @@ const Footer = () => {
 export default Footer;
 
 export const DropdownButton = () => {
-  const [show, setShow] = useState(false);
-  const [Language, setLanguage] = useState(i18n.language);
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    setShow(false);
-    setLanguage(lng);
   };
 
   return (
-    <div className="relative inline-block text-left">
-      <div>
-        <span className="rounded-md shadow-sm">
-          <button
-            type="button"
-            className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
-            onClick={() => setShow(!show)}
-          >
-            {Language === 'en' ? 'English' : 'العربيه'}
-            <svg
-              className="w-5 h-5 ml-2 -mr-1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-        </span>
-      </div>
-
-      <div
-        className={`origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg ${
-          show ? 'block' : 'hidden'
-        }`}
+    <div className="inline-flex  mx-auto border-2 border-indigo-500 rounded overflow-hidden">
+      <button
+        type="button"
+        onClick={() => changeLanguage('en')}
+        className="py-1 px-4 bg-indigo-500 text-white hover:text-indigo-800 focus:text-indigo-800 focus:bg-indigo-300  focus:outline-none"
       >
-        <div className="bg-white rounded-md shadow-xs">
-          <div
-            className="py-1"
-            role="menu"
-            aria-orientation="vertical"
-            aria-labelledby="options-menu"
-          >
-            <button
-              type="button"
-              onClick={() => changeLanguage('ar')}
-              className="block w-full px-4 py-2 text-sm leading-5 text-left text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
-            >
-              العربية
-            </button>
-            <button
-              type="button"
-              onClick={() => changeLanguage('en')}
-              className="block w-full px-4 py-2 text-sm leading-5 text-left text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
-            >
-              English
-            </button>
-          </div>
-        </div>
-      </div>
+        English
+      </button>
+      <button
+        type="button"
+        onClick={() => changeLanguage('ar')}
+        className="py-1 px-4 hover:text-gray-500 focus:text-gray-500 focus:outline-none"
+      >
+        العربيه
+      </button>
     </div>
   );
 };
