@@ -11,9 +11,6 @@ export default function ResetPassword() {
   });
   const [errMessage, setErrMessage] = useState('');
   const [success, setSuccess] = useState('');
-  const [clicked, setClicked] = useState(false);
-  const [hide, setHide] = useState('');
-
   return (
     <Formik
       initialValues={{ email: '' }}
@@ -24,9 +21,11 @@ export default function ResetPassword() {
             .auth()
             .sendPasswordResetEmail(values.email)
             .then(() => {
+              setErrMessage('');
               setSuccess('Check your inbox to reset your password');
             })
             .catch((err) => {
+              setSuccess('');
               setErrMessage(err.message);
             });
           setSubmitting(false);
@@ -34,57 +33,36 @@ export default function ResetPassword() {
       }}
     >
       {(formik) => (
-        <>
-          {clicked ? setHide('hidden') : setHide('')}
-          <div className={`w-full max-w-xs mx-auto ${hide}`}>
-            <form
-              onSubmit={formik.handleSubmit}
-              className="px-8 pt-6 pb-8 mb-4 bg-white rounded shadow-md"
-            >
-              <div className="flex justify-center py-2 mb-4 text-2xl text-blue-800 border-b-2">
-                {t('Reset')}
+        <div className="w-full max-w-xs mx-auto">
+          <form
+            onSubmit={formik.handleSubmit}
+            className="pt-6 pb-3 mb-4 bg-white rounded"
+          >
+            <div className="mb-2 text-lg text-green-500">{success}</div>
+            <input
+              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+              id="email"
+              name="email"
+              type="text"
+              placeholder={t('yourEmail')}
+              onChange={formik.handleChange}
+            />
+            {formik.errors.email && (
+              <div className="text-sm font-bold text-red-500">
+                {formik.errors.email}
               </div>
-              <div className="text-lg text-green-500">{success}</div>
-              <label
-                htmlFor="email"
-                className="block mb-2 text-sm font-bold text-gray-700"
+            )}
+            <div className="mb-2">
+              <button
+                className="w-full px-4 py-2 mt-5 text-white bg-blue-800 rounded shadow-lg focus:outline-none over:bg-blue-600 focus:bg-blue-700"
+                type="submit"
               >
-                {t('Email')}
-                <input
-                  className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                  id="email"
-                  name="email"
-                  type="text"
-                  placeholder={t('yourEmail')}
-                  onChange={formik.handleChange}
-                />
-              </label>
-              {formik.errors.email && (
-                <div className="text-sm font-bold text-red-500">
-                  {formik.errors.email}
-                </div>
-              )}
-              <div className="flex items-center justify-between mb-6">
-                <button
-                  className="inline-block px-4 py-2 text-white bg-blue-800 rounded shadow-lg hover:bg-blue-600 focus:bg-blue-700"
-                  type="submit"
-                >
-                  {t('Reset')}
-                </button>
-                <button
-                  type="button"
-                  className="inline-block text-sm font-normal text-blue-600 align-baseline hover:text-blue-800 focus:outline-none"
-                  onClick={() => {
-                    setClicked(!clicked);
-                  }}
-                >
-                  {t('cancel')}
-                </button>
-              </div>
-              <div className="text-lg text-red-500">{errMessage}</div>
-            </form>
-          </div>
-        </>
+                {t('Reset')}
+              </button>
+            </div>
+            <div className="mt-2 text-red-500 mtext-lg">{errMessage}</div>
+          </form>
+        </div>
       )}
     </Formik>
   );

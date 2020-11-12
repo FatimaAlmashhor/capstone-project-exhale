@@ -44,7 +44,7 @@ exports[`Modal test Modal Header  1`] = `
   className="flex items-start justify-between p-5 border-b border-gray-300 border-solid rounded-t"
 >
   <h3
-    className="text-3xl font-semibold"
+    className="flex justify-center py-2 mb-4 text-2xl text-blue-800 "
   >
      
   </h3>
@@ -54,7 +54,13 @@ exports[`Modal test Modal Header  1`] = `
     type="button"
   >
     <span
+<<<<<<< HEAD
       className="block w-6 h-6 text-2xl text-black bg-transparent outline-none opacity-5 focus:outline-none"
+||||||| parent of 644e0cd... Fix: make reset pW as a modal.
+      className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none"
+=======
+      className="block w-6 h-6 text-2xl text-red-700 bg-transparent outline-none opacity-5 focus:outline-none"
+>>>>>>> 644e0cd... Fix: make reset pW as a modal.
     >
       ×
     </span>
