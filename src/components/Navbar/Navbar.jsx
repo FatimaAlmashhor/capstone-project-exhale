@@ -71,30 +71,6 @@ function Navbar() {
             >
               {t('ContactUs')}
             </NavLink>
-<<<<<<< HEAD
-||||||| parent of 52e8f6e... Feat: add forget password component
-
-            <NavLink
-              className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap hover:text-gray-900 border-b pb-2  hover:border-b hover:pb-2 border-white hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
-              to={{
-                pathname: SIGNUP_ROUTE,
-                state: { modal: location },
-              }}
-            >
-              {t('Signup')}
-            </NavLink>
-=======
-            
-            <NavLink
-              className="pb-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap border-b border-white hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
-              to={{
-                pathname: SIGNUP_ROUTE,
-                state: { modal: location },
-              }}
-            >
-              {t('Signup')}
-            </NavLink>
->>>>>>> 52e8f6e... Feat: add forget password component
           </nav>
           <div className="items-center justify-end hidden space-x-8 lg:flex lg:flex-1 lg:w-0">
             {isSignedIn ? (
@@ -106,7 +82,6 @@ function Navbar() {
                 {t('Logout')}
               </button>
             ) : (
-<<<<<<< HEAD
               <>
                 <NavLink
                   className="pb-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap border-b border-white hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
@@ -127,27 +102,6 @@ function Navbar() {
                   {t('Login')}
                 </NavLink>
               </>
-||||||| parent of 52e8f6e... Feat: add forget password component
-              <NavLink
-                className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap hover:text-gray-900  border-b pb-2  hover:border-b hover:pb-2 border-white hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
-                to={{
-                  pathname: LOGIN_ROUTE,
-                  state: { modal: location },
-                }}
-              >
-                {t('Login')}
-              </NavLink>
-=======
-              <NavLink
-                className="pb-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap border-b border-white hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
-                to={{
-                  pathname: LOGIN_ROUTE,
-                  state: { modal: location },
-                }}
-              >
-                {t('Login')}
-              </NavLink>
->>>>>>> 52e8f6e... Feat: add forget password component
             )}
             <span className="inline-flex rounded-lg shadow-sm">
               <NavLink
@@ -231,7 +185,6 @@ function Navbar() {
                     {t('ContactUs')}
                   </NavLink>
 
-<<<<<<< HEAD
                   {isSignedIn ? (
                     <>
                       <div className="space-y-6">
@@ -248,39 +201,6 @@ function Navbar() {
                         className="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700 focus:outline-none focus:shadow-outline"
                         type="button"
                         onClick={() => fire.auth().signOut()}
-||||||| parent of 52e8f6e... Feat: add forget password component
-                  <NavLink
-                    className="flex items-center p-3 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 border-b pb-2  hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
-                    to={{
-                      pathname: SIGNUP_ROUTE,
-                      state: { modal: location },
-                    }}
-                  >
-                    {t('Signup')}
-                  </NavLink>
-
-                  <div className="space-y-6">
-                    <span className="flex w-full rounded-md shadow-sm">
-                      <NavLink
-                        to={SELF_ASSESSMENT_ROUTE}
-                        className="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
-=======
-                  <NavLink
-                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out border-b rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
-                    to={{
-                      pathname: SIGNUP_ROUTE,
-                      state: { modal: location },
-                    }}
-                  >
-                    {t('Signup')}
-                  </NavLink>
-
-                  <div className="space-y-6">
-                    <span className="flex w-full rounded-md shadow-sm">
-                      <NavLink
-                        to={SELF_ASSESSMENT_ROUTE}
-                        className="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
->>>>>>> 52e8f6e... Feat: add forget password component
                       >
                         {t('Logout')}
                       </button>

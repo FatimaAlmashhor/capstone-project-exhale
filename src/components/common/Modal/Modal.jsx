@@ -41,30 +41,14 @@ export const Header = ({ onClick, title }) => {
   return (
     <>
       {/* header */}
-<<<<<<< HEAD
       <div className="flex items-start justify-between p-5 border-b border-gray-300 border-solid rounded-t">
         <h3 className="text-3xl font-semibold">{title}</h3>
-||||||| parent of 644e0cd... Fix: make reset pW as a modal.
-      <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t">
-        <h3 className="text-3xl font-semibold">{title}</h3>
-=======
-      <div className="flex items-start justify-between p-5 border-b border-gray-300 border-solid rounded-t">
-        <h3 className="flex justify-center py-2 mb-4 text-2xl text-blue-800 ">
-          {title}
-        </h3>
->>>>>>> 644e0cd... Fix: make reset pW as a modal.
         <button
           type="button"
           className="float-right p-1 ml-auto text-3xl font-semibold leading-none text-black bg-transparent border-0 outline-none opacity-5 focus:outline-none"
           onClick={onClick}
         >
-<<<<<<< HEAD
           <span className="block w-6 h-6 text-2xl text-black bg-transparent outline-none opacity-5 focus:outline-none">
-||||||| parent of 644e0cd... Fix: make reset pW as a modal.
-          <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
-=======
-          <span className="block w-6 h-6 text-2xl text-red-700 bg-transparent outline-none opacity-5 focus:outline-none">
->>>>>>> 644e0cd... Fix: make reset pW as a modal.
             ×
           </span>
         </button>
