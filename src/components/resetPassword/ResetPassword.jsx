@@ -73,7 +73,7 @@ export default function ResetPassword() {
                 </button>
                 <button
                   type="button"
-                  className="inline-block text-sm font-normal text-blue-600 align-baseline hover:text-blue-800"
+                  className="inline-block text-sm font-normal text-blue-600 align-baseline hover:text-blue-800 focus:outline-none"
                   onClick={() => {
                     setClicked(!clicked);
                   }}
