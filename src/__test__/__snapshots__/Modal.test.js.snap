@@ -1,16 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Modal test Modal Body  1`] = `
-Array [
-  <div
-    id="firebaseui_container"
-  />,
-  <div
-    className="relative flex-auto p-6"
-  >
-    <div />
-  </div>,
-]
+<div
+  className="relative flex-auto p-6"
+>
+  <div />
+</div>
 `;
 
 exports[`Modal test Modal Footer  1`] = `

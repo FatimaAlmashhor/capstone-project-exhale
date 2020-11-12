@@ -2,8 +2,6 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import PropTypes from 'prop-types';
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
-import fire, { uiConfig } from '../../../firebase';
 
 const Modal = ({ show, onClick, children }) => {
   return (
@@ -67,7 +65,6 @@ export const Body = ({ children }) => {
   return (
     <>
       {/* body */}
-      <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={fire.auth()} />
       <div className="relative flex-auto p-6">{children}</div>
     </>
   );
