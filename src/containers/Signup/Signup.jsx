@@ -30,17 +30,17 @@ const Signup = ({ show, onClick }) => {
               <Header title="SING UP" onClick={onClick} />
               <Body>
                 <div>
-                  <div className="my-2 border-b text-center">
-                    <div className="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">
+                  <div className="my-2 text-center border-b">
+                    <div className="inline-block px-2 text-sm font-medium leading-none tracking-wide text-gray-600 transform translate-y-1/2 bg-white">
                       {t('with email')}
                     </div>
                   </div>
                   <RegisterForm />
                   <div>
-                    <p className="mt-5 text-gray-500 text-sm">
+                    <p className="mt-5 text-sm text-gray-500">
                       {t('haveAccount')}
                       <Link
-                        className=" cursor-pointer text-blue-500"
+                        className="text-blue-500 cursor-pointer "
                         to={{
                           pathname: LOGIN_ROUTE,
                           state: { modal: location },
