@@ -10,7 +10,6 @@ import {
   ARTICLE_ROUTE,
   LOGIN_ROUTE,
   SIGNUP_ROUTE,
-  FORGETPASSWORD_ROUTE,
   NOT_FOUND_ROUTE,
 } from './routes';
 import Home from './containers/Home';
@@ -26,8 +25,6 @@ import NotFound from './components/NotFound';
 import Footer from './components/Footer'
 import ModalHolder from './components/common/ModalHolder/index.js';
 import Signup from './containers/Signup';
-import ForgetPassword from './containers/ForgetPassword';
-
 
 function App() {
   return (
@@ -56,7 +53,6 @@ export const Routing = () => {
         <Switch location={modal || location}>
         <Route path={LOGIN_ROUTE} component={Login} />
         <Route path={SIGNUP_ROUTE} component={Signup} />
-        <Route path={FORGETPASSWORD_ROUTE} component={ForgetPassword} />
         <Route path={DOCTORS_ROUTE} component={Doctors} />
         <Route path={ARTICLE_ROUTE} component={Article} />
         <Route path={ARTICLES_BASE_ROUTE} component={Articles} />

@@ -4,9 +4,11 @@ import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 import LoginForm from '../../components/LoginForm';
 import { SIGNUP_ROUTE } from '../../routes';
+import ResetPassword from '../../components/resetPassword/ResetPassword';
 
 const Login = () => {
   const [isSignedIn, setisSignedIn] = useState(false);
+  const [clicked, setClicked] = useState(false);
   const { t } = useTranslation();
   const location = useLocation();
   useEffect(() => {
