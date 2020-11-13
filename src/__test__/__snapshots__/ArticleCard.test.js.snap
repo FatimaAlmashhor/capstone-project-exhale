@@ -54,7 +54,8 @@ exports[`renders correctly 1`] = `
             >
               <li>
                 <a
-                  href="//1"
+                  aria-current={null}
+                  href="// "
                   onClick={[Function]}
                 >
                   read more
