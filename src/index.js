@@ -5,9 +5,10 @@ import App from './App';
 import './i18next';
 import './fontawesome';
 import * as serviceWorker from './serviceWorker';
+import Loading from './components/Loading';
 
 ReactDOM.render(
-  <Suspense fallback={<div>Loading ....</div>}>
+  <Suspense fallback={<Loading />}>
     <React.StrictMode>
       <App />
     </React.StrictMode>

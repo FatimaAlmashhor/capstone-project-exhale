@@ -2,7 +2,7 @@
 
 exports[`Modal test Modal Body  1`] = `
 <div
-  className="relative p-6 flex-auto"
+  className="relative flex-auto p-6"
 >
   <div />
 </div>
@@ -10,10 +10,10 @@ exports[`Modal test Modal Body  1`] = `
 
 exports[`Modal test Modal Footer  1`] = `
 <div
-  className="flex items-center justify-end p-6 border-t border-solid border-gray-300 rounded-b"
+  className="flex items-center justify-end p-6 border-t border-gray-300 border-solid rounded-b"
 >
   <button
-    className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
+    className="px-6 py-2 mb-1 mr-1 text-sm font-bold text-red-500 uppercase outline-none background-transparent focus:outline-none"
     onClick={[Function]}
     style={
       Object {
@@ -25,7 +25,7 @@ exports[`Modal test Modal Footer  1`] = `
     Close
   </button>
   <button
-    className="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+    className="px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase bg-green-500 rounded shadow outline-none active:bg-green-600 hover:shadow-lg focus:outline-none"
     onClick={[Function]}
     style={
       Object {
@@ -41,7 +41,7 @@ exports[`Modal test Modal Footer  1`] = `
 
 exports[`Modal test Modal Header  1`] = `
 <div
-  className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t"
+  className="flex items-start justify-between p-5 border-b border-gray-300 border-solid rounded-t"
 >
   <h3
     className="text-3xl font-semibold"
@@ -49,12 +49,12 @@ exports[`Modal test Modal Header  1`] = `
      
   </h3>
   <button
-    className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+    className="float-right p-1 ml-auto text-3xl font-semibold leading-none text-black bg-transparent border-0 outline-none opacity-5 focus:outline-none"
     onClick={[Function]}
     type="button"
   >
     <span
-      className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none"
+      className="block w-6 h-6 text-2xl text-black bg-transparent outline-none opacity-5 focus:outline-none"
     >
       ×
     </span>

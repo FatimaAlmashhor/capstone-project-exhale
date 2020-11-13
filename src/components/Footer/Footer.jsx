@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -10,16 +10,16 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-blue-800 text-white border-t-2  pt-12 pb-4 w-full">
-      <div className="container mx-auto px-8">
-        <div className=" w-full">
+    <footer className="w-full pt-12 pb-4 text-white bg-blue-800 border-t-2">
+      <div className="container px-8 mx-auto">
+        <div className="w-full ">
           <div className="block ">
-            <h1 className="font-medium text-3xl text-black-500 transition ease-in-out duration-150">
-              <span className="text-4xl text-white font-black">EX</span>
+            <h1 className="text-3xl font-medium transition duration-150 ease-in-out text-black-500">
+              <span className="text-4xl font-black text-white">EX</span>
               hale
             </h1>
           </div>
-          <div className="inline container px-18 z-10">
+          <div className="container z-10 inline px-18">
             <ul className="flex flex-col md:flex-row">
               <li className="flex-1 text-center text-white">
                 <Link to={SELF_ASSESSMENT_ROUTE}>{t('Checkup')}</Link>
@@ -35,16 +35,16 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="block flex flex-row mt-8">
-            <div className="flex-1 text-gray-400 text-sm">
-              Copyright @Exhale All right Reserved.
+          <div className="flex flex-row block mt-8">
+            <div className="flex-1 text-sm text-gray-400">
+              Copyright &copy; 2020 Exhale. All rights Reserved.
             </div>
             <div className="flex-auto">
               <ul className="flex flex-row-reverse">
                 <li className="mx-3 cursor-pointer">
                   <a href=" ">
                     <FontAwesomeIcon
-                      className="text-gray-500 text-lg hover:text-white"
+                      className="text-lg text-gray-500 hover:text-white"
                       icon={['fab', 'twitter']}
                     />
                   </a>
@@ -52,7 +52,7 @@ const Footer = () => {
                 <li className="mx-3 cursor-pointer">
                   <a href=" ">
                     <FontAwesomeIcon
-                      className="text-gray-500 text-lg hover:text-white"
+                      className="text-lg text-gray-500 hover:text-white"
                       icon={['fab', 'facebook']}
                     />
                   </a>
@@ -60,15 +60,15 @@ const Footer = () => {
                 <li className="mx-3 cursor-pointer">
                   <a href=" ">
                     <FontAwesomeIcon
-                      className="text-gray-500 text-lg hover:text-white"
+                      className="text-lg text-gray-500 hover:text-white"
                       icon={['fab', 'instagram']}
                     />
                   </a>
                 </li>
-                <li className="mx-3  cursor-pointer ">
+                <li className="mx-3 cursor-pointer ">
                   <a href=" ">
                     <FontAwesomeIcon
-                      className="text-gray-500 text-lg hover:text-white"
+                      className="text-lg text-gray-500 hover:text-white"
                       icon={['fab', 'linkedin']}
                     />
                   </a>
@@ -85,69 +85,26 @@ const Footer = () => {
 export default Footer;
 
 export const DropdownButton = () => {
-  const [show, setShow] = useState(false);
-  const [Language, setLanguage] = useState(i18n.language);
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    setShow(false);
-    setLanguage(lng);
   };
 
   return (
-    <div className="relative inline-block text-left">
-      <div>
-        <span className="rounded-md shadow-sm">
-          <button
-            type="button"
-            className="inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150"
-            onClick={() => setShow(!show)}
-          >
-            {Language === 'en' ? 'English' : 'العربيه'}
-            <svg
-              className="-mr-1 ml-2 h-5 w-5"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-        </span>
-      </div>
-
-      <div
-        className={`origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg ${
-          show ? 'block' : 'hidden'
-        }`}
+    <div className="inline-flex  mx-auto border-2 border-indigo-500 rounded overflow-hidden">
+      <button
+        type="button"
+        onClick={() => changeLanguage('en')}
+        className="py-1 px-4 bg-indigo-500 text-white hover:text-indigo-800 focus:text-indigo-800 focus:bg-indigo-300  focus:outline-none"
       >
-        <div className="rounded-md bg-white shadow-xs">
-          <div
-            className="py-1"
-            role="menu"
-            aria-orientation="vertical"
-            aria-labelledby="options-menu"
-          >
-            <button
-              type="button"
-              onClick={() => changeLanguage('ar')}
-              className="block w-full text-left px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
-            >
-              العربية
-            </button>
-            <button
-              type="button"
-              onClick={() => changeLanguage('en')}
-              className="block w-full text-left px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
-            >
-              English
-            </button>
-          </div>
-        </div>
-      </div>
+        English
+      </button>
+      <button
+        type="button"
+        onClick={() => changeLanguage('ar')}
+        className="py-1 px-4 hover:text-gray-500 focus:text-gray-500 focus:outline-none"
+      >
+        العربيه
+      </button>
     </div>
   );
 };
