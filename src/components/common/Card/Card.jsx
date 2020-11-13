@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 
 export default function Card({ children }) {
   return (
-    <div className="max-w-screen-sm md:max-w-xs lg:max-w-xs rounded overflow-hidden border hover:shadow-md">
-      {children}
-    </div>
+    <div className=" rounded overflow-hidden border hover:shadow-md">{children}</div>
   );
 }
 
