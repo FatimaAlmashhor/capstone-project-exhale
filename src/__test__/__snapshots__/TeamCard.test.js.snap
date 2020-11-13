@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="p-3 text-center "
+  className="p-4 text-center "
 >
   <img
     alt="team member"
@@ -16,20 +16,20 @@ exports[`renders correctly 1`] = `
       className="pt-6 font-sans text-lg font-bold text-gray-700"
     >
       <h2>
-        Member Name
+        Dhiaa Alshamy
       </h2>
     </div>
     <div
       className="py-2 font-sans text-xs font-bold text-gray-600 "
     >
       <h3>
-        Major
+        IT
       </h3>
     </div>
     <p
       className="pt-2 pb-4 text-xs text-gray-600"
     >
-      email.examlpe@gmail.com
+      example.exam@gmail.com
     </p>
   </div>
   <hr
@@ -39,7 +39,7 @@ exports[`renders correctly 1`] = `
     className="pt-4 "
   >
     <a
-      href="https://twitter.com/"
+      href="https://twitter.com"
       rel="noreferrer noopener"
       target="_blank"
     >
@@ -62,7 +62,7 @@ exports[`renders correctly 1`] = `
       </svg>
     </a>
     <a
-      href="https://www.linkedin.com/"
+      href="https://www.linkedin.com"
       rel="noreferrer noopener"
       target="_blank"
     >
@@ -85,7 +85,7 @@ exports[`renders correctly 1`] = `
       </svg>
     </a>
     <a
-      href="https://www.facebook.com/"
+      href="https://www.facebook.com"
       rel="noreferrer noopener"
       target="_blank"
     >
@@ -108,7 +108,7 @@ exports[`renders correctly 1`] = `
       </svg>
     </a>
     <a
-      href="https://www.instagram.com/"
+      href="https://www.instagram.com"
       rel="noreferrer noopener"
       target="_blank"
     >
