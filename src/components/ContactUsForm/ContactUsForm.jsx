@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { useTranslation } from 'react-i18next';
 import emailjs from 'emailjs-com';
+import Lottie from 'react-lottie';
+import received from '../../Lottie/message-received.json';
+import Modal, { Body } from '../common/Modal';
 
 export default function ContactUsForm() {
   const { t } = useTranslation();
@@ -11,6 +14,35 @@ export default function ContactUsForm() {
     email: Yup.string().email().required(t('EmailRequired')),
     message: Yup.string().required(t('MassageRequierd')),
   });
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: received,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
+  const [show, setShow] = useState(false);
+  const [errMsg, setErrMsg] = useState('');
+  const handleTarget = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        'gmail_Exhale',
+        'template_g1p37uk',
+        e.target,
+        'user_ux4cNdoe5I82QS9ztaxr7'
+      )
+      .then(
+        () => {
+          setShow(true);
+          setErrMsg('');
+        },
+        (error) => {
+          setErrMsg(error.text);
+        }
+      );
+  };
   return (
     <Formik
       initialValues={{ name: '', email: '', message: '' }}
@@ -21,17 +53,15 @@ export default function ContactUsForm() {
             .sendForm(
               'gmail_Exhale',
               'template_g1p37uk',
-              values.name,
+              values,
               'user_ux4cNdoe5I82QS9ztaxr7'
             )
-            .then(
-              (result) => {
-                // console.log(result.text);
-              },
-              (error) => {
-                // console.log(error.text);
-              }
-            );
+            .then((result) => {
+              // console.log(result);
+            })
+            .catch((error) => {
+              // console.log(error);
+            });
           setSubmitting(false);
         }, 500);
       }}
@@ -47,13 +77,13 @@ export default function ContactUsForm() {
                 {t('contactus')}
               </p>
             </div>
-            <form onSubmit={formik.handleSubmit}>
+            <form onSubmit={(formik.handleSubmit, handleTarget)}>
               <div className="mx-auto lg:w-1/2 md:w-2/3">
                 <div className="flex flex-wrap -m-2">
                   <div className="w-1/2 p-2">
                     <input
                       type="text"
-                      id="user-name"
+                      id="name"
                       name="name"
                       placeholder={t('Name')}
                       onChange={formik.handleChange}
@@ -69,7 +99,7 @@ export default function ContactUsForm() {
                   <div className="w-1/2 p-2">
                     <input
                       type="email"
-                      id="user-email"
+                      id="email"
                       name="email"
                       placeholder={t('Email')}
                       onChange={formik.handleChange}
@@ -107,8 +137,43 @@ export default function ContactUsForm() {
                   </div>
                 </div>
               </div>
+              <div className="text-lg text-red-500">{errMsg}</div>
             </form>
           </div>
+          {show ? (
+            <>
+              <Modal
+                show={show}
+                onClick={() => {
+                  setShow(false);
+                }}
+              >
+                <div>
+                  <Body>
+                    <div>
+                      <div>
+                        <h1 className="text-xl text-center text-teal-500">
+                          Thank you for contacting us
+                        </h1>
+                        <div className="relative w-64 h-64 mx-auto overflow-hidden">
+                          <Lottie
+                            options={defaultOptions}
+                            height="auto"
+                            width="100%"
+                          />
+                        </div>
+                        <div className="w-full mt-5 ">
+                          <p className="text-lg text-center text-blue-800">
+                            Your message have been received successfully.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </Body>
+                </div>
+              </Modal>
+            </>
+          ) : null}
         </section>
       )}
     </Formik>
