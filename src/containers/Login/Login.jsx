@@ -9,8 +9,7 @@ import Modal, { Header, Body } from '../../components/common/Modal/Modal';
 
 const Login = () => {
   const [isSignedIn, setisSignedIn] = useState(false);
-  const [clicked, setClicked] = useState(false);
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const { t } = useTranslation();
   const location = useLocation();
   useEffect(() => {
@@ -37,13 +36,12 @@ const Login = () => {
             type="button"
             className="inline-block w-full text-sm font-normal text-center text-blue-600 align-baseline focus:outline-none hover:text-blue-800"
             onClick={() => {
-              setClicked(!clicked);
               setShow(true);
             }}
           >
             {t('forgetpassword')}
           </button>
-          {clicked ? (
+          {show ? (
             <div>
               <Modal show={show} onClick={handleClose}>
                 <div>
