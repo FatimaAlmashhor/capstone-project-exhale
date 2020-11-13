@@ -8,8 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Nunito', ...defaultTheme.fontFamily.sans],
-        'sans-serif': ['El Messiri', 'Cairo'],
-        serif: ['Scheherazade', 'Markazi Text'],
+        Tajawal: 'sans-serif',
       },
       animation: {
         bounce: 'bounce 1s finite',

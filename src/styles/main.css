@@ -10873,8 +10873,8 @@ video {
   font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
 
-.font-sans-serif {
-  font-family: El Messiri;
+.font-Tajawal {
+  font-family: sans-serif;
 }
 
 .font-hairline {
@@ -30089,8 +30089,8 @@ video {
     font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   }
 
-  .sm\:font-sans-serif {
-    font-family: El Messiri;
+  .sm\:font-Tajawal {
+    font-family: sans-serif;
   }
 
   .sm\:font-hairline {
@@ -49276,8 +49276,8 @@ video {
     font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   }
 
-  .md\:font-sans-serif {
-    font-family: El Messiri;
+  .md\:font-Tajawal {
+    font-family: sans-serif;
   }
 
   .md\:font-hairline {
@@ -68463,8 +68463,8 @@ video {
     font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   }
 
-  .lg\:font-sans-serif {
-    font-family: El Messiri;
+  .lg\:font-Tajawal {
+    font-family: sans-serif;
   }
 
   .lg\:font-hairline {
@@ -87650,8 +87650,8 @@ video {
     font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   }
 
-  .xl\:font-sans-serif {
-    font-family: El Messiri;
+  .xl\:font-Tajawal {
+    font-family: sans-serif;
   }
 
   .xl\:font-hairline {
