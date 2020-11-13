@@ -4,12 +4,18 @@ import Article from '../../components/ArticleCard';
 import articles from '../../services/fakeArticleService';
 
 const Articles = () => {
-  const [artc, setstate] = useState([]);
+  const [artc, setstate] = useState(null);
 
   const getData = () => {
     articles.then((res) => {
       setstate(res);
     });
+    if (artc == null)
+      return (
+        <div>
+          <p>Loading articles please waite ...</p>
+        </div>
+      );
     return (
       <div className="flex flex-wrap -mb-4">
         {artc.map((article) => {
@@ -21,6 +27,7 @@ const Articles = () => {
                 img={article.articleImg}
                 paragraph={article.text.substring(1, 100)}
                 time={article.date}
+                articleLink={article.articleLink.replaceAll('/', '$')}
               />
             </div>
           );
