@@ -2,6 +2,7 @@ import React from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { useTranslation } from 'react-i18next';
+import emailjs from 'emailjs-com';
 
 export default function ContactUsForm() {
   const { t } = useTranslation();
@@ -14,72 +15,92 @@ export default function ContactUsForm() {
     <Formik
       initialValues={{ name: '', email: '', message: '' }}
       validationSchema={ReviewError}
+      onSubmit={(values, { setSubmitting }) => {
+        setTimeout(() => {
+          emailjs
+            .sendForm(
+              'gmail_Exhale',
+              'template_g1p37uk',
+              values.name,
+              'user_ux4cNdoe5I82QS9ztaxr7'
+            )
+            .then(
+              (result) => {
+                // console.log(result.text);
+              },
+              (error) => {
+                // console.log(error.text);
+              }
+            );
+          setSubmitting(false);
+        }, 500);
+      }}
     >
       {(formik) => (
         <section className="text-gray-700 body-font ">
           <div className="container px-5 py-24 mx-auto">
-            <div className="flex flex-col text-center w-full mb-12">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-blue-800">
+            <div className="flex flex-col w-full mb-12 text-center">
+              <h1 className="mb-4 text-2xl font-medium text-blue-800 sm:text-3xl title-font">
                 {t('GetInTouch')}
               </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+              <p className="mx-auto text-base leading-relaxed lg:w-2/3">
                 {t('contactus')}
               </p>
             </div>
             <form onSubmit={formik.handleSubmit}>
-              <div className="lg:w-1/2 md:w-2/3 mx-auto">
+              <div className="mx-auto lg:w-1/2 md:w-2/3">
                 <div className="flex flex-wrap -m-2">
-                  <div className="p-2 w-1/2">
+                  <div className="w-1/2 p-2">
                     <input
                       type="text"
-                      id="name"
+                      id="user-name"
                       name="name"
                       placeholder={t('Name')}
                       onChange={formik.handleChange}
-                      className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500"
                     />
 
                     {formik.errors.name && (
-                      <div className="text-red-500 text-sm font-bold">
+                      <div className="text-sm font-bold text-red-500">
                         {formik.errors.name}
                       </div>
                     )}
                   </div>
-                  <div className="p-2 w-1/2">
+                  <div className="w-1/2 p-2">
                     <input
                       type="email"
-                      id="email"
+                      id="user-email"
                       name="email"
                       placeholder={t('Email')}
                       onChange={formik.handleChange}
-                      className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500"
                     />
 
                     {formik.errors.email && (
-                      <div className="text-red-500 text-sm font-bold">
+                      <div className="text-sm font-bold text-red-500">
                         {formik.errors.email}
                       </div>
                     )}
                   </div>
-                  <div className="p-2 w-full">
+                  <div className="w-full p-2">
                     <textarea
                       id="message"
                       name="message"
                       placeholder={t('Message')}
                       onChange={formik.handleChange}
-                      className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                      className="w-full h-32 px-3 py-1 text-base leading-6 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none resize-none focus:border-indigo-500"
                     />
 
                     {formik.errors.message && (
-                      <div className="text-red-500 text-sm font-bold">
+                      <div className="text-sm font-bold text-red-500">
                         {formik.errors.message}
                       </div>
                     )}
                   </div>
-                  <div className="p-2 w-full">
+                  <div className="w-full p-2">
                     <button
                       type="submit"
-                      className="mt-5 px-4 py-3 w-full rounded text-white inline-block shadow-lg bg-blue-800 hover:bg-blue-600 focus:bg-blue-700"
+                      className="inline-block w-full px-4 py-3 mt-5 text-white bg-blue-800 rounded shadow-lg hover:bg-blue-600 focus:bg-blue-700"
                     >
                       {t('Send')}
                     </button>
