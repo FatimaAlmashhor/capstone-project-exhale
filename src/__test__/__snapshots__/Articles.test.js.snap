@@ -103,8 +103,7 @@ exports[`renders correctly 1`] = `
                   >
                     <li>
                       <a
-                        aria-current={null}
-                        href="// "
+                        href="//99"
                         onClick={[Function]}
                       >
                         read more
@@ -121,10 +120,359 @@ exports[`renders correctly 1`] = `
     <div
       className="w-full flex "
     />
-    <div>
-      <p>
-        Loading articles please waite ...
-      </p>
+    <div
+      className="flex flex-wrap -mb-4"
+    >
+      <div
+        className="w-1/3"
+      >
+        <section
+          className="blog "
+        >
+          <div
+            className="container px-5 py-24 mx-auto"
+          >
+            <div
+              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+            >
+              <div
+                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+              >
+                <div
+                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://media.gq-magazine.co.uk/photos/5d1390269a22c2b6ef9478f3/16:9/w_1920,c_limit/depression-gq-7aug18_istock_b.jpg",
+                    }
+                  }
+                />
+                <div
+                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                >
+                  <div
+                    className="header-content inline-flex"
+                  >
+                    <div
+                      className="category-title flex-1 text-sm text-gray-400"
+                    >
+                      March 12th, 2019
+                    </div>
+                  </div>
+                  <div
+                    className="title-post text-3xl"
+                  >
+                    <h2
+                      className="text-blue-500 "
+                    >
+                      What is depression
+                    </h2>
+                  </div>
+                  <div
+                    className="summary-post text-base text-justify text-1xl "
+                  >
+                    <p>
+                      epression is a common mental disorder affecting more than 264 million people worldwide. It is chara
+                    </p>
+                    <button
+                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      type="button"
+                    >
+                      <li>
+                        <a
+                          href="//1"
+                          onClick={[Function]}
+                        >
+                          What is depression
+                        </a>
+                      </li>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        className="w-1/3"
+      >
+        <section
+          className="blog "
+        >
+          <div
+            className="container px-5 py-24 mx-auto"
+          >
+            <div
+              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+            >
+              <div
+                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+              >
+                <div
+                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://media.gq-magazine.co.uk/photos/5d1390269a22c2b6ef9478f3/16:9/w_1920,c_limit/depression-gq-7aug18_istock_b.jpg",
+                    }
+                  }
+                />
+                <div
+                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                >
+                  <div
+                    className="header-content inline-flex"
+                  >
+                    <div
+                      className="category-title flex-1 text-sm text-gray-400"
+                    >
+                      March 12th, 2019
+                    </div>
+                  </div>
+                  <div
+                    className="title-post text-3xl"
+                  >
+                    <h2
+                      className="text-blue-500 "
+                    >
+                      What is depression
+                    </h2>
+                  </div>
+                  <div
+                    className="summary-post text-base text-justify text-1xl "
+                  >
+                    <p>
+                      epression is a common mental disorder affecting more than 264 million people worldwide. It is chara
+                    </p>
+                    <button
+                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      type="button"
+                    >
+                      <li>
+                        <a
+                          href="//2"
+                          onClick={[Function]}
+                        >
+                          What is depression
+                        </a>
+                      </li>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        className="w-1/3"
+      >
+        <section
+          className="blog "
+        >
+          <div
+            className="container px-5 py-24 mx-auto"
+          >
+            <div
+              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+            >
+              <div
+                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+              >
+                <div
+                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://media.gq-magazine.co.uk/photos/5d1390269a22c2b6ef9478f3/16:9/w_1920,c_limit/depression-gq-7aug18_istock_b.jpg",
+                    }
+                  }
+                />
+                <div
+                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                >
+                  <div
+                    className="header-content inline-flex"
+                  >
+                    <div
+                      className="category-title flex-1 text-sm text-gray-400"
+                    >
+                      March 12th, 2019
+                    </div>
+                  </div>
+                  <div
+                    className="title-post text-3xl"
+                  >
+                    <h2
+                      className="text-blue-500 "
+                    >
+                      What is depression
+                    </h2>
+                  </div>
+                  <div
+                    className="summary-post text-base text-justify text-1xl "
+                  >
+                    <p>
+                      epression is a common mental disorder affecting more than 264 million people worldwide. It is chara
+                    </p>
+                    <button
+                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      type="button"
+                    >
+                      <li>
+                        <a
+                          href="//3"
+                          onClick={[Function]}
+                        >
+                          What is depression
+                        </a>
+                      </li>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        className="w-1/3"
+      >
+        <section
+          className="blog "
+        >
+          <div
+            className="container px-5 py-24 mx-auto"
+          >
+            <div
+              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+            >
+              <div
+                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+              >
+                <div
+                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://media.gq-magazine.co.uk/photos/5d1390269a22c2b6ef9478f3/16:9/w_1920,c_limit/depression-gq-7aug18_istock_b.jpg",
+                    }
+                  }
+                />
+                <div
+                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                >
+                  <div
+                    className="header-content inline-flex"
+                  >
+                    <div
+                      className="category-title flex-1 text-sm text-gray-400"
+                    >
+                      March 12th, 2019
+                    </div>
+                  </div>
+                  <div
+                    className="title-post text-3xl"
+                  >
+                    <h2
+                      className="text-blue-500 "
+                    >
+                      What is depression
+                    </h2>
+                  </div>
+                  <div
+                    className="summary-post text-base text-justify text-1xl "
+                  >
+                    <p>
+                      epression is a common mental disorder affecting more than 264 million people worldwide. It is chara
+                    </p>
+                    <button
+                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      type="button"
+                    >
+                      <li>
+                        <a
+                          href="//4"
+                          onClick={[Function]}
+                        >
+                          What is depression
+                        </a>
+                      </li>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        className="w-1/3"
+      >
+        <section
+          className="blog "
+        >
+          <div
+            className="container px-5 py-24 mx-auto"
+          >
+            <div
+              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+            >
+              <div
+                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+              >
+                <div
+                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://media.gq-magazine.co.uk/photos/5d1390269a22c2b6ef9478f3/16:9/w_1920,c_limit/depression-gq-7aug18_istock_b.jpg",
+                    }
+                  }
+                />
+                <div
+                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                >
+                  <div
+                    className="header-content inline-flex"
+                  >
+                    <div
+                      className="category-title flex-1 text-sm text-gray-400"
+                    >
+                      March 12th, 2019
+                    </div>
+                  </div>
+                  <div
+                    className="title-post text-3xl"
+                  >
+                    <h2
+                      className="text-blue-500 "
+                    >
+                      What is depression
+                    </h2>
+                  </div>
+                  <div
+                    className="summary-post text-base text-justify text-1xl "
+                  >
+                    <p>
+                      epression is a common mental disorder affecting more than 264 million people worldwide. It is chara
+                    </p>
+                    <button
+                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      type="button"
+                    >
+                      <li>
+                        <a
+                          href="//5"
+                          onClick={[Function]}
+                        >
+                          What is depression
+                        </a>
+                      </li>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   </div>
 </div>

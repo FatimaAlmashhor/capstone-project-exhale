@@ -1,26 +1,8 @@
-/* eslint-disable no-use-before-define */
 /* eslint-disable no-await-in-loop */
-const express = require('express');
+/* eslint-disable no-use-before-define */
 const poppeter = require('puppeteer');
-const path = require('path');
 
-const app = express();
-
-app.use(function (req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header(
-    'Access-Control-Allow-Headers',
-    'Origin, X-Requested-With, Content-Type, Accept, Authorization'
-  );
-  res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
-  next();
-});
-
-// Serve the static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build')));
-
-// An api endpoint that returns a short list of items
-app.get('/api/getList', async function (req, res) {
+async function getArticles() {
   const browser = poppeter.launch();
   const page = (await browser).newPage();
   (await page).setDefaultNavigationTimeout(1000000);
@@ -55,16 +37,14 @@ app.get('/api/getList', async function (req, res) {
       articleLink: articleLink,
     });
   }
-
   (await browser).close();
-  res.json(articles);
-});
-app.get('/api/getList/item', async function (req, res) {
-  const { url } = req.query;
+  return articles;
+}
+async function getArticleContenet(articleUrl) {
   const browser = poppeter.launch();
   const page = (await browser).newPage();
   (await page).setDefaultNavigationTimeout(1000000);
-  await (await page).goto(url);
+  await (await page).goto(articleUrl);
 
   const pr1 = await getArticleParagraph(page, 1);
   const pr2 = await getArticleParagraph(page, 2);
@@ -76,14 +56,8 @@ app.get('/api/getList/item', async function (req, res) {
   const pr8 = await getArticleParagraph(page, 9);
   (await browser).close();
   const paragraphs = [pr1, pr2, pr3, pr4, pr5, pr6, pr7, pr8];
-  res.json(paragraphs);
-});
-
-// Handles any requests that don't match the ones above
-app.get('*', (req, res) => {
-  res.sendFile(path.join(`${__dirname}/client/build/index.html`));
-});
-
+  return paragraphs;
+}
 async function getArticleParagraph(page, num) {
   const fullTextPath = `//*[@id="block-narwhal-content"]/div/article/div/div[1]/p[${num}]`;
   const [fullTextEl1] = await (await page).$x(fullTextPath);
@@ -91,6 +65,4 @@ async function getArticleParagraph(page, num) {
   const fullTextContent1 = await fullText1.jsonValue();
   return fullTextContent1;
 }
-
-const port = process.env.PORT || 5000;
-app.listen(port);
+module.exports = { getArticle: getArticleContenet, getArticles: getArticles };
