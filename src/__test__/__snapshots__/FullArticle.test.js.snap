@@ -1,11 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
-  <div>
-    <h2>
-       Sorry. Article does not exist 
-    </h2>
-  </div>
-</div>
+Object {
+  "_Scheduler": Object {
+    "unstable_IdlePriority": 5,
+    "unstable_ImmediatePriority": 1,
+    "unstable_LowPriority": 4,
+    "unstable_NormalPriority": 3,
+    "unstable_Profiling": Object {
+      "sharedProfilingBuffer": SharedArrayBuffer {},
+      "startLoggingProfilingEvents": [Function],
+      "stopLoggingProfilingEvents": [Function],
+    },
+    "unstable_UserBlockingPriority": 2,
+    "unstable_advanceTime": [Function],
+    "unstable_cancelCallback": [Function],
+    "unstable_clearYields": [Function],
+    "unstable_continueExecution": [Function],
+    "unstable_flushAll": [Function],
+    "unstable_flushAllWithoutAsserting": [Function],
+    "unstable_flushExpired": [Function],
+    "unstable_flushNumberOfYields": [Function],
+    "unstable_flushUntilNextPaint": [Function],
+    "unstable_forceFrameRate": [Function],
+    "unstable_getCurrentPriorityLevel": [Function],
+    "unstable_getFirstCallbackNode": [Function],
+    "unstable_next": [Function],
+    "unstable_now": [Function],
+    "unstable_pauseExecution": [Function],
+    "unstable_requestPaint": [Function],
+    "unstable_runWithPriority": [Function],
+    "unstable_scheduleCallback": [Function],
+    "unstable_shouldYield": [Function],
+    "unstable_wrapCallback": [Function],
+    "unstable_yieldValue": [Function],
+  },
+  "act": [Function],
+  "create": [Function],
+  "unstable_batchedUpdates": [Function],
+  "unstable_concurrentAct": [Function],
+}
 `;
