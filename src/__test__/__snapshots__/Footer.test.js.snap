@@ -65,14 +65,16 @@ exports[`renders correctly 1`] = `
               className="inline-flex  mx-auto border-2 border-indigo-500 rounded overflow-hidden"
             >
               <button
-                className="py-1 px-4 bg-indigo-500 text-white hover:text-indigo-800 focus:text-indigo-800 focus:bg-indigo-300  focus:outline-none"
+                className="py-1 px-4 hover:text-gray-500 focus:text-gray-500 focus:outline-none bg-indigo-500"
+                id="btn-en"
                 onClick={[Function]}
                 type="button"
               >
                 English
               </button>
               <button
-                className="py-1 px-4 hover:text-gray-500 focus:text-gray-500 focus:outline-none"
+                className="py-1 px-4 hover:text-gray-500 focus:text-gray-500 focus:outline-none "
+                id="btn-ar"
                 onClick={[Function]}
                 type="button"
               >
