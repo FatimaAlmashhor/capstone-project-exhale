@@ -5,7 +5,7 @@ export const CONTACT_ROUTE = '/contact';
 export const SELF_ASSESSMENT_ROUTE = '/self-assessment';
 
 export const ARTICLES_BASE_ROUTE = '/articles';
-export const ARTICLE_ROUTE = `${ARTICLES_BASE_ROUTE}/:id`;
+export const ARTICLE_ROUTE = `${ARTICLES_BASE_ROUTE}/:articleLink`;
 
 export const LOGIN_ROUTE = '/login';
 export const SIGNUP_ROUTE = '/signup';

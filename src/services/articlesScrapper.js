@@ -37,7 +37,8 @@ async function getArticles() {
       articleLink: articleLink,
     });
   }
-  (await browser).close();
+
+  // (await browser).close();
   return articles;
 }
 async function getArticleContenet(articleUrl) {
@@ -54,15 +55,43 @@ async function getArticleContenet(articleUrl) {
   const pr6 = await getArticleParagraph(page, 7);
   const pr7 = await getArticleParagraph(page, 8);
   const pr8 = await getArticleParagraph(page, 9);
+
+  const img = await getArticleImage(
+    page,
+    '//*[@id="block-views-block-banner-image-block-1"]/div/div/div/div/div/div/div/img'
+  );
+  const title = await getArticleParagraph(
+    page,
+    '//*[@id="block-narwhal-page-title"]/div/h1/span'
+  );
+  const time = await getArticleParagraph(
+    page,
+    '//*[@id="block-narwhal-content"]/div/article/header/div/span'
+  );
   (await browser).close();
-  const paragraphs = [pr1, pr2, pr3, pr4, pr5, pr6, pr7, pr8];
-  return paragraphs;
+  const articleContent = {
+    paragraphs: [pr1, pr2, pr3, pr4, pr5, pr6, pr7, pr8],
+    imageUrl: img,
+    title: title,
+    time: time,
+  };
+  return articleContent;
 }
-async function getArticleParagraph(page, num) {
-  const fullTextPath = `//*[@id="block-narwhal-content"]/div/article/div/div[1]/p[${num}]`;
+async function getArticleParagraph(page, para) {
+  const fullTextPath =
+    typeof para === 'number'
+      ? `//*[@id="block-narwhal-content"]/div/article/div/div[1]/p[${para}]`
+      : para;
   const [fullTextEl1] = await (await page).$x(fullTextPath);
   const fullText1 = await fullTextEl1.getProperty('innerHTML');
   const fullTextContent1 = await fullText1.jsonValue();
   return fullTextContent1;
 }
+async function getArticleImage(page, path) {
+  const [imgEl] = await (await page).$x(path);
+  const imageSrc = await imgEl.getProperty('src');
+  const src = await imageSrc.jsonValue();
+  return src;
+}
+
 module.exports = { getArticle: getArticleContenet, getArticles: getArticles };

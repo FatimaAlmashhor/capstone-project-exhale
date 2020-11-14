@@ -30,7 +30,7 @@
     "yup": "^0.29.3"
   },
   "scripts": {
-    "start": "npm run watch:css && react-scripts start",
+    "start": "npm run watch:css && react-scripts start && npm run start-server",
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -38,7 +38,8 @@
     "postcommit": "git update-index -g",
     "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\"",
     "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
-    "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css"
+    "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
+    "start-server": "node server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -79,6 +80,7 @@
     "eslint-plugin-react": "^7.21.4",
     "eslint-plugin-react-hooks": "^4.1.2",
     "husky": "^4.3.0",
+    "jest-canvas-mock": "^2.3.0",
     "lint-staged": "^10.4.2",
     "postcss": "^8.1.1",
     "postcss-cli": "^8.1.0",

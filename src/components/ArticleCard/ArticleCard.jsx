@@ -34,14 +34,14 @@ const ArticleCard = ({ articleLink, id, title, paragraph, time, img }) => {
                   className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
                 >
                   <li key={articleLink}>
-                    <NavLink to={`${url}/${articleLink}`}>read more</NavLink>
+                    <Link to={`${url}/${articleLink}`}> read more </Link>
                   </li>
                 </button>
               </div>
             </div>
           </div>
           <Route path={`${url}/:articleLink`}>
-            <Article id={id} articleLink={articleLink} />
+            <Article id={id} articleLink={articleLink} img={img} />
           </Route>
         </div>
       </div>
@@ -96,7 +96,7 @@ export const HorizontalArticleCard = ({
                 <div className="summary-post text-base text-gray-500 pt-2 text-justify text-md ">
                   <p>{paragraph}</p>
                   <div className="mt-2">
-                    <Link
+                    <NavLink
                       to={`/articles/${index}`}
                       className="text-blue-400 hover:text-blue-900 text-sm transition duration-150 ease-in-out"
                     >
@@ -122,7 +122,7 @@ export const HorizontalArticleCard = ({
                           <path d="M4 1l4 4-4 4" />
                         </g>
                       </svg>
-                    </Link>
+                    </NavLink>
                     {authorImage && (
                       <div className="mt-6 flex flex-row items-center ">
                         <div className="flex-shrink-0">

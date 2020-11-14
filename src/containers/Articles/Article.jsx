@@ -1,10 +1,10 @@
 import React from 'react';
 import FullArticle from '../../components/FullArticle/Article';
 
-const Article = (artId) => {
+const Article = (artlink) => {
   return (
     <div>
-      <FullArticle id={artId} />
+      <FullArticle articleLink={artlink} />
     </div>
   );
 };

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Article from '../../components/ArticleCard';
 import articles from '../../services/fakeArticleService';
+import Loading from '../../components/Loading';
 
 const Articles = () => {
   const [artc, setstate] = useState(null);
@@ -13,7 +14,10 @@ const Articles = () => {
     if (artc == null)
       return (
         <div>
-          <p>Loading articles please waite ...</p>
+          <Loading />
+          <div className="content-center">
+            <p>Loading articles please waite ...</p>
+          </div>
         </div>
       );
     return (
