@@ -10873,6 +10873,10 @@ video {
   font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
 
+.font-Tajawal {
+  font-family: sans-serif;
+}
+
 .font-hairline {
   font-weight: 100;
 }
@@ -30085,6 +30089,10 @@ video {
     font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   }
 
+  .sm\:font-Tajawal {
+    font-family: sans-serif;
+  }
+
   .sm\:font-hairline {
     font-weight: 100;
   }
@@ -49266,6 +49274,10 @@ video {
 
   .md\:font-mono {
     font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  }
+
+  .md\:font-Tajawal {
+    font-family: sans-serif;
   }
 
   .md\:font-hairline {
@@ -68451,6 +68463,10 @@ video {
     font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   }
 
+  .lg\:font-Tajawal {
+    font-family: sans-serif;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -87632,6 +87648,10 @@ video {
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  }
+
+  .xl\:font-Tajawal {
+    font-family: sans-serif;
   }
 
   .xl\:font-hairline {
