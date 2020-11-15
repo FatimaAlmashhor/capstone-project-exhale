@@ -1,5 +1,7 @@
 /* eslint-disable react/button-has-type */
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Article from '../../components/ArticleCard';
 import articles from '../../services/fakeArticleService';
 import Loading from '../../components/Loading';
@@ -7,7 +9,7 @@ import Loading from '../../components/Loading';
 const Articles = () => {
   const [artc, setstate] = useState(null);
 
-  const getData = () => {
+  const getArticles = () => {
     articles.then((res) => {
       setstate(res);
     });
@@ -15,7 +17,7 @@ const Articles = () => {
       return (
         <div>
           <Loading />
-          <div className="content-center">
+          <div className="text-cente">
             <p>Loading articles please waite ...</p>
           </div>
         </div>
@@ -24,7 +26,7 @@ const Articles = () => {
       <div className="flex flex-wrap -mb-4">
         {artc.map((article) => {
           return (
-            <div className="w-1/3">
+            <div className="lg:w-1/3 md:w-1/2 sm:w-1 min-w-0">
               <Article
                 id={article.id}
                 title={article.title}
@@ -39,10 +41,32 @@ const Articles = () => {
       </div>
     );
   };
+  const geHeadArticle = () => {
+    if (artc == null)
+      return (
+        <div>
+          <Loading />
+          <div className="text-cente">
+            <p>Loading articles please waite ...</p>
+          </div>
+        </div>
+      );
+    const headArt = artc[Math.floor(Math.random() * artc.length)];
+    return (
+      <Article
+        id={headArt.id}
+        title={headArt.title}
+        img={headArt.articleImg}
+        paragraph={headArt.text.substring(1, 100)}
+        time={headArt.date}
+        articleLink={headArt.articleLink.replaceAll('/', '$')}
+      />
+    );
+  };
   return (
-    <div>
-      <div className="text-center">
-        <h1 className="text-4xl lg:text-5xl font-bold leading-tight">Articles</h1>
+    <div className="p-10">
+      <div className="mt-6 text-center ">
+        <h1 className="text-xl text-gray-600">Mental Health Articles & Advices</h1>
         <div className="flex box-content justify-center">
           <p className="font-mono w-2/4">
             Extreme emotions, attitudes, and behaviors involving weight and food is a
@@ -50,20 +74,23 @@ const Articles = () => {
             how to get help.
           </p>
         </div>
-        <div className="flex box-content justify-center">
-          <div className="flex box-content justify-center bg-white rounded-full shadow-xl w-2/5">
+        <div className="m-5 flex box-content justify-center">
+          <div className="flex box-content justify-center bg-white rounded-full border border-black-600 w-2/5">
             <input
-              className="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none"
+              className="rounded-l-full w-full py-1 px-4 text-gray-700 leading-tight focus:outline-none"
               id="search"
               type="text"
               placeholder="Search"
             />
-            <div className="p-4">
+            <div className="p-1">
               <button
                 type="button"
                 className="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center"
               >
-                icon
+                <FontAwesomeIcon
+                  className="pt-1 text-lg text-white md:text-xl"
+                  icon={faSearch}
+                />
               </button>
             </div>
           </div>
@@ -71,16 +98,9 @@ const Articles = () => {
       </div>
 
       <div className="flex flex-col">
-        <div className="w-full flex-grow">
-          <Article
-            id={99}
-            title="Coming Out About Mental Health On Social Media"
-            img="https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851"
-            paragraph="Susanna Harris was sitting in her lab class for her graduate program at the University of North Carolina at Chapel Hill when she received an email that told her she had failed ."
-          />
-        </div>
+        <div className="w-full flex-grow">{geHeadArticle()}</div>
         <div className="w-full flex " />
-        {getData()}
+        {getArticles()}
       </div>
     </div>
   );

@@ -8,9 +8,9 @@ const ArticleCard = ({ articleLink, id, title, paragraph, time, img }) => {
   const { url } = useRouteMatch();
   return (
     <section className="blog ">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-12 mx-auto">
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-          <div className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto">
+          <div className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center mx-auto">
             {img && (
               <div
                 className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
