@@ -1,3 +1,4 @@
+import 'jest-canvas-mock';
 import React from 'react';
 import 'react-router-dom';
 import renderer from 'react-test-renderer';
