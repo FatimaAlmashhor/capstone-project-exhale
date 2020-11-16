@@ -65,8 +65,8 @@ const Signup = () => {
               </div>
             </div>
             <RegisterForm />
-            <div className="text-center">
-              <p className="mt-5 text-sm text-gray-500">
+            <div className="text-center ">
+              <p className="mt-1 text-sm text-gray-500">
                 {t('haveAccount')}
                 <Link
                   className="text-blue-500 cursor-pointer "

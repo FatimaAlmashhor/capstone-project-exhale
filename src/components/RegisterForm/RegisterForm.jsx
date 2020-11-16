@@ -48,7 +48,7 @@ export default function RegisterForm() {
             className=" pt-6 pb-8 mb-4 bg-white rounded w-full"
           >
             <input
-              className="w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
+              className=" w-full  p-2 md:p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
               id="name"
               name="name"
               type="text"
@@ -59,7 +59,7 @@ export default function RegisterForm() {
               <div className="text-sm  mt-2 text-red-400">{formik.errors.name}</div>
             )}
             <input
-              className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
+              className="mt-2 md:mt-4 w-full  p-2 md:p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
               id="email"
               name="email"
               type="text"
@@ -70,7 +70,7 @@ export default function RegisterForm() {
               <div className="text-sm  mt-2 text-red-400">{formik.errors.email}</div>
             )}
             <input
-              className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
+              className="mt-2 md:mt-4 w-full  p-2 md:p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
               id="password"
               name="password"
               type="password"
@@ -83,7 +83,7 @@ export default function RegisterForm() {
               </div>
             )}
             <input
-              className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
+              className=" mt-2 md:mt-4 w-full  p-2 md:p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
               id="confirmPassword"
               name="confirmPassword"
               type="password"
@@ -96,7 +96,7 @@ export default function RegisterForm() {
               </div>
             )}
             <button
-              className="w-full px-4 py-3 mt-4 font-bold text-white bg-blue-800 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+              className="w-full px-2 py-1 md:px-4 py-3 mt-4 font-bold text-white bg-blue-800 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
               type="submit"
             >
               {t('SignUP')}
