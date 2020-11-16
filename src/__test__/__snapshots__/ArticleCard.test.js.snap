@@ -5,13 +5,13 @@ exports[`renders correctly 1`] = `
   className="blog "
 >
   <div
-    className="container px-5 py-24 mx-auto"
+    className="container px-5 py-12 mx-auto"
   >
     <div
       className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
     >
       <div
-        className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+        className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center mx-auto"
       >
         <div
           className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
@@ -30,7 +30,7 @@ exports[`renders correctly 1`] = `
             <div
               className="category-title flex-1 text-sm text-gray-400"
             >
-              11/15/2020
+              11/16/2020
             </div>
           </div>
           <div
@@ -102,7 +102,7 @@ exports[`renders correctly 2`] = `
               <div
                 className="category-title mt-10 w-full  flex-1 text-sm text-gray-400"
               >
-                11/15/2020
+                11/16/2020
               </div>
             </div>
             <div

@@ -1,14 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
+<div
+  className="p-10"
+>
   <div
-    className="text-center"
+    className="mt-6 text-center "
   >
     <h1
-      className="text-4xl lg:text-5xl font-bold leading-tight"
+      className="text-xl text-gray-600"
     >
-      Articles
+      Mental Health Articles & Advices
     </h1>
     <div
       className="flex box-content justify-center"
@@ -20,25 +22,41 @@ exports[`renders correctly 1`] = `
       </p>
     </div>
     <div
-      className="flex box-content justify-center"
+      className="m-5 flex box-content justify-center"
     >
       <div
-        className="flex box-content justify-center bg-white rounded-full shadow-xl w-2/5"
+        className="flex box-content justify-center bg-white rounded-full border border-black-600 w-2/5"
       >
         <input
-          className="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none"
+          className="rounded-l-full w-full py-1 px-4 text-gray-700 leading-tight focus:outline-none"
           id="search"
           placeholder="Search"
           type="text"
         />
         <div
-          className="p-4"
+          className="p-1"
         >
           <button
             className="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center"
             type="button"
           >
-            icon
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-search fa-w-16 pt-1 text-lg text-white md:text-xl"
+              data-icon="search"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -50,72 +68,39 @@ exports[`renders correctly 1`] = `
     <div
       className="w-full flex-grow"
     >
-      <section
-        className="blog "
-      >
+      <div>
         <div
-          className="container px-5 py-24 mx-auto"
+          className="w-full h-full flex content-center "
         >
           <div
-            className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+            className="mx-auto mt-20 my-20 container w-1/5 items-center"
           >
             <div
-              className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
-            >
-              <div
-                className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
-                style={
-                  Object {
-                    "backgroundImage": "url(https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851",
-                  }
+              aria-label="animation"
+              onClick={[Function]}
+              role="button"
+              style={
+                Object {
+                  "height": "auto",
+                  "margin": "0 auto",
+                  "outline": "none",
+                  "overflow": "hidden",
+                  "width": "400px",
                 }
-              />
-              <div
-                className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
-              >
-                <div
-                  className="header-content inline-flex"
-                >
-                  <div
-                    className="category-title flex-1 text-sm text-gray-400"
-                  >
-                    11/15/2020
-                  </div>
-                </div>
-                <div
-                  className="title-post text-3xl"
-                >
-                  <h2
-                    className="text-blue-500 "
-                  >
-                    Coming Out About Mental Health On Social Media
-                  </h2>
-                </div>
-                <div
-                  className="summary-post text-base text-justify text-1xl "
-                >
-                  <p>
-                    Susanna Harris was sitting in her lab class for her graduate program at the University of North Carolina at Chapel Hill when she received an email that told her she had failed .
-                  </p>
-                  <button
-                    className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
-                    type="button"
-                  >
-                    <li>
-                      <a
-                        href="// "
-                        onClick={[Function]}
-                      >
-                         read more 
-                      </a>
-                    </li>
-                  </button>
-                </div>
-              </div>
-            </div>
+              }
+              tabIndex="0"
+              title=""
+            />
           </div>
         </div>
-      </section>
+        <div
+          className="text-cente"
+        >
+          <p>
+            Loading articles please waite ...
+          </p>
+        </div>
+      </div>
     </div>
     <div
       className="w-full flex "
@@ -146,12 +131,26 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="content-center"
+        className="text-cente"
       >
         <p>
           Loading articles please waite ...
         </p>
       </div>
+    </div>
+    <div
+      className="flex"
+    >
+      <button
+        className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm m-auto"
+        onClick={[Function]}
+        type="button"
+      >
+        show more
+      </button>
+    </div>
+    <div>
+       
     </div>
   </div>
 </div>
