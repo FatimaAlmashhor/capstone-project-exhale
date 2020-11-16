@@ -7,8 +7,8 @@ export default function ProgressBar({ now, max, showLabel }) {
       {showLabel && <p>{`${now}\\${max}`}</p>}
       <div className="overflow-hidden  h-2 mb-4 text-xs flex rounded bg-blue-200">
         <div
-          style={{ width: `${2 * now}%` }}
-          className="shadow-none  flex flex-col text-center whitespace-nowrap text-white justify-center  bg-yellow-500"
+          style={{ width: `${7 * now}%` }}
+          className="shadow-none  flex flex-col text-center whitespace-nowrap text-white justify-center  bg-yellow-500 transition-all duration-200"
         />
       </div>
     </div>
