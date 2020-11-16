@@ -208,6 +208,7 @@ function Navbar() {
                   ) : (
                     <>
                       <NavLink
+                        onClick={() => toggleExpansion(false)}
                         className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out border-b rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                         to={{
                           pathname: SIGNUP_ROUTE,
@@ -228,6 +229,7 @@ function Navbar() {
                         <p className="text-base font-medium leading-6 text-center text-gray-500">
                           Existing User?&nbsp;
                           <NavLink
+                            onClick={() => toggleExpansion(false)}
                             to={{
                               pathname: LOGIN_ROUTE,
                               state: { modal: location },

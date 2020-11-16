@@ -9,12 +9,12 @@ const Modal = ({ show, onClick, children }) => {
       {show ? (
         <>
           <div
-            className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none"
+            className="fixed top-0 right-0 left-0  mt-5 xl:inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none"
             onClick={onClick}
           >
             <div
               onClick={(e) => e.stopPropagation()}
-              className="relative w-auto max-w-5xl mx-auto my-auto"
+              className="relative w-auto w-auto"
             >
               {/* content */}
               <div className="relative flex flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none">
