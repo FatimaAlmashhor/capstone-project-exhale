@@ -5,6 +5,8 @@ import Singin from '../../../../containers/Login';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import fire, { uiConfig } from '../../../../firebase';
 import Modal, { Header, Body } from '../../Modal';
+import Lottie from 'react-lottie';
+import hi from '../../../../Lottie/hello.json';
 
 const ModalHolder = () => {
     const {id} = useParams() ;
@@ -17,25 +19,39 @@ const ModalHolder = () => {
         setShow(false)
         history.push(previsePath) 
     }
-    React.useEffect(()=>{
-            console.log(location);
-            console.log(previsePath);
-    } , [location])
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: hi,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice',
+        },
+      };
     return (
         <div>
             <Modal show={show} onClick={handleClose}>
             <div>
                 <Header title={id === 'login' ? "SIGN IN" : "SING UP"} onClick={handleClose} />
                <Body>
-               
-            <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={fire.auth()} />
-            {
-                id == 'login' ?(
-                    <Singin />
-                ):(
-                    <Signup />
-                )
-            }
+                <div className ='flex flex-col md:flex-row-reverse'>
+                  <div class='mx-6 mt-3  md:border-l-2'>
+                   <div className ="overflow-hidden hidden md:block">
+                     <Lottie options={defaultOptions} height='auto' width='120%' />
+                   </div>
+                   <div className='mx-auto'>
+                    <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={fire.auth()} />
+                   </div>
+                  </div>
+                  <div>
+                     {
+                      id == 'login' ?(
+                        <Singin />
+                      ):(
+                        <Signup />
+                     )
+                     }
+                    </div>
+                     </div>
                </Body>
                 </div>
             </Modal>

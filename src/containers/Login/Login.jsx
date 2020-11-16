@@ -1,29 +1,63 @@
 import React, { useState, useEffect } from 'react';
 import firebase from 'firebase';
 import { useTranslation } from 'react-i18next';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
+import Lottie from 'react-lottie';
 import LoginForm from '../../components/LoginForm';
 import { SIGNUP_ROUTE } from '../../routes';
 import ResetPassword from '../../components/resetPassword/ResetPassword';
 import Modal, { Header, Body } from '../../components/common/Modal/Modal';
+import check from '../../Lottie/check-animation.json';
 
 const Login = () => {
   const [isSignedIn, setisSignedIn] = useState(false);
   const [show, setShow] = useState(false);
   const { t } = useTranslation();
   const location = useLocation();
+  const history = useHistory();
   useEffect(() => {
     firebase.auth().onAuthStateChanged((user) => {
       setisSignedIn(!!user);
+      if (isSignedIn) {
+        setTimeout(() => {
+          history.push('/');
+        }, 2000);
+      }
     });
   });
   const handleClose = () => setShow(false);
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: check,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
   return (
     <div>
       {isSignedIn ? (
-        <span>
-          <div className="text-red-600">Logged In!</div>
-        </span>
+        <>
+          <Modal
+            show={isSignedIn}
+            onClick={() => {
+              setisSignedIn(false);
+            }}
+          >
+            <div>
+              <Body>
+                <div>
+                  <div>
+                    <Lottie options={defaultOptions} height={300} width={300} />
+                  </div>
+                  <h1 className="text-center mt-5 text-blue-600">
+                    You Successfully Logged in!
+                  </h1>
+                </div>
+              </Body>
+            </div>
+          </Modal>
+        </>
       ) : (
         <>
           <div className="my-2 text-center border-b">
