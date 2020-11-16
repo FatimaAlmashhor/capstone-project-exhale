@@ -8,15 +8,15 @@ exports[`renders correctly 1`] = `
     className="container px-5 py-24 mx-auto"
   >
     <div
-      className="flex flex-col text-center w-full mb-12"
+      className="flex flex-col w-full mb-12 text-center"
     >
       <h1
-        className="sm:text-3xl text-2xl font-medium title-font mb-4 text-blue-800"
+        className="mb-4 text-2xl font-medium text-blue-800 sm:text-3xl title-font"
       >
         GetInTouch
       </h1>
       <p
-        className="lg:w-2/3 mx-auto leading-relaxed text-base"
+        className="mx-auto text-base leading-relaxed lg:w-2/3"
       >
         contactus
       </p>
@@ -25,57 +25,62 @@ exports[`renders correctly 1`] = `
       onSubmit={[Function]}
     >
       <div
-        className="lg:w-1/2 md:w-2/3 mx-auto"
+        className="mx-auto lg:w-1/2 md:w-2/3"
       >
         <div
           className="flex flex-wrap -m-2"
         >
           <div
-            className="p-2 w-1/2"
+            className="w-1/2 p-2"
           >
             <input
-              className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500"
               id="name"
               name="name"
-              onChange={[Function]}
               placeholder="Name"
+              required={true}
               type="text"
             />
           </div>
           <div
-            className="p-2 w-1/2"
+            className="w-1/2 p-2"
           >
             <input
-              className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500"
               id="email"
               name="email"
-              onChange={[Function]}
               placeholder="Email"
+              required={true}
               type="email"
             />
           </div>
           <div
-            className="p-2 w-full"
+            className="w-full p-2"
           >
             <textarea
-              className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              className="w-full h-32 px-3 py-1 text-base leading-6 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none resize-none focus:border-indigo-500"
               id="message"
               name="message"
-              onChange={[Function]}
               placeholder="Message"
+              required={true}
             />
           </div>
           <div
-            className="p-2 w-full"
+            className="w-full p-2"
           >
             <button
-              className="mt-5 px-4 py-3 w-full rounded text-white inline-block shadow-lg bg-blue-800 hover:bg-blue-600 focus:bg-blue-700"
+              className="inline-block w-full px-4 py-3 mt-5 text-white bg-blue-800 rounded shadow-lg hover:bg-blue-600 focus:bg-blue-700"
               type="submit"
             >
               Send
             </button>
           </div>
         </div>
+      </div>
+      <div
+        className="text-lg text-center text-red-500"
+      >
+        
       </div>
     </form>
   </div>

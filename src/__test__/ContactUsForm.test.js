@@ -1,3 +1,4 @@
+import 'jest-canvas-mock';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import ContactUsForm from '../components/ContactUsForm';
