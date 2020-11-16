@@ -109,11 +109,11 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap">
           <div className="w-full md:w-4/12 px-4">
-            <h4 className="text-3xl font-semibold border-b pb-4">
+            <h4 className="text-3xl font-semibold text-gray-200 border-b pb-4">
               What is a Exhale
               <span className="text-4xl text-red-500">?</span>
             </h4>
-            <h5 className="text-md mt-0 mb-2 text-gray-300 pt-2">
+            <h5 className="text-md mt-0 mb-2 text-gray-400 pt-2">
               Mental health includes our emotional, psychological, and social
               well-being. It affects how we think, feel, and act. It also helps
               determine how we handle stress, relate to others, and make choices.
@@ -127,7 +127,7 @@ const Footer = () => {
                 <span className="block pt-4 uppercase text-white text-sm font-semibold mb-2">
                   Pages
                 </span>
-                <ul className="list-unstyled">
+                <ul className="list-unstyled text-gray-400">
                   <li>
                     <Link to={HOME_ROUTE}>Home</Link>
                   </li>
@@ -143,7 +143,7 @@ const Footer = () => {
                 <span className="block pt-4 uppercase text-white text-sm font-semibold mb-2">
                   Team
                 </span>
-                <ul className="list-unstyled">
+                <ul className="list-unstyled text-gray-400">
                   <Link to={ABOUT_ROUTE}>About Us</Link>
                   <li>
                     <Link to={CONTACT_ROUTE}> Get in touch</Link>
@@ -228,7 +228,7 @@ export const DropdownButton = () => {
     i18n.changeLanguage(lng);
   };
   return (
-    <div className="inline-flex  mx-auto border-2 border-indigo-500 rounded overflow-hidden">
+    <div className="inline-flex text-gray-400 mx-auto border-2 border-indigo-500 rounded overflow-hidden">
       <button
         id="btn-en"
         type="button"

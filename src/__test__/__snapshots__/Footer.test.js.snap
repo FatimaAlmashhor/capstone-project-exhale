@@ -38,7 +38,7 @@ exports[`renders correctly 1`] = `
         className="w-full md:w-4/12 px-4"
       >
         <h4
-          className="text-3xl font-semibold border-b pb-4"
+          className="text-3xl font-semibold text-gray-200 border-b pb-4"
         >
           What is a Exhale
           <span
@@ -48,7 +48,7 @@ exports[`renders correctly 1`] = `
           </span>
         </h4>
         <h5
-          className="text-md mt-0 mb-2 text-gray-300 pt-2"
+          className="text-md mt-0 mb-2 text-gray-400 pt-2"
         >
           Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood.
         </h5>
@@ -68,7 +68,7 @@ exports[`renders correctly 1`] = `
               Pages
             </span>
             <ul
-              className="list-unstyled"
+              className="list-unstyled text-gray-400"
             >
               <li>
                 <a
@@ -105,7 +105,7 @@ exports[`renders correctly 1`] = `
               Team
             </span>
             <ul
-              className="list-unstyled"
+              className="list-unstyled text-gray-400"
             >
               <a
                 href="/about"
@@ -146,7 +146,7 @@ exports[`renders correctly 1`] = `
             className="mt-10 flex  justify-self-end w-full text-right"
           >
             <div
-              className="inline-flex  mx-auto border-2 border-indigo-500 rounded overflow-hidden"
+              className="inline-flex text-gray-400 mx-auto border-2 border-indigo-500 rounded overflow-hidden"
             >
               <button
                 className="py-1 px-4 hover:text-gray-500 focus:text-gray-200 focus:outline-none "
