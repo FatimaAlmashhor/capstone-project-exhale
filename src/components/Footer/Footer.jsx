@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -85,23 +85,36 @@ const Footer = () => {
 export default Footer;
 
 export const DropdownButton = () => {
+  const [lang, changeLang] = useState(
+    i18n.language || window.localStorage.i18nextLng
+  );
   const changeLanguage = (lng) => {
+    changeLang(lng);
     i18n.changeLanguage(lng);
   };
-
   return (
     <div className="inline-flex  mx-auto border-2 border-indigo-500 rounded overflow-hidden">
       <button
+        id="btn-en"
         type="button"
         onClick={() => changeLanguage('en')}
-        className="py-1 px-4 bg-indigo-500 text-white hover:text-indigo-800 focus:text-indigo-800 focus:bg-indigo-300  focus:outline-none"
+        className={
+          lang === 'en'
+            ? 'py-1 px-4 hover:text-gray-500 focus:text-gray-500 focus:outline-none bg-indigo-500'
+            : 'py-1 px-4 hover:text-gray-500 focus:text-gray-500 focus:outline-none '
+        }
       >
         English
       </button>
       <button
+        id="btn-ar"
         type="button"
-        onClick={() => changeLanguage('ar')}
-        className="py-1 px-4 hover:text-gray-500 focus:text-gray-500 focus:outline-none"
+        onClick={(e) => changeLanguage('ar', e)}
+        className={
+          lang === 'ar'
+            ? 'py-1 px-4 hover:text-gray-500 focus:text-gray-500 focus:outline-none bg-indigo-500'
+            : 'py-1 px-4 hover:text-gray-500 focus:text-gray-500 focus:outline-none '
+        }
       >
         العربيه
       </button>
