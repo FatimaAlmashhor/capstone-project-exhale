@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 import LoginForm from '../../components/LoginForm';
