@@ -4,68 +4,32 @@ exports[`renders correctly 1`] = `
 <div
   className="max-w-screen-sm overflow-hidden rounded  md:max-w-xs lg:max-w-xs"
 >
-  <img
-    alt="Sunset in the mountains"
-    className="w-full"
-    src="https://cdn.benchmark.pl/uploads/article/72855/MODERNICON/4f91fb01300b74ba42dcf080665285f3f56bd4ff.jpg"
-  />
   <div
-    className="px-6 py-4"
+    className="w-3/5 mx-auto mt-5 border-4 border-blue-700 rounded-full"
+  >
+    <img
+      alt="Sunset in the mountains"
+      className=" "
+      src="https://www.shareicon.net/data/512x512/2016/08/18/813849_people_512x512.png"
+    />
+  </div>
+  <div
+    className="px-6 py-4 mx-auto"
   >
     <div
-      className="mb-2 text-xl font-bold"
+      className="mb-2  mx-auto text-center text-xl font-bold"
     >
       <span>
          
       </span>
     </div>
-    <p
-      className="text-base text-gray-700"
-    >
-      <span>
-        Specialty :
-      </span>
-       
-    </p>
-    <p
-      className="text-base text-gray-700"
-    >
-      <span>
-        Work Place :
-      </span>
-      dose not add work place yet
-    </p>
-    <p
-      className="text-base text-gray-700"
-    >
-      <span>
-        Address :
-      </span>
-      dose not add address yet
-    </p>
-    <p
-      className="text-base text-gray-700"
-    >
-      <span>
-        Email :
-      </span>
-      dose not add email yet
-    </p>
-    <p
-      className="text-base text-gray-700"
-    >
-      <span>
-        Phone :
-      </span>
-      555555555555
-    </p>
   </div>
   <div
-    className="px-6 pt-4 pb-2"
+    className="px-6 pt-4 pb-2  text-center"
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-twitter fa-w-16 text-lg text-black"
+      className="svg-inline--fa fa-twitter fa-w-16 text-lg text-gray-600 hover:text-blue-400 cursor-pointer"
       data-icon="twitter"
       data-prefix="fab"
       focusable="false"
@@ -82,7 +46,7 @@ exports[`renders correctly 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-facebook fa-w-16 mx-3 text-lg"
+      className="svg-inline--fa fa-facebook fa-w-16 mx-3 text-gray-600 hover:text-blue-700 text-lg cursor-pointer"
       data-icon="facebook"
       data-prefix="fab"
       focusable="false"
@@ -99,7 +63,7 @@ exports[`renders correctly 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-linkedin fa-w-14 mx-3 text-lg"
+      className="svg-inline--fa fa-linkedin fa-w-14 mx-3 text-lg text-gray-600 hover:text-blue-700 cursor-pointer"
       data-icon="linkedin"
       data-prefix="fab"
       focusable="false"
@@ -116,7 +80,7 @@ exports[`renders correctly 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-instagram fa-w-14 mx-3 text-lg"
+      className="svg-inline--fa fa-instagram fa-w-14 mx-3 text-lg text-gray-600 hover:text-red-700 cursor-pointer"
       data-icon="instagram"
       data-prefix="fab"
       focusable="false"

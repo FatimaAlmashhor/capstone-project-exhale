@@ -2,7 +2,7 @@ export const doctors = [
   {
     id: 1,
     image:
-      'https://images.all-free-download.com/images/graphiclarge/doctor_work_painting_colored_cartoon_character_sketch_6847622.jpg',
+      'https://www.shareicon.net/data/512x512/2016/08/18/813849_people_512x512.png',
     name: "Dr. Nabeel No'man",
     specialty: 'Depression',
     workplace: 'Azal Hospital',
@@ -13,7 +13,7 @@ export const doctors = [
   {
     id: 2,
     image:
-      'https://images.all-free-download.com/images/graphiclarge/doctor_work_painting_colored_cartoon_character_sketch_6847622.jpg',
+      'https://www.shareicon.net/data/512x512/2016/08/18/813849_people_512x512.png',
     name: "Dr. Nabeel No'man",
     specialty: 'Depression',
     workplace: 'Azal Hospital',
@@ -24,7 +24,7 @@ export const doctors = [
   {
     id: 3,
     image:
-      'https://images.all-free-download.com/images/graphiclarge/doctor_work_painting_colored_cartoon_character_sketch_6847622.jpg',
+      'https://www.shareicon.net/data/512x512/2016/08/18/813844_people_512x512.png',
     name: "Dr. Nabeel No'man",
     specialty: 'Depression',
     workplace: 'Azal Hospital',
@@ -35,7 +35,7 @@ export const doctors = [
   {
     id: 4,
     image:
-      'https://images.all-free-download.com/images/graphiclarge/doctor_work_painting_colored_cartoon_character_sketch_6847622.jpg',
+      'https://www.shareicon.net/data/512x512/2016/08/18/813849_people_512x512.png',
     name: "Dr. Nabeel No'man",
     specialty: 'Depression',
     workplace: 'Azal Hospital',
@@ -46,7 +46,7 @@ export const doctors = [
   {
     id: 5,
     image:
-      'https://images.all-free-download.com/images/graphiclarge/doctor_work_painting_colored_cartoon_character_sketch_6847622.jpg',
+      'https://www.shareicon.net/data/512x512/2016/08/18/813844_people_512x512.png',
     name: "Dr. Nabeel No'man",
     specialty: 'Depression',
     workplace: 'Azal Hospital',
@@ -57,7 +57,7 @@ export const doctors = [
   {
     id: 6,
     image:
-      'https://images.all-free-download.com/images/graphiclarge/doctor_work_painting_colored_cartoon_character_sketch_6847622.jpg',
+      'https://www.shareicon.net/data/512x512/2016/08/18/813849_people_512x512.png',
     name: "Dr. Nabeel No'man",
     specialty: 'Depression',
     workplace: 'Azal Hospital',
@@ -68,7 +68,7 @@ export const doctors = [
   {
     id: 7,
     image:
-      'https://images.all-free-download.com/images/graphiclarge/doctor_work_painting_colored_cartoon_character_sketch_6847622.jpg',
+      'https://www.shareicon.net/data/512x512/2016/08/18/813849_people_512x512.png',
     name: "Dr. Nabeel No'man",
     specialty: 'Depression',
     workplace: 'Azal Hospital',
@@ -79,7 +79,7 @@ export const doctors = [
   {
     id: 8,
     image:
-      'https://images.all-free-download.com/images/graphiclarge/doctor_work_painting_colored_cartoon_character_sketch_6847622.jpg',
+      'https://www.shareicon.net/data/512x512/2016/08/18/813844_people_512x512.png',
     name: "Dr. Nabeel No'man",
     specialty: 'Depression',
     workplace: 'Azal Hospital',

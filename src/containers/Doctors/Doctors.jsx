@@ -1,41 +1,111 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import Card from '../../components/common/Card/Card';
-import DoctorCard from '../../components/DoctorCard/DoctorCard';
-import FirstDoctorCard from '../../components/DoctorCard/FirstDoctorCard';
+/* eslint-disable react/button-has-type */
+/* eslint-disable jsx-a11y/control-has-associated-label */
+import React, { useState } from 'react';
 import { doctors } from '../../services/fakeDoctorsServices';
+import DoctorCard from '../../components/DoctorCard';
+import Modal, { Body } from '../../components/common/Modal';
 
 const Doctors = () => {
-  const { t } = useTranslation();
+  const [show, setShow] = useState(false);
+  const [doctorId, setDoctorId] = useState(-1);
   return (
-    <div className="p-10">
-      <div className="mt-6 text-center ">
-        <h1 className="text-xl text-gray-600">{t('ourpsychiatrists')}</h1>
-        <p className="mt-2 mb-8 text-gray-500">
-          {t('psychiatristsDetails')}
-          <br />
-          {t('contentbr')}
-        </p>
-      </div>
-      <FirstDoctorCard name="Dr. Mohammad Al-Khulaidi" specialty="Sleep Disorder" />
-      <div className="container px-5 py-24 mx-auto ">
-        <div className="flex flex-wrap m-4">
-          {doctors.map((doc) => (
-            <div className="p-4 md:w-1/2 lg:w-1/3" key={doc.id}>
-              <Card>
-                <DoctorCard
-                  name={`${doc.id}. ${doc.name}`}
-                  specialty={doc.specialty}
-                  workplace={doc.workplace}
-                  address={doc.address}
-                  email={doc.email}
-                  phone={doc.phone}
-                />
-              </Card>
+    <div className="mx-2 md:mx-20 lg:mx-32 my-20">
+      <div className="flex flex-col">
+        <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+            <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+              <table className="min-w-full divide-y divide-gray-200">
+                <thead>
+                  <tr>
+                    <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      Name
+                    </th>
+                    <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      specialty
+                    </th>
+                    <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      workplace
+                    </th>
+                    <th className="px-6 py-3 bg-gray-50" />
+                  </tr>
+                </thead>
+                {doctors.map((el) => (
+                  <tbody className="bg-white divide-y divide-gray-200">
+                    <tr>
+                      <td className="px-6 py-4 whitespace-no-wrap">
+                        <div className="flex items-center">
+                          <div className="flex-shrink-0 h-10 w-10">
+                            <img
+                              className="h-10 w-10 rounded-full"
+                              src={el.image}
+                              alt=""
+                            />
+                          </div>
+                          <div className="ml-4">
+                            <div className="text-sm leading-5 font-medium text-gray-900">
+                              {el.name}
+                            </div>
+                            <div className="text-sm leading-5 text-gray-500">
+                              {el.email}
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td className="px-6 py-4 whitespace-no-wrap">
+                        <div className="text-sm leading-5 text-gray-900">
+                          {el.specialty}
+                        </div>
+                      </td>
+                      <td className="px-6 py-4 whitespace-no-wrap">
+                        <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                          {el.workplace}
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
+                        <button
+                          onClick={() => {
+                            setDoctorId(el.id);
+                            setShow(true);
+                          }}
+                        >
+                          detalis
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                ))}
+              </table>
             </div>
-          ))}
+          </div>
         </div>
       </div>
+      {show && (
+        <Modal
+          show={show}
+          onClick={() => {
+            setShow(false);
+          }}
+        >
+          <div>
+            <Body>
+              <div>
+                <DoctorCard
+                  show
+                  name={doctors[doctorId] ? doctors[doctorId].name : 'unde'}
+                  specialty={
+                    doctors[doctorId] ? doctors[doctorId].specialty : 'unde'
+                  }
+                  workplace={
+                    doctors[doctorId] ? doctors[doctorId].workplace : 'unde'
+                  }
+                  address={doctors[doctorId] ? doctors[doctorId].address : 'unde'}
+                  phone={doctors[doctorId] ? doctors[doctorId].phone : 'unde'}
+                />
+              </div>
+            </Body>
+          </div>
+        </Modal>
+      )}
     </div>
   );
 };
