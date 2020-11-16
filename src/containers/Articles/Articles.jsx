@@ -8,6 +8,7 @@ import Loading from '../../components/Loading';
 
 const Articles = () => {
   const [artc, setstate] = useState(null);
+  const [moreLoaded, setLoadMore] = useState(false);
 
   const getArticles = () => {
     articles.then((res) => {
@@ -101,6 +102,18 @@ const Articles = () => {
         <div className="w-full flex-grow">{geHeadArticle()}</div>
         <div className="w-full flex " />
         {getArticles()}
+        <div className="flex">
+          <button
+            type="button"
+            onClick={() => {
+              setLoadMore(!moreLoaded);
+            }}
+            className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm m-auto"
+          >
+            {moreLoaded ? 'show less' : 'show more'}
+          </button>
+        </div>
+        <div>{moreLoaded ? getArticles() : ' '}</div>
       </div>
     </div>
   );
