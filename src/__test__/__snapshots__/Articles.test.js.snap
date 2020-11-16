@@ -79,7 +79,7 @@ exports[`renders correctly 1`] = `
                   <div
                     className="category-title flex-1 text-sm text-gray-400"
                   >
-                    11/13/2020
+                    11/16/2020
                   </div>
                 </div>
                 <div
@@ -142,7 +142,7 @@ exports[`renders correctly 1`] = `
                   className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
                   style={
                     Object {
-                      "backgroundImage": "url(https://media.gq-magazine.co.uk/photos/5d1390269a22c2b6ef9478f3/16:9/w_1920,c_limit/depression-gq-7aug18_istock_b.jpg",
+                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Mother%20Daughter_1.jpg?itok=B37_Y2SA",
                     }
                   }
                 />
@@ -164,14 +164,14 @@ exports[`renders correctly 1`] = `
                     <h2
                       className="text-blue-500 "
                     >
-                      What is depression
+                      Lending Money to My Daughter
                     </h2>
                   </div>
                   <div
                     className="summary-post text-base text-justify text-1xl "
                   >
                     <p>
-                      epression is a common mental disorder affecting more than 264 million people worldwide. It is chara
+                       few years back, I gave my daughter a significant amount of money because she had lost her job and 
                     </p>
                     <button
                       className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
@@ -182,7 +182,7 @@ exports[`renders correctly 1`] = `
                           href="//1"
                           onClick={[Function]}
                         >
-                          What is depression
+                          Lending Money to My Daughter
                         </a>
                       </li>
                     </button>
@@ -212,7 +212,7 @@ exports[`renders correctly 1`] = `
                   className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
                   style={
                     Object {
-                      "backgroundImage": "url(https://media.gq-magazine.co.uk/photos/5d1390269a22c2b6ef9478f3/16:9/w_1920,c_limit/depression-gq-7aug18_istock_b.jpg",
+                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Storm%20%281%29.jpg?itok=WnRJ6jAA",
                     }
                   }
                 />
@@ -234,14 +234,14 @@ exports[`renders correctly 1`] = `
                     <h2
                       className="text-blue-500 "
                     >
-                      What is depression
+                      I Blame Myself for My Best Friend's Suicide
                     </h2>
                   </div>
                   <div
                     className="summary-post text-base text-justify text-1xl "
                   >
                     <p>
-                      epression is a common mental disorder affecting more than 264 million people worldwide. It is chara
+                      y friend hung himself 15 years ago and I still blame myself. Every day I feel like I’m just going t
                     </p>
                     <button
                       className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
@@ -252,7 +252,7 @@ exports[`renders correctly 1`] = `
                           href="//2"
                           onClick={[Function]}
                         >
-                          What is depression
+                          I Blame Myself for My Best Friend's Suicide
                         </a>
                       </li>
                     </button>
@@ -282,7 +282,7 @@ exports[`renders correctly 1`] = `
                   className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
                   style={
                     Object {
-                      "backgroundImage": "url(https://media.gq-magazine.co.uk/photos/5d1390269a22c2b6ef9478f3/16:9/w_1920,c_limit/depression-gq-7aug18_istock_b.jpg",
+                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Relationship%20help%20v2.jpg?itok=rTF_Ti_5",
                     }
                   }
                 />
@@ -304,14 +304,14 @@ exports[`renders correctly 1`] = `
                     <h2
                       className="text-blue-500 "
                     >
-                      What is depression
+                       I Am Afraid My Wife Is Having an Affair
                     </h2>
                   </div>
                   <div
                     className="summary-post text-base text-justify text-1xl "
                   >
                     <p>
-                      epression is a common mental disorder affecting more than 264 million people worldwide. It is chara
+                       am reaching out because things are not going well between my wife and me. Over the last several ye
                     </p>
                     <button
                       className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
@@ -322,7 +322,7 @@ exports[`renders correctly 1`] = `
                           href="//3"
                           onClick={[Function]}
                         >
-                          What is depression
+                           I Am Afraid My Wife Is Having an Affair
                         </a>
                       </li>
                     </button>
@@ -352,7 +352,7 @@ exports[`renders correctly 1`] = `
                   className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
                   style={
                     Object {
-                      "backgroundImage": "url(https://media.gq-magazine.co.uk/photos/5d1390269a22c2b6ef9478f3/16:9/w_1920,c_limit/depression-gq-7aug18_istock_b.jpg",
+                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Father%20Son.jpg?itok=KjivBcsN",
                     }
                   }
                 />
@@ -374,14 +374,14 @@ exports[`renders correctly 1`] = `
                     <h2
                       className="text-blue-500 "
                     >
-                      What is depression
+                      My Son Is Out of Control 
                     </h2>
                   </div>
                   <div
                     className="summary-post text-base text-justify text-1xl "
                   >
                     <p>
-                      epression is a common mental disorder affecting more than 264 million people worldwide. It is chara
+                      ur 14-year-old son is out of control. He is very aggressive toward family members and we fear for o
                     </p>
                     <button
                       className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
@@ -392,7 +392,7 @@ exports[`renders correctly 1`] = `
                           href="//4"
                           onClick={[Function]}
                         >
-                          What is depression
+                          My Son Is Out of Control 
                         </a>
                       </li>
                     </button>
@@ -422,7 +422,7 @@ exports[`renders correctly 1`] = `
                   className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
                   style={
                     Object {
-                      "backgroundImage": "url(https://media.gq-magazine.co.uk/photos/5d1390269a22c2b6ef9478f3/16:9/w_1920,c_limit/depression-gq-7aug18_istock_b.jpg",
+                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/thumbnail_Web%20Parenting_2.jpg?itok=Fk0ULlBl",
                     }
                   }
                 />
@@ -444,14 +444,14 @@ exports[`renders correctly 1`] = `
                     <h2
                       className="text-blue-500 "
                     >
-                      What is depression
+                      My Girlfriend Wants Her Kids to Call Me Dad
                     </h2>
                   </div>
                   <div
                     className="summary-post text-base text-justify text-1xl "
                   >
                     <p>
-                      epression is a common mental disorder affecting more than 264 million people worldwide. It is chara
+                      y girlfriend and I just moved in together after dating for about 2 years. She has a 13-year-old son
                     </p>
                     <button
                       className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
@@ -462,7 +462,287 @@ exports[`renders correctly 1`] = `
                           href="//5"
                           onClick={[Function]}
                         >
-                          What is depression
+                          My Girlfriend Wants Her Kids to Call Me Dad
+                        </a>
+                      </li>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        className="w-1/3"
+      >
+        <section
+          className="blog "
+        >
+          <div
+            className="container px-5 py-24 mx-auto"
+          >
+            <div
+              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+            >
+              <div
+                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+              >
+                <div
+                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/SadAdult.jpg?itok=4KYEsUSJ",
+                    }
+                  }
+                />
+                <div
+                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                >
+                  <div
+                    className="header-content inline-flex"
+                  >
+                    <div
+                      className="category-title flex-1 text-sm text-gray-400"
+                    >
+                      March 12th, 2019
+                    </div>
+                  </div>
+                  <div
+                    className="title-post text-3xl"
+                  >
+                    <h2
+                      className="text-blue-500 "
+                    >
+                      I'm Always Upset and Not Sure What To Do
+                    </h2>
+                  </div>
+                  <div
+                    className="summary-post text-base text-justify text-1xl "
+                  >
+                    <p>
+                       feel upset all of time. It has been like this for several years. Nothing seems to go right, and&nb
+                    </p>
+                    <button
+                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      type="button"
+                    >
+                      <li>
+                        <a
+                          href="//6"
+                          onClick={[Function]}
+                        >
+                          I'm Always Upset and Not Sure What To Do
+                        </a>
+                      </li>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        className="w-1/3"
+      >
+        <section
+          className="blog "
+        >
+          <div
+            className="container px-5 py-24 mx-auto"
+          >
+            <div
+              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+            >
+              <div
+                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+              >
+                <div
+                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/TeenAnger.jpg?itok=w6qmzvuR",
+                    }
+                  }
+                />
+                <div
+                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                >
+                  <div
+                    className="header-content inline-flex"
+                  >
+                    <div
+                      className="category-title flex-1 text-sm text-gray-400"
+                    >
+                      March 12th, 2019
+                    </div>
+                  </div>
+                  <div
+                    className="title-post text-3xl"
+                  >
+                    <h2
+                      className="text-blue-500 "
+                    >
+                      Is Teen Anger Connected to Childhood Trauma?
+                    </h2>
+                  </div>
+                  <div
+                    className="summary-post text-base text-justify text-1xl "
+                  >
+                    <p>
+                       was wondering if you could help me to better understand how early childhood trauma would affect a 
+                    </p>
+                    <button
+                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      type="button"
+                    >
+                      <li>
+                        <a
+                          href="//7"
+                          onClick={[Function]}
+                        >
+                          Is Teen Anger Connected to Childhood Trauma?
+                        </a>
+                      </li>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        className="w-1/3"
+      >
+        <section
+          className="blog "
+        >
+          <div
+            className="container px-5 py-24 mx-auto"
+          >
+            <div
+              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+            >
+              <div
+                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+              >
+                <div
+                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/friendshipsonline.jpg?itok=jj1ustT3",
+                    }
+                  }
+                />
+                <div
+                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                >
+                  <div
+                    className="header-content inline-flex"
+                  >
+                    <div
+                      className="category-title flex-1 text-sm text-gray-400"
+                    >
+                      March 12th, 2019
+                    </div>
+                  </div>
+                  <div
+                    className="title-post text-3xl"
+                  >
+                    <h2
+                      className="text-blue-500 "
+                    >
+                      My 13-Year-Old Says Making Friends Is Easier Online
+                    </h2>
+                  </div>
+                  <div
+                    className="summary-post text-base text-justify text-1xl "
+                  >
+                    <p>
+                      y 13-year-old son (soon to be 14) is having a hard time maintaining friendships. As a result, he te
+                    </p>
+                    <button
+                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      type="button"
+                    >
+                      <li>
+                        <a
+                          href="//8"
+                          onClick={[Function]}
+                        >
+                          My 13-Year-Old Says Making Friends Is Easier Online
+                        </a>
+                      </li>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        className="w-1/3"
+      >
+        <section
+          className="blog "
+        >
+          <div
+            className="container px-5 py-24 mx-auto"
+          >
+            <div
+              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+            >
+              <div
+                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+              >
+                <div
+                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/kidnofriends.jpg?itok=n-KsUE6h",
+                    }
+                  }
+                />
+                <div
+                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                >
+                  <div
+                    className="header-content inline-flex"
+                  >
+                    <div
+                      className="category-title flex-1 text-sm text-gray-400"
+                    >
+                      March 12th, 2019
+                    </div>
+                  </div>
+                  <div
+                    className="title-post text-3xl"
+                  >
+                    <h2
+                      className="text-blue-500 "
+                    >
+                      My Son Is Impulsive and Has Trouble Making Friends
+                    </h2>
+                  </div>
+                  <div
+                    className="summary-post text-base text-justify text-1xl "
+                  >
+                    <p>
+                      y 8-year-old son struggles with impulsivity and has little to no friends that initiate contact with
+                    </p>
+                    <button
+                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      type="button"
+                    >
+                      <li>
+                        <a
+                          href="//9"
+                          onClick={[Function]}
+                        >
+                          My Son Is Impulsive and Has Trouble Making Friends
                         </a>
                       </li>
                     </button>
