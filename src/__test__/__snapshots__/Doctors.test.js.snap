@@ -19,7 +19,9 @@ exports[`renders correctly 1`] = `
           <table
             className="min-w-full divide-y divide-gray-200"
           >
-            <thead>
+            <thead
+              className="bg-gray-200"
+            >
               <tr>
                 <th
                   className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
@@ -98,9 +100,10 @@ exports[`renders correctly 1`] = `
                   className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium"
                 >
                   <button
+                    className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
                   >
-                    detalis
+                    Contact
                   </button>
                 </td>
               </tr>
@@ -162,9 +165,10 @@ exports[`renders correctly 1`] = `
                   className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium"
                 >
                   <button
+                    className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
                   >
-                    detalis
+                    Contact
                   </button>
                 </td>
               </tr>
@@ -226,9 +230,10 @@ exports[`renders correctly 1`] = `
                   className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium"
                 >
                   <button
+                    className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
                   >
-                    detalis
+                    Contact
                   </button>
                 </td>
               </tr>
@@ -290,9 +295,10 @@ exports[`renders correctly 1`] = `
                   className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium"
                 >
                   <button
+                    className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
                   >
-                    detalis
+                    Contact
                   </button>
                 </td>
               </tr>
@@ -354,9 +360,10 @@ exports[`renders correctly 1`] = `
                   className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium"
                 >
                   <button
+                    className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
                   >
-                    detalis
+                    Contact
                   </button>
                 </td>
               </tr>
@@ -418,9 +425,10 @@ exports[`renders correctly 1`] = `
                   className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium"
                 >
                   <button
+                    className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
                   >
-                    detalis
+                    Contact
                   </button>
                 </td>
               </tr>
@@ -482,9 +490,10 @@ exports[`renders correctly 1`] = `
                   className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium"
                 >
                   <button
+                    className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
                   >
-                    detalis
+                    Contact
                   </button>
                 </td>
               </tr>
@@ -546,9 +555,10 @@ exports[`renders correctly 1`] = `
                   className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium"
                 >
                   <button
+                    className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
                   >
-                    detalis
+                    Contact
                   </button>
                 </td>
               </tr>

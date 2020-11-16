@@ -15,7 +15,7 @@ const Doctors = () => {
           <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
             <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
               <table className="min-w-full divide-y divide-gray-200">
-                <thead>
+                <thead className="bg-gray-200">
                   <tr>
                     <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                       Name
@@ -63,12 +63,13 @@ const Doctors = () => {
                       </td>
                       <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                         <button
+                          className="text-indigo-600 hover:text-blue-500"
                           onClick={() => {
                             setDoctorId(el.id);
                             setShow(true);
                           }}
                         >
-                          detalis
+                          Contact
                         </button>
                       </td>
                     </tr>
@@ -91,15 +92,18 @@ const Doctors = () => {
               <div>
                 <DoctorCard
                   show
-                  name={doctors[doctorId] ? doctors[doctorId].name : 'unde'}
+                  name={doctors[doctorId] ? doctors[doctorId - 1].name : 'unde'}
                   specialty={
-                    doctors[doctorId] ? doctors[doctorId].specialty : 'unde'
+                    doctors[doctorId] ? doctors[doctorId - 1].specialty : 'unde'
                   }
                   workplace={
-                    doctors[doctorId] ? doctors[doctorId].workplace : 'unde'
+                    doctors[doctorId] ? doctors[doctorId - 1].workplace : 'unde'
                   }
-                  address={doctors[doctorId] ? doctors[doctorId].address : 'unde'}
+                  address={
+                    doctors[doctorId] ? doctors[doctorId - 1].address : 'unde'
+                  }
                   phone={doctors[doctorId] ? doctors[doctorId].phone : 'unde'}
+                  img={doctors[doctorId] ? doctors[doctorId].image : 'unde'}
                 />
               </div>
             </Body>
