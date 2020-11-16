@@ -17,6 +17,7 @@ import DoctorCard from '../../components/DoctorCard';
 import { doctors } from '../../services/fakeDoctorsServices';
 import { articles } from '../../services/fakeArticleService';
 import { HorizontalArticleCard } from '../../components/ArticleCard';
+import Cursol from '../../components/Cursol/Cursol';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -92,6 +93,7 @@ const Home = () => {
       </section>
       <section className="relative py-10 pb-20 mt-40 bg-gray-200 md:px-14">
         <SeparatorSVG />
+        <Cursol />
         <div className="flex flex-wrap justify-center py-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
             <h2 className="text-4xl font-semibold">Why Use Exhale?</h2>

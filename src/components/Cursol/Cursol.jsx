@@ -9,11 +9,13 @@ import svg3 from '../../asset/svg/ProcessSvgs/3.svg';
 
 const Cursol = () => {
   return (
-    <Carousel autoPlay={2000} animationSpeed={1000} infinite>
-      <img alt="dd" src={svg1} />
-      <img alt="dd" src={svg2} />
-      <img alt="dd" src={svg3} />
-    </Carousel>
+    <div>
+      <Carousel autoPlay={2000} animationSpeed={1000} infinite>
+        <img alt="dd" src={svg1} />
+        <img alt="dd" src={svg2} />
+        <img alt="dd" src={svg3} />
+      </Carousel>
+    </div>
   );
 };
 
