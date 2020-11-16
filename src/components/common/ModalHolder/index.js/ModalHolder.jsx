@@ -34,11 +34,11 @@ const ModalHolder = () => {
                 <Header title={id === 'login' ? "SIGN IN" : "SING UP"} onClick={handleClose} />
                <Body>
                 <div className ='flex flex-col md:flex-row-reverse'>
-                  <div class='mx-6 mt-3  md:border-l-2 w-2/5'>
+                  <div class='mx-6  mt-0 md:mt-3  md:border-l-2 w-full md:w-2/5 '>
                    <div className ="overflow-hidden hidden md:block">
                      <Lottie options={defaultOptions} height='auto' width='120%' />
                    </div>
-                   <div className='mx-auto'>
+                   <div className='mx-auto w-full'>
                     <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={fire.auth()} />
                    </div>
                   </div>

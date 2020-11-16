@@ -14,7 +14,7 @@ const Modal = ({ show, onClick, children }) => {
           >
             <div
               onClick={(e) => e.stopPropagation()}
-              className="relative w-auto max-w-5xl mx-auto my-6"
+              className="relative w-auto max-w-5xl mx-auto my-auto"
             >
               {/* content */}
               <div className="relative flex flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none">
