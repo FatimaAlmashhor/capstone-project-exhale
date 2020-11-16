@@ -2,8 +2,10 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 export default function SelfAssessmentPanel({ task, onClick }) {
+  const { t } = useTranslation();
   const handleClick = (e) => {
     onClick(e);
   };
@@ -35,7 +37,7 @@ export default function SelfAssessmentPanel({ task, onClick }) {
               onClick={handleClick}
               onMouseEnter={handleHover}
             />
-            <p className="mx-auto text-gray-500  mt-3">NEVER</p>
+            <p className="mx-auto text-gray-500  mt-3">{t('Never')}</p>
           </div>
           <div className="flex justify-center self-center flex-1 ">
             <button
@@ -72,7 +74,7 @@ export default function SelfAssessmentPanel({ task, onClick }) {
               onClick={handleClick}
               onMouseEnter={handleHover}
             />
-            <p className="mx-auto mt-3 text-gray-500">ALWAYS</p>
+            <p className="mx-auto mt-3 text-gray-500">{t('Always')}</p>
           </div>
         </div>
       </div>

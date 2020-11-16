@@ -38,15 +38,15 @@ export default function ContactUsForm() {
     e.target.reset();
   };
   return (
-    <section className="text-gray-700 body-font ">
+    <section className="text-gray-700 body-font">
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-col w-full mb-12 text-center">
-          <h1 className="mb-4 text-2xl font-medium text-blue-800 sm:text-3xl title-font">
-            {t('GetInTouch')}
-          </h1>
-          <p className="mx-auto text-base leading-relaxed lg:w-2/3">
-            {t('contactus')}
-          </p>
+        <div className=" flex flex-wrap justify-center text-center py-8">
+          <div className="w-full md:w-6/12 px-12 md:px-4">
+            <h2 className=" text-4xl text-blue-700">{t('GetInTouch')}</h2>
+            <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
+              {t('contactus')}
+            </p>
+          </div>
         </div>
         <form onSubmit={handleTarget}>
           <div className="mx-auto lg:w-1/2 md:w-2/3">
