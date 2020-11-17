@@ -61,7 +61,7 @@ Array [
           </a>
           <a
             aria-current={null}
-            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out border-b border-white hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out  hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
             href="/about"
             onClick={[Function]}
           >
