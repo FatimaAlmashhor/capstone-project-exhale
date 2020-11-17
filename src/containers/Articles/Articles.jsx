@@ -17,7 +17,7 @@ const Articles = () => {
       <div className="flex flex-wrap -mb-4">
         {articlesCollection.map((article) => {
           return (
-            <div className="lg:w-1/3 md:w-1/2 min-w-0">
+            <div className="lg:w-1/3 md:w-1/2 min-w-0" key={article.id}>
               <Article
                 id={article.id}
                 title={article.title}
