@@ -66,12 +66,17 @@ const Home = () => {
         <div className="container px-4 mx-auto my-10 ">
           <div className="flex flex-col-reverse items-center md:flex-row-reverse">
             <div className="w-full px-4 my-16 ml-auto mr-auto overflow-hidden md:w-5/12 md:my-0">
-              <Lottie options={defaultOptions(Hero)} width="100%" height="auto" />
+              <Lottie
+                options={defaultOptions(Hero)}
+                isClickToPauseDisabled
+                width="100%"
+                height="auto"
+              />
             </div>
             <div className="w-full px-4 ml-auto mr-auto md:w-6/12">
               <div className="pt-0 md:pt-16">
                 <h2 className="text-4xl font-semibold text-gray-700">
-                  We Here To Help You
+                  We Are Here To Help You
                 </h2>
                 <p className="mt-4 text-lg leading-relaxed text-gray-600">
                   If you are feeling overwhelmed or unable to do the things you once
@@ -80,7 +85,7 @@ const Home = () => {
                 <div>
                   <button
                     type="button"
-                    className="inline-flex items-center justify-center px-4 py-2 my-4 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
+                    className="inline-flex items-center justify-center px-16 py-3 mt-4 text-base text-lg leading-6 text-white uppercase whitespace-no-wrap transition duration-150 duration-500 ease-in-out transform bg-blue-800 border border-transparent rounded-lg hover:-translate-y-1 hover:scale-110 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 hover:shadow-xl"
                   >
                     <Link to={SELF_ASSESSMENT_ROUTE}>{t('Checkup')}</Link>
                   </button>
@@ -105,6 +110,7 @@ const Home = () => {
           <div className="flex flex-col items-center md:flex-row">
             <div className="w-full px-4 my-0 mr-auto overflow-hidden md:w-4/12 md:pt-0">
               <Lottie
+                isClickToPauseDisabled
                 options={defaultOptions(Analysis)}
                 width="100%"
                 height="auto"
@@ -127,7 +133,12 @@ const Home = () => {
         <div className="container px-4 py-8 mx-auto">
           <div className="flex flex-col items-center md:flex-row-reverse">
             <div className="w-full px-4 my-0 mr-auto overflow-hidden md:w-4/12 md:pt-0">
-              <Lottie options={defaultOptions(Yoga)} width="120%" height="auto" />
+              <Lottie
+                options={defaultOptions(Yoga)}
+                isClickToPauseDisabled
+                width="120%"
+                height="auto"
+              />
             </div>
             <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
               <div className="md:pr-4">
@@ -161,9 +172,30 @@ const Home = () => {
             <div className="flex justify-center w-full mt-20">
               <Link
                 to={DOCTORS_ROUTE}
-                className="justify-center p-2 text-lg text-center text-yellow-500 transition-all duration-200 border-2 border-t-2 border-yellow-500 rounded-lg hover:shadow-sm hover:text-white hover:bg-yellow-400 hover:border-white"
+                className="justify-center p-2 px-6 text-lg text-center text-green-500 transition-all duration-200 border-2 border-t-2 border-green-500 rounded-lg hover:shadow-xl hover:text-white hover:bg-green-500 hover:border-white"
               >
                 See More
+                <svg
+                  className="inline-block w-2 h-2 ml-1 stroke-current stroke-2 chev"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <g fillRule="evenodd">
+                    <path d="M1 1l4 4-4 4" />
+                  </g>
+                </svg>
+                <svg
+                  className="hidden w-2 h-2 ml-1 stroke-current stroke-2 arr hover:inline-block"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <g fillRule="evenodd">
+                    <path d="M0 5h7" />
+                    <path d="M4 1l4 4-4 4" />
+                  </g>
+                </svg>
               </Link>
             </div>
           </div>
@@ -200,15 +232,26 @@ const Home = () => {
         </div>
         <div className="py-4 team-1 md:py-12">
           <div className="container px-4 mx-auto">
-            <div className="overflow-hidden md:flex md:-mx-4 md:mt-12 md:mb-6 team-list">
+            <div className="flex flex-wrap overflow-hidden w-1-2 md:flex md:-mx-4 md:mt-12 md:mb-6 team-list">
+              {articleItem}
               {articleItem}
             </div>
             <div className="flex justify-center w-full">
               <Link
                 to={ARTICLES_BASE_ROUTE}
-                className="justify-center p-2 text-lg text-center text-yellow-500 transition-all duration-200 border-2 border-t-2 border-yellow-500 rounded-lg hover:shadow-sm hover:text-white hover:bg-yellow-400 hover:border-white"
+                className="justify-center p-2 px-6 text-lg text-center text-green-500 transition-all duration-200 border-2 border-t-2 border-green-500 rounded-lg hover:shadow-xl hover:text-white hover:bg-green-500 hover:border-white"
               >
                 See More
+                <svg
+                  className="inline-block w-2 h-2 ml-1 stroke-current stroke-2 chev"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <g fillRule="evenodd">
+                    <path d="M1 1l4 4-4 4" />
+                  </g>
+                </svg>
               </Link>
             </div>
           </div>

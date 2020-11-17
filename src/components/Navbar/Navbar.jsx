@@ -106,7 +106,7 @@ function Navbar() {
             <span className="inline-flex rounded-lg shadow-sm">
               <NavLink
                 to={SELF_ASSESSMENT_ROUTE}
-                className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-lg hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
+                className="inline-flex items-center justify-center px-4 py-3 text-base text-lg leading-6 text-white uppercase whitespace-no-wrap transition duration-150 duration-500 ease-in-out transform bg-blue-800 border border-transparent rounded-lg hover:-translate-y-1 hover:scale-110 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 hover:shadow-xl"
               >
                 {t('Checkup')}
               </NavLink>
@@ -191,7 +191,7 @@ function Navbar() {
                         <span className="flex w-full rounded-md shadow-sm">
                           <NavLink
                             to={SELF_ASSESSMENT_ROUTE}
-                            className="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
+                            className="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white uppercase transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
                           >
                             {t('Checkup')}
                           </NavLink>
@@ -220,7 +220,7 @@ function Navbar() {
                         <span className="flex w-full rounded-md shadow-sm">
                           <NavLink
                             to={SELF_ASSESSMENT_ROUTE}
-                            className="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
+                            className="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white uppercase transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
                           >
                             {t('Checkup')}
                           </NavLink>
