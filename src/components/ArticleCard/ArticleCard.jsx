@@ -9,31 +9,31 @@ const ArticleCard = ({ id, title, paragraph, time, img }) => {
   return (
     <section className="blog ">
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-          <div className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto">
+        <div className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4">
+          <div className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0">
             {img && (
               <div
-                className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                 style={{ backgroundImage: `url(${img}` }}
               />
             )}
-            <div className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5">
-              <div className="header-content inline-flex">
-                <div className="category-title flex-1 text-sm text-gray-400">
+            <div className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg ">
+              <div className="inline-flex header-content">
+                <div className="flex-1 text-sm text-gray-400 category-title">
                   {time}
                 </div>
               </div>
-              <div className="title-post text-3xl">
+              <div className="text-3xl title-post">
                 <h2 className="text-blue-500 ">{title}</h2>
               </div>
-              <div className="summary-post text-base text-justify text-1xl ">
+              <div className="text-base text-justify summary-post text-1xl ">
                 <p>{paragraph}</p>
 
                 <button
                   type="button"
-                  className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
+                  className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded hover:bg-green-300"
                 >
-                  <li key={id}>
+                  <li className="list-none" key={id}>
                     <Link to={`${url}/${id}`}>Read More</Link>
                   </li>
                 </button>
@@ -71,36 +71,36 @@ export const HorizontalArticleCard = ({
   authorImage,
 }) => {
   return (
-    <section className="blog w-full  shadow-sm">
+    <section className="w-full shadow-sm blog">
       <div className="container w-full px-5 py-24 mx-auto">
-        <div className=" flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-          <div className=" m-auto flex flex-col lg:flex-row ">
+        <div className="flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4">
+          <div className="flex flex-col m-auto lg:flex-row">
             {img && (
               <div
-                className="bg-gray-300 h-56 w-full flex lg:w-2/3 lg:h-auto shadow-sm bg-cover bg-center content-center "
+                className="flex content-center w-full h-56 bg-gray-300 bg-center bg-cover shadow-sm lg:w-2/3 lg:h-auto "
                 style={{ backgroundImage: `url(${img}` }}
               />
             )}
             <Card>
-              <div className="  shadow-sm bg-white -mt-10 m-auto rounded-lg overflow-hidden p-6">
+              <div className="p-6 m-auto -mt-10 overflow-hidden bg-white rounded-lg shadow-sm ">
                 <div className="header-content ">
-                  <div className="category-title mt-10 w-full  flex-1 text-sm text-gray-400">
+                  <div className="flex-1 w-full mt-10 text-sm text-gray-400 category-title">
                     {time}
                   </div>
                 </div>
-                <div className="title-post text-lg mt-5">
+                <div className="mt-5 text-lg title-post">
                   <h2 className="text-black ">{title}</h2>
                 </div>
-                <div className="summary-post text-base text-gray-500 pt-2 text-justify text-md ">
+                <div className="pt-2 text-base text-justify text-gray-500 summary-post text-md ">
                   <p>{paragraph}</p>
                   <div className="mt-2">
                     <Link
                       to={`/articles/${index}`}
-                      className="text-blue-400 hover:text-blue-900 text-sm transition duration-150 ease-in-out"
+                      className="text-sm text-blue-400 transition duration-150 ease-in-out hover:text-blue-900"
                     >
                       Read more
                       <svg
-                        className="chev inline-block ml-1 w-2 h-2 stroke-2 stroke-current"
+                        className="inline-block w-2 h-2 ml-1 stroke-current stroke-2 chev"
                         viewBox="0 0 10 10"
                         fill="none"
                         aria-hidden="true"
@@ -110,7 +110,7 @@ export const HorizontalArticleCard = ({
                         </g>
                       </svg>
                       <svg
-                        className="arr hidden hover:inline-block ml-1 w-2 h-2 stroke-2 stroke-current"
+                        className="hidden w-2 h-2 ml-1 stroke-current stroke-2 arr hover:inline-block"
                         viewBox="0 0 10 10"
                         fill="none"
                         aria-hidden="true"
@@ -122,16 +122,16 @@ export const HorizontalArticleCard = ({
                       </svg>
                     </Link>
                     {authorImage && (
-                      <div className="mt-6 flex flex-row items-center ">
+                      <div className="flex flex-row items-center mt-6 ">
                         <div className="flex-shrink-0">
                           <img
-                            className="h-10 w-10 rounded-full object-cover"
+                            className="object-cover w-10 h-10 rounded-full"
                             src={authorImage}
                             alt=""
                           />
                         </div>
                         <div className="ml-3">
-                          <p className="text-sm leading-5 font-medium text-gray-900">
+                          <p className="text-sm font-medium leading-5 text-gray-900">
                             Joseph Dough
                           </p>
                         </div>
