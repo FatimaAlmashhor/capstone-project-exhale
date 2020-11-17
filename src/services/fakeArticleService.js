@@ -4,62 +4,62 @@ export const articles = [
     date: 'March 12th, 2019',
     author: 'Ali',
     authorDetails: 'whatever whatever',
-    title: 'Lending Money to My Daughter',
+    title: 'The Harsh Light of Motherhood',
     text:
-      'A few years back, I gave my daughter a significant amount of money because she had lost her job and was struggling to make ends meet. She’s been doing well for some time even though we are dealing with COVID. She has not made any attempt to pay me back and when I brought it up, she says she does not have the money.',
+      'Motherhood, at its core, can be simply terrifying and exhausting. This is especially true for those with mental illness that stems from adverse childho.',
     articleImg:
-      'https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Mother%20Daughter_1.jpg?itok=B37_Y2SA',
+      'https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/motherhood-blog.jpg',
     articleLink:
-      'https://www.nexusfamilyhealing.org/advice/lending-money-my-daughter',
+      'https://www.nami.org/Blogs/NAMI-Blog/November-2020/The-Harsh-Light-of-Motherhood',
   },
   {
     id: 2,
     date: 'March 12th, 2019',
     author: 'Ali',
     authorDetails: 'whatever whatever',
-    title: "I Blame Myself for My Best Friend's Suicide",
+    title: 'Finding a Partner Who Accepts My Mental Illness',
     text:
-      'My friend hung himself 15 years ago and I still blame myself. Every day I feel like I’m just going through the motions and can’t seem to feel excited about anything.',
+      'I can’t change who I am or the challenges I’ve had to face. What I can do is choose who and what to accept into my life to make it an envir',
     articleImg:
-      'https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Storm%20%281%29.jpg?itok=WnRJ6jAA',
+      'https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/finding-a-partner-blog.jpg',
     articleLink:
-      'https://www.nexusfamilyhealing.org/advice/i-blame-myself-my-best-friends-suicide',
+      'https://www.nami.org/Blogs/NAMI-Blog/November-2020/Finding-a-Partner-Who-Accepts-My-Mental-Illness',
   },
   {
     id: 3,
     date: 'March 12th, 2019',
     author: 'Ali',
     authorDetails: 'whatever whatever',
-    title: ' I Am Afraid My Wife Is Having an Affair',
+    title: 'What People Get Wrong About Bipolar Disorder',
     text:
-      'I am reaching out because things are not going well between my wife and me. Over the last several years we have become very distant. She seems very distracted and I am afraid she is having an affair. ',
+      'Bipolar disorder is a complicated mental illness. It has a variety of layers and symptoms, which can make it difficult to understand. However, this doesn’t mean that it — or the people who have it — should have to deal with unfair assumptions and misconceptions. ',
     articleImg:
-      'https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Relationship%20help%20v2.jpg?itok=rTF_Ti_5',
+      'https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/bipolar-blog.jpg',
     articleLink:
-      'https://www.nexusfamilyhealing.org/advice/i-am-afraid-my-wife-having-affair',
+      'https://www.nami.org/Blogs/NAMI-Blog/October-2020/What-People-Get-Wrong-About-Bipolar-Disorder',
   },
   {
     id: 4,
     date: 'March 12th, 2019',
     author: 'Ali',
     authorDetails: 'whatever whatever',
-    title: 'My Son Is Out of Control ',
-    text:
-      'Our 14-year-old son is out of control. He is very aggressive toward family members and we fear for our safety. We have tried family therapy and we have had counselors come to our home and work with him. It helps for a little while and then his aggression returns. We are thinking about having him placed in a residential treatment program',
+    title: 'When Someone is Suicidal, Choose Support — Not Guilt',
+    text: 'When Someone is Suicidal, Choose Support — Not Guilt',
     articleImg:
-      'https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Father%20Son.jpg?itok=KjivBcsN',
-    articleLink: 'https://www.nexusfamilyhealing.org/advice/my-son-out-control',
+      'https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/support-not-guild-blog.jpg',
+    articleLink:
+      'https://www.nami.org/Blogs/NAMI-Blog/September-2020/When-Someone-is-Suicidal-Choose-Support-%E2%80%94-Not-Guilt',
   },
   {
     id: 5,
     date: 'March 12th, 2019',
     author: 'Ali',
     authorDetails: 'whatever whatever',
-    title: 'My Girlfriend Wants Her Kids to Call Me Dad',
+    title: 'Does Victim Mentality Play a Role in Depression?',
     text:
-      'My girlfriend and I just moved in together after dating for about 2 years. She has a 13-year-old son and a 10-year-old daughter who live with us full time. They are great kids and we get along really well, but my girlfriend is pressuring the kids to call me dad and I don’t think that’s a good idea. ',
+      'First off, I want to clarify that depression and victim mentality are not the same. The former is a mental illness that no one can choose, while the latter is a mindset that may or may not be a choice. That said, victim mentality does play a role in depression, which is why it is crucial to identify and manage it.',
     articleImg:
-      'https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/thumbnail_Web%20Parenting_2.jpg?itok=Fk0ULlBl',
+      'https://www.healthyplace.com/sites/default/files/styles/blog_listing/public/2020-11/Does%20Victim%20Mentality%20Play%20a%20Role%20in%20Depression.jpg?itok=gBu3jcna',
     articleLink:
       'https://www.nexusfamilyhealing.org/advice/my-girlfriend-wants-her-kids-call-me-dad',
   },
@@ -74,49 +74,51 @@ export const articles = [
     articleImg:
       'https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/SadAdult.jpg?itok=4KYEsUSJ',
     articleLink:
-      'https://www.nexusfamilyhealing.org/advice/im-always-upset-and-not-sure-what-do',
+      'https://www.healthyplace.com/blogs/copingwithdepression/2020/11/does-victim-mentality-play-a-role-in-depression',
   },
   {
     id: 7,
     date: 'March 12th, 2019',
     author: 'Ali',
     authorDetails: 'whatever whatever',
-    title: 'Is Teen Anger Connected to Childhood Trauma?',
+    title: 'When the Pressure to Succeed Damages Your Mental Health',
     text:
-      'I was wondering if you could help me to better understand how early childhood trauma would affect a person’s behavior. Have you seen any correlations of certain forms of trauma and anger in early adolescence?<br> Sam',
+      'Nobody is immune to the pressure to succeed. Whether it comes from family, teachers, bosses, or ourselves, the pressure to "achieve" is something we have all felt. Its not necessarily a bad thing: pressure (or your perception of it) can give you a competitive drive, the impetus to keep going when you feel like giving up, and it can result in great things, both professionally and personally. However, when that pressure to succeed becomes so intense that you lose sight of everything else, its time to pump the brakes and reevaluate your priorities. Sure, success is great, but not when it comes at the expense of your mental health.',
     articleImg:
-      'https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/TeenAnger.jpg?itok=w6qmzvuR',
+      'https://www.healthyplace.com/sites/default/files/styles/blog_listing/public/2020-10/pursuit%20of%20success.jpg?itok=t8ppsuEM',
     articleLink:
-      'https://www.nexusfamilyhealing.org/advice/teen-anger-connected-childhood-trauma',
+      'https://www.healthyplace.com/blogs/copingwithdepression/2020/10/when-the-pressure-to-succeed-damages-your-mental-health',
   },
   {
     id: 8,
     date: 'March 12th, 2019',
     author: 'Ali',
     authorDetails: 'whatever whatever',
-    title: 'My 13-Year-Old Says Making Friends Is Easier Online',
+    title: 'From Patient to Survivor',
     text:
-      'My 13-year-old son (soon to be 14) is having a hard time maintaining friendships. As a result, he tells his dad and me that he is lonely and then moves to “online friends,” which are really people he doesn’t know. He says that when he goes online, he can be who he wants and can just tell them the good stuff.',
+      'My journey started during Game 2 of the 2013 World Series; starting pitcher was John Lackey for the Boston Red Sox. The game was on the TV in the hospital lobby. They were losing. This is my first of many memories of my hospitalization',
     articleImg:
       'https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/friendshipsonline.jpg?itok=jj1ustT3',
     articleLink:
-      'https://www.nexusfamilyhealing.org/advice/my-13-year-old-says-making-friends-easier-online',
+      'https://www.nami.org/Blogs/NAMI-Blog/August-2020/From-Patient-to-Survivor',
   },
   {
     id: 9,
     date: 'March 12th, 2019',
     author: 'Ali',
     authorDetails: 'whatever whatever',
-    title: 'My Son Is Impulsive and Has Trouble Making Friends',
+    title: 'How to Be with Sadness',
     text:
-      'My 8-year-old son struggles with impulsivity and has little to no friends that initiate contact with him. He can participate and engage with them but there doesn’t seem to be any bond. How can I help him with his impulse control and fostering&nbsp;friendships?<br> Tara',
+      'The thought of going to a funeral used to terrify me. Walking into a room filled with sadness and grief evoked an intense desire not to go. Anxiety was all I could feel as it masked the emotions I wanted to have, like sadness and compassion. I secretly felt ashamed that I didn’t have “the right feelings."',
     articleImg:
-      'https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/kidnofriends.jpg?itok=n-KsUE6h',
+      'https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/sadness-blog.jpg',
     articleLink:
-      'https://www.nexusfamilyhealing.org/advice/my-son-impulsive-and-has-trouble-making-friends',
+      'https://www.nami.org/Blogs/NAMI-Blog/September-2020/How-to-Be-with-Sadness',
   },
 ];
 
 export function getArticles() {
   return articles.map((a) => a);
 }
+
+export default articles;

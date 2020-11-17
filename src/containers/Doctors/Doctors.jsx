@@ -1,5 +1,3 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useState } from 'react';
 import { doctors } from '../../services/fakeDoctorsServices';
 import DoctorCard from '../../components/DoctorCard';
@@ -26,7 +24,7 @@ const Doctors = () => {
                     <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                       workplace
                     </th>
-                    <th className="px-6 py-3 bg-gray-50" />
+                    <th className="px-6 py-3 bg-gray-50">&nbsp;</th>
                   </tr>
                 </thead>
                 {doctors.map((el) => (
@@ -63,6 +61,7 @@ const Doctors = () => {
                       </td>
                       <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                         <button
+                          type="button"
                           className="text-indigo-600 hover:text-blue-500"
                           onClick={() => {
                             setDoctorId(el.id);

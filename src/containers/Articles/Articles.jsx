@@ -1,69 +1,88 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { useState } from 'react';
 import Article from '../../components/ArticleCard';
 import { articles } from '../../services/fakeArticleService';
 
-const articlesDives = () => {
-  return (
-    <div className="flex flex-wrap -mb-4">
-      {articles.map((article) => {
-        return (
-          <div className="w-1/3" key={article.id}>
-            <Article
-              id={article.id}
-              title={article.title}
-              img={article.articleImg}
-              paragraph={article.text.substring(1, 100)}
-              time={article.date}
-            />
-          </div>
-        );
-      })}
-    </div>
-  );
-};
 const Articles = () => {
-  const { t } = useTranslation();
-  return (
-    <div>
-      <div className="text-center">
-        <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
-          {t('articles')}
-        </h1>
-        <div className="flex box-content justify-center">
-          <p className="font-mono w-2/4">{t('articlesDetsils')}</p>
-        </div>
-        <div className="flex box-content justify-center">
-          <div className="flex box-content justify-center bg-white rounded-full shadow-xl w-2/5">
-            <input
-              className="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none"
-              id="search"
-              type="text"
-              placeholder={t('Search')}
-            />
-            <div className="p-4">
-              <button
-                type="button"
-                className="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center"
-              >
-                icon
-              </button>
+  const [articlesCollection, setArticles] = useState(articles);
+  const [search, setSearch] = useState('');
+
+  const getArticles = () => {
+    return articlesCollection.length !== 0 ? (
+      <div className="flex flex-wrap -mb-4">
+        {articlesCollection.map((article) => {
+          return (
+            <div className="lg:w-1/3 md:w-1/2 min-w-0" key={article.id}>
+              <Article
+                id={article.id}
+                title={article.title}
+                img={article.articleImg}
+                paragraph={article.text.substring(1, 100)}
+                time={article.date}
+                articleLink={article.articleLink.replaceAll('/', '$')}
+              />
             </div>
+          );
+        })}
+      </div>
+    ) : null;
+  };
+  const geHeadArticle = () => {
+    const headArt = search === '' ? articlesCollection[0] : null;
+
+    return headArt ? (
+      <Article
+        id={headArt.id}
+        title={headArt.title}
+        img={headArt.articleImg}
+        paragraph={headArt.text.substring(1, 100)}
+        time={headArt.date}
+        articleLink={headArt.articleLink.replaceAll('/', '$')}
+      />
+    ) : (
+      <div />
+    );
+  };
+  const filterArticle = (ser) => {
+    let feltered = articlesCollection;
+    if (ser !== '') {
+      feltered = articlesCollection.filter((m) =>
+        m.title.toString().toUpperCase().startsWith(ser.toString().toUpperCase())
+      );
+      setArticles(feltered);
+    } else setArticles(articles);
+  };
+  const handleSearch = (ser) => {
+    setSearch(ser.value);
+    filterArticle(ser.value);
+  };
+  return (
+    <div className="p-10">
+      <div className="mt-6 text-center ">
+        <h1 className="text-xl text-gray-600">Mental Health Articles & Advices</h1>
+        <div className="flex box-content justify-center">
+          <p className="font-mono w-2/4">
+            Extreme emotions, attitudes, and behaviors involving weight and food is a
+            kind of mental health problem. Read more about the causes, symptoms and
+            how to get help.
+          </p>
+        </div>
+        <div className="m-5 flex box-content justify-center">
+          <div className="flex box-content justify-center bg-white rounded-full w-2/4">
+            <input
+              type="text"
+              name="search"
+              placeholder="Search"
+              className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500"
+              onChange={(e) => handleSearch(e.target)}
+            />
           </div>
         </div>
       </div>
 
       <div className="flex flex-col">
-        <div className="w-full flex-grow">
-          <Article
-            id={99}
-            title={t('articletitle')}
-            img="https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851"
-            paragraph={t('articlepragraph')}
-          />
-        </div>
+        <div className="w-full flex-grow">{geHeadArticle()}</div>
         <div className="w-full flex " />
-        {articlesDives()}
+        {getArticles()}
       </div>
     </div>
   );
