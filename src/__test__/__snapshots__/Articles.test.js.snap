@@ -57,13 +57,13 @@ exports[`renders correctly 1`] = `
           className="container px-5 py-24 mx-auto"
         >
           <div
-            className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+            className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
           >
             <div
-              className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+              className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
             >
               <div
-                className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                 style={
                   Object {
                     "backgroundImage": "url(https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851",
@@ -71,19 +71,19 @@ exports[`renders correctly 1`] = `
                 }
               />
               <div
-                className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
               >
                 <div
-                  className="header-content inline-flex"
+                  className="inline-flex header-content"
                 >
                   <div
-                    className="category-title flex-1 text-sm text-gray-400"
+                    className="flex-1 text-sm text-gray-400 category-title"
                   >
-                    11/16/2020
+                    11/17/2020
                   </div>
                 </div>
                 <div
-                  className="title-post text-3xl"
+                  className="text-3xl title-post"
                 >
                   <h2
                     className="text-blue-500 "
@@ -92,13 +92,13 @@ exports[`renders correctly 1`] = `
                   </h2>
                 </div>
                 <div
-                  className="summary-post text-base text-justify text-1xl "
+                  className="text-base text-justify summary-post text-1xl "
                 >
                   <p>
                     Susanna Harris was sitting in her lab class for her graduate program at the University of North Carolina at Chapel Hill when she received an email that told her she had failed .
                   </p>
                   <button
-                    className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                    className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded"
                     type="button"
                   >
                     <li>
@@ -133,13 +133,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Mother%20Daughter_1.jpg?itok=B37_Y2SA",
@@ -147,19 +147,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -168,13 +168,13 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                        few years back, I gave my daughter a significant amount of money because she had lost her job and 
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded"
                       type="button"
                     >
                       <li>
@@ -203,13 +203,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Storm%20%281%29.jpg?itok=WnRJ6jAA",
@@ -217,19 +217,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -238,13 +238,13 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                       y friend hung himself 15 years ago and I still blame myself. Every day I feel like I’m just going t
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded"
                       type="button"
                     >
                       <li>
@@ -273,13 +273,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Relationship%20help%20v2.jpg?itok=rTF_Ti_5",
@@ -287,19 +287,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -308,13 +308,13 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                        am reaching out because things are not going well between my wife and me. Over the last several ye
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded"
                       type="button"
                     >
                       <li>
@@ -343,13 +343,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Father%20Son.jpg?itok=KjivBcsN",
@@ -357,19 +357,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -378,13 +378,13 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                       ur 14-year-old son is out of control. He is very aggressive toward family members and we fear for o
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded"
                       type="button"
                     >
                       <li>
@@ -413,13 +413,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/thumbnail_Web%20Parenting_2.jpg?itok=Fk0ULlBl",
@@ -427,19 +427,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -448,13 +448,13 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                       y girlfriend and I just moved in together after dating for about 2 years. She has a 13-year-old son
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded"
                       type="button"
                     >
                       <li>
@@ -483,13 +483,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/SadAdult.jpg?itok=4KYEsUSJ",
@@ -497,19 +497,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -518,13 +518,13 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                        feel upset all of time. It has been like this for several years. Nothing seems to go right, and&nb
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded"
                       type="button"
                     >
                       <li>
@@ -553,13 +553,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/TeenAnger.jpg?itok=w6qmzvuR",
@@ -567,19 +567,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -588,13 +588,13 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                        was wondering if you could help me to better understand how early childhood trauma would affect a 
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded"
                       type="button"
                     >
                       <li>
@@ -623,13 +623,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/friendshipsonline.jpg?itok=jj1ustT3",
@@ -637,19 +637,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -658,13 +658,13 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                       y 13-year-old son (soon to be 14) is having a hard time maintaining friendships. As a result, he te
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded"
                       type="button"
                     >
                       <li>
@@ -693,13 +693,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/kidnofriends.jpg?itok=n-KsUE6h",
@@ -707,19 +707,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -728,13 +728,13 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                       y 8-year-old son struggles with impulsivity and has little to no friends that initiate contact with
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded"
                       type="button"
                     >
                       <li>
