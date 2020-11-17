@@ -1,8 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import TeamCard from '../../components/teamCard';
 import { ReactComponent as WhatDo } from '../../asset/svg/whatdo3.svg';
 
 const About = () => {
+  const { t } = useTranslation();
   // const svg1 = {
   //   loop: true,
   //   autoplay: true,
@@ -24,9 +26,9 @@ const About = () => {
       <section className="mt-10 pt-10 relative bg-gray-200">
         <div className="justify-center text-center flex flex-wrap py-8">
           <div className="w-full md:w-6/12 px-12 md:px-4">
-            <h2 className="font-semibold text-4xl text-blue-700">About Us</h2>
+            <h2 className="font-semibold text-4xl text-blue-700">{t('aboutus')}</h2>
             <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              {t('detailaboutus')}
             </p>
           </div>
         </div>
@@ -41,12 +43,11 @@ const About = () => {
                 <div className="text-red-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                   <i className="fas fa-rocket text-xl" />
                 </div>
-                <h3 className="text-3xl font-semibold text-green-500">What we do</h3>
+                <h3 className="text-3xl font-semibold text-green-500">
+                  {t('mission')}
+                </h3>
                 <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
-                  ex placeat quia id consequuntur ullam, beatae minima sint
-                  consectetur natus illo praesentium voluptas maiores! Est ipsam
-                  autem eius velit quasi!
+                  {t('ourmission')}
                 </p>
               </div>
             </div>
@@ -68,13 +69,10 @@ const About = () => {
                   <i className="fas fa-chart-line text-xl" />
                 </div>
                 <h3 className="text-3xl font-semibold text-green-500">
-                  What we aim
+                  {t('ourgoals')}
                 </h3>
                 <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
-                  ex placeat quia id consequuntur ullam, beatae minima sint
-                  consectetur natus illo praesentium voluptas maiores! Est ipsam
-                  autem eius velit quasi!
+                  {t('goalsdetail')}
                 </p>
               </div>
             </div>
@@ -115,10 +113,9 @@ const About = () => {
       <section className="mt-10 pb-20 py-10 relative ">
         <div className="justify-center text-center flex flex-wrap py-8">
           <div className="w-full md:w-6/12 px-12 md:px-4">
-            <h2 className="font-semibold text-4xl text-blue-700">Our Team</h2>
+            <h2 className="font-semibold text-4xl text-blue-700">{t('ourteam')}</h2>
             <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
-              Meet our amazing members. Without them, we could not offer the support
-              our users need to rebuild their lives.
+              {t('detailteam')}
             </p>
           </div>
         </div>

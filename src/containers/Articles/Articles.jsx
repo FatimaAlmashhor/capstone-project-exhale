@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Article from '../../components/ArticleCard';
 import { articles } from '../../services/fakeArticleService';
 
@@ -22,16 +23,15 @@ const articlesDives = () => {
   );
 };
 const Articles = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="text-center">
-        <h1 className="text-4xl lg:text-5xl font-bold leading-tight">Articles</h1>
+        <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+          {t('articles')}
+        </h1>
         <div className="flex box-content justify-center">
-          <p className="font-mono w-2/4">
-            Extreme emotions, attitudes, and behaviors involving weight and food is a
-            kind of mental health problem. Read more about the causes, symptoms and
-            how to get help.
-          </p>
+          <p className="font-mono w-2/4">{t('articlesDetsils')}</p>
         </div>
         <div className="flex box-content justify-center">
           <div className="flex box-content justify-center bg-white rounded-full shadow-xl w-2/5">
@@ -39,7 +39,7 @@ const Articles = () => {
               className="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none"
               id="search"
               type="text"
-              placeholder="Search"
+              placeholder={t('Search')}
             />
             <div className="p-4">
               <button
@@ -57,9 +57,9 @@ const Articles = () => {
         <div className="w-full flex-grow">
           <Article
             id={99}
-            title="Coming Out About Mental Health On Social Media"
+            title={t('articletitle')}
             img="https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851"
-            paragraph="Susanna Harris was sitting in her lab class for her graduate program at the University of North Carolina at Chapel Hill when she received an email that told her she had failed ."
+            paragraph={t('articlepragraph')}
           />
         </div>
         <div className="w-full flex " />

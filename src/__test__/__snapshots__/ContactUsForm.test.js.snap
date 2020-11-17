@@ -2,24 +2,28 @@
 
 exports[`renders correctly 1`] = `
 <section
-  className="text-gray-700 body-font "
+  className="text-gray-700 body-font"
 >
   <div
     className="container px-5 py-24 mx-auto"
   >
     <div
-      className="flex flex-col w-full mb-12 text-center"
+      className=" flex flex-wrap justify-center text-center py-8"
     >
-      <h1
-        className="mb-4 text-2xl font-medium text-blue-800 sm:text-3xl title-font"
+      <div
+        className="w-full md:w-6/12 px-12 md:px-4"
       >
-        GetInTouch
-      </h1>
-      <p
-        className="mx-auto text-base leading-relaxed lg:w-2/3"
-      >
-        contactus
-      </p>
+        <h2
+          className=" text-4xl text-blue-700"
+        >
+          GetInTouch
+        </h2>
+        <p
+          className="text-lg leading-relaxed mt-4 mb-4 text-gray-600"
+        >
+          contactus
+        </p>
+      </div>
     </div>
     <form
       onSubmit={[Function]}

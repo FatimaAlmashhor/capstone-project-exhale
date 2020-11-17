@@ -71,11 +71,10 @@ const Home = () => {
             <div className="w-full px-4 ml-auto mr-auto md:w-6/12">
               <div className="pt-0 md:pt-16">
                 <h2 className="text-4xl font-semibold text-gray-700">
-                  We Here To Help You
+                  {t('HereHelpYou')}
                 </h2>
                 <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                  If you are feeling overwhelmed or unable to do the things you once
-                  enjoyed, it may be time to assess your emotional health.
+                  {t('HowHelp')}
                 </p>
                 <div>
                   <button
@@ -94,9 +93,9 @@ const Home = () => {
         <SeparatorSVG />
         <div className="flex flex-wrap justify-center py-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
-            <h2 className="text-4xl font-semibold">Why Use Exhale?</h2>
+            <h2 className="text-4xl font-semibold">{t('whyexhal')}</h2>
             <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-600">
-              Learn the reasons why you should be using Exhale
+              {t('ReasonsUseExhale')}
             </p>
           </div>
         </div>
@@ -112,12 +111,9 @@ const Home = () => {
             </div>
             <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
               <div className="md:pr-4">
-                <h3 className="text-3xl font-semibold">
-                  Check up And Speed Service
-                </h3>
+                <h3 className="text-3xl font-semibold">{t('checkupservice')}</h3>
                 <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                  Request a check and have your examination done in a matter of
-                  minutes and not days and all that with Volunteering doctors
+                  {t('detailcheckup')}
                 </p>
               </div>
             </div>
@@ -131,12 +127,9 @@ const Home = () => {
             </div>
             <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
               <div className="md:pr-4">
-                <h3 className="text-3xl font-semibold">
-                  Learn How To Take Care Of Yourself
-                </h3>
+                <h3 className="text-3xl font-semibold">{t('tackcarofurself')}</h3>
                 <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                  You can now focus on the important things such as work, family or
-                  just being able to relax Learn All that here .
+                  {t('detailTackare')}
                 </p>
               </div>
             </div>
@@ -147,9 +140,9 @@ const Home = () => {
         <SeparatorSVG color="white" />
         <div className="flex flex-wrap justify-center py-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
-            <h2 className="text-4xl font-semibold">Meet Our Doctors</h2>
+            <h2 className="text-4xl font-semibold">{t('meetdoctor')}</h2>
             <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-600">
-              you can take look at them here
+              {t('takelook')}
             </p>
           </div>
         </div>
@@ -163,7 +156,7 @@ const Home = () => {
                 to={DOCTORS_ROUTE}
                 className="justify-center p-2 text-lg text-center text-yellow-500 transition-all duration-200 border-2 border-t-2 border-yellow-500 rounded-lg hover:shadow-sm hover:text-white hover:bg-yellow-400 hover:border-white"
               >
-                See More
+                {t('seemore')}
               </Link>
             </div>
           </div>
@@ -173,9 +166,11 @@ const Home = () => {
         <SeparatorSVG color="blue-800" />
         <div className="flex flex-wrap justify-center py-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
-            <h2 className="text-4xl font-semibold text-white">Self Assessment</h2>
+            <h2 className="text-4xl font-semibold text-white">
+              {t('selfAssessment')}
+            </h2>
             <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-400">
-              let see if you need any help
+              {t('needhelp')}
             </p>
             <div>
               <button
@@ -192,9 +187,9 @@ const Home = () => {
         <SeparatorSVG color="white" />
         <div className="flex flex-wrap justify-center py-8 mt-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
-            <h2 className="text-4xl font-semibold">Read Something Helpful</h2>
+            <h2 className="text-4xl font-semibold">{t('helpfulread')}</h2>
             <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-600">
-              let see if you need any help
+              {t('needhelp')}
             </p>
           </div>
         </div>
@@ -208,7 +203,7 @@ const Home = () => {
                 to={ARTICLES_BASE_ROUTE}
                 className="justify-center p-2 text-lg text-center text-yellow-500 transition-all duration-200 border-2 border-t-2 border-yellow-500 rounded-lg hover:shadow-sm hover:text-white hover:bg-yellow-400 hover:border-white"
               >
-                See More
+                {t('seemore')}
               </Link>
             </div>
           </div>

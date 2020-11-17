@@ -1,19 +1,20 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Card from '../../components/common/Card/Card';
 import DoctorCard from '../../components/DoctorCard/DoctorCard';
 import FirstDoctorCard from '../../components/DoctorCard/FirstDoctorCard';
 import { doctors } from '../../services/fakeDoctorsServices';
 
 const Doctors = () => {
+  const { t } = useTranslation();
   return (
     <div className="p-10">
       <div className="mt-6 text-center ">
-        <h1 className="text-xl text-gray-600">Our Psychiatrists</h1>
+        <h1 className="text-xl text-gray-600">{t('ourpsychiatrists')}</h1>
         <p className="mt-2 mb-8 text-gray-500">
-          Need help but you don&sbquo;t know where to go? Or you&sbquo;re worried
-          about someone you know - help is available. You&sbquo;re
+          {t('psychiatristsDetails')}
           <br />
-          not alone. Meet our experienced psychiatrists to seek the counsel you need.
+          {t('contentbr')}
         </p>
       </div>
       <FirstDoctorCard name="Dr. Mohammad Al-Khulaidi" specialty="Sleep Disorder" />
