@@ -73,6 +73,7 @@ const SelfAssessment = () => {
           <FontAwesomeIcon
             className="pt-1 text-lg text-green-400 md:text-xl"
             icon={['fas', 'chevron-left']}
+            isClickToPauseDisabled
           />
           <span className="ml-5 text-base text-gray-500">BACK</span>
         </button>
@@ -94,6 +95,7 @@ const SelfAssessment = () => {
                         options={defaultOptions(register)}
                         height="auto"
                         width="100%"
+                        isClickToPauseDisabled
                       />
                     </div>
                     <div className="w-full mt-5 ">
@@ -101,7 +103,7 @@ const SelfAssessment = () => {
                     </div>
                     <div className="w-full flex">
                       <Link
-                        className="pb-2 justify-center mx-auto w-full text-center font-medium leading-6 text-blue-400 hover:text-gray-400 whitespace-no-wrap border-b border-white  focus:border-gray-500 focus:outline-none focus:text-gray-900"
+                        className="p-2 justify-center items-center mx-auto w-full hover:bg-transparent text-center font-medium border-blue-400 bg-blue-400 leading-6 text-white hover:text-gray-600 whitespace-no-wrap  focus:border-gray-500 focus:outline-none focus:text-gray-900 transition-all duration-100 "
                         to={{
                           pathname: LOGIN_ROUTE,
                           state: { modal: location },
