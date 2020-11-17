@@ -61,7 +61,7 @@ const SelfAssessment = () => {
   });
 
   return (
-    <div className="flex flex-col w-4/5 mx-auto mt-10 md:w-8/12 lg:w-6/12 mb-10">
+    <div className="flex flex-col mt-56 w-4/5 mx-auto mt-10 md:w-8/12 lg:w-6/12 mb-10">
       <ProgressBar showLabel max={Tasks.length} now={displayIndex} />
       {TasksBicker}
       <div className="mt-16 ">
