@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useParams, useHistory, withRouter } from 'react-router-dom';
+import { useParams, useHistory, withRouter, useLocation } from 'react-router-dom';
 import Signup from '../../../../containers/Signup';
 import Singin from '../../../../containers/Login';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
@@ -10,9 +10,18 @@ import hi from '../../../../Lottie/hello.json';
 
 const ModalHolder = () => {
   const { id } = useParams();
+  const location = useLocation();
   const history = useHistory();
+
   const [show, setShow] = useState(true);
   const [previsePath] = useState(history.location.state.modal);
+  const [isSignedIn, setisSignedIn] = useState(false);
+
+  React.useEffect(() => {
+    fire.auth().onAuthStateChanged((user) => {
+      setisSignedIn(!!user);
+    });
+  }, [location]);
 
   const handleClose = () => {
     setShow(false);
@@ -41,10 +50,9 @@ const ModalHolder = () => {
                   <Lottie options={defaultOptions} height="auto" width="120%" />
                 </div>
                 <div className="mx-auto w-full">
-                  <StyledFirebaseAuth
-                    uiConfig={uiConfig}
-                    firebaseAuth={fire.auth()}
-                  />
+                  {isSignedIn ? null : (
+                    <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={fire.auth()} />
+                  )}      
                 </div>
               </div>
               <div className="mx-auto pr-3">
