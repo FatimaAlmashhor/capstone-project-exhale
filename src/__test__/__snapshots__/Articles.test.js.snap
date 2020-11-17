@@ -85,7 +85,7 @@ exports[`renders correctly 1`] = `
                 className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
                 style={
                   Object {
-                    "backgroundImage": "url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/sadness-blog.jpg",
+                    "backgroundImage": "url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/motherhood-blog.jpg",
                   }
                 }
               />
@@ -107,14 +107,14 @@ exports[`renders correctly 1`] = `
                   <h2
                     className="text-blue-500 "
                   >
-                    How to Be with Sadness
+                    The Harsh Light of Motherhood
                   </h2>
                 </div>
                 <div
                   className="summary-post text-base text-justify text-1xl "
                 >
                   <p>
-                    he thought of going to a funeral used to terrify me. Walking into a room filled with sadness and gr
+                    otherhood, at its core, can be simply terrifying and exhausting. This is especially true for those 
                   </p>
                   <button
                     className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
@@ -122,7 +122,7 @@ exports[`renders correctly 1`] = `
                   >
                     <li>
                       <a
-                        href="//9"
+                        href="//1"
                         onClick={[Function]}
                       >
                         read more

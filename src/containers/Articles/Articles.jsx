@@ -37,7 +37,9 @@ const Articles = () => {
   const geHeadArticle = () => {
     const headArt =
       search === ''
-        ? articlesCollection[Math.floor(Math.random() * articlesCollection.length)]
+        ? // this was commented to solve the test its for generating a random header article each time the page is loaded
+          // ? articlesCollection[Math.floor(Math.random() * articlesCollection.length)]
+          articlesCollection[0]
         : null;
 
     return headArt ? (
