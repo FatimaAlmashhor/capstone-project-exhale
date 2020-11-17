@@ -12,7 +12,8 @@ const ModalHolder = () => {
     const location = useLocation();
     const [show , setShow] = useState(true)
     const [previsePath , setPreviesPath] = useState(history.location.state.modal)
-  
+    const [isSignedIn, setisSignedIn] = useState(false);
+
     const handleClose = () => {
         setShow(false)
         history.push(previsePath) 
@@ -20,6 +21,9 @@ const ModalHolder = () => {
     React.useEffect(()=>{
             console.log(location);
             console.log(previsePath);
+            fire.auth().onAuthStateChanged((user) => {
+                setisSignedIn(!!user);
+              });
     } , [location])
     return (
         <div>
@@ -28,8 +32,9 @@ const ModalHolder = () => {
                 <Header title={id === 'login' ? "SIGN IN" : "SING UP"} onClick={handleClose} />
                <Body>
                
-            <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={fire.auth()} />
-            {
+               {isSignedIn ? null : (
+        <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={fire.auth()} />
+      )}            {
                 id == 'login' ?(
                     <Singin />
                 ):(
