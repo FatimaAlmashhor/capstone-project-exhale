@@ -206,7 +206,8 @@ const Home = () => {
         </div>
         <div className="py-4 team-1 md:py-12">
           <div className="container px-4 mx-auto">
-            <div className="overflow-hidden md:flex md:-mx-4 md:mt-12 md:mb-6 team-list">
+            <div className="flex flex-wrap overflow-hidden w-1-2 md:flex md:-mx-4 md:mt-12 md:mb-6 team-list">
+              {articleItem}
               {articleItem}
             </div>
             <div className="flex justify-center w-full">
