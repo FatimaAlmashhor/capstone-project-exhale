@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import {
   ABOUT_ROUTE,
   CONTACT_ROUTE,
@@ -14,8 +13,6 @@ import {
 import i18n from '../../i18next';
 
 const Footer = () => {
-  const { t } = useTranslation();
-
   return (
     <footer className="relative bg-blue-800 pt-8 pb-6">
       <div
@@ -91,7 +88,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="mt-10 flex  justify-self-end w-full text-right">
+              <div className="mt-10 flex flex-row-reverse w-full text-right">
                 <DropdownButton />
               </div>
               <div className="w-full md:w-6/12 text-center xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto" />
@@ -159,7 +156,7 @@ export const DropdownButton = () => {
     i18n.changeLanguage(lng);
   };
   return (
-    <div className="inline-flex text-gray-400 mx-auto border-2 border-indigo-500 rounded overflow-hidden">
+    <div className="inline-flex text-gray-400 mx-auto md:mx-0 lg:mx-0 border-2 border-indigo-500 rounded overflow-hidden">
       <button
         id="btn-en"
         type="button"

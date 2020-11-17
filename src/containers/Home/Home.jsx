@@ -79,7 +79,7 @@ const Home = () => {
                 <div>
                   <button
                     type="button"
-                    className="inline-flex items-center justify-center px-4 py-2 my-4 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
+                    className="inline-flex items-center justify-center px-32 py-2 my-4 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
                   >
                     <Link to={SELF_ASSESSMENT_ROUTE}>{t('Checkup')}</Link>
                   </button>
@@ -154,7 +154,7 @@ const Home = () => {
             <div className="flex justify-center w-full mt-20">
               <Link
                 to={DOCTORS_ROUTE}
-                className="justify-center p-2 text-lg text-center text-yellow-500 transition-all duration-200 border-2 border-t-2 border-yellow-500 rounded-lg hover:shadow-sm hover:text-white hover:bg-yellow-400 hover:border-white"
+                className="justify-center px-16 py-2 text-center text-green-500 transition-all duration-200 border-2 border-t-2 border-green-500 rounded-lg hover:shadow-sm hover:text-white hover:bg-green-400 hover:border-white"
               >
                 {t('seemore')}
               </Link>
@@ -175,7 +175,7 @@ const Home = () => {
             <div>
               <button
                 type="button"
-                className="inline-flex items-center justify-center px-4 py-2 my-4 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-transparent border border-transparent border-white rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
+                className="inline-flex  items-center justify-center px-16 py-2 my-4 text-lg font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-transparent border border-transparent border-white rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
               >
                 <Link to={SELF_ASSESSMENT_ROUTE}>{t('Checkup')}</Link>
               </button>
@@ -201,7 +201,7 @@ const Home = () => {
             <div className="flex justify-center w-full">
               <Link
                 to={ARTICLES_BASE_ROUTE}
-                className="justify-center p-2 text-lg text-center text-yellow-500 transition-all duration-200 border-2 border-t-2 border-yellow-500 rounded-lg hover:shadow-sm hover:text-white hover:bg-yellow-400 hover:border-white"
+                className="justify-center px-16 py-2 text-center text-green-500 transition-all duration-200 border-2 border-t-2 border-green-500 rounded-lg hover:shadow-sm hover:text-white hover:bg-green-400 hover:border-white"
               >
                 {t('seemore')}
               </Link>
