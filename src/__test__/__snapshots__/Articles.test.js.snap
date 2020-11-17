@@ -1,14 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
+<div
+  className="p-10"
+>
   <div
-    className="text-center"
+    className="mt-6 text-center "
   >
     <h1
-      className="text-4xl lg:text-5xl font-bold leading-tight"
+      className="text-xl text-gray-600"
     >
-      articles
+      Mental Health Articles & Advices
     </h1>
     <div
       className="flex box-content justify-center"
@@ -16,31 +18,22 @@ exports[`renders correctly 1`] = `
       <p
         className="font-mono w-2/4"
       >
-        articlesDetsils
+        Extreme emotions, attitudes, and behaviors involving weight and food is a kind of mental health problem. Read more about the causes, symptoms and how to get help.
       </p>
     </div>
     <div
-      className="flex box-content justify-center"
+      className="m-5 flex box-content justify-center"
     >
       <div
-        className="flex box-content justify-center bg-white rounded-full shadow-xl w-2/5"
+        className="flex box-content justify-center bg-white rounded-full w-2/4"
       >
         <input
-          className="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none"
-          id="search"
+          className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500"
+          name="search"
+          onChange={[Function]}
           placeholder="Search"
           type="text"
         />
-        <div
-          className="p-4"
-        >
-          <button
-            className="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center"
-            type="button"
-          >
-            icon
-          </button>
-        </div>
       </div>
     </div>
   </div>
@@ -66,7 +59,7 @@ exports[`renders correctly 1`] = `
                 className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdn.shopify.com/s/files/1/0100/4430/9570/articles/Coming_Out_About_Mental_Health_On_Social_Media.jpg?v=1567939851",
+                    "backgroundImage": "url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/motherhood-blog.jpg",
                   }
                 }
               />
@@ -79,7 +72,7 @@ exports[`renders correctly 1`] = `
                   <div
                     className="category-title flex-1 text-sm text-gray-400"
                   >
-                    11/17/2020
+                    March 12th, 2019
                   </div>
                 </div>
                 <div
@@ -88,25 +81,25 @@ exports[`renders correctly 1`] = `
                   <h2
                     className="text-blue-500 "
                   >
-                    articletitle
+                    The Harsh Light of Motherhood
                   </h2>
                 </div>
                 <div
                   className="summary-post text-base text-justify text-1xl "
                 >
                   <p>
-                    articlepragraph
+                    otherhood, at its core, can be simply terrifying and exhausting. This is especially true for those 
                   </p>
                   <button
-                    className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                    className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
                     type="button"
                   >
                     <li>
                       <a
-                        href="//99"
+                        href="//1"
                         onClick={[Function]}
                       >
-                        articletitle
+                        Read More
                       </a>
                     </li>
                   </button>
@@ -124,7 +117,7 @@ exports[`renders correctly 1`] = `
       className="flex flex-wrap -mb-4"
     >
       <div
-        className="w-1/3"
+        className="lg:w-1/3 md:w-1/2 min-w-0"
       >
         <section
           className="blog "
@@ -142,7 +135,7 @@ exports[`renders correctly 1`] = `
                   className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
                   style={
                     Object {
-                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Mother%20Daughter_1.jpg?itok=B37_Y2SA",
+                      "backgroundImage": "url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/motherhood-blog.jpg",
                     }
                   }
                 />
@@ -164,17 +157,17 @@ exports[`renders correctly 1`] = `
                     <h2
                       className="text-blue-500 "
                     >
-                      Lending Money to My Daughter
+                      The Harsh Light of Motherhood
                     </h2>
                   </div>
                   <div
                     className="summary-post text-base text-justify text-1xl "
                   >
                     <p>
-                       few years back, I gave my daughter a significant amount of money because she had lost her job and 
+                      otherhood, at its core, can be simply terrifying and exhausting. This is especially true for those 
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
                       type="button"
                     >
                       <li>
@@ -182,7 +175,7 @@ exports[`renders correctly 1`] = `
                           href="//1"
                           onClick={[Function]}
                         >
-                          Lending Money to My Daughter
+                          Read More
                         </a>
                       </li>
                     </button>
@@ -194,7 +187,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="w-1/3"
+        className="lg:w-1/3 md:w-1/2 min-w-0"
       >
         <section
           className="blog "
@@ -212,7 +205,7 @@ exports[`renders correctly 1`] = `
                   className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
                   style={
                     Object {
-                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Storm%20%281%29.jpg?itok=WnRJ6jAA",
+                      "backgroundImage": "url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/finding-a-partner-blog.jpg",
                     }
                   }
                 />
@@ -234,17 +227,17 @@ exports[`renders correctly 1`] = `
                     <h2
                       className="text-blue-500 "
                     >
-                      I Blame Myself for My Best Friend's Suicide
+                      Finding a Partner Who Accepts My Mental Illness
                     </h2>
                   </div>
                   <div
                     className="summary-post text-base text-justify text-1xl "
                   >
                     <p>
-                      y friend hung himself 15 years ago and I still blame myself. Every day I feel like I’m just going t
+                       can’t change who I am or the challenges I’ve had to face. What I can do is choose who and what to 
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
                       type="button"
                     >
                       <li>
@@ -252,7 +245,7 @@ exports[`renders correctly 1`] = `
                           href="//2"
                           onClick={[Function]}
                         >
-                          I Blame Myself for My Best Friend's Suicide
+                          Read More
                         </a>
                       </li>
                     </button>
@@ -264,7 +257,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="w-1/3"
+        className="lg:w-1/3 md:w-1/2 min-w-0"
       >
         <section
           className="blog "
@@ -282,7 +275,7 @@ exports[`renders correctly 1`] = `
                   className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
                   style={
                     Object {
-                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Relationship%20help%20v2.jpg?itok=rTF_Ti_5",
+                      "backgroundImage": "url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/bipolar-blog.jpg",
                     }
                   }
                 />
@@ -304,17 +297,17 @@ exports[`renders correctly 1`] = `
                     <h2
                       className="text-blue-500 "
                     >
-                       I Am Afraid My Wife Is Having an Affair
+                      What People Get Wrong About Bipolar Disorder
                     </h2>
                   </div>
                   <div
                     className="summary-post text-base text-justify text-1xl "
                   >
                     <p>
-                       am reaching out because things are not going well between my wife and me. Over the last several ye
+                      ipolar disorder is a complicated mental illness. It has a variety of layers and symptoms, which can
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
                       type="button"
                     >
                       <li>
@@ -322,7 +315,7 @@ exports[`renders correctly 1`] = `
                           href="//3"
                           onClick={[Function]}
                         >
-                           I Am Afraid My Wife Is Having an Affair
+                          Read More
                         </a>
                       </li>
                     </button>
@@ -334,7 +327,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="w-1/3"
+        className="lg:w-1/3 md:w-1/2 min-w-0"
       >
         <section
           className="blog "
@@ -352,7 +345,7 @@ exports[`renders correctly 1`] = `
                   className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
                   style={
                     Object {
-                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/Web%20Father%20Son.jpg?itok=KjivBcsN",
+                      "backgroundImage": "url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/support-not-guild-blog.jpg",
                     }
                   }
                 />
@@ -374,17 +367,17 @@ exports[`renders correctly 1`] = `
                     <h2
                       className="text-blue-500 "
                     >
-                      My Son Is Out of Control 
+                      When Someone is Suicidal, Choose Support — Not Guilt
                     </h2>
                   </div>
                   <div
                     className="summary-post text-base text-justify text-1xl "
                   >
                     <p>
-                      ur 14-year-old son is out of control. He is very aggressive toward family members and we fear for o
+                      hen Someone is Suicidal, Choose Support — Not Guilt
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
                       type="button"
                     >
                       <li>
@@ -392,7 +385,7 @@ exports[`renders correctly 1`] = `
                           href="//4"
                           onClick={[Function]}
                         >
-                          My Son Is Out of Control 
+                          Read More
                         </a>
                       </li>
                     </button>
@@ -404,7 +397,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="w-1/3"
+        className="lg:w-1/3 md:w-1/2 min-w-0"
       >
         <section
           className="blog "
@@ -422,7 +415,7 @@ exports[`renders correctly 1`] = `
                   className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
                   style={
                     Object {
-                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/thumbnail_Web%20Parenting_2.jpg?itok=Fk0ULlBl",
+                      "backgroundImage": "url(https://www.healthyplace.com/sites/default/files/styles/blog_listing/public/2020-11/Does%20Victim%20Mentality%20Play%20a%20Role%20in%20Depression.jpg?itok=gBu3jcna",
                     }
                   }
                 />
@@ -444,17 +437,17 @@ exports[`renders correctly 1`] = `
                     <h2
                       className="text-blue-500 "
                     >
-                      My Girlfriend Wants Her Kids to Call Me Dad
+                      Does Victim Mentality Play a Role in Depression?
                     </h2>
                   </div>
                   <div
                     className="summary-post text-base text-justify text-1xl "
                   >
                     <p>
-                      y girlfriend and I just moved in together after dating for about 2 years. She has a 13-year-old son
+                      irst off, I want to clarify that depression and victim mentality are not the same. The former is a 
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
                       type="button"
                     >
                       <li>
@@ -462,7 +455,7 @@ exports[`renders correctly 1`] = `
                           href="//5"
                           onClick={[Function]}
                         >
-                          My Girlfriend Wants Her Kids to Call Me Dad
+                          Read More
                         </a>
                       </li>
                     </button>
@@ -474,7 +467,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="w-1/3"
+        className="lg:w-1/3 md:w-1/2 min-w-0"
       >
         <section
           className="blog "
@@ -524,7 +517,7 @@ exports[`renders correctly 1`] = `
                        feel upset all of time. It has been like this for several years. Nothing seems to go right, and&nb
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
                       type="button"
                     >
                       <li>
@@ -532,7 +525,7 @@ exports[`renders correctly 1`] = `
                           href="//6"
                           onClick={[Function]}
                         >
-                          I'm Always Upset and Not Sure What To Do
+                          Read More
                         </a>
                       </li>
                     </button>
@@ -544,7 +537,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="w-1/3"
+        className="lg:w-1/3 md:w-1/2 min-w-0"
       >
         <section
           className="blog "
@@ -562,7 +555,7 @@ exports[`renders correctly 1`] = `
                   className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
                   style={
                     Object {
-                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/TeenAnger.jpg?itok=w6qmzvuR",
+                      "backgroundImage": "url(https://www.healthyplace.com/sites/default/files/styles/blog_listing/public/2020-10/pursuit%20of%20success.jpg?itok=t8ppsuEM",
                     }
                   }
                 />
@@ -584,17 +577,17 @@ exports[`renders correctly 1`] = `
                     <h2
                       className="text-blue-500 "
                     >
-                      Is Teen Anger Connected to Childhood Trauma?
+                      When the Pressure to Succeed Damages Your Mental Health
                     </h2>
                   </div>
                   <div
                     className="summary-post text-base text-justify text-1xl "
                   >
                     <p>
-                       was wondering if you could help me to better understand how early childhood trauma would affect a 
+                      obody is immune to the pressure to succeed. Whether it comes from family, teachers, bosses, or ours
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
                       type="button"
                     >
                       <li>
@@ -602,7 +595,7 @@ exports[`renders correctly 1`] = `
                           href="//7"
                           onClick={[Function]}
                         >
-                          Is Teen Anger Connected to Childhood Trauma?
+                          Read More
                         </a>
                       </li>
                     </button>
@@ -614,7 +607,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="w-1/3"
+        className="lg:w-1/3 md:w-1/2 min-w-0"
       >
         <section
           className="blog "
@@ -654,17 +647,17 @@ exports[`renders correctly 1`] = `
                     <h2
                       className="text-blue-500 "
                     >
-                      My 13-Year-Old Says Making Friends Is Easier Online
+                      From Patient to Survivor
                     </h2>
                   </div>
                   <div
                     className="summary-post text-base text-justify text-1xl "
                   >
                     <p>
-                      y 13-year-old son (soon to be 14) is having a hard time maintaining friendships. As a result, he te
+                      y journey started during Game 2 of the 2013 World Series; starting pitcher was John Lackey for the 
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
                       type="button"
                     >
                       <li>
@@ -672,7 +665,7 @@ exports[`renders correctly 1`] = `
                           href="//8"
                           onClick={[Function]}
                         >
-                          My 13-Year-Old Says Making Friends Is Easier Online
+                          Read More
                         </a>
                       </li>
                     </button>
@@ -684,7 +677,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="w-1/3"
+        className="lg:w-1/3 md:w-1/2 min-w-0"
       >
         <section
           className="blog "
@@ -702,7 +695,7 @@ exports[`renders correctly 1`] = `
                   className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
                   style={
                     Object {
-                      "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/kidnofriends.jpg?itok=n-KsUE6h",
+                      "backgroundImage": "url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/sadness-blog.jpg",
                     }
                   }
                 />
@@ -724,17 +717,17 @@ exports[`renders correctly 1`] = `
                     <h2
                       className="text-blue-500 "
                     >
-                      My Son Is Impulsive and Has Trouble Making Friends
+                      How to Be with Sadness
                     </h2>
                   </div>
                   <div
                     className="summary-post text-base text-justify text-1xl "
                   >
                     <p>
-                      y 8-year-old son struggles with impulsivity and has little to no friends that initiate contact with
+                      he thought of going to a funeral used to terrify me. Walking into a room filled with sadness and gr
                     </p>
                     <button
-                      className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
                       type="button"
                     >
                       <li>
@@ -742,7 +735,7 @@ exports[`renders correctly 1`] = `
                           href="//9"
                           onClick={[Function]}
                         >
-                          My Son Is Impulsive and Has Trouble Making Friends
+                          Read More
                         </a>
                       </li>
                     </button>

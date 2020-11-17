@@ -18,7 +18,7 @@ const Articles = () => {
                 img={article.articleImg}
                 paragraph={article.text.substring(1, 100)}
                 time={article.date}
-                articleLink={article.articleLink.replaceAll('/', '$')}
+                articleLink={article.articleLink.replace('///g', '$')}
               />
             </div>
           );
@@ -36,7 +36,7 @@ const Articles = () => {
         img={headArt.articleImg}
         paragraph={headArt.text.substring(1, 100)}
         time={headArt.date}
-        articleLink={headArt.articleLink.replaceAll('/', '$')}
+        articleLink={headArt.articleLink.replace('///g', '$')}
       />
     ) : (
       <div />

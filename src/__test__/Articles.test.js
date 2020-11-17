@@ -4,6 +4,12 @@ import {BrowserRouter as  Router} from 'react-router-dom'
 import Articles from '../containers/Articles/Articles';
 
 it('renders correctly', () => {
-  const tree = renderer.create(<Articles />).toJSON();
+  const tree = renderer
+    .create(
+      <Router>
+        <Articles />
+      </Router>
+    )
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });

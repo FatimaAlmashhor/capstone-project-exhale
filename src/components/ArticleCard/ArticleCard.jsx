@@ -40,7 +40,7 @@ const ArticleCard = ({ id, title, paragraph, time, img }) => {
               </div>
             </div>
           </div>
-          <Route path={`${url}/:Id`}>
+          <Route path={`${url}/:id`}>
             <Article id={id} />
           </Route>
         </div>
