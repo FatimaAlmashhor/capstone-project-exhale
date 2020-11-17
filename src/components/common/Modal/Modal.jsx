@@ -9,7 +9,7 @@ const Modal = ({ show, onClick, children }) => {
       {show ? (
         <>
           <div
-            className="fixed top-0 right-0 left-0  mt-5 xl:inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none"
+            className="fixed top-0 right-0 left-0  mt-5 lg:inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none"
             onClick={onClick}
           >
             <div
