@@ -69,13 +69,10 @@ const About = () => {
                   <i className="fas fa-chart-line text-xl" />
                 </div>
                 <h3 className="text-3xl font-semibold text-green-500">
-                  What we aim
+                  {t('ourgoals')}
                 </h3>
                 <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
-                  ex placeat quia id consequuntur ullam, beatae minima sint
-                  consectetur natus illo praesentium voluptas maiores! Est ipsam
-                  autem eius velit quasi!
+                  {t('goalsdetail')}
                 </p>
               </div>
             </div>
