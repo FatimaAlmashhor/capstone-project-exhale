@@ -9,13 +9,13 @@ const Doctors = () => {
   const [show, setShow] = useState(false);
   const [doctorId, setDoctorId] = useState(-1);
   return (
-    <div className=" relative h-screan bg-gray-400">
+    <div className="relative bg-gray-400 h-screan">
       <div
-        className="Header flex-grow  w-full h-64 top-0 py-64 "
+        className="top-0 flex-grow w-full h-64 py-64 Header "
         style={{ backgroundColor: '#ADCCD2' }}
       >
         <svg
-          className="absolute buttom-0 h-full w-full"
+          className="absolute w-full h-full buttom-0"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
@@ -24,23 +24,23 @@ const Doctors = () => {
         </svg>
       </div>
       <div
-        className="  mx-auto right-0 left-0  absolute w-full md:w-9/12 "
+        className="absolute left-0 right-0 w-full mx-auto md:w-9/12"
         style={{ top: '300px' }}
       >
         <div className="flex flex-col">
           <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-              <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+            <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+              <div className="overflow-hidden border-b border-gray-200 shadow sm:ronot provided yetd-lg">
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-200">
                     <tr>
-                      <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase bg-gray-50">
                         Name
                       </th>
-                      <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase bg-gray-50">
                         specialty
                       </th>
-                      <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase bg-gray-50">
                         workplace
                       </th>
                       <th className="px-6 py-3 bg-gray-50" />
@@ -51,15 +51,15 @@ const Doctors = () => {
                       <tr>
                         <td className="px-6 py-4 whitespace-no-wrap">
                           <div className="flex items-center">
-                            <div className="flex-shrink-0 h-10 w-10">
+                            <div className="flex-shrink-0 w-10 h-10">
                               <img
-                                className="h-10 w-10 rounded-full"
+                                className="w-10 h-10 ronot provided yetd-full"
                                 src={el.image}
                                 alt=""
                               />
                             </div>
                             <div className="ml-4">
-                              <div className="text-sm leading-5 font-medium text-gray-900">
+                              <div className="text-sm font-medium leading-5 text-gray-900">
                                 {el.name}
                               </div>
                               <div className="text-sm leading-5 text-gray-500">
@@ -74,11 +74,11 @@ const Doctors = () => {
                           </div>
                         </td>
                         <td className="px-6 py-4 whitespace-no-wrap">
-                          <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                          <span className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 ronot provided yetd-full">
                             {el.workplace}
                           </span>
                         </td>
-                        <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
+                        <td className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap">
                           <button
                             className="text-indigo-600 hover:text-blue-500"
                             onClick={() => {
@@ -109,18 +109,36 @@ const Doctors = () => {
                 <div>
                   <DoctorCard
                     show
-                    name={doctors[doctorId] ? doctors[doctorId - 1].name : 'unde'}
+                    name={
+                      doctors[doctorId - 1]
+                        ? doctors[doctorId - 1].name
+                        : 'not provided yet'
+                    }
                     specialty={
-                      doctors[doctorId] ? doctors[doctorId - 1].specialty : 'unde'
+                      doctors[doctorId - 1]
+                        ? doctors[doctorId - 1].specialty
+                        : 'not provided yet'
                     }
                     workplace={
-                      doctors[doctorId] ? doctors[doctorId - 1].workplace : 'unde'
+                      doctors[doctorId - 1]
+                        ? doctors[doctorId - 1].workplace
+                        : 'not provided yet'
                     }
                     address={
-                      doctors[doctorId] ? doctors[doctorId - 1].address : 'unde'
+                      doctors[doctorId - 1]
+                        ? doctors[doctorId - 1].address
+                        : 'not provided yet'
                     }
-                    phone={doctors[doctorId] ? doctors[doctorId].phone : 'unde'}
-                    img={doctors[doctorId] ? doctors[doctorId - 1].image : 'unde'}
+                    phone={
+                      doctors[doctorId - 1]
+                        ? doctors[doctorId - 1].phone
+                        : 'not provided yet'
+                    }
+                    img={
+                      doctors[doctorId - 1]
+                        ? doctors[doctorId - 1].image
+                        : 'not provided yet'
+                    }
                   />
                 </div>
               </Body>
