@@ -40,10 +40,10 @@ export default function ContactUsForm() {
   return (
     <section className="text-gray-700 body-font">
       <div className="container px-5 py-24 mx-auto">
-        <div className=" flex flex-wrap justify-center text-center py-8">
-          <div className="w-full md:w-6/12 px-12 md:px-4">
-            <h2 className=" text-4xl text-blue-700">{t('GetInTouch')}</h2>
-            <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
+        <div className="flex flex-wrap justify-center py-8 text-center ">
+          <div className="w-full px-12 md:w-6/12 md:px-4">
+            <h2 className="text-4xl text-blue-700 ">{t('GetInTouch')}</h2>
+            <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-600">
               {t('contactus')}
             </p>
           </div>
@@ -109,7 +109,12 @@ export default function ContactUsForm() {
                       Thank you for contacting us
                     </h1>
                     <div className="relative w-64 h-64 mx-auto overflow-hidden">
-                      <Lottie options={defaultOptions} height="auto" width="100%" />
+                      <Lottie
+                        isClickToPauseDisabled
+                        options={defaultOptions}
+                        height="auto"
+                        width="100%"
+                      />
                     </div>
                     <div className="w-full mt-5 ">
                       <p className="text-lg text-center text-blue-800">
