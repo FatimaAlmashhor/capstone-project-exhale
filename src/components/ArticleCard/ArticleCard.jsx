@@ -31,16 +31,16 @@ const ArticleCard = ({ id, title, paragraph, time, img }) => {
 
                 <button
                   type="button"
-                  className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+                  className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
                 >
                   <li key={id}>
-                    <Link to={`${url}/${id}`}>{title}</Link>
+                    <Link to={`${url}/${id}`}>Read More</Link>
                   </li>
                 </button>
               </div>
             </div>
           </div>
-          <Route path={`${url}/:Id`}>
+          <Route path={`${url}/:id`}>
             <Article id={id} />
           </Route>
         </div>
@@ -77,7 +77,7 @@ export const HorizontalArticleCard = ({
           <div className=" m-auto flex flex-col lg:flex-row ">
             {img && (
               <div
-                className="bg-gray-300 h-56 w-full flex w-auto lg:w-2/3 lg:h-auto shadow-sm bg-cover bg-center content-center "
+                className="bg-gray-300 h-56 w-full flex lg:w-2/3 lg:h-auto shadow-sm bg-cover bg-center content-center "
                 style={{ backgroundImage: `url(${img}` }}
               />
             )}

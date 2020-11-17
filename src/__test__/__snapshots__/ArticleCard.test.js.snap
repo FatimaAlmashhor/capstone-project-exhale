@@ -49,7 +49,7 @@ exports[`renders correctly 1`] = `
                
             </p>
             <button
-              className="bg-green-400 text-white px-2 mt-4 block rounded p-2 text-sm"
+              className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
               type="button"
             >
               <li>
@@ -57,7 +57,7 @@ exports[`renders correctly 1`] = `
                   href="//1"
                   onClick={[Function]}
                 >
-                   
+                  Read More
                 </a>
               </li>
             </button>
@@ -83,7 +83,7 @@ exports[`renders correctly 2`] = `
         className=" m-auto flex flex-col lg:flex-row "
       >
         <div
-          className="bg-gray-300 h-56 w-full flex w-auto lg:w-2/3 lg:h-auto shadow-sm bg-cover bg-center content-center "
+          className="bg-gray-300 h-56 w-full flex lg:w-2/3 lg:h-auto shadow-sm bg-cover bg-center content-center "
           style={
             Object {
               "backgroundImage": "url( ",

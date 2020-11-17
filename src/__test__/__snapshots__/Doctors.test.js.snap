@@ -40,7 +40,9 @@ exports[`renders correctly 1`] = `
                 </th>
                 <th
                   className="px-6 py-3 bg-gray-50"
-                />
+                >
+                   
+                </th>
               </tr>
             </thead>
             <tbody
@@ -102,6 +104,7 @@ exports[`renders correctly 1`] = `
                   <button
                     className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
+                    type="button"
                   >
                     Contact
                   </button>
@@ -167,6 +170,7 @@ exports[`renders correctly 1`] = `
                   <button
                     className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
+                    type="button"
                   >
                     Contact
                   </button>
@@ -232,6 +236,7 @@ exports[`renders correctly 1`] = `
                   <button
                     className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
+                    type="button"
                   >
                     Contact
                   </button>
@@ -297,6 +302,7 @@ exports[`renders correctly 1`] = `
                   <button
                     className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
+                    type="button"
                   >
                     Contact
                   </button>
@@ -362,6 +368,7 @@ exports[`renders correctly 1`] = `
                   <button
                     className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
+                    type="button"
                   >
                     Contact
                   </button>
@@ -427,6 +434,7 @@ exports[`renders correctly 1`] = `
                   <button
                     className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
+                    type="button"
                   >
                     Contact
                   </button>
@@ -492,6 +500,7 @@ exports[`renders correctly 1`] = `
                   <button
                     className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
+                    type="button"
                   >
                     Contact
                   </button>
@@ -557,6 +566,7 @@ exports[`renders correctly 1`] = `
                   <button
                     className="text-indigo-600 hover:text-blue-500"
                     onClick={[Function]}
+                    type="button"
                   >
                     Contact
                   </button>
