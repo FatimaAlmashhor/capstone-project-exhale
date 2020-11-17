@@ -8,7 +8,7 @@ const Articles = () => {
 
   const getArticles = () => {
     return articlesCollection.length !== 0 ? (
-      <div className="flex flex-wrap -mb-4">
+      <div className="flex flex-wrap -mb-4 mt-32">
         {articlesCollection.map((article) => {
           return (
             <div className="lg:w-1/3 md:w-1/2 min-w-0" key={article.id}>
@@ -56,7 +56,7 @@ const Articles = () => {
     filterArticle(ser.value);
   };
   return (
-    <div className="p-10">
+    <div className="p-10 mt-32">
       <div className="mt-6 text-center ">
         <h1 className="text-xl text-gray-600">Mental Health Articles & Advices</h1>
         <div className="flex box-content justify-center">
