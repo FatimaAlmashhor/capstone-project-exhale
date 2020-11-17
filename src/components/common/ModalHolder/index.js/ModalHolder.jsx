@@ -35,6 +35,7 @@ const ModalHolder = () => {
                <Body>
                 <div className ='flex w-auto flex-col md:flex-row-reverse'>
                   <div class='  mt-0 md:mt-3  md:border-l-2 md:ml-5 w-full md:w-2/5 '>
+
                    <div className ="overflow-hidden hidden md:block">
                      <Lottie options={defaultOptions} height='auto' width='120%' />
                    </div>
