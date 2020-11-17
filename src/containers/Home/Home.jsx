@@ -156,7 +156,7 @@ const Home = () => {
                 to={DOCTORS_ROUTE}
                 className="justify-center p-2 text-lg text-center text-yellow-500 transition-all duration-200 border-2 border-t-2 border-yellow-500 rounded-lg hover:shadow-sm hover:text-white hover:bg-yellow-400 hover:border-white"
               >
-                See More
+                {t('seemore')}
               </Link>
             </div>
           </div>
@@ -166,9 +166,11 @@ const Home = () => {
         <SeparatorSVG color="blue-800" />
         <div className="flex flex-wrap justify-center py-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
-            <h2 className="text-4xl font-semibold text-white">Self Assessment</h2>
+            <h2 className="text-4xl font-semibold text-white">
+              {t('selfAssessment')}
+            </h2>
             <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-400">
-              let see if you need any help
+              {t('needhelp')}
             </p>
             <div>
               <button
@@ -185,9 +187,9 @@ const Home = () => {
         <SeparatorSVG color="white" />
         <div className="flex flex-wrap justify-center py-8 mt-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
-            <h2 className="text-4xl font-semibold">Read Something Helpful</h2>
+            <h2 className="text-4xl font-semibold">{t('helpfulread')}</h2>
             <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-600">
-              let see if you need any help
+              {t('needhelp')}
             </p>
           </div>
         </div>
@@ -201,7 +203,7 @@ const Home = () => {
                 to={ARTICLES_BASE_ROUTE}
                 className="justify-center p-2 text-lg text-center text-yellow-500 transition-all duration-200 border-2 border-t-2 border-yellow-500 rounded-lg hover:shadow-sm hover:text-white hover:bg-yellow-400 hover:border-white"
               >
-                See More
+                {t('seemore')}
               </Link>
             </div>
           </div>
