@@ -7,27 +7,17 @@ import { articles } from '../../services/fakeArticleService';
 import Loading from '../../components/Loading';
 
 const Articles = () => {
-  const [artc, setstate] = useState(null);
+  const [articlesCollection, setArticles] = useState(articles);
+  const [search, setSearch] = useState('');
+
   const [moreLoaded, setLoadMore] = useState(false);
 
   const getArticles = () => {
-    articles.then((res) => {
-      setstate(res);
-    });
-    if (artc == null)
-      return (
-        <div>
-          <Loading />
-          <div className="text-cente">
-            <p>Loading articles please waite ...</p>
-          </div>
-        </div>
-      );
-    return (
+    return articlesCollection.length !== 0 ? (
       <div className="flex flex-wrap -mb-4">
-        {artc.map((article) => {
+        {articlesCollection.map((article) => {
           return (
-            <div className="lg:w-1/3 md:w-1/2 sm:w-1 min-w-0">
+            <div className="lg:w-1/3 md:w-1/2 min-w-0">
               <Article
                 id={article.id}
                 title={article.title}
@@ -40,20 +30,17 @@ const Articles = () => {
           );
         })}
       </div>
+    ) : (
+      <Loading />
     );
   };
   const geHeadArticle = () => {
-    if (artc == null)
-      return (
-        <div>
-          <Loading />
-          <div className="text-cente">
-            <p>Loading articles please waite ...</p>
-          </div>
-        </div>
-      );
-    const headArt = artc[Math.floor(Math.random() * artc.length)];
-    return (
+    const headArt =
+      search === ''
+        ? articlesCollection[Math.floor(Math.random() * articlesCollection.length)]
+        : null;
+
+    return headArt ? (
       <Article
         id={headArt.id}
         title={headArt.title}
@@ -62,7 +49,22 @@ const Articles = () => {
         time={headArt.date}
         articleLink={headArt.articleLink.replaceAll('/', '$')}
       />
+    ) : (
+      <div />
     );
+  };
+  const filterArticle = (ser) => {
+    let feltered = articlesCollection;
+    if (ser !== '') {
+      feltered = articlesCollection.filter((m) =>
+        m.title.toString().toUpperCase().startsWith(ser.toString().toUpperCase())
+      );
+      setArticles(feltered);
+    } else setArticles(articles);
+  };
+  const handleSearch = (ser) => {
+    setSearch(ser.value);
+    filterArticle(ser.value);
   };
   return (
     <div className="p-10">
@@ -82,6 +84,7 @@ const Articles = () => {
               id="search"
               type="text"
               placeholder="Search"
+              onChange={(e) => handleSearch(e.target)}
             />
             <div className="p-1">
               <button
@@ -102,6 +105,7 @@ const Articles = () => {
         <div className="w-full flex-grow">{geHeadArticle()}</div>
         <div className="w-full flex " />
         {getArticles()}
+        <div>{moreLoaded ? getArticles() : ' '}</div>
         <div className="flex">
           <button
             type="button"
@@ -113,7 +117,6 @@ const Articles = () => {
             {moreLoaded ? 'show less' : 'show more'}
           </button>
         </div>
-        <div>{moreLoaded ? getArticles() : ' '}</div>
       </div>
     </div>
   );

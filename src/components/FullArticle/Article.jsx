@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import articles from '../../services/fakeArticleService';
+import { articles } from '../../services/fakeArticleService';
 
 const Article = () => {
   const { id } = useParams();
