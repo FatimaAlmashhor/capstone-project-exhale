@@ -61,7 +61,7 @@ const SelfAssessment = () => {
   });
 
   return (
-    <div className="flex flex-col mt-56 w-4/5 mx-auto mt-10 md:w-8/12 lg:w-6/12 mb-10">
+    <div className="flex flex-col w-4/5 mx-auto mt-56 mb-10 md:w-8/12 lg:w-6/12">
       <ProgressBar showLabel max={Tasks.length} now={displayIndex} />
       {TasksBicker}
       <div className="mt-16 ">
@@ -90,7 +90,7 @@ const SelfAssessment = () => {
               <Body>
                 <div>
                   <div>
-                    <div className="w-64 h-64 mx-auto relative overflow-hidden">
+                    <div className="relative w-64 h-64 mx-auto overflow-hidden">
                       <Lottie
                         options={defaultOptions(register)}
                         height="auto"
@@ -101,9 +101,9 @@ const SelfAssessment = () => {
                     <div className="w-full mt-5 ">
                       <h1 className="text-center">Please Login ...</h1>
                     </div>
-                    <div className="w-full flex">
+                    <div className="flex w-full">
                       <Link
-                        className="p-2 justify-center items-center mx-auto w-full hover:bg-transparent text-center font-medium border-blue-400 bg-blue-400 leading-6 text-white hover:text-gray-600 whitespace-no-wrap  focus:border-gray-500 focus:outline-none focus:text-gray-900 transition-all duration-100 "
+                        className="items-center justify-center w-full p-2 mx-auto font-medium leading-6 text-center text-white whitespace-no-wrap transition-all duration-100 bg-blue-400 border-blue-400 hover:bg-transparent hover:text-gray-600 focus:border-gray-500 focus:outline-none focus:text-gray-900 "
                         to={{
                           pathname: LOGIN_ROUTE,
                           state: { modal: location },
@@ -131,8 +131,9 @@ const SelfAssessment = () => {
               <Body>
                 <div>
                   <div>
-                    <div className="w-64 h-64 mx-auto relative overflow-hidden">
+                    <div className="relative w-64 h-64 mx-auto overflow-hidden">
                       <Lottie
+                        isClickToPauseDisabled
                         options={defaultOptions(check)}
                         height="auto"
                         width="100%"
@@ -140,7 +141,7 @@ const SelfAssessment = () => {
                     </div>
                     <div className="w-full mt-5 ">
                       <h1 className="text-center">Your Result at Test Is</h1>
-                      <p className="text-center text-3xl text-red-500">
+                      <p className="text-3xl text-center text-red-500">
                         {final}
                         <span>%</span>
                       </p>

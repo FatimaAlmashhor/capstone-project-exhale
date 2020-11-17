@@ -44,18 +44,18 @@ const ModalHolder = () => {
             onClick={handleClose}
           />
           <Body>
-            <div className="flex w-auto flex-col md:flex-row-reverse">
+            <div className="flex flex-col w-auto md:flex-row-reverse">
               <div class="  mt-0 md:mt-3  md:border-l-2 md:ml-5 w-full md:w-2/5 ">
-                <div className="overflow-hidden hidden md:block">
-                  <Lottie options={defaultOptions} height="auto" width="120%" />
+                <div className="hidden overflow-hidden md:block">
+                  <Lottie isClickToPauseDisabled={true} options={defaultOptions} height="auto" width="120%" />
                 </div>
-                <div className="mx-auto w-full">
+                <div className="w-full mx-auto">
                   {isSignedIn ? null : (
                     <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={fire.auth()} />
                   )}      
                 </div>
               </div>
-              <div className="mx-auto pr-3">
+              <div className="pr-3 mx-auto">
                 {id === 'login' ? <Singin /> : <Signup />}
               </div>
             </div>

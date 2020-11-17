@@ -66,7 +66,12 @@ const Home = () => {
         <div className="container px-4 mx-auto my-10 ">
           <div className="flex flex-col-reverse items-center md:flex-row-reverse">
             <div className="w-full px-4 my-16 ml-auto mr-auto overflow-hidden md:w-5/12 md:my-0">
-              <Lottie options={defaultOptions(Hero)} width="100%" height="auto" />
+              <Lottie
+                isClickToPauseDisabled
+                options={defaultOptions(Hero)}
+                width="100%"
+                height="auto"
+              />
             </div>
             <div className="w-full px-4 ml-auto mr-auto md:w-6/12">
               <div className="pt-0 md:pt-16">
@@ -104,6 +109,7 @@ const Home = () => {
           <div className="flex flex-col items-center md:flex-row">
             <div className="w-full px-4 my-0 mr-auto overflow-hidden md:w-4/12 md:pt-0">
               <Lottie
+                isClickToPauseDisabled
                 options={defaultOptions(Analysis)}
                 width="100%"
                 height="auto"
@@ -123,7 +129,12 @@ const Home = () => {
         <div className="container px-4 py-8 mx-auto">
           <div className="flex flex-col items-center md:flex-row-reverse">
             <div className="w-full px-4 my-0 mr-auto overflow-hidden md:w-4/12 md:pt-0">
-              <Lottie options={defaultOptions(Yoga)} width="120%" height="auto" />
+              <Lottie
+                isClickToPauseDisabled
+                options={defaultOptions(Yoga)}
+                width="120%"
+                height="auto"
+              />
             </div>
             <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
               <div className="md:pr-4">
@@ -175,7 +186,7 @@ const Home = () => {
             <div>
               <button
                 type="button"
-                className="inline-flex  items-center justify-center px-16 py-2 my-4 text-lg font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-transparent border border-transparent border-white rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
+                className="inline-flex items-center justify-center px-16 py-2 my-4 text-lg font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-transparent border border-transparent border-white rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
               >
                 <Link to={SELF_ASSESSMENT_ROUTE}>{t('Checkup')}</Link>
               </button>

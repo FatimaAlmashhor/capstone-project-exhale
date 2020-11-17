@@ -46,9 +46,14 @@ const Signup = () => {
               <Body>
                 <div>
                   <div>
-                    <Lottie options={defaultOptions} height={300} width={300} />
+                    <Lottie
+                      isClickToPauseDisabled
+                      options={defaultOptions}
+                      height={300}
+                      width={300}
+                    />
                   </div>
-                  <h1 className="text-center mt-5 text-blue-600">
+                  <h1 className="mt-5 text-center text-blue-600">
                     Welcome To Our Site , We are Glad to have you here
                   </h1>
                 </div>
