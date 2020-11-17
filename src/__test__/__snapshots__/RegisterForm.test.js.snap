@@ -9,7 +9,7 @@ exports[`renders correctly 1`] = `
     onSubmit={[Function]}
   >
     <input
-      className="w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
+      className=" w-full  p-2 md:p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
       id="name"
       name="name"
       onChange={[Function]}
@@ -17,7 +17,7 @@ exports[`renders correctly 1`] = `
       type="text"
     />
     <input
-      className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
+      className="mt-2 md:mt-4 w-full  p-2 md:p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none "
       id="email"
       name="email"
       onChange={[Function]}
@@ -25,7 +25,7 @@ exports[`renders correctly 1`] = `
       type="text"
     />
     <input
-      className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
+      className="mt-2 md:mt-4 w-full  p-2 md:p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
       id="password"
       name="password"
       onChange={[Function]}
@@ -33,7 +33,7 @@ exports[`renders correctly 1`] = `
       type="password"
     />
     <input
-      className="mt-4 w-full p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
+      className=" mt-2 md:mt-4 w-full  p-2 md:p-3 leading-tight text-gray-700 border rounded  appearance-none focus:outline-none"
       id="confirmPassword"
       name="confirmPassword"
       onChange={[Function]}
@@ -41,7 +41,7 @@ exports[`renders correctly 1`] = `
       type="password"
     />
     <button
-      className="w-full px-4 py-3 mt-4 font-bold text-white bg-blue-800 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+      className="w-full px-2 py-1 md:px-4 py-3 mt-4 font-bold text-white bg-blue-800 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
       type="submit"
     >
       SignUP

@@ -1,25 +1,61 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
+import Lottie from 'react-lottie';
 import fire from '../../firebase';
 import RegisterForm from '../../components/RegisterForm/RegisterForm';
 import { LOGIN_ROUTE } from '../../routes';
+import Modal, { Body } from '../../components/common/Modal/Modal';
+import hi from '../../Lottie/hi.json';
 
 const Signup = () => {
   const [isSignedIn, setisSignedIn] = useState(false);
   const location = useLocation();
+  const history = useHistory();
+
   const { t } = useTranslation();
   useEffect(() => {
     fire.auth().onAuthStateChanged((user) => {
       setisSignedIn(!!user);
+      if (isSignedIn) {
+        setTimeout(() => {
+          history.push('/');
+        }, 3000);
+      }
     });
   });
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: hi,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
   return (
     <div>
       {isSignedIn ? (
-        <span>
-          <div className="text-red-600">Signed In!</div>
-        </span>
+        <>
+          <Modal
+            show={isSignedIn}
+            onClick={() => {
+              setisSignedIn(false);
+            }}
+          >
+            <div>
+              <Body>
+                <div>
+                  <div>
+                    <Lottie options={defaultOptions} height={300} width={300} />
+                  </div>
+                  <h1 className="text-center mt-5 text-blue-600">
+                    Welcome To Our Site , We are Glad to have you here
+                  </h1>
+                </div>
+              </Body>
+            </div>
+          </Modal>
+        </>
       ) : (
         <>
           <div>
@@ -29,8 +65,8 @@ const Signup = () => {
               </div>
             </div>
             <RegisterForm />
-            <div>
-              <p className="mt-5 text-sm text-gray-500">
+            <div className="text-center ">
+              <p className="mt-1 text-sm text-gray-500">
                 {t('haveAccount')}
                 <Link
                   className="text-blue-500 cursor-pointer "
