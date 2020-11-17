@@ -3,8 +3,8 @@ import personImage from '../asset/images/placeholder-image.jpg';
 export const members = [
   {
     id: 1,
-    img: { personImage },
-    name: 'Member Name',
+    img: '../../asset/images/default-image.PNG',
+    name: 'Marwa  alaghbri',
     major: 'Front End Developer',
     email: 'example.exam@gmail.com',
     twitter: 'https://twitter.com',
@@ -15,8 +15,8 @@ export const members = [
   {
     id: 2,
     img: { personImage },
-    name: 'Member Name',
-    major: 'Front End Developer',
+    name: 'Dhiaa Alshamy',
+    major: 'IT',
     email: 'example.exam@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
@@ -26,8 +26,8 @@ export const members = [
   {
     id: 3,
     img: { personImage },
-    name: 'Member Name',
-    major: 'Front End Developer',
+    name: 'Fatima Almashhor',
+    major: 'CTO',
     email: 'example.exam@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
@@ -37,8 +37,8 @@ export const members = [
   {
     id: 4,
     img: { personImage },
-    name: 'Member Name',
-    major: 'Front End Developer',
+    name: 'Marie Jensen',
+    major: 'CEO, Designer',
     email: 'example.exam@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
@@ -48,8 +48,8 @@ export const members = [
   {
     id: 5,
     img: { personImage },
-    name: 'Member Name',
-    major: 'Front End Developer',
+    name: 'Nuha Al-sameai',
+    major: 'CS',
     email: 'example.exam@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
@@ -59,8 +59,8 @@ export const members = [
   {
     id: 6,
     img: { personImage },
-    name: 'Member Name',
-    major: 'Front End Developer',
+    name: 'Somaia Al- Mekhlafi',
+    major: 'Mechatronics Engineer',
     email: 'example.exam@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
