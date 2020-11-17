@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import {
   ABOUT_ROUTE,
   CONTACT_ROUTE,
@@ -14,8 +13,6 @@ import {
 import i18n from '../../i18next';
 
 const Footer = () => {
-  const { t } = useTranslation();
-
   return (
     <footer className="relative bg-blue-800 pt-8 pb-6">
       <div
