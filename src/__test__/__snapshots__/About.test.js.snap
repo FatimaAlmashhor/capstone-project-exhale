@@ -14,12 +14,12 @@ exports[`renders correctly 1`] = `
         <h2
           className="font-semibold text-4xl text-blue-700"
         >
-          About Us
+          aboutus
         </h2>
         <p
           className="text-lg leading-relaxed mt-4 mb-4 text-gray-600"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          detailaboutus
         </p>
       </div>
     </div>
@@ -52,12 +52,12 @@ exports[`renders correctly 1`] = `
             <h3
               className="text-3xl font-semibold text-green-500"
             >
-              What we do
+              mission
             </h3>
             <p
               className="mt-4 text-lg leading-relaxed text-gray-600"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus ex placeat quia id consequuntur ullam, beatae minima sint consectetur natus illo praesentium voluptas maiores! Est ipsam autem eius velit quasi!
+              ourmission
             </p>
           </div>
         </div>
@@ -88,12 +88,12 @@ exports[`renders correctly 1`] = `
             <h3
               className="text-3xl font-semibold text-green-500"
             >
-              What we aim
+              ourgoals
             </h3>
             <p
               className="mt-4 text-lg leading-relaxed text-gray-600"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus ex placeat quia id consequuntur ullam, beatae minima sint consectetur natus illo praesentium voluptas maiores! Est ipsam autem eius velit quasi!
+              goalsdetail
             </p>
           </div>
         </div>
@@ -158,12 +158,12 @@ exports[`renders correctly 1`] = `
         <h2
           className="font-semibold text-4xl text-blue-700"
         >
-          Our Team
+          ourteam
         </h2>
         <p
           className="text-lg leading-relaxed mt-4 mb-4 text-gray-600"
         >
-          Meet our amazing members. Without them, we could not offer the support our users need to rebuild their lives.
+          detailteam
         </p>
       </div>
     </div>

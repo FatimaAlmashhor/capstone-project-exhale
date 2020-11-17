@@ -30,7 +30,7 @@ exports[`renders correctly 1`] = `
         <p
           className="mx-auto text-gray-500  mt-3"
         >
-          NEVER
+          Never
         </p>
       </div>
       <div
@@ -79,7 +79,7 @@ exports[`renders correctly 1`] = `
         <p
           className="mx-auto mt-3 text-gray-500"
         >
-          ALWAYS
+          Always
         </p>
       </div>
     </div>

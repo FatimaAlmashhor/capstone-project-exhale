@@ -10,14 +10,14 @@ exports[`renders correctly 1`] = `
     <h1
       className="text-xl text-gray-600"
     >
-      Our Psychiatrists
+      ourpsychiatrists
     </h1>
     <p
       className="mt-2 mb-8 text-gray-500"
     >
-      Need help but you don‚t know where to go? Or you‚re worried about someone you know - help is available. You‚re
+      psychiatristsDetails
       <br />
-      not alone. Meet our experienced psychiatrists to seek the counsel you need.
+      contentbr
     </p>
   </div>
   <div
