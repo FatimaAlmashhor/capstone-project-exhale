@@ -30,7 +30,7 @@ const Doctors = () => {
         <div className="flex flex-col">
           <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-              <div className="overflow-hidden border-b border-gray-200 shadow sm:ronot provided yetd-lg">
+              <div className="overflow-hidden border-b border-gray-200 shadow sm:roNot provided yetd-lg">
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-200">
                     <tr>
@@ -53,7 +53,7 @@ const Doctors = () => {
                           <div className="flex items-center">
                             <div className="flex-shrink-0 w-10 h-10">
                               <img
-                                className="w-10 h-10 ronot provided yetd-full"
+                                className="w-10 h-10 roNot provided yetd-full"
                                 src={el.image}
                                 alt=""
                               />
@@ -74,7 +74,7 @@ const Doctors = () => {
                           </div>
                         </td>
                         <td className="px-6 py-4 whitespace-no-wrap">
-                          <span className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 ronot provided yetd-full">
+                          <span className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full">
                             {el.workplace}
                           </span>
                         </td>
@@ -112,32 +112,32 @@ const Doctors = () => {
                     name={
                       doctors[doctorId - 1]
                         ? doctors[doctorId - 1].name
-                        : 'not provided yet'
+                        : 'Not provided yet'
                     }
                     specialty={
                       doctors[doctorId - 1]
                         ? doctors[doctorId - 1].specialty
-                        : 'not provided yet'
+                        : 'Not provided yet'
                     }
                     workplace={
                       doctors[doctorId - 1]
                         ? doctors[doctorId - 1].workplace
-                        : 'not provided yet'
+                        : 'Not provided yet'
                     }
                     address={
                       doctors[doctorId - 1]
                         ? doctors[doctorId - 1].address
-                        : 'not provided yet'
+                        : 'Not provided yet'
                     }
                     phone={
                       doctors[doctorId - 1]
                         ? doctors[doctorId - 1].phone
-                        : 'not provided yet'
+                        : 'Not provided yet'
                     }
                     img={
                       doctors[doctorId - 1]
                         ? doctors[doctorId - 1].image
-                        : 'not provided yet'
+                        : 'Not provided yet'
                     }
                   />
                 </div>

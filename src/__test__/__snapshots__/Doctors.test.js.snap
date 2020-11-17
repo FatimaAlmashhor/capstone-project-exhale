@@ -42,7 +42,7 @@ exports[`renders correctly 1`] = `
           className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8"
         >
           <div
-            className="overflow-hidden border-b border-gray-200 shadow sm:ronot provided yetd-lg"
+            className="overflow-hidden border-b border-gray-200 shadow sm:roNot provided yetd-lg"
           >
             <table
               className="min-w-full divide-y divide-gray-200"
@@ -86,7 +86,7 @@ exports[`renders correctly 1`] = `
                       >
                         <img
                           alt=""
-                          className="w-10 h-10 ronot provided yetd-full"
+                          className="w-10 h-10 roNot provided yetd-full"
                           src="https://www.shareicon.net/data/512x512/2016/08/18/813849_people_512x512.png"
                         />
                       </div>
@@ -119,7 +119,7 @@ exports[`renders correctly 1`] = `
                     className="px-6 py-4 whitespace-no-wrap"
                   >
                     <span
-                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 ronot provided yetd-full"
+                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
                       Azal Hospital
                     </span>
@@ -151,7 +151,7 @@ exports[`renders correctly 1`] = `
                       >
                         <img
                           alt=""
-                          className="w-10 h-10 ronot provided yetd-full"
+                          className="w-10 h-10 roNot provided yetd-full"
                           src="https://www.shareicon.net/data/512x512/2016/08/18/813849_people_512x512.png"
                         />
                       </div>
@@ -184,7 +184,7 @@ exports[`renders correctly 1`] = `
                     className="px-6 py-4 whitespace-no-wrap"
                   >
                     <span
-                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 ronot provided yetd-full"
+                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
                       Azal Hospital
                     </span>
@@ -216,7 +216,7 @@ exports[`renders correctly 1`] = `
                       >
                         <img
                           alt=""
-                          className="w-10 h-10 ronot provided yetd-full"
+                          className="w-10 h-10 roNot provided yetd-full"
                           src="https://www.shareicon.net/data/512x512/2016/08/18/813844_people_512x512.png"
                         />
                       </div>
@@ -249,7 +249,7 @@ exports[`renders correctly 1`] = `
                     className="px-6 py-4 whitespace-no-wrap"
                   >
                     <span
-                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 ronot provided yetd-full"
+                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
                       Azal Hospital
                     </span>
@@ -281,7 +281,7 @@ exports[`renders correctly 1`] = `
                       >
                         <img
                           alt=""
-                          className="w-10 h-10 ronot provided yetd-full"
+                          className="w-10 h-10 roNot provided yetd-full"
                           src="https://www.shareicon.net/data/512x512/2016/08/18/813849_people_512x512.png"
                         />
                       </div>
@@ -314,7 +314,7 @@ exports[`renders correctly 1`] = `
                     className="px-6 py-4 whitespace-no-wrap"
                   >
                     <span
-                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 ronot provided yetd-full"
+                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
                       Azal Hospital
                     </span>
@@ -346,7 +346,7 @@ exports[`renders correctly 1`] = `
                       >
                         <img
                           alt=""
-                          className="w-10 h-10 ronot provided yetd-full"
+                          className="w-10 h-10 roNot provided yetd-full"
                           src="https://www.shareicon.net/data/512x512/2016/08/18/813844_people_512x512.png"
                         />
                       </div>
@@ -379,7 +379,7 @@ exports[`renders correctly 1`] = `
                     className="px-6 py-4 whitespace-no-wrap"
                   >
                     <span
-                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 ronot provided yetd-full"
+                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
                       Azal Hospital
                     </span>
@@ -411,7 +411,7 @@ exports[`renders correctly 1`] = `
                       >
                         <img
                           alt=""
-                          className="w-10 h-10 ronot provided yetd-full"
+                          className="w-10 h-10 roNot provided yetd-full"
                           src="https://www.shareicon.net/data/512x512/2016/08/18/813849_people_512x512.png"
                         />
                       </div>
@@ -444,7 +444,7 @@ exports[`renders correctly 1`] = `
                     className="px-6 py-4 whitespace-no-wrap"
                   >
                     <span
-                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 ronot provided yetd-full"
+                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
                       Azal Hospital
                     </span>
@@ -476,7 +476,7 @@ exports[`renders correctly 1`] = `
                       >
                         <img
                           alt=""
-                          className="w-10 h-10 ronot provided yetd-full"
+                          className="w-10 h-10 roNot provided yetd-full"
                           src="https://www.shareicon.net/data/512x512/2016/08/18/813849_people_512x512.png"
                         />
                       </div>
@@ -509,7 +509,7 @@ exports[`renders correctly 1`] = `
                     className="px-6 py-4 whitespace-no-wrap"
                   >
                     <span
-                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 ronot provided yetd-full"
+                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
                       Azal Hospital
                     </span>
@@ -541,7 +541,7 @@ exports[`renders correctly 1`] = `
                       >
                         <img
                           alt=""
-                          className="w-10 h-10 ronot provided yetd-full"
+                          className="w-10 h-10 roNot provided yetd-full"
                           src="https://www.shareicon.net/data/512x512/2016/08/18/813844_people_512x512.png"
                         />
                       </div>
@@ -574,7 +574,7 @@ exports[`renders correctly 1`] = `
                     className="px-6 py-4 whitespace-no-wrap"
                   >
                     <span
-                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 ronot provided yetd-full"
+                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
                       Azal Hospital
                     </span>
