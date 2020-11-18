@@ -6,7 +6,8 @@ import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import fire, { uiConfig } from '../../../../firebase';
 import Modal, { Header, Body } from '../../Modal';
 import Lottie from 'react-lottie';
-import hi from '../../../../Lottie/hello.json';
+import hello from '../../../../Lottie/hello.json';
+import check from '../../../../Lottie/hi.json';
 
 const ModalHolder = () => {
   const { id } = useParams();
@@ -27,30 +28,55 @@ const ModalHolder = () => {
     setShow(false);
     history.push(previsePath);
   };
-  const defaultOptions = {
-    loop: true,
+  const defaultOptions =(lottie) => ({
+    loop: false,
     autoplay: true,
-    animationData: hi,
+    animationData:lottie ,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     },
-  };
+  });
   return (
     <div>
       <Modal show={show} onClick={handleClose}>
-        <div>
+        <div className="w-full xl:w-10/12">
           <Header
             title={id === 'login' ? 'SIGN IN' : 'SING UP'}
             onClick={handleClose}
           />
           <Body>
-            <div className="flex flex-col w-auto md:flex-row-reverse">
-              <div class="  mt-0 md:mt-3  md:border-l-2 md:ml-5 w-full md:w-2/5 ">
+            <div className="flex flex-colw-full md:max-w-3xl xl:max-w-4xl md:flex-row-reverse">
+              <div class="  mt-0 md:mt-3  md:border-l-2 md:ml-5 s md:w-2/5 ">
                 <div className="hidden overflow-hidden md:block">
-                  <Lottie isClickToPauseDisabled={true} options={defaultOptions} height="auto" width="120%" />
+                  <Lottie isClickToPauseDisabled={true} options={defaultOptions(hello)} height="auto" width="120%" />
                 </div>
-                <div className="w-full mx-auto">
-                  {isSignedIn ? null : (
+                <div className=" w-full">
+                  {isSignedIn ? <>
+          <Modal
+            show={isSignedIn}
+            onClick={() => {
+              handleClose()
+            }}
+          >
+            <div>
+              <Body>
+                <div>
+                  <div>
+                    <Lottie
+                      isClickToPauseDisabled
+                      options={defaultOptions(check)}
+                      height={300}
+                      width={300}
+                    />
+                  </div>
+                  <h1 className="mt-5 text-center text-blue-600">
+                    Welcome To Our Site , We are Glad to have you here
+                  </h1>
+                </div>
+              </Body>
+            </div>
+          </Modal>
+        </> : (
                     <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={fire.auth()} />
                   )}      
                 </div>
