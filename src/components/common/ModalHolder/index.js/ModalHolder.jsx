@@ -7,11 +7,9 @@ import fire, { uiConfig } from '../../../../firebase';
 import Modal, { Header, Body } from '../../Modal';
 import Lottie from 'react-lottie';
 import hello from '../../../../Lottie/hello.json';
-import check from '../../../../Lottie/hi.json';
 
 const ModalHolder = () => {
   const { id } = useParams();
-  const location = useLocation();
   const history = useHistory();
 
   const [show, setShow] = useState(true);
@@ -52,6 +50,7 @@ const ModalHolder = () => {
                   <Lottie isClickToPauseDisabled={true} options={defaultOptions(hello)} height="auto" width="120%" />
                 </div>
                 <div className=" w-full">
+
                     <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={fire.auth()} />
                 </div>
               </div>
