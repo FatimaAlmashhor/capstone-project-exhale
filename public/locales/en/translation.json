@@ -79,5 +79,9 @@
   "Sorry. Article does not exist": "Sorry. Article does not exist",
   "Read More": "Read More",
   "Our Values": "Our Values",
-  "Already have an account": "Already have an account ?"
+  "Already have an account": "Already have an account ?",
+  "Please Login": "Please Login ...",
+  "Bad Result": "Our test has concluded that your mental health could use support from our recommended doctors. Please take a look at our doctors list. You will be redirected there after closing this result.",
+  "Good Result": "Our test has concluded that your mental health is in a good condition, but please if you need any support contact any of our recommended doctors. You will be redirected there after closing this result.",
+  "Your Result at the test is": "Your Result at the test is"
 }

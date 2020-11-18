@@ -1,4 +1,3 @@
-/* eslint-disable no-return-assign */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -9,11 +8,13 @@ export default function SelfAssessmentPanel({ task, onClick }) {
   const handleClick = (e) => {
     onClick(e);
   };
-  const handleHover = (e) => (e.target.className += ' hover:bg-green-400');
+  const handleHover = (e) => {
+    e.target.className += ' hover:bg-green-300';
+  };
 
   const style = {
     buttonStyle:
-      'bg-transparent border-4 border-gray-600 rounded-full focus:outline-none',
+      'bg-transparent border-2 border-gray-400 rounded-full focus:outline-none',
     trans: 'transition duration-500',
     hover: '',
   };
