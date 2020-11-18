@@ -6,7 +6,7 @@ const Contact = () => {
     <div>
       <div
         className="Header flex-grow  w-full h-64 top-0 py-64 "
-        style={{ backgroundColor: '#ADCCD2' }}
+        style={{ backgroundColor: '#F0EEF0' }}
       >
         <svg
           className="absolute buttom-0 h-64 w-full"
@@ -32,7 +32,7 @@ const Contact = () => {
           preserveAspectRatio="none"
           style={{ top: '600px' }}
         >
-          <polygon fill="#F0EEF0" points="0,100 0,0 100, 100 100" />
+          <polygon fill="#ADCCD2" points="0,100 0,0 100, 100 100" />
         </svg>
       </div>
     </div>
