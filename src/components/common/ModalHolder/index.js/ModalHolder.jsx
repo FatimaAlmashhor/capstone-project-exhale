@@ -46,8 +46,8 @@ const ModalHolder = () => {
               onClick={handleClose}
             />
             <Body>
-              <div className="flex flex-colw-full md:max-w-3xl xl:max-w-4xl md:flex-row-reverse">
-                <div class="  mt-0 md:mt-3  md:border-l-2 md:ml-5 s md:w-2/5 ">
+              <div className="flex flex-col w-full md:max-w-3xl xl:max-w-4xl md:flex-row-reverse">
+                <div class="  mt-0 md:mt-3  md:border-l-2 md:ml-5 md:w-2/5 ">
                   <div className="hidden overflow-hidden md:block">
                     <Lottie
                       isClickToPauseDisabled={true}
