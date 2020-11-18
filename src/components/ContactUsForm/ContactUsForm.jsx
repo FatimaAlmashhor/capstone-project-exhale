@@ -7,6 +7,7 @@ import Modal, { Body } from '../common/Modal';
 
 export default function ContactUsForm() {
   const { t } = useTranslation();
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -15,8 +16,10 @@ export default function ContactUsForm() {
       preserveAspectRatio: 'xMidYMid slice',
     },
   };
+
   const [show, setShow] = useState(false);
   const [errMsg, setErrMsg] = useState('');
+
   const handleTarget = (e) => {
     e.preventDefault();
     emailjs
@@ -37,6 +40,7 @@ export default function ContactUsForm() {
       );
     e.target.reset();
   };
+
   return (
     <section className="text-gray-700 body-font">
       <div className="container px-5 py-24 mx-auto">
@@ -106,7 +110,7 @@ export default function ContactUsForm() {
                 <div>
                   <div>
                     <h1 className="text-xl text-center text-teal-500">
-                      Thank you for contacting us
+                      {t('Thank you for contacting us')}
                     </h1>
                     <div className="relative w-64 h-64 mx-auto overflow-hidden">
                       <Lottie
@@ -118,7 +122,7 @@ export default function ContactUsForm() {
                     </div>
                     <div className="w-full mt-5 ">
                       <p className="text-lg text-center text-blue-800">
-                        Your message have been received successfully.
+                        {t('Your message have been received successfully.')}
                       </p>
                     </div>
                   </div>
