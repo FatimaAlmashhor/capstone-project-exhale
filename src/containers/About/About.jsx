@@ -5,22 +5,7 @@ import { ReactComponent as WhatDo } from '../../asset/svg/whatdo3.svg';
 
 const About = () => {
   const { t } = useTranslation();
-  // const svg1 = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: Svg1,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice"
-  //   }
-  // };
-  // const svg2 = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: Svg2,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice"
-  //   }
-  // };
+
   return (
     <div>
       <section className="mt-10 pt-10 relative bg-gray-200">
@@ -102,7 +87,9 @@ const About = () => {
         </div>
         <div className="justify-center text-center flex flex-wrap py-8">
           <div className="w-full md:w-6/12 px-12 md:px-4">
-            <h2 className="font-semibold text-4xl text-blue-700">Our Values</h2>
+            <h2 className="font-semibold text-4xl text-blue-700">
+              {t('Our Values')}
+            </h2>
             <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             </p>
