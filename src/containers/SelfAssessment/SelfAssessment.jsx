@@ -60,7 +60,7 @@ const SelfAssessment = () => {
   });
 
   return (
-    <div className="flex flex-col w-4/5 mx-auto mt-56 mb-16 md:w-8/12 lg:w-6/12">
+    <div className="flex flex-col w-4/5 mx-auto mt-56 mb-16 md:w-8/12 lg:w-6/12 transition-all duration-100">
       <ProgressBar showLabel max={Tasks.length} now={displayIndex} />
       {TasksBicker}
       {!isSignedIn ? (
@@ -70,6 +70,7 @@ const SelfAssessment = () => {
             onClick={() => {
               setisSignedIn(false);
               setShowResultModal(false);
+              setDisplayIndex((pre) => pre - 1);
             }}
           >
             <div>
@@ -105,7 +106,7 @@ const SelfAssessment = () => {
           </Modal>
         </>
       ) : (
-        <>
+        <div className="max-w-xs">
           <Modal
             show={showResultModal}
             onClick={() => {
@@ -113,34 +114,34 @@ const SelfAssessment = () => {
               history.push(DOCTORS_ROUTE);
             }}
           >
-            <div>
+            <div className="max-w-xs">
               <Body>
-                <div>
-                  <div>
-                    <div className="relative w-64 h-64 mx-auto overflow-hidden">
-                      <Lottie
-                        isClickToPauseDisabled
-                        options={defaultOptions(check)}
-                        height="auto"
-                        width="100%"
-                      />
-                    </div>
-                    <div className="w-full mt-5 ">
-                      <h1 className="text-center">
-                        {t('Your Result at the test is')}
-                      </h1>
-                      <p className="text-3xl text-center text-red-500">
-                        {final}
-                        <span>%</span>
-                      </p>
-                      <p>{final < 40 ? t('Good Result') : t('Bad Result')}</p>
-                    </div>
+                <div className="">
+                  <div className="  overflow-hidden">
+                    <Lottie
+                      isClickToPauseDisabled
+                      options={defaultOptions(check)}
+                      height="auto"
+                      width="200px"
+                    />
+                  </div>
+                  <div className=" mt-2 w-full ">
+                    <h1 className="text-center">
+                      {t('Your Result at the test is')}
+                    </h1>
+                    <p className="text-3xl text-center text-red-500">
+                      {final}
+                      <span>%</span>
+                    </p>
+                    <p className="">
+                      {final < 40 ? t('Good Result') : t('Bad Result')}
+                    </p>
                   </div>
                 </div>
               </Body>
             </div>
           </Modal>
-        </>
+        </div>
       )}
     </div>
   );

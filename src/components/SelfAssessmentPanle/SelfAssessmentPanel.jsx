@@ -20,10 +20,10 @@ export default function SelfAssessmentPanel({ task, onClick }) {
   };
 
   return (
-    <div>
+    <div className="transition-all duration-100">
       <div className="flex-auto py-10 ">
         <h1
-          className={` text-4xl  text-center font-sans ${style.trans} ${style.hover} `}
+          className={` text-4xl  text-center font-sans ${style.trans} ${style.hover} transition-all duration-100 `}
         >
           {task}
         </h1>

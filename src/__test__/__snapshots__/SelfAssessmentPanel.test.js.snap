@@ -1,12 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
+<div
+  className="transition-all duration-100"
+>
   <div
     className="flex-auto py-10 "
   >
     <h1
-      className=" text-4xl  text-center font-sans transition duration-500  "
+      className=" text-4xl  text-center font-sans transition duration-500  transition-all duration-100 "
     >
        
     </h1>
