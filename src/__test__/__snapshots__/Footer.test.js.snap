@@ -50,7 +50,7 @@ exports[`renders correctly 1`] = `
         <h5
           className="text-md mt-0 mb-2 text-gray-400 pt-2"
         >
-          Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood.
+          What is Exhale answer
         </h5>
       </div>
       <div
@@ -75,7 +75,7 @@ exports[`renders correctly 1`] = `
                   href="/"
                   onClick={[Function]}
                 >
-                  Home
+                  HOME
                 </a>
               </li>
               <li>
@@ -83,7 +83,7 @@ exports[`renders correctly 1`] = `
                   href="/articles"
                   onClick={[Function]}
                 >
-                  Article
+                  Articles
                 </a>
               </li>
               <li>
@@ -111,21 +111,21 @@ exports[`renders correctly 1`] = `
                 href="/about"
                 onClick={[Function]}
               >
-                About Us
+                AboutUs
               </a>
               <li>
                 <a
                   href="/contact"
                   onClick={[Function]}
                 >
-                   Get in touch
+                  GetInTouch
                 </a>
               </li>
               <li>
                 <span
                   className="block mt-8 uppercase text-white text-sm font-semibold mb-2"
                 >
-                  Self assessment
+                  selfAssessment
                 </span>
                 <ul
                   className="list-unstyled"
@@ -292,7 +292,7 @@ exports[`renders correctly 1`] = `
           <div
             className="text-sm text-gray-300 font-semibold py-1"
           >
-            Copyright © 2020 Exhale Inc
+            CopyRight
           </div>
         </div>
       </div>

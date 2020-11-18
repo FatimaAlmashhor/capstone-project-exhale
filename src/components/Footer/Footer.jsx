@@ -1,7 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import {
   ABOUT_ROUTE,
   CONTACT_ROUTE,
@@ -13,6 +13,8 @@ import {
 import i18n from '../../i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="relative bg-blue-800 pt-8 pb-6">
       <div
@@ -38,51 +40,47 @@ const Footer = () => {
         <div className="flex flex-wrap">
           <div className="w-full md:w-4/12 px-4">
             <h4 className="text-3xl font-semibold text-gray-200 border-b pb-4">
-              What is a Exhale
+              {t('What is a Exhale')}
               <span className="text-4xl text-red-500">?</span>
             </h4>
             <h5 className="text-md mt-0 mb-2 text-gray-400 pt-2">
-              Mental health includes our emotional, psychological, and social
-              well-being. It affects how we think, feel, and act. It also helps
-              determine how we handle stress, relate to others, and make choices.
-              Mental health is important at every stage of life, from childhood and
-              adolescence through adulthood.
+              {t('What is Exhale answer')}
             </h5>
           </div>
           <div className="w-full md:w-8/12 px-4">
             <div className="flex flex-wrap items-top mb-6">
               <div className="w-full text-center md:w-6/12 xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
                 <span className="block pt-4 uppercase text-white text-sm font-semibold mb-2">
-                  Pages
+                  {t('Pages')}
                 </span>
                 <ul className="list-unstyled text-gray-400">
                   <li>
-                    <Link to={HOME_ROUTE}>Home</Link>
+                    <Link to={HOME_ROUTE}>{t('HOME')}</Link>
                   </li>
                   <li>
-                    <Link to={ARTICLES_BASE_ROUTE}>Article</Link>
+                    <Link to={ARTICLES_BASE_ROUTE}>{t('Articles')}</Link>
                   </li>
                   <li>
-                    <Link to={DOCTORS_ROUTE}>Doctors</Link>
+                    <Link to={DOCTORS_ROUTE}>{t('Doctors')}</Link>
                   </li>
                 </ul>
               </div>
               <div className="w-full md:w-6/12 text-center xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
                 <span className="block pt-4 uppercase text-white text-sm font-semibold mb-2">
-                  Team
+                  {t('Team')}
                 </span>
                 <ul className="list-unstyled text-gray-400">
-                  <Link to={ABOUT_ROUTE}>About Us</Link>
+                  <Link to={ABOUT_ROUTE}>{t('AboutUs')}</Link>
                   <li>
-                    <Link to={CONTACT_ROUTE}> Get in touch</Link>
+                    <Link to={CONTACT_ROUTE}>{t('GetInTouch')}</Link>
                   </li>
                   <li>
                     <span className="block mt-8 uppercase text-white text-sm font-semibold mb-2">
-                      Self assessment
+                      {t('selfAssessment')}
                     </span>
                     <ul className="list-unstyled">
                       <li>
-                        <Link to={SELF_ASSESSMENT_ROUTE}>Checkup</Link>
+                        <Link to={SELF_ASSESSMENT_ROUTE}>{t('Checkup')}</Link>
                       </li>
                     </ul>
                   </li>
@@ -135,7 +133,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="text-sm text-gray-300 font-semibold py-1">
-                Copyright © 2020 Exhale Inc
+                {t('CopyRight')}
               </div>
             </div>
           </div>
