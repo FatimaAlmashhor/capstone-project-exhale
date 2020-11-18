@@ -6,11 +6,10 @@ import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import fire, { uiConfig } from '../../../../firebase';
 import Modal, { Header, Body } from '../../Modal';
 import Lottie from 'react-lottie';
-import hi from '../../../../Lottie/hello.json';
+import hello from '../../../../Lottie/hello.json';
 
 const ModalHolder = () => {
   const { id } = useParams();
-  const location = useLocation();
   const history = useHistory();
 
   const [show, setShow] = useState(true);
@@ -21,38 +20,38 @@ const ModalHolder = () => {
     fire.auth().onAuthStateChanged((user) => {
       setisSignedIn(!!user);
     });
-  }, [location]);
+  }, );
 
   const handleClose = () => {
     setShow(false);
     history.push(previsePath);
   };
-  const defaultOptions = {
-    loop: true,
+  const defaultOptions =(lottie) => ({
+    loop: false,
     autoplay: true,
-    animationData: hi,
+    animationData:lottie ,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     },
-  };
+  });
   return (
     <div>
+    {isSignedIn ? null :(
       <Modal show={show} onClick={handleClose}>
-        <div>
+        <div className="w-full ">
           <Header
             title={id === 'login' ? 'SIGN IN' : 'SING UP'}
             onClick={handleClose}
           />
           <Body>
-            <div className="flex flex-col w-auto md:flex-row-reverse">
-              <div class="  mt-0 md:mt-3  md:border-l-2 md:ml-5 w-full md:w-2/5 ">
+            <div className="flex flex-colw-full md:max-w-3xl xl:max-w-4xl md:flex-row-reverse">
+              <div class="  mt-0 md:mt-3  md:border-l-2 md:ml-5 s md:w-2/5 ">
                 <div className="hidden overflow-hidden md:block">
-                  <Lottie isClickToPauseDisabled={true} options={defaultOptions} height="auto" width="120%" />
+                  <Lottie isClickToPauseDisabled={true} options={defaultOptions(hello)} height="auto" width="120%" />
                 </div>
-                <div className="w-full mx-auto">
-                  {isSignedIn ? null : (
+                <div className=" w-full">
+
                     <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={fire.auth()} />
-                  )}      
                 </div>
               </div>
               <div className="pr-3 mx-auto">
@@ -62,6 +61,7 @@ const ModalHolder = () => {
           </Body>
         </div>
       </Modal>
+        )}
     </div>
   );
 };

@@ -78,11 +78,12 @@ const SelfAssessment = () => {
           <span className="ml-5 text-base text-gray-500">BACK</span>
         </button>
       </div>
-      {showResultModal && !isSignedIn ? (
+      {!isSignedIn ? (
         <>
           <Modal
             show={showResultModal}
             onClick={() => {
+              setisSignedIn(false);
               setShowResultModal(false);
             }}
           >
