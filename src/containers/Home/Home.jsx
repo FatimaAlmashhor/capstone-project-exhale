@@ -93,7 +93,7 @@ const Home = () => {
       </section>
       <section className="relative py-10 pb-20 mt-40 bg-gray-200 md:px-14">
         <SeparatorSVG />
-        <Cursol />
+
         <div className="flex flex-wrap justify-center py-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
             <h2 className="text-4xl font-semibold">Why Use Exhale?</h2>
@@ -179,6 +179,9 @@ const Home = () => {
             <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-400">
               let see if you need any help
             </p>
+            <div className="p-4 m-auto ">
+              <Cursol />
+            </div>
             <div>
               <button
                 type="button"
