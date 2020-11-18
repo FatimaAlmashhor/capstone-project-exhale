@@ -59,7 +59,7 @@ const Home = () => {
   return (
     <div className="">
       <section
-        className="relative flex items-center h-screen my-32 header md:py-16 md:my-0"
+        className="relative flex items-center h-screen my-20 md:my-10  header pt-56 md:pt-10 md:my-0"
         style={{ maxHeight: '660px' }}
       >
         <div className="container px-4 mx-auto my-10 ">
@@ -92,7 +92,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="relative py-10 pb-20 mt-40 bg-gray-200 md:px-14">
+      <section className="relative py-10 pb-20 mt-10 bg-gray-200 md:px-14">
         <SeparatorSVG />
         <div className="flex flex-wrap justify-center py-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
@@ -105,7 +105,7 @@ const Home = () => {
 
         <div className="container px-4 mx-auto">
           <div className="flex flex-col items-center md:flex-row">
-            <div className="w-full px-4 my-0 mr-auto overflow-hidden md:w-4/12 md:pt-0">
+            <div className="w-full px-4 my-0 md:mr-4 overflow-hidden md:w-7/12 md:pt-0">
               <Lottie
                 isClickToPauseDisabled
                 options={defaultOptions(Analysis)}
@@ -126,11 +126,11 @@ const Home = () => {
 
         <div className="container px-4 py-4 mx-auto">
           <div className="flex flex-col items-center md:flex-row-reverse">
-            <div className="w-full px-4 my-0 mr-auto overflow-hidden md:w-4/12 md:pt-0">
+            <div className="w-full px-4 my-0 mr-auto overflow-hidden md:w-7/12 md:pt-0">
               <Lottie
                 isClickToPauseDisabled
                 options={defaultOptions(Yoga)}
-                width="120%"
+                width="100%"
                 height="auto"
               />
             </div>
