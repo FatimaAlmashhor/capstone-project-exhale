@@ -22,7 +22,7 @@ const ModalHolder = () => {
     fire.auth().onAuthStateChanged((user) => {
       setisSignedIn(!!user);
     });
-  }, [location]);
+  }, );
 
   const handleClose = () => {
     setShow(false);
@@ -38,6 +38,7 @@ const ModalHolder = () => {
   });
   return (
     <div>
+    {isSignedIn ? null :(
       <Modal show={show} onClick={handleClose}>
         <div className="w-full ">
           <Header
@@ -51,34 +52,7 @@ const ModalHolder = () => {
                   <Lottie isClickToPauseDisabled={true} options={defaultOptions(hello)} height="auto" width="120%" />
                 </div>
                 <div className=" w-full">
-                  {isSignedIn ? <>
-          <Modal
-            show={isSignedIn}
-            onClick={() => {
-              handleClose()
-            }}
-          >
-            <div>
-              <Body>
-                <div>
-                  <div>
-                    <Lottie
-                      isClickToPauseDisabled
-                      options={defaultOptions(check)}
-                      height={300}
-                      width={300}
-                    />
-                  </div>
-                  <h1 className="mt-5 text-center text-blue-600">
-                    Welcome To Our Site , We are Glad to have you here
-                  </h1>
-                </div>
-              </Body>
-            </div>
-          </Modal>
-        </> : (
                     <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={fire.auth()} />
-                  )}      
                 </div>
               </div>
               <div className="pr-3 mx-auto">
@@ -88,6 +62,7 @@ const ModalHolder = () => {
           </Body>
         </div>
       </Modal>
+        )}
     </div>
   );
 };
