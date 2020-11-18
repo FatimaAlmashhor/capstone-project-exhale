@@ -39,7 +39,7 @@ const ModalHolder = () => {
   return (
     <div>
       <Modal show={show} onClick={handleClose}>
-        <div className="w-full xl:w-10/12">
+        <div className="w-full ">
           <Header
             title={id === 'login' ? 'SIGN IN' : 'SING UP'}
             onClick={handleClose}
