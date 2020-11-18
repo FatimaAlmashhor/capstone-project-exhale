@@ -97,7 +97,7 @@ export default function RegisterForm() {
               </div>
             )}
             <button
-              className="w-full px-2 md:px-4 py-3 mt-4 font-bold text-white bg-blue-800 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+              className="w-full  md:px-4 py-1 md:py-3 mt-2 font-bold text-white bg-blue-800 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
               type="submit"
             >
               {t('SignUP')}
