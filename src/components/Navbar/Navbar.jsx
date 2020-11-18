@@ -39,7 +39,7 @@ function Navbar() {
       } fixed w-full top-0 right-0 left-0 z-50  navbar-expand-lg transition-all duration-150`}
     >
       <div className="px-4 mx-auto max-w-7xl sm:px-6">
-        <div className="flex items-center justify-between py-4  lg:justify-start lg:space-x-10">
+        <div className="flex items-center justify-between py-4 lg:justify-start lg:space-x-10">
           <div className="lg:w-0 lg:flex-1">
             <Link to={HOME_ROUTE} class="flex">
               <h1 className="text-3xl font-medium transition duration-150 ease-in-out text-black-500">
@@ -51,33 +51,33 @@ function Navbar() {
           <nav className="hidden space-x-10 md:flex">
             <NavLink
               to={HOME_ROUTE}
-              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out  border-white hover:text-gray-500 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out border-white hover:text-gray-500 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
             >
               {t('HOME')}
             </NavLink>
 
             <NavLink
               to={DOCTORS_ROUTE}
-              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out  border-white hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out border-white hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
             >
               {t('Doctors')}
             </NavLink>
 
             <NavLink
               to={ARTICLES_BASE_ROUTE}
-              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out   hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
             >
               {t('Articles')}
             </NavLink>
             <NavLink
               to={ABOUT_ROUTE}
-              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out  hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
             >
               {t('AboutUs')}
             </NavLink>
             <NavLink
               to={CONTACT_ROUTE}
-              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out   hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
             >
               {t('ContactUs')}
             </NavLink>
@@ -94,7 +94,7 @@ function Navbar() {
             ) : (
               <>
                 <NavLink
-                  className=" text-base font-medium leading-6 text-gray-600 whitespace-no-wrap   hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+                  className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap  hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
                   to={{
                     pathname: LOGIN_ROUTE,
                     state: { modal: location },
@@ -154,27 +154,27 @@ function Navbar() {
                 <nav className="grid gap-y-8">
                   <NavLink
                     to={HOME_ROUTE}
-                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out  rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('HOME')}
                   </NavLink>
 
                   <NavLink
                     to={DOCTORS_ROUTE}
-                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out  rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('Doctors')}
                   </NavLink>
 
                   <NavLink
                     to={ARTICLES_BASE_ROUTE}
-                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out  rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('Articles')}
                   </NavLink>
                   <NavLink
                     to={CONTACT_ROUTE}
-                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out  rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('ContactUs')}
                   </NavLink>

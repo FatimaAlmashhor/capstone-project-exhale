@@ -9,7 +9,7 @@ Array [
       className="px-4 mx-auto max-w-7xl sm:px-6"
     >
       <div
-        className="flex items-center justify-between py-4  lg:justify-start lg:space-x-10"
+        className="flex items-center justify-between py-4 lg:justify-start lg:space-x-10"
       >
         <div
           className="lg:w-0 lg:flex-1"
@@ -36,7 +36,7 @@ Array [
         >
           <a
             aria-current="page"
-            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out  border-white hover:text-gray-500 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900 active"
+            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out border-white hover:text-gray-500 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900 active"
             href="/"
             onClick={[Function]}
             style={Object {}}
@@ -45,7 +45,7 @@ Array [
           </a>
           <a
             aria-current={null}
-            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out  border-white hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out border-white hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
             href="/doctors"
             onClick={[Function]}
           >
@@ -53,7 +53,7 @@ Array [
           </a>
           <a
             aria-current={null}
-            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out   hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
             href="/articles"
             onClick={[Function]}
           >
@@ -61,7 +61,7 @@ Array [
           </a>
           <a
             aria-current={null}
-            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out  hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
             href="/about"
             onClick={[Function]}
           >
@@ -69,7 +69,7 @@ Array [
           </a>
           <a
             aria-current={null}
-            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out   hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+            className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
             href="/contact"
             onClick={[Function]}
           >
@@ -81,7 +81,7 @@ Array [
         >
           <a
             aria-current={null}
-            className=" text-base font-medium leading-6 text-gray-600 whitespace-no-wrap   hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+            className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap  hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
             href="/login"
             onClick={[Function]}
           >
@@ -162,7 +162,7 @@ Array [
               >
                 <a
                   aria-current="page"
-                  className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out  rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 active"
+                  className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 active"
                   href="/"
                   onClick={[Function]}
                   style={Object {}}
@@ -171,7 +171,7 @@ Array [
                 </a>
                 <a
                   aria-current={null}
-                  className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out  rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                  className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   href="/doctors"
                   onClick={[Function]}
                 >
@@ -179,7 +179,7 @@ Array [
                 </a>
                 <a
                   aria-current={null}
-                  className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out  rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                  className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   href="/articles"
                   onClick={[Function]}
                 >
@@ -187,7 +187,7 @@ Array [
                 </a>
                 <a
                   aria-current={null}
-                  className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out  rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                  className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   href="/contact"
                   onClick={[Function]}
                 >
