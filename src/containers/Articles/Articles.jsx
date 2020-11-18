@@ -8,10 +8,10 @@ const Articles = () => {
 
   const getArticles = () => {
     return articlesCollection.length !== 0 ? (
-      <div className="flex flex-wrap -mb-4 mt-32">
+      <div className="flex flex-wrap mt-32 -mb-4">
         {articlesCollection.map((article) => {
           return (
-            <div className="lg:w-1/3 md:w-1/2 min-w-0" key={article.id}>
+            <div className="min-w-0 lg:w-1/3 md:w-1/2" key={article.id}>
               <Article
                 id={article.id}
                 title={article.title}
@@ -58,16 +58,18 @@ const Articles = () => {
   return (
     <div className="p-10 mt-32">
       <div className="mt-6 text-center ">
-        <h1 className="text-xl text-gray-600">Mental Health Articles & Advices</h1>
-        <div className="flex box-content justify-center">
-          <p className="font-mono w-2/4">
+        <h1 className="text-4xl font-semibold text-blue-700">
+          Mental Health Articles & Advices
+        </h1>
+        <div className="box-content flex justify-center mt-4 mb-8 text-lg leading-relaxed text-gray-600">
+          <p className="w-2/4 ">
             Extreme emotions, attitudes, and behaviors involving weight and food is a
             kind of mental health problem. Read more about the causes, symptoms and
             how to get help.
           </p>
         </div>
-        <div className="m-5 flex box-content justify-center">
-          <div className="flex box-content justify-center bg-white rounded-full w-2/4">
+        <div className="box-content flex justify-center m-5">
+          <div className="box-content flex justify-center w-2/4 bg-white rounded-full">
             <input
               type="text"
               name="search"
@@ -80,8 +82,8 @@ const Articles = () => {
       </div>
 
       <div className="flex flex-col">
-        <div className="w-full flex-grow">{geHeadArticle()}</div>
-        <div className="w-full flex " />
+        <div className="flex-grow w-full">{geHeadArticle()}</div>
+        <div className="flex w-full " />
         {getArticles()}
       </div>
     </div>

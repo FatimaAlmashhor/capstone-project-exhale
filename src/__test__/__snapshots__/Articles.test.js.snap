@@ -8,24 +8,24 @@ exports[`renders correctly 1`] = `
     className="mt-6 text-center "
   >
     <h1
-      className="text-xl text-gray-600"
+      className="text-4xl font-semibold text-blue-700"
     >
       Mental Health Articles & Advices
     </h1>
     <div
-      className="flex box-content justify-center"
+      className="box-content flex justify-center mt-4 mb-8 text-lg leading-relaxed text-gray-600"
     >
       <p
-        className="font-mono w-2/4"
+        className="w-2/4 "
       >
         Extreme emotions, attitudes, and behaviors involving weight and food is a kind of mental health problem. Read more about the causes, symptoms and how to get help.
       </p>
     </div>
     <div
-      className="m-5 flex box-content justify-center"
+      className="box-content flex justify-center m-5"
     >
       <div
-        className="flex box-content justify-center bg-white rounded-full w-2/4"
+        className="box-content flex justify-center w-2/4 bg-white rounded-full"
       >
         <input
           className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500"
@@ -41,7 +41,7 @@ exports[`renders correctly 1`] = `
     className="flex flex-col"
   >
     <div
-      className="w-full flex-grow"
+      className="flex-grow w-full"
     >
       <section
         className="blog "
@@ -50,13 +50,13 @@ exports[`renders correctly 1`] = `
           className="container px-5 py-24 mx-auto"
         >
           <div
-            className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+            className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
           >
             <div
-              className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+              className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
             >
               <div
-                className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                 style={
                   Object {
                     "backgroundImage": "url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/motherhood-blog.jpg",
@@ -64,19 +64,19 @@ exports[`renders correctly 1`] = `
                 }
               />
               <div
-                className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
               >
                 <div
-                  className="header-content inline-flex"
+                  className="inline-flex header-content"
                 >
                   <div
-                    className="category-title flex-1 text-sm text-gray-400"
+                    className="flex-1 text-sm text-gray-400 category-title"
                   >
                     March 12th, 2019
                   </div>
                 </div>
                 <div
-                  className="title-post text-3xl"
+                  className="text-3xl title-post"
                 >
                   <h2
                     className="text-blue-500 "
@@ -85,16 +85,18 @@ exports[`renders correctly 1`] = `
                   </h2>
                 </div>
                 <div
-                  className="summary-post text-base text-justify text-1xl "
+                  className="text-base text-justify summary-post text-1xl "
                 >
                   <p>
                     otherhood, at its core, can be simply terrifying and exhausting. This is especially true for those 
                   </p>
                   <button
-                    className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
+                    className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded hover:bg-green-300"
                     type="button"
                   >
-                    <li>
+                    <li
+                      className="list-none"
+                    >
                       <a
                         href="//1"
                         onClick={[Function]}
@@ -111,13 +113,13 @@ exports[`renders correctly 1`] = `
       </section>
     </div>
     <div
-      className="w-full flex "
+      className="flex w-full "
     />
     <div
-      className="flex flex-wrap -mb-4 mt-32"
+      className="flex flex-wrap mt-32 -mb-4"
     >
       <div
-        className="lg:w-1/3 md:w-1/2 min-w-0"
+        className="min-w-0 lg:w-1/3 md:w-1/2"
       >
         <section
           className="blog "
@@ -126,13 +128,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/motherhood-blog.jpg",
@@ -140,19 +142,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -161,16 +163,18 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                       otherhood, at its core, can be simply terrifying and exhausting. This is especially true for those 
                     </p>
                     <button
-                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded hover:bg-green-300"
                       type="button"
                     >
-                      <li>
+                      <li
+                        className="list-none"
+                      >
                         <a
                           href="//1"
                           onClick={[Function]}
@@ -187,7 +191,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="lg:w-1/3 md:w-1/2 min-w-0"
+        className="min-w-0 lg:w-1/3 md:w-1/2"
       >
         <section
           className="blog "
@@ -196,13 +200,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/finding-a-partner-blog.jpg",
@@ -210,19 +214,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -231,16 +235,18 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                        can’t change who I am or the challenges I’ve had to face. What I can do is choose who and what to 
                     </p>
                     <button
-                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded hover:bg-green-300"
                       type="button"
                     >
-                      <li>
+                      <li
+                        className="list-none"
+                      >
                         <a
                           href="//2"
                           onClick={[Function]}
@@ -257,7 +263,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="lg:w-1/3 md:w-1/2 min-w-0"
+        className="min-w-0 lg:w-1/3 md:w-1/2"
       >
         <section
           className="blog "
@@ -266,13 +272,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/bipolar-blog.jpg",
@@ -280,19 +286,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -301,16 +307,18 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                       ipolar disorder is a complicated mental illness. It has a variety of layers and symptoms, which can
                     </p>
                     <button
-                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded hover:bg-green-300"
                       type="button"
                     >
-                      <li>
+                      <li
+                        className="list-none"
+                      >
                         <a
                           href="//3"
                           onClick={[Function]}
@@ -327,7 +335,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="lg:w-1/3 md:w-1/2 min-w-0"
+        className="min-w-0 lg:w-1/3 md:w-1/2"
       >
         <section
           className="blog "
@@ -336,13 +344,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/support-not-guild-blog.jpg",
@@ -350,19 +358,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -371,16 +379,18 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                       hen Someone is Suicidal, Choose Support — Not Guilt
                     </p>
                     <button
-                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded hover:bg-green-300"
                       type="button"
                     >
-                      <li>
+                      <li
+                        className="list-none"
+                      >
                         <a
                           href="//4"
                           onClick={[Function]}
@@ -397,7 +407,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="lg:w-1/3 md:w-1/2 min-w-0"
+        className="min-w-0 lg:w-1/3 md:w-1/2"
       >
         <section
           className="blog "
@@ -406,13 +416,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.healthyplace.com/sites/default/files/styles/blog_listing/public/2020-11/Does%20Victim%20Mentality%20Play%20a%20Role%20in%20Depression.jpg?itok=gBu3jcna",
@@ -420,19 +430,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -441,16 +451,18 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                       irst off, I want to clarify that depression and victim mentality are not the same. The former is a 
                     </p>
                     <button
-                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded hover:bg-green-300"
                       type="button"
                     >
-                      <li>
+                      <li
+                        className="list-none"
+                      >
                         <a
                           href="//5"
                           onClick={[Function]}
@@ -467,7 +479,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="lg:w-1/3 md:w-1/2 min-w-0"
+        className="min-w-0 lg:w-1/3 md:w-1/2"
       >
         <section
           className="blog "
@@ -476,13 +488,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/SadAdult.jpg?itok=4KYEsUSJ",
@@ -490,19 +502,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -511,16 +523,18 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                        feel upset all of time. It has been like this for several years. Nothing seems to go right, and&nb
                     </p>
                     <button
-                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded hover:bg-green-300"
                       type="button"
                     >
-                      <li>
+                      <li
+                        className="list-none"
+                      >
                         <a
                           href="//6"
                           onClick={[Function]}
@@ -537,7 +551,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="lg:w-1/3 md:w-1/2 min-w-0"
+        className="min-w-0 lg:w-1/3 md:w-1/2"
       >
         <section
           className="blog "
@@ -546,13 +560,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.healthyplace.com/sites/default/files/styles/blog_listing/public/2020-10/pursuit%20of%20success.jpg?itok=t8ppsuEM",
@@ -560,19 +574,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -581,16 +595,18 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                       obody is immune to the pressure to succeed. Whether it comes from family, teachers, bosses, or ours
                     </p>
                     <button
-                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded hover:bg-green-300"
                       type="button"
                     >
-                      <li>
+                      <li
+                        className="list-none"
+                      >
                         <a
                           href="//7"
                           onClick={[Function]}
@@ -607,7 +623,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="lg:w-1/3 md:w-1/2 min-w-0"
+        className="min-w-0 lg:w-1/3 md:w-1/2"
       >
         <section
           className="blog "
@@ -616,13 +632,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nexusfamilyhealing.org/sites/default/files/styles/banner_medium/public/image-uploads/friendshipsonline.jpg?itok=jj1ustT3",
@@ -630,19 +646,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -651,16 +667,18 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                       y journey started during Game 2 of the 2013 World Series; starting pitcher was John Lackey for the 
                     </p>
                     <button
-                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded hover:bg-green-300"
                       type="button"
                     >
-                      <li>
+                      <li
+                        className="list-none"
+                      >
                         <a
                           href="//8"
                           onClick={[Function]}
@@ -677,7 +695,7 @@ exports[`renders correctly 1`] = `
         </section>
       </div>
       <div
-        className="lg:w-1/3 md:w-1/2 min-w-0"
+        className="min-w-0 lg:w-1/3 md:w-1/2"
       >
         <section
           className="blog "
@@ -686,13 +704,13 @@ exports[`renders correctly 1`] = `
             className="container px-5 py-24 mx-auto"
           >
             <div
-              className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+              className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
             >
               <div
-                className="p-5  md:mb-0 mb-6 flex flex-col justify-center items-center  mx-auto"
+                className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0"
               >
                 <div
-                  className="bg-gray-300 h-56 w-full  shadow-md bg-cover bg-center "
+                  className="w-full h-56 bg-gray-300 bg-center bg-cover shadow-md "
                   style={
                     Object {
                       "backgroundImage": "url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2020/sadness-blog.jpg",
@@ -700,19 +718,19 @@ exports[`renders correctly 1`] = `
                   }
                 />
                 <div
-                  className="  bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5"
+                  className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
                 >
                   <div
-                    className="header-content inline-flex"
+                    className="inline-flex header-content"
                   >
                     <div
-                      className="category-title flex-1 text-sm text-gray-400"
+                      className="flex-1 text-sm text-gray-400 category-title"
                     >
                       March 12th, 2019
                     </div>
                   </div>
                   <div
-                    className="title-post text-3xl"
+                    className="text-3xl title-post"
                   >
                     <h2
                       className="text-blue-500 "
@@ -721,16 +739,18 @@ exports[`renders correctly 1`] = `
                     </h2>
                   </div>
                   <div
-                    className="summary-post text-base text-justify text-1xl "
+                    className="text-base text-justify summary-post text-1xl "
                   >
                     <p>
                       he thought of going to a funeral used to terrify me. Walking into a room filled with sadness and gr
                     </p>
                     <button
-                      className="bg-green-400 hover:bg-green-300 text-white px-2 mt-4 block rounded p-2 text-sm"
+                      className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded hover:bg-green-300"
                       type="button"
                     >
-                      <li>
+                      <li
+                        className="list-none"
+                      >
                         <a
                           href="//9"
                           onClick={[Function]}

@@ -1,6 +1,7 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { doctors } from '../../services/fakeDoctorsServices';
 import DoctorCard from '../../components/DoctorCard';
 import Modal, { Body } from '../../components/common/Modal';
@@ -8,12 +9,24 @@ import Modal, { Body } from '../../components/common/Modal';
 const Doctors = () => {
   const [show, setShow] = useState(false);
   const [doctorId, setDoctorId] = useState(-1);
+  const { t } = useTranslation();
+
   return (
     <div className="relative bg-gray-400 h-screan">
       <div
         className="top-0 flex-grow w-full h-64 py-64 Header "
         style={{ backgroundColor: '#ADCCD2' }}
       >
+        <div className="relative z-10 flex flex-wrap justify-center -mt-32 text-center">
+          <div className="w-full px-12 md:w-6/12 md:px-6">
+            <h2 className="text-4xl font-semibold text-blue-700">
+              {t('ourpsychiatrists')}
+            </h2>
+            <div className="box-content flex justify-center mt-4 mb-4 text-lg leading-relaxed text-gray-600 ">
+              <p className="">{t('psychiatristsDetails')}</p>
+            </div>
+          </div>
+        </div>
         <svg
           className="absolute w-full h-full buttom-0"
           xmlns="http://www.w3.org/2000/svg"

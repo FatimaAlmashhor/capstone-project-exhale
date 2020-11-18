@@ -12,6 +12,28 @@ exports[`renders correctly 1`] = `
       }
     }
   >
+    <div
+      className="relative z-10 flex flex-wrap justify-center -mt-32 text-center"
+    >
+      <div
+        className="w-full px-12 md:w-6/12 md:px-6"
+      >
+        <h2
+          className="text-4xl font-semibold text-blue-700"
+        >
+          ourpsychiatrists
+        </h2>
+        <div
+          className="box-content flex justify-center mt-4 mb-4 text-lg leading-relaxed text-gray-600 "
+        >
+          <p
+            className=""
+          >
+            psychiatristsDetails
+          </p>
+        </div>
+      </div>
+    </div>
     <svg
       className="absolute w-full h-full buttom-0"
       preserveAspectRatio="none"
