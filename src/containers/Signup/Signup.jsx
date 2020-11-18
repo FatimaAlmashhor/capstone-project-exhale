@@ -15,6 +15,7 @@ const Signup = () => {
       setisSignedIn(!!user);
     });
   });
+
   return (
     <div>
       {isSignedIn ? null : (
@@ -28,7 +29,7 @@ const Signup = () => {
             <RegisterForm />
             <div className="text-center ">
               <p className="mt-1 text-sm text-gray-500">
-                {t('haveAccount')}
+                {t('Already have an account')}
                 <Link
                   className="text-blue-500 cursor-pointer "
                   to={{

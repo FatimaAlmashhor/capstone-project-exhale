@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useState } from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
@@ -8,6 +6,7 @@ import fire from '../../firebase';
 
 export default function RegisterForm() {
   const { t } = useTranslation();
+
   const ReviewError = Yup.object().shape({
     name: Yup.string().required(t('NamRequired')),
     email: Yup.string().email().required(t('EmailRequired')),
@@ -16,7 +15,9 @@ export default function RegisterForm() {
       .oneOf([Yup.ref('password'), null], t('MuchPass'))
       .required(t('confirmPasswordRequierd')),
   });
+
   const [errMessage, setErrMessage] = useState('');
+
   return (
     <Formik
       initialValues={{ name: '', email: '', password: '', confirmPassword: '' }}
@@ -96,7 +97,7 @@ export default function RegisterForm() {
               </div>
             )}
             <button
-              className="w-full px-2 py-1 md:px-4 py-3 mt-4 font-bold text-white bg-blue-800 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+              className="w-full px-2 md:px-4 py-3 mt-4 font-bold text-white bg-blue-800 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
               type="submit"
             >
               {t('SignUP')}
