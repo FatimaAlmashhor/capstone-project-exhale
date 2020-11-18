@@ -25,18 +25,20 @@ import NotFound from './components/NotFound';
 import Footer from './components/Footer'
 import ModalHolder from './components/common/ModalHolder/index.js';
 import Signup from './containers/Signup';
+import ScrollToTop from './scrollToTop'; 
 
 function App() {
   return (
     <Router>
-      <div className = 'flex flex-col min-h-screen'>
-       <div className = 'flex-auto'>
-         <Navbar />
-       </div>
-       <div className ='flex-grow'>
+      <ScrollToTop />
+      <div className="flex flex-col min-h-screen">
+        <div className="flex-auto">
+          <Navbar />
+        </div>
+        <div className="flex-grow">
           <Routing />
         </div>
-        <div className ='flex-initial'>
+        <div className="flex-initial">
           <Footer />
         </div>
       </div>

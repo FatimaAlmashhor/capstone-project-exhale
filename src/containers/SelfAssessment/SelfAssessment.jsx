@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import Lottie from 'react-lottie';
 import { useTranslation } from 'react-i18next';
@@ -18,6 +17,7 @@ const SelfAssessment = () => {
   const [displayIndex, setDisplayIndex] = useState(0);
   const [showResultModal, setShowResultModal] = useState(false);
   const [final, setFinal] = useState(0);
+
   const history = useHistory();
   const location = useLocation();
   const { t } = useTranslation();
@@ -43,8 +43,7 @@ const SelfAssessment = () => {
     setResult((pre) => [...pre], (result[displayIndex] = e.target.dataset.rate));
     setDisplayIndex((pre) => (displayIndex === Tasks.length ? pre : pre + 1)); // move to next question
   };
-  const handleBackStep = () =>
-    setDisplayIndex((pre) => (displayIndex === 0 ? pre : pre - 1));
+
   const TasksBicker = Tasks.map((element) => (
     <div key={element.id} className={`${display(element.id)}`}>
       <SelfAssessmentPanel task={element.task} onClick={handleClick} />
@@ -61,23 +60,9 @@ const SelfAssessment = () => {
   });
 
   return (
-    <div className="flex flex-col w-4/5 mx-auto mt-56 mb-10 md:w-8/12 lg:w-6/12">
+    <div className="flex flex-col w-4/5 mx-auto mt-56 mb-16 md:w-8/12 lg:w-6/12">
       <ProgressBar showLabel max={Tasks.length} now={displayIndex} />
       {TasksBicker}
-      <div className="mt-16 ">
-        <button
-          type="button"
-          className="self-start focus:outline-none"
-          onClick={handleBackStep}
-        >
-          <FontAwesomeIcon
-            className="pt-1 text-lg text-green-400 md:text-xl"
-            icon={['fas', 'chevron-left']}
-            isClickToPauseDisabled
-          />
-          <span className="ml-5 text-base text-gray-500">BACK</span>
-        </button>
-      </div>
       {!isSignedIn ? (
         <>
           <Modal
@@ -100,7 +85,7 @@ const SelfAssessment = () => {
                       />
                     </div>
                     <div className="w-full mt-5 ">
-                      <h1 className="text-center">Please Login ...</h1>
+                      <h1 className="text-center">{t('Please Login')}</h1>
                     </div>
                     <div className="flex w-full">
                       <Link
@@ -141,16 +126,14 @@ const SelfAssessment = () => {
                       />
                     </div>
                     <div className="w-full mt-5 ">
-                      <h1 className="text-center">Your Result at Test Is</h1>
+                      <h1 className="text-center">
+                        {t('Your Result at the test is')}
+                      </h1>
                       <p className="text-3xl text-center text-red-500">
                         {final}
                         <span>%</span>
                       </p>
-                      <p>
-                        {final < 40
-                          ? 'You look good but If you ever need to talk to someone check out our doctors'
-                          : 'It seem like you have some problems ,we recommend you to check out our doctors for helping'}
-                      </p>
+                      <p>{final < 40 ? t('Good Result') : t('Bad Result')}</p>
                     </div>
                   </div>
                 </div>

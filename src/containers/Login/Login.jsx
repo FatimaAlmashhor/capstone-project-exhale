@@ -6,19 +6,22 @@ import LoginForm from '../../components/LoginForm';
 import { SIGNUP_ROUTE } from '../../routes';
 import ResetPassword from '../../components/resetPassword/ResetPassword';
 import Modal, { Header, Body } from '../../components/common/Modal/Modal';
-import check from '../../Lottie/check-animation.json';
 
 const Login = () => {
   const [isSignedIn, setisSignedIn] = useState(false);
   const [show, setShow] = useState(false);
+
   const { t } = useTranslation();
   const location = useLocation();
+
   useEffect(() => {
     firebase.auth().onAuthStateChanged((user) => {
       setisSignedIn(!!user);
     });
   });
+
   const handleClose = () => setShow(false);
+
   return (
     <div>
       {isSignedIn ? null : (

@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-expressions */
 import React from 'react';
 import Lottie from 'react-lottie';
 import { Link } from 'react-router-dom';
@@ -82,9 +81,11 @@ const Home = () => {
                   {t('HowHelp')}
                 </p>
                 <div>
-                  <div className="inline-flex items-center justify-center px-32 py-2 my-4 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700">
-                    <Link to={SELF_ASSESSMENT_ROUTE}>{t('Checkup')}</Link>
-                  </div>
+                  <Link to={SELF_ASSESSMENT_ROUTE}>
+                    <div className="inline-flex items-center justify-center px-32 py-2 my-4 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700">
+                      {t('Checkup')}
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
