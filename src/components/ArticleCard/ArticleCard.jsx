@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, Route, useRouteMatch } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Article from '../FullArticle/Article';
 import Card from '../common/Card';
 
 const ArticleCard = ({ id, title, paragraph, time, img }) => {
   const { url } = useRouteMatch();
+  const { t } = useTranslation();
+
   return (
     <section className="blog ">
       <div className="container px-5 py-24 mx-auto">
@@ -34,7 +37,7 @@ const ArticleCard = ({ id, title, paragraph, time, img }) => {
                   className="block p-2 px-2 mt-4 text-sm text-white bg-green-400 rounded hover:bg-green-300"
                 >
                   <li className="list-none" key={id}>
-                    <Link to={`${url}/${id}`}>Read More</Link>
+                    <Link to={`${url}/${id}`}>{t('Read More')}</Link>
                   </li>
                 </button>
               </div>

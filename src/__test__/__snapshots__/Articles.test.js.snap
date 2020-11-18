@@ -18,7 +18,7 @@ exports[`renders correctly 1`] = `
       <p
         className="w-2/4 "
       >
-        Extreme emotions, attitudes, and behaviors involving weight and food is a kind of mental health problem. Read more about the causes, symptoms and how to get help.
+        Articles paragraph
       </p>
     </div>
     <div

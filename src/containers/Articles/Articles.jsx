@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Article from '../../components/ArticleCard';
 import { articles } from '../../services/fakeArticleService';
 
 const Articles = () => {
+  const { t } = useTranslation();
+
   const [articlesCollection, setArticles] = useState(articles);
   const [search, setSearch] = useState('');
 
@@ -59,21 +62,17 @@ const Articles = () => {
     <div className="p-10 mt-32">
       <div className="mt-6 text-center ">
         <h1 className="text-4xl font-semibold text-blue-700">
-          Mental Health Articles & Advices
+          {t('Mental Health Articles & Advices')}
         </h1>
         <div className="box-content flex justify-center mt-4 mb-8 text-lg leading-relaxed text-gray-600">
-          <p className="w-2/4 ">
-            Extreme emotions, attitudes, and behaviors involving weight and food is a
-            kind of mental health problem. Read more about the causes, symptoms and
-            how to get help.
-          </p>
+          <p className="w-2/4 ">{t('Articles paragraph')}</p>
         </div>
         <div className="box-content flex justify-center m-5">
           <div className="box-content flex justify-center w-2/4 bg-white rounded-full">
             <input
               type="text"
               name="search"
-              placeholder="Search"
+              placeholder={t('Search')}
               className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 border border-gray-300 rounded outline-none focus:border-indigo-500"
               onChange={(e) => handleSearch(e.target)}
             />

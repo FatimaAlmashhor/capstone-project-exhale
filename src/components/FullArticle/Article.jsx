@@ -1,9 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
 import { articles } from '../../services/fakeArticleService';
 
 const Article = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
+
   const article = articles.find((p) => p.id === Number(id));
   let articleData;
 
@@ -43,7 +46,7 @@ const Article = () => {
       </div>
     );
   } else {
-    articleData = <h2> Sorry. Article does not exist </h2>;
+    articleData = <h2>{t('Sorry. Article does not exist')}</h2>;
   }
 
   return (
