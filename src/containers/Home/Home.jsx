@@ -36,7 +36,7 @@ const Home = () => {
       </Card>
     </div>
   ));
-  const articleItem = articles.slice(0, 2).map((item) => (
+  const articleItem = articles.slice(0, 4).map((item) => (
     <div className="flex justify-center mt-10 md:w-1/2 md:px-4 md:mt-0">
       <HorizontalArticleCard
         index={item.id}
@@ -82,12 +82,9 @@ const Home = () => {
                   {t('HowHelp')}
                 </p>
                 <div>
-                  <button
-                    type="button"
-                    className="inline-flex items-center justify-center px-32 py-2 my-4 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
-                  >
+                  <div className="inline-flex items-center justify-center px-32 py-2 my-4 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700">
                     <Link to={SELF_ASSESSMENT_ROUTE}>{t('Checkup')}</Link>
-                  </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -99,13 +96,13 @@ const Home = () => {
         <div className="flex flex-wrap justify-center py-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
             <h2 className="text-4xl font-semibold">{t('whyexhal')}</h2>
-            <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-600">
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">
               {t('ReasonsUseExhale')}
             </p>
           </div>
         </div>
 
-        <div className="container px-4 py-8 mx-auto">
+        <div className="container px-4 mx-auto">
           <div className="flex flex-col items-center md:flex-row">
             <div className="w-full px-4 my-0 mr-auto overflow-hidden md:w-4/12 md:pt-0">
               <Lottie
@@ -126,7 +123,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="container px-4 py-8 mx-auto">
+        <div className="container px-4 py-4 mx-auto">
           <div className="flex flex-col items-center md:flex-row-reverse">
             <div className="w-full px-4 my-0 mr-auto overflow-hidden md:w-4/12 md:pt-0">
               <Lottie
@@ -153,7 +150,7 @@ const Home = () => {
           <div className="w-full px-12 md:w-6/12 md:px-4">
             <h2 className="text-4xl font-semibold">{t('meetdoctor')}</h2>
             <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-600">
-              {t('takelook')}
+              {t('psychiatristsDetails')}
             </p>
           </div>
         </div>
@@ -199,15 +196,14 @@ const Home = () => {
         <div className="flex flex-wrap justify-center py-8 mt-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
             <h2 className="text-4xl font-semibold">{t('helpfulread')}</h2>
-            <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-600">
-              {t('needhelp')}
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">
+              {t('detailarticlesHome')}
             </p>
           </div>
         </div>
         <div className="py-4 team-1 md:py-12">
           <div className="container px-4 mx-auto">
-            <div className="flex flex-wrap overflow-hidden w-1-2 md:flex md:-mx-4 md:mt-12 md:mb-6 team-list">
-              {articleItem}
+            <div className="flex flex-wrap justify-center overflow-hidden md:flex md:-mx-4 md:mt-12 md:mb-6 team-liste">
               {articleItem}
             </div>
             <div className="flex justify-center w-full">
