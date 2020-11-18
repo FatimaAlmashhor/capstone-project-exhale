@@ -17,16 +17,6 @@ const Doctors = () => {
         className="top-0 flex-grow w-full h-64 py-64 Header "
         style={{ backgroundColor: '#ADCCD2' }}
       >
-        <div className="relative z-10 flex flex-wrap justify-center -mt-32 text-center">
-          <div className="w-full px-12 md:w-6/12 md:px-6">
-            <h2 className="text-4xl font-semibold text-blue-700">
-              {t('ourpsychiatrists')}
-            </h2>
-            <div className="box-content flex justify-center mt-4 mb-4 text-lg leading-relaxed text-gray-600 ">
-              <p className="">{t('psychiatristsDetails')}</p>
-            </div>
-          </div>
-        </div>
         <svg
           className="absolute w-full h-full buttom-0"
           xmlns="http://www.w3.org/2000/svg"
@@ -40,6 +30,16 @@ const Doctors = () => {
         className="absolute left-0 right-0 w-full mx-auto md:w-9/12"
         style={{ top: '300px' }}
       >
+        <div className="relative z-10 flex flex-wrap justify-center w-full -mt-32 text-center pb-12">
+          <div className="w-full px-12 md:w-8/12 md:px-6">
+            <h2 className="text-4xl font-semibold text-blue-700">
+              {t('ourpsychiatrists')}
+            </h2>
+            <div className="box-content flex justify-center mt-4 mb-4 text-lg leading-relaxed text-gray-600 ">
+              <p className="">{t('psychiatristsDetails')}</p>
+            </div>
+          </div>
+        </div>
         <div className="flex flex-col">
           <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
@@ -60,7 +60,7 @@ const Doctors = () => {
                     </tr>
                   </thead>
                   {doctors.map((el) => (
-                    <tbody className="bg-white divide-y divide-gray-200">
+                    <tbody key={el.id} className="bg-white divide-y divide-gray-200">
                       <tr>
                         <td className="px-6 py-4 whitespace-no-wrap">
                           <div className="flex items-center">
@@ -159,7 +159,10 @@ const Doctors = () => {
           </Modal>
         )}
       </div>
-      <div className="block h-full py-64 " style={{ backgroundColor: '#F0EEF0' }} />
+      <div
+        className="block h-full py-64 mb-64 md:mb-32"
+        style={{ backgroundColor: '#F0EEF0' }}
+      />
     </div>
   );
 };
