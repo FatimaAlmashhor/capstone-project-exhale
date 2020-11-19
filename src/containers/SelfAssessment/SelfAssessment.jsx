@@ -1,7 +1,10 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useState, useEffect } from 'react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import Lottie from 'react-lottie';
 import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ProgressBar from '../../components/ProgressBar';
 import Tasks from '../../services/selfAssessmentQuestion';
 import SelfAssessmentPanel from '../../components/SelfAssessmentPanle';
@@ -43,6 +46,8 @@ const SelfAssessment = () => {
     setResult((pre) => [...pre], (result[displayIndex] = e.target.dataset.rate));
     setDisplayIndex((pre) => (displayIndex === Tasks.length ? pre : pre + 1)); // move to next question
   };
+  const handleBackStep = () =>
+    setDisplayIndex((pre) => (displayIndex === 0 ? pre : pre - 1));
 
   const TasksBicker = Tasks.map((element) => (
     <div key={element.id} className={`${display(element.id)}`}>
@@ -63,6 +68,21 @@ const SelfAssessment = () => {
     <div className="flex flex-col w-4/5 mx-auto mt-56 mb-16 md:w-8/12 lg:w-6/12 transition-all duration-100">
       <ProgressBar showLabel max={Tasks.length} now={displayIndex} />
       {TasksBicker}
+      <div className="w-full h-6 my-12">
+        <div
+          onClick={handleBackStep}
+          className="h-full items-center align-center my-auto"
+        >
+          <FontAwesomeIcon
+            icon={['fa', 'chevron-left']}
+            className="h-full text-green-400"
+            style={{ width: '50' }}
+          />
+          <span className="text-xl cursor-pointer text-gray-600 pb-4 ">
+            {t('back')}
+          </span>
+        </div>
+      </div>
       {!isSignedIn ? (
         <>
           <Modal
