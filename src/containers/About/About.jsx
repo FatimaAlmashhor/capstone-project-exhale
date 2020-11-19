@@ -20,7 +20,7 @@ const About = () => {
   const defaultOptions = (data) => {
     return {
       loop: false,
-      autoplay: false,
+      autoplay: hoverLottie,
       animationData: data,
     };
   };
@@ -102,32 +102,42 @@ const About = () => {
               {t('Our Values')}
             </h2>
             <div className="justify-between mt-10 flex flex-wrap -mb-4">
-              <div className="text-red-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white ">
-                <Lottie
-                  isClickToPauseDisabled
-                  options={defaultOptions(care)}
-                  height="auto"
-                  width="100%"
-                  onMouseOver={() => setHoverLottie({ autoplay: true })}
-                />
+              <div>
+                <div className="text-red-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white ">
+                  <Lottie
+                    isClickToPauseDisabled
+                    options={defaultOptions(care)}
+                    height="auto"
+                    width="100%"
+                    onMouseOver={() => setHoverLottie({ autoplay: true })}
+                  />
+                </div>
+                <p className="text-green-500">Care Deeply</p>
               </div>
-              <div className="text-red-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white ">
-                <Lottie
-                  isClickToPauseDisabled
-                  options={defaultOptions(excellence)}
-                  height="auto"
-                  width="100%"
-                  onMouseOver={() => setHoverLottie(true)}
-                />
+
+              <div>
+                <div className="text-red-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white ">
+                  <Lottie
+                    isClickToPauseDisabled
+                    options={defaultOptions(excellence)}
+                    height="auto"
+                    width="100%"
+                    onMouseOver={() => setHoverLottie(true)}
+                  />
+                </div>
+                <p className="text-green-500">Integrity</p>
               </div>
-              <div className="text-red-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white  ">
-                <Lottie
-                  isClickToPauseDisabled
-                  options={defaultOptions(integrity)}
-                  height="auto"
-                  width="100%"
-                  onMouseOver={() => setHoverLottie(true)}
-                />
+              <div>
+                <div className="text-red-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white  ">
+                  <Lottie
+                    isClickToPauseDisabled
+                    options={defaultOptions(integrity)}
+                    height="auto"
+                    width="100%"
+                    onMouseOver={() => setHoverLottie(true)}
+                  />
+                </div>
+                <p className="text-green-500">Excllence</p>
               </div>
             </div>
           </div>
@@ -149,7 +159,7 @@ const About = () => {
             <div className="p-8 mb-4  sm:w-1/1  md:w-1/2  lg:w-1/3">
               <Card>
                 <TeamCard
-                  name={`${doc.id}. ${doc.name}`}
+                  name={`${doc.name}`}
                   major={`${doc.major}`}
                   image={doc.img}
                   email={`${doc.email}`}

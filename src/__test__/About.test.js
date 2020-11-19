@@ -2,7 +2,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import '../fontawesome';
 import About from '../containers/About/About';
-
+import Lottie from 'react-lottie';
+import 'jest-canvas-mock';
 
 it('renders correctly', () => {
   const Test = <div>Hello</div>

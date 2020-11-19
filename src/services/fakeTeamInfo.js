@@ -3,8 +3,20 @@ import marwa from '../asset/images/TeamPhotos/teamMarwa.jpg';
 import somaia from '../asset/images/TeamPhotos/teamSomaia.jpg';
 import dhiaa from '../asset/images/TeamPhotos/teamDhiaa.jpg';
 import nuha from '../asset/images/TeamPhotos/teamNuha.jpg';
+import muhannad from '../asset/images/TeamPhotos/teamMuhannad.jpg';
 
 export const members = [
+  {
+    id: 0,
+    img: muhannad,
+    name: 'Muhanned Noman',
+    major: 'Team Leader',
+    email: 'muhannad@re-coded.com',
+    twitter: 'https://twitter.com',
+    linkedin: 'https://www.linkedin.com',
+    facebook: 'https://www.facebook.com',
+    instagram: 'https://www.instagram.com',
+  },
   {
     id: 1,
     img: fatima,
@@ -18,10 +30,10 @@ export const members = [
   },
   {
     id: 2,
-    img: dhiaa,
-    name: 'Dhiaa Alshamy',
+    img: marwa,
+    name: 'Marwa  alaghbri',
     major: 'IT',
-    email: 'dhodhof@gmail.com',
+    email: 'marwaalaghbry@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
     facebook: 'https://www.facebook.com',
@@ -29,10 +41,10 @@ export const members = [
   },
   {
     id: 3,
-    img: marwa,
-    name: 'Marwa  alaghbri',
+    img: dhiaa,
+    name: 'Dhiaa Alshamy',
     major: 'IT',
-    email: 'marwaalaghbry@gmail.com',
+    email: 'dhodhof@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
     facebook: 'https://www.facebook.com',
