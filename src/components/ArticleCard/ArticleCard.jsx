@@ -75,7 +75,7 @@ export const HorizontalArticleCard = ({
 }) => {
   return (
     <section className="w-full bg-transparent blog">
-      <div className="container w-full px-5 py-24 mx-auto">
+      <div className="container w-full px-5 py-12 mx-auto">
         <div className="flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4 hover:shadow-lg">
           <div className="flex flex-col m-auto lg:flex-row">
             {img && (
