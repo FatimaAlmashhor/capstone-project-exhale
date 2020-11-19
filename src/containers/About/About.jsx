@@ -24,26 +24,11 @@ const About = () => {
       animationData: data,
     };
   };
-  // const svg1 = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: Svg1,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice"
-  //   }
-  // };
-  // const svg2 = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: Svg2,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice"
-  //   }
-  // };
+
   return (
     <div>
       <section className=" pt-10 relative ">
-        <div className="justify-center text-center flex flex-wrap py-8 Header flex-grow  w-full h-64 top-0 py-48 ">
+        <div className="justify-center text-center flex flex-wrap Header flex-grow  w-full h-64 top-0 py-48 ">
           <div className="w-full md:w-6/12  md:px-4">
             <h2 className="font-semibold text-4xl text-blue-700">{t('aboutus')}</h2>
             <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
@@ -73,12 +58,6 @@ const About = () => {
         <div className="container mx-auto px-4 py-8">
           <div className="items-center flex flex-col md:flex-row-reverse">
             <div className="w-full md:w-4/12 mr-auto px-4 md:pt-0 my-0">
-              {/* <Lottie 
-	    options={svg2}
-        height={400}
-        width={400}
-      /> */}
-              {/* <FishGirl /> */}
               <Goals />
             </div>
             <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -122,6 +101,7 @@ const About = () => {
                     options={defaultOptions(excellence)}
                     height="auto"
                     width="100%"
+                    autoplay
                     onMouseOver={() => setHoverLottie(true)}
                   />
                 </div>
