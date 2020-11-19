@@ -1,67 +1,65 @@
+import i18n from '../i18next';
+
 const questions = [
   {
     id: 0,
-    task: 'Little interest or pleasure in doing things',
+    task: i18n.t('question1'),
   },
   {
     id: 1,
-    task: 'Feeling down, depressed, or hopeless',
+    task: i18n.t('question2'),
   },
   {
     id: 2,
-    task: 'Trouble falling or staying asleep, or sleeping too much',
+    task: i18n.t('question3'),
   },
   {
     id: 3,
-    task: 'Feeling tired or having little energy',
+    task: i18n.t('question4'),
   },
   {
     id: 4,
-    task: 'Poor appetite or overeating',
+    task: i18n.t('question5'),
   },
   {
     id: 5,
-    task:
-      'Feeling bad about yourself - or that you are a failure or have let yourself or your family down',
+    task: i18n.t('question6'),
   },
   {
     id: 6,
-    task:
-      'Trouble concentrating on things, such as reading the newspaper or watching television',
+    task: i18n.t('question7'),
   },
   {
     id: 7,
-    task: 'Thoughts that you would be better off dead, or of hurting yourself',
+    task: i18n.t('question8'),
   },
   {
     id: 8,
-    task:
-      'If you checked off any problems, how difficult have these problems made it for you at work, home, or with other people?',
+    task: i18n.t('question9'),
   },
   {
     id: 9,
-    task:
-      'I feel agitated or restless (I pace, am unable to stay calm, or need to move constantly).',
+    task: i18n.t('question10'),
   },
   {
     id: 10,
-    task: 'I feel so guilty that I can barely take it',
+    task: i18n.t('question11'),
   },
   {
     id: 11,
-    task: 'When needed, I can make up my mind quickly',
+    task: i18n.t('question12'),
   },
   {
     id: 12,
-    task: 'I feel worn out',
+    task: i18n.t('question13'),
   },
   {
     id: 13,
-    task: 'When something is bothering me, I cannot stop thinking about it',
+    task: i18n.t('question14'),
   },
   {
     id: 14,
-    task: 'When things go wrong in my life, I feel like I will never get over it.',
+    task: i18n.t('question15'),
   },
 ];
 

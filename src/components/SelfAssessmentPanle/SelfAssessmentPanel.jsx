@@ -25,7 +25,7 @@ export default function SelfAssessmentPanel({ task, onClick }) {
         <h1
           className={` text-4xl  text-center font-sans ${style.trans} ${style.hover} transition-all duration-100 `}
         >
-          {task}
+          {t(task)}
         </h1>
       </div>
       <div className="flex-auto ">
