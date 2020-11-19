@@ -13,7 +13,7 @@ export const doctors = [
     id: 2,
     image: 'http://ye-mj.net/userimages/2019/06/1560527133blobid0.jpg',
     name: 'Dr. Mohammed Abdulhabeeb Al-Khulaidi',
-    specialty: 'Schizophrenia, Obsessive-Compulsive Disorder, Sleep Disorders ',
+    specialty: 'Schizophrenia, Obsessive-Compulsive Disorder',
     workplace: 'Dr. Mohammed Abdulhabeeb Al-Khulaidi Center',
     address: 'Al-Zubairi street - Sanaa',
     email: '',
@@ -65,17 +65,6 @@ export const doctors = [
     id: 7,
     image:
       'https://www.shareicon.net/data/512x512/2016/08/18/813844_people_512x512.png',
-    name: "Dr. Fekri Al-Na'eb",
-    specialty: 'Psychiatric and Neurological Consultant',
-    workplace: "Dr. Fekri Al-Na'eb Clinic",
-    address: 'Taiz street - Sanaa',
-    email: '',
-    phone: +967711707954,
-  },
-  {
-    id: 8,
-    image:
-      'https://www.shareicon.net/data/512x512/2016/08/18/813844_people_512x512.png',
     name: "Dr. Abdullah Abdulwahhab Al-Shar'abi",
     specialty: 'Psychiatric and Neurological Consultant',
     workplace: "Dr. Abdullah Abdulwahhab Al-Shar'abi Center",
@@ -84,7 +73,7 @@ export const doctors = [
     phone: +9967775179872,
   },
   {
-    id: 9,
+    id: 8,
     image:
       'https://www.shareicon.net/data/512x512/2016/08/18/813844_people_512x512.png',
     name: 'Dr. Abdulqader Al-Majed',

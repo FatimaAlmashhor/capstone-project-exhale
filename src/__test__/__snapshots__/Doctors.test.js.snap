@@ -199,7 +199,7 @@ exports[`renders correctly 1`] = `
                     <div
                       className="text-sm leading-5 text-gray-900"
                     >
-                      Schizophrenia, Obsessive-Compulsive Disorder, Sleep Disorders 
+                      Schizophrenia, Obsessive-Compulsive Disorder
                     </div>
                   </td>
                   <td
@@ -469,71 +469,6 @@ exports[`renders correctly 1`] = `
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
                       Psychotherapy Clinic
-                    </span>
-                  </td>
-                  <td
-                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap"
-                  >
-                    <button
-                      className="text-indigo-600 hover:text-blue-500"
-                      onClick={[Function]}
-                    >
-                      Contact
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-              <tbody
-                className="bg-white divide-y divide-gray-200"
-              >
-                <tr>
-                  <td
-                    className="px-6 py-4 whitespace-no-wrap"
-                  >
-                    <div
-                      className="flex items-center"
-                    >
-                      <div
-                        className="flex-shrink-0 w-10 h-10"
-                      >
-                        <img
-                          alt=""
-                          className="w-10 h-10 rounded-full roNot provided yetd-full"
-                          src="https://www.shareicon.net/data/512x512/2016/08/18/813844_people_512x512.png"
-                        />
-                      </div>
-                      <div
-                        className="ml-4"
-                      >
-                        <div
-                          className="text-sm font-medium leading-5 text-gray-900"
-                        >
-                          Dr. Fekri Al-Na'eb
-                        </div>
-                        <div
-                          className="text-sm leading-5 text-gray-500"
-                        >
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td
-                    className="px-6 py-4 whitespace-no-wrap"
-                  >
-                    <div
-                      className="text-sm leading-5 text-gray-900"
-                    >
-                      Psychiatric and Neurological Consultant
-                    </div>
-                  </td>
-                  <td
-                    className="px-6 py-4 whitespace-no-wrap"
-                  >
-                    <span
-                      className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
-                    >
-                      Dr. Fekri Al-Na'eb Clinic
                     </span>
                   </td>
                   <td
