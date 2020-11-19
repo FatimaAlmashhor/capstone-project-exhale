@@ -14,12 +14,12 @@ export default function DoctorCard({
   show,
 }) {
   return (
-    <div className="max-w-screen-sm overflow-hidden rounded  md:max-w-xs lg:max-w-xs">
-      <div className="w-3/5 mx-auto mt-5 border-4 border-blue-700 rounded-full">
-        <img className=" " src={img} alt="Sunset in the mountains" />
+    <div className="max-w-screen-sm overflow-hidden md:max-w-xs lg:max-w-xs">
+      <div className="w-40 mx-auto mt-5 border-4 border-blue-700 rounded-full">
+        <img className="w-40 h-40 rounded-full" src={img} alt="Doctor" />
       </div>
       <div className="px-6 py-4 mx-auto">
-        <div className="mb-2  mx-auto text-center text-xl font-bold">
+        <div className="mx-auto mb-2 text-xl font-bold text-center">
           <span>{name}</span>
         </div>
         {show && (
@@ -47,21 +47,21 @@ export default function DoctorCard({
           </>
         )}
       </div>
-      <div className="px-6 pt-4 pb-2  text-center">
+      <div className="px-6 pt-4 pb-2 text-center">
         <FontAwesomeIcon
-          className="text-lg text-gray-600 hover:text-blue-400 cursor-pointer"
+          className="text-lg text-gray-600 cursor-pointer hover:text-blue-400"
           icon={['fab', 'twitter']}
         />
         <FontAwesomeIcon
-          className="mx-3 text-gray-600 hover:text-blue-700 text-lg cursor-pointer"
+          className="mx-3 text-lg text-gray-600 cursor-pointer hover:text-blue-700"
           icon={['fab', 'facebook']}
         />
         <FontAwesomeIcon
-          className="mx-3 text-lg text-gray-600 hover:text-blue-700 cursor-pointer"
+          className="mx-3 text-lg text-gray-600 cursor-pointer hover:text-blue-700"
           icon={['fab', 'linkedin']}
         />
         <FontAwesomeIcon
-          className="mx-3 text-lg text-gray-600 hover:text-red-700 cursor-pointer"
+          className="mx-3 text-lg text-gray-600 cursor-pointer hover:text-red-700"
           icon={['fab', 'instagram']}
         />
       </div>

@@ -30,7 +30,7 @@ const Doctors = () => {
         className="absolute left-0 right-0 w-full mx-auto md:w-9/12"
         style={{ top: '300px' }}
       >
-        <div className="relative z-10 flex flex-wrap justify-center w-full -mt-32 text-center pb-12">
+        <div className="relative z-10 flex flex-wrap justify-center w-full pb-12 -mt-32 text-center">
           <div className="w-full px-12 md:w-8/12 md:px-6">
             <h2 className="text-4xl font-semibold text-blue-700">
               {t('ourpsychiatrists')}
@@ -66,7 +66,7 @@ const Doctors = () => {
                           <div className="flex items-center">
                             <div className="flex-shrink-0 w-10 h-10">
                               <img
-                                className="w-10 h-10 roNot provided yetd-full"
+                                className="w-10 h-10 rounded-full roNot provided yetd-full"
                                 src={el.image}
                                 alt=""
                               />
