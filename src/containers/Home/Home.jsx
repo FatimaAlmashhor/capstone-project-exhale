@@ -16,6 +16,9 @@ import DoctorCard from '../../components/DoctorCard';
 import { doctors } from '../../services/fakeDoctorsServices';
 import { articles } from '../../services/fakeArticleService';
 import { HorizontalArticleCard } from '../../components/ArticleCard';
+import chckeList from '../../Lottie/checkList.json';
+import doctorsTeam from '../../Lottie/doctors.json';
+import result from '../../Lottie/review.json';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -59,7 +62,7 @@ const Home = () => {
   return (
     <div className="">
       <section
-        className="relative flex items-center h-screen my-20 md:my-10  header pt-56 md:pt-10 md:my-0"
+        className="relative flex items-center h-screen pt-56 my-20 md:my-10 header md:pt-10 "
         style={{ maxHeight: '660px' }}
       >
         <div className="container px-4 mx-auto my-10 ">
@@ -105,7 +108,7 @@ const Home = () => {
 
         <div className="container px-4 mx-auto">
           <div className="flex flex-col items-center md:flex-row">
-            <div className="w-full px-4 my-0 md:mr-4 overflow-hidden md:w-7/12 md:pt-0">
+            <div className="w-full px-4 my-0 overflow-hidden md:mr-4 md:w-7/12 md:pt-0">
               <Lottie
                 isClickToPauseDisabled
                 options={defaultOptions(Analysis)}
@@ -179,7 +182,7 @@ const Home = () => {
               {t('selfAssessment')}
             </h2>
             <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-400">
-              {t('needhelp')}
+              {t('detailselfassessment')}
             </p>
             <div>
               <button
@@ -188,6 +191,74 @@ const Home = () => {
               >
                 <Link to={SELF_ASSESSMENT_ROUTE}>{t('Checkup')}</Link>
               </button>
+            </div>
+          </div>
+        </div>
+        <div className="container px-4 mx-auto">
+          <div className="flex flex-col items-center md:flex-row">
+            <div className="w-full px-4 my-0 overflow-hidden md:mr-4 md:w-7/12 md:pt-0">
+              <Lottie
+                isClickToPauseDisabled
+                options={defaultOptions(chckeList)}
+                width="100%"
+                height="auto"
+              />
+            </div>
+            <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
+              <div className="md:pr-4">
+                <h3 className="text-3xl font-semibold text-gray-200">
+                  {t('step1')}
+                </h3>
+                <p className="mt-4 text-lg leading-relaxed text-gray-400">
+                  {t('detailstep1')}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container px-4 mx-auto mb-10">
+          <div className="flex flex-col items-center md:flex-row-reverse">
+            <div className="w-full px-4 my-0 mr-auto overflow-hidden md:w-7/12 md:pt-0">
+              <Lottie
+                isClickToPauseDisabled
+                options={defaultOptions(result)}
+                width="60%"
+                height="auto"
+              />
+            </div>
+            <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
+              <div className="md:pr-4">
+                <h3 className="text-3xl font-semibold text-gray-200">
+                  {t('step2')}
+                </h3>
+                <p className="mt-4 text-lg leading-relaxed text-gray-400">
+                  {t('detailstep2')}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container px-4 mx-auto">
+          <div className="flex flex-col items-center md:flex-row">
+            <div className="w-full px-4 my-0 overflow-hidden md:mr-4 md:w-7/12 md:pt-0">
+              <Lottie
+                isClickToPauseDisabled
+                options={defaultOptions(doctorsTeam)}
+                width="90%"
+                height="auto"
+              />
+            </div>
+            <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
+              <div className="md:pr-4">
+                <h3 className="text-3xl font-semibold text-gray-200">
+                  {t('step3')}
+                </h3>
+                <p className="mt-4 text-lg leading-relaxed text-gray-400">
+                  {t('detailstep3')}
+                </p>
+              </div>
             </div>
           </div>
         </div>
