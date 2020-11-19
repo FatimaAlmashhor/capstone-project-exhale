@@ -139,8 +139,8 @@ const About = () => {
             <div className="p-8 mb-4 sm:w-1/1 md:w-1/2 lg:w-1/3">
               <Card>
                 <TeamCard
-                  name={`${doc.name}`}
-                  major={`${doc.major}`}
+                  name={`${t(doc.name)}`}
+                  major={`${t(doc.major)}`}
                   image={doc.img}
                   email={`${doc.email}`}
                   twitter={`${doc.twitter}`}
