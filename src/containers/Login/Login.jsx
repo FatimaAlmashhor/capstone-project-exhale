@@ -34,7 +34,7 @@ const Login = () => {
           <LoginForm />
           <button
             type="button"
-            className="inline-block w-full text-sm font-normal text-center text-blue-600 align-baseline focus:outline-none hover:text-blue-800"
+            className="inline-block w-full text-sm font-normal text-center text-blue-500 align-baseline focus:outline-none hover:text-blue-700"
             onClick={() => {
               setShow(true);
             }}
@@ -56,7 +56,7 @@ const Login = () => {
           <p className="text-center text-gray-600 text-md">
             {t('haveAccount')}
             <Link
-              className="px-2 text-blue-600 text-md focus:outline-none"
+              className="px-2 text-blue-500 text-md focus:outline-none"
               to={{
                 pathname: SIGNUP_ROUTE,
                 state: { modal: location.state.modal },

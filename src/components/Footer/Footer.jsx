@@ -16,9 +16,9 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="relative bg-blue-800 pt-8 pb-6">
+    <footer className="relative pt-8 pb-6 bg-blue-800">
       <div
-        className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        className="absolute top-0 left-0 right-0 bottom-auto w-full -mt-20 overflow-hidden pointer-events-none"
         style={{ height: '80px', transform: 'translateZ(0px)' }}
       >
         <svg
@@ -36,24 +36,24 @@ const Footer = () => {
           />
         </svg>
       </div>
-      <div className="container mx-auto px-4">
+      <div className="container px-4 mx-auto">
         <div className="flex flex-wrap">
-          <div className="w-full md:w-4/12 px-4">
-            <h4 className="text-3xl font-semibold text-gray-200 border-b pb-4">
+          <div className="w-full px-4 md:w-4/12">
+            <h4 className="pb-4 text-3xl font-semibold text-gray-200 border-b">
               {t('What is a Exhale')}
               <span className="text-4xl text-red-500">?</span>
             </h4>
-            <h5 className="text-md mt-0 mb-2 text-gray-400 pt-2">
+            <h5 className="pt-2 mt-0 mb-2 text-gray-400 text-md">
               {t('What is Exhale answer')}
             </h5>
           </div>
-          <div className="w-full md:w-8/12 px-4">
-            <div className="flex flex-wrap items-top mb-6">
-              <div className="w-full text-center md:w-6/12 xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
-                <span className="block pt-4 uppercase text-white text-sm font-semibold mb-2">
+          <div className="w-full px-4 md:w-8/12">
+            <div className="flex flex-wrap mb-6 items-top">
+              <div className="w-full pt-6 ml-auto text-center md:w-6/12 xl:w-4/12 md:pt-0 md:px-4">
+                <span className="block pt-4 mb-2 text-sm font-semibold text-white uppercase">
                   {t('Pages')}
                 </span>
-                <ul className="list-unstyled text-gray-400">
+                <ul className="text-gray-400 list-unstyled">
                   <li>
                     <Link to={HOME_ROUTE}>{t('HOME')}</Link>
                   </li>
@@ -65,17 +65,17 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="w-full md:w-6/12 text-center xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
-                <span className="block pt-4 uppercase text-white text-sm font-semibold mb-2">
+              <div className="w-full pt-6 ml-auto text-center md:w-6/12 xl:w-4/12 md:pt-0 md:px-4">
+                <span className="block pt-4 mb-2 text-sm font-semibold text-white uppercase">
                   {t('Team')}
                 </span>
-                <ul className="list-unstyled text-gray-400">
+                <ul className="text-gray-400 list-unstyled">
                   <Link to={ABOUT_ROUTE}>{t('AboutUs')}</Link>
                   <li>
                     <Link to={CONTACT_ROUTE}>{t('GetInTouch')}</Link>
                   </li>
                   <li>
-                    <span className="block mt-8 uppercase text-white text-sm font-semibold mb-2">
+                    <span className="block mt-8 mb-2 text-sm font-semibold text-white uppercase">
                       {t('selfAssessment')}
                     </span>
                     <ul className="list-unstyled">
@@ -86,18 +86,18 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="mt-10 flex flex-row-reverse w-full text-right">
+              <div className="flex flex-row-reverse w-full mt-10 text-right">
                 <DropdownButton />
               </div>
-              <div className="w-full md:w-6/12 text-center xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto" />
+              <div className="w-full pt-6 ml-auto text-center md:w-6/12 xl:w-4/12 md:pt-0 md:px-4" />
             </div>
           </div>
         </div>
-        <div className="my-6 border-gray-400 border-t">
-          <div className="flex flex-wrap items-center md:justify-between justify-center">
-            <div className="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div className="my-6 border-t border-gray-400">
+          <div className="flex flex-wrap items-center justify-center md:justify-between">
+            <div className="w-full px-4 mx-auto text-center md:w-4/12">
               <div className="mt-6">
-                <ul className="flex flex-auto justify-center">
+                <ul className="flex justify-center flex-auto">
                   <li className="mx-3 cursor-pointer">
                     <a href=" ">
                       <FontAwesomeIcon
@@ -132,7 +132,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="text-sm text-gray-300 font-semibold py-1">
+              <div className="py-1 text-sm font-semibold text-gray-300">
                 {t('CopyRight')}
               </div>
             </div>
@@ -154,7 +154,7 @@ export const DropdownButton = () => {
     i18n.changeLanguage(lng);
   };
   return (
-    <div className="inline-flex text-gray-400 mx-auto md:mx-0 lg:mx-0 border-2 border-indigo-500 rounded overflow-hidden">
+    <div className="inline-flex mx-auto overflow-hidden text-gray-400 border-2 border-indigo-500 rounded md:mx-0 lg:mx-0">
       <button
         id="btn-en"
         type="button"
@@ -177,7 +177,7 @@ export const DropdownButton = () => {
             : 'py-1 px-4 hover:text-gray-500 focus:text-gray-200 focus:outline-none '
         }
       >
-        العربيه
+        العربية
       </button>
     </div>
   );

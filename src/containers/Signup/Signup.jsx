@@ -37,6 +37,7 @@ const Signup = () => {
                     state: { modal: location.state.modal },
                   }}
                 >
+                  &nbsp;
                   {t('Login')}
                 </Link>
               </p>
