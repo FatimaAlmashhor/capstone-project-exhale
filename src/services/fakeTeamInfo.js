@@ -1,12 +1,28 @@
-import personImage from '../asset/images/placeholder-image.jpg';
+import fatima from '../asset/images/TeamPhotos/teamFatima.jpg';
+import marwa from '../asset/images/TeamPhotos/teamMarwa.jpg';
+import somaia from '../asset/images/TeamPhotos/teamSomaia.jpg';
+import dhiaa from '../asset/images/TeamPhotos/teamDhiaa.jpg';
+import nuha from '../asset/images/TeamPhotos/teamNuha.jpg';
+import muhannad from '../asset/images/TeamPhotos/teamMuhannad.jpg';
 
 export const members = [
   {
+    id: 0,
+    img: muhannad,
+    name: 'Muhanned Noman',
+    major: 'Team Leader',
+    email: 'muhannad@re-coded.com',
+    twitter: 'https://twitter.com',
+    linkedin: 'https://www.linkedin.com',
+    facebook: 'https://www.facebook.com',
+    instagram: 'https://www.instagram.com',
+  },
+  {
     id: 1,
-    img: { personImage },
-    name: 'Member Name',
-    major: 'Front End Developer',
-    email: 'example.exam@gmail.com',
+    img: fatima,
+    name: 'Fatima Almashhor',
+    major: 'CTO',
+    email: 'fatima.almashhor@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
     facebook: 'https://www.facebook.com',
@@ -14,10 +30,10 @@ export const members = [
   },
   {
     id: 2,
-    img: { personImage },
-    name: 'Member Name',
-    major: 'Front End Developer',
-    email: 'example.exam@gmail.com',
+    img: marwa,
+    name: 'Marwa  alaghbri',
+    major: 'IT',
+    email: 'marwaalaghbry@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
     facebook: 'https://www.facebook.com',
@@ -25,10 +41,10 @@ export const members = [
   },
   {
     id: 3,
-    img: { personImage },
-    name: 'Member Name',
-    major: 'Front End Developer',
-    email: 'example.exam@gmail.com',
+    img: dhiaa,
+    name: 'Dhiaa Alshamy',
+    major: 'IT',
+    email: 'dhodhof@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
     facebook: 'https://www.facebook.com',
@@ -36,10 +52,10 @@ export const members = [
   },
   {
     id: 4,
-    img: { personImage },
-    name: 'Member Name',
-    major: 'Front End Developer',
-    email: 'example.exam@gmail.com',
+    img: somaia,
+    name: 'Somaia Al- Mekhlafi',
+    major: 'Mechatronics Engineer',
+    email: 'somia.abdullah3@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
     facebook: 'https://www.facebook.com',
@@ -47,21 +63,10 @@ export const members = [
   },
   {
     id: 5,
-    img: { personImage },
-    name: 'Member Name',
-    major: 'Front End Developer',
-    email: 'example.exam@gmail.com',
-    twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com',
-    facebook: 'https://www.facebook.com',
-    instagram: 'https://www.instagram.com',
-  },
-  {
-    id: 6,
-    img: { personImage },
-    name: 'Member Name',
-    major: 'Front End Developer',
-    email: 'example.exam@gmail.com',
+    img: nuha,
+    name: 'Nuha Al-Sameai',
+    major: 'CS',
+    email: 'noha.pepeep1@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
     facebook: 'https://www.facebook.com',
