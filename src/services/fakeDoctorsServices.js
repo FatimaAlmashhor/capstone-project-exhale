@@ -19,7 +19,7 @@ export const doctors = [
     workplace: i18n.t('Kulaidiworkplace'),
     address: i18n.t('Address'),
     email: '',
-    phone: +967770774063,
+    phone: +967777538304,
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ export const doctors = [
     workplace: i18n.t('Mahfoodworkplace'),
     address: i18n.t('Address'),
     email: '',
-    phone: +967777538304,
+    phone: +967770774063,
   },
   {
     id: 5,

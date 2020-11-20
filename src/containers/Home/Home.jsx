@@ -31,7 +31,7 @@ const Home = () => {
           specialty={item.specialty}
           email={item.email}
           phone={item.phone}
-          image={item.image}
+          img={item.image}
           address={item.address}
           workplace={item.workplace}
         />
