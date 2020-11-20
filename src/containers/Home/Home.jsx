@@ -184,26 +184,10 @@ const Home = () => {
             <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-400">
               {t('detailselfassessment')}
             </p>
-            <div>
-              <button
-                type="button"
-                className="inline-flex items-center justify-center px-16 py-2 my-4 text-lg font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-transparent border border-transparent border-white rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
-              >
-                <Link to={SELF_ASSESSMENT_ROUTE}>{t('Checkup')}</Link>
-              </button>
-            </div>
           </div>
         </div>
         <div className="container px-4 mx-auto">
           <div className="flex flex-col items-center md:flex-row">
-            <div className="w-full px-4 my-0 overflow-hidden md:mr-4 md:w-7/12 md:pt-0">
-              <Lottie
-                isClickToPauseDisabled
-                options={defaultOptions(chckeList)}
-                width="100%"
-                height="auto"
-              />
-            </div>
             <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
               <div className="md:pr-4">
                 <h3 className="text-3xl font-semibold text-gray-200">
@@ -214,16 +198,24 @@ const Home = () => {
                 </p>
               </div>
             </div>
+            <div className="w-full px-4 my-0 overflow-hidden md:mr-4 md:w-7/12 md:pt-0">
+              <Lottie
+                isClickToPauseDisabled
+                options={defaultOptions(chckeList)}
+                width="70%"
+                height="auto"
+              />
+            </div>
           </div>
         </div>
 
-        <div className="container px-4 mx-auto mb-10">
+        <div className="container px-4 mx-auto mb-20">
           <div className="flex flex-col items-center md:flex-row-reverse">
             <div className="w-full px-4 my-0 mr-auto overflow-hidden md:w-7/12 md:pt-0">
               <Lottie
                 isClickToPauseDisabled
                 options={defaultOptions(result)}
-                width="60%"
+                width="40%"
                 height="auto"
               />
             </div>
@@ -242,14 +234,6 @@ const Home = () => {
 
         <div className="container px-4 mx-auto">
           <div className="flex flex-col items-center md:flex-row">
-            <div className="w-full px-4 my-0 overflow-hidden md:mr-4 md:w-7/12 md:pt-0">
-              <Lottie
-                isClickToPauseDisabled
-                options={defaultOptions(doctorsTeam)}
-                width="90%"
-                height="auto"
-              />
-            </div>
             <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
               <div className="md:pr-4">
                 <h3 className="text-3xl font-semibold text-gray-200">
@@ -260,7 +244,23 @@ const Home = () => {
                 </p>
               </div>
             </div>
+            <div className="w-full px-4 my-0 overflow-hidden md:mr-4 md:w-7/12 md:pt-0">
+              <Lottie
+                isClickToPauseDisabled
+                options={defaultOptions(doctorsTeam)}
+                width="60%"
+                height="auto"
+              />
+            </div>
           </div>
+        </div>
+        <div className="flex justify-center w-full mt-20 mb-4">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center px-20 py-4 my-4 text-3xl font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-transparent border border-transparent border-white rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
+          >
+            <Link to={SELF_ASSESSMENT_ROUTE}>{t('Checkup')}</Link>
+          </button>
         </div>
       </section>
       <section className="relative py-10 pb-20 bg-white">

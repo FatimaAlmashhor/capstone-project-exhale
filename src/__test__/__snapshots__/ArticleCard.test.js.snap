@@ -76,7 +76,7 @@ exports[`renders correctly 2`] = `
   className="w-full bg-transparent blog"
 >
   <div
-    className="container w-full px-5 py-24 mx-auto"
+    className="container w-full px-5 py-12 mx-auto"
   >
     <div
       className="flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4 hover:shadow-lg"
