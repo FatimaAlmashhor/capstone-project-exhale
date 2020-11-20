@@ -24,8 +24,8 @@ export const members = [
     major: 'IT Engineer',
     email: 'fatima.almashhor@gmail.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com',
-    github: 'https://www.github.com',
+    linkedin: 'https://www.linkedin.com/in/fatima-almashhor-b89b841b1/',
+    github: 'https://github.com/FatimaAlmashhor',
     instagram: 'https://www.instagram.com',
   },
   {

@@ -422,7 +422,7 @@ exports[`renders correctly 1`] = `
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/fatima-almashhor-b89b841b1/"
                 rel="noreferrer noopener"
                 target="_blank"
               >
@@ -445,7 +445,7 @@ exports[`renders correctly 1`] = `
                 </svg>
               </a>
               <a
-                href="https://www.github.com"
+                href="https://github.com/FatimaAlmashhor"
                 rel="noreferrer noopener"
                 target="_blank"
               >
