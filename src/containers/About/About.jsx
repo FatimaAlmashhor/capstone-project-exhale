@@ -27,22 +27,22 @@ const About = () => {
 
   return (
     <div>
-      <section className=" pt-10 relative ">
-        <div className="justify-center text-center flex flex-wrap Header flex-grow  w-full h-64 top-0 py-48 ">
-          <div className="w-full md:w-6/12  md:px-4">
-            <h2 className="font-semibold text-4xl text-blue-700">{t('aboutus')}</h2>
-            <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
+      <section className="relative pt-10 ">
+        <div className="top-0 flex flex-wrap justify-center flex-grow w-full h-64 py-48 text-center Header ">
+          <div className="w-full md:w-6/12 md:px-4">
+            <h2 className="text-4xl font-semibold text-blue-700">{t('aboutus')}</h2>
+            <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-600">
               {t('detailaboutus')}
             </p>
           </div>
         </div>
 
-        <div className="container mx-auto px-4 py-8">
-          <div className="items-center flex flex-col md:flex-row">
-            <div className="w-full md:w-6/12 mr-auto px-4 md:pt-0 my-0">
+        <div className="container px-4 py-8 mx-auto">
+          <div className="flex flex-col items-center md:flex-row">
+            <div className="w-full px-4 my-0 mr-auto md:w-6/12 md:pt-0">
               <WhatDo />
             </div>
-            <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
+            <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
               <div className="md:pr-4">
                 <h3 className="text-3xl font-semibold text-green-500">
                   {t('mission')}
@@ -55,12 +55,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 py-8">
-          <div className="items-center flex flex-col md:flex-row-reverse">
-            <div className="w-full md:w-4/12 mr-auto px-4 md:pt-0 my-0">
+        <div className="container px-4 py-8 mx-auto">
+          <div className="flex flex-col items-center md:flex-row-reverse">
+            <div className="w-full px-4 my-0 mr-auto md:w-4/12 md:pt-0">
               <Goals />
             </div>
-            <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
+            <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
               <div className="md:pr-4">
                 <h3 className="text-3xl font-semibold text-green-500">
                   {t('ourgoals')}
@@ -74,15 +74,15 @@ const About = () => {
         </div>
       </section>
 
-      <section className="mt-40 pb-20 py-10 relative bg-gray-200">
-        <div className="justify-center text-center flex flex-wrap py-8">
+      <section className="relative py-10 pb-20 mt-40 bg-gray-200">
+        <div className="flex flex-wrap justify-center py-8 text-center">
           <div className=" md:w-6/12">
-            <h2 className="font-semibold text-4xl text-blue-700">
+            <h2 className="text-4xl font-semibold text-blue-700">
               {t('Our Values')}
             </h2>
-            <div className="justify-between mt-10 flex flex-wrap -mb-4">
+            <div className="flex flex-wrap justify-between mt-10 -mb-4">
               <div>
-                <div className="text-red-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white ">
+                <div className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center text-red-600 bg-white rounded-full shadow-lg ">
                   <Lottie
                     isClickToPauseDisabled
                     options={defaultOptions(care)}
@@ -95,7 +95,7 @@ const About = () => {
               </div>
 
               <div>
-                <div className="text-red-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white ">
+                <div className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center text-red-600 bg-white rounded-full shadow-lg ">
                   <Lottie
                     isClickToPauseDisabled
                     options={defaultOptions(excellence)}
@@ -108,7 +108,7 @@ const About = () => {
                 <p className="text-green-500">{t('Integrity')}</p>
               </div>
               <div>
-                <div className="text-red-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white  ">
+                <div className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center text-red-600 bg-white rounded-full shadow-lg ">
                   <Lottie
                     isClickToPauseDisabled
                     options={defaultOptions(integrity)}
@@ -124,25 +124,29 @@ const About = () => {
         </div>
       </section>
 
-      <section className="m-auto mt-10 pb-20 py-10 relative ">
-        <div className="justify-center text-center flex flex-wrap py-8">
-          <div className="w-full md:w-6/12 px-12 md:px-4">
-            <h2 className="font-semibold text-4xl text-blue-700">{t('ourteam')}</h2>
-            <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
+      <section className="relative py-10 pb-20 m-auto mt-10 ">
+        <div className="flex flex-wrap justify-center py-8 text-center">
+          <div className="w-full px-12 md:w-6/12 md:px-4">
+            <h2 className="text-4xl font-semibold text-blue-700">{t('ourteam')}</h2>
+            <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-600">
               {t('detailteam')}
             </p>
           </div>
         </div>
 
-        <div className=" justify-center md:flex md:flex-wrap -mb-4">
+        <div className="justify-center -mb-4 md:flex md:flex-wrap">
           {members.map((doc) => (
-            <div className="p-8 mb-4  sm:w-1/1  md:w-1/2  lg:w-1/3">
+            <div className="p-8 mb-4 sm:w-1/1 md:w-1/2 lg:w-1/3">
               <Card>
                 <TeamCard
                   name={`${doc.name}`}
                   major={`${doc.major}`}
                   image={doc.img}
                   email={`${doc.email}`}
+                  twitter={`${doc.twitter}`}
+                  linkedin={`${doc.linkedin}`}
+                  github={`${doc.github}`}
+                  instagram={`${doc.instagram}`}
                 />
               </Card>
             </div>

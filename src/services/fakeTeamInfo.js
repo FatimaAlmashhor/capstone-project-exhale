@@ -14,7 +14,7 @@ export const members = [
     email: 'muhannad@re-coded.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
-    facebook: 'https://www.facebook.com',
+    github: 'https://www.github.com',
     instagram: 'https://www.instagram.com',
   },
   {
@@ -24,8 +24,8 @@ export const members = [
     major: 'IT Engineer',
     email: 'fatima.almashhor@gmail.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com',
-    facebook: 'https://www.facebook.com',
+    linkedin: 'https://www.linkedin.com/in/fatima-almashhor-b89b841b1/',
+    github: 'https://github.com/FatimaAlmashhor',
     instagram: 'https://www.instagram.com',
   },
   {
@@ -35,8 +35,8 @@ export const members = [
     major: 'IT Engineer',
     email: 'marwaalaghbry@gmail.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com',
-    facebook: 'https://www.facebook.com',
+    linkedin: 'https://www.linkedin.com/in/marwa-alaghbri-728bb21b0',
+    github: 'https://github.com/Marwa-k',
     instagram: 'https://www.instagram.com',
   },
   {
@@ -47,7 +47,7 @@ export const members = [
     email: 'dhodhof@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
-    facebook: 'https://www.facebook.com',
+    github: 'https://www.github.com',
     instagram: 'https://www.instagram.com',
   },
   {
@@ -57,9 +57,9 @@ export const members = [
     major: 'Mechatronics Engineer',
     email: 'somia.abdullah3@gmail.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com',
-    facebook: 'https://www.facebook.com',
-    instagram: 'https://www.instagram.com',
+    linkedin: 'https://www.linkedin.com/in/somaia-abdullah-3a9298b2/',
+    github: 'https://github.com/eng-somaia',
+    instagram: 'https://www.instagram.com/somia.abdullah/',
   },
   {
     id: 5,
@@ -69,7 +69,7 @@ export const members = [
     email: 'noha.pepeep1@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
-    facebook: 'https://www.facebook.com',
+    github: 'https://www.github.com',
     instagram: 'https://www.instagram.com',
   },
 ];

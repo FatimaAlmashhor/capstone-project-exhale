@@ -10,7 +10,7 @@ export default function TeamCard({
   email,
   twitter,
   linkedin,
-  facebook,
+  github,
   instagram,
 }) {
   return (
@@ -43,10 +43,10 @@ export default function TeamCard({
             icon={['fab', 'linkedin']}
           />
         </a>
-        <a href={facebook} rel="noreferrer noopener" target="_blank">
+        <a href={github} rel="noreferrer noopener" target="_blank">
           <FontAwesomeIcon
-            className="mx-3 text-lg text-gray-600 hover:text-blue-700"
-            icon={['fab', 'facebook']}
+            className="mx-3 text-lg text-gray-600 hover:text-gray-900"
+            icon={['fab', 'github']}
           />
         </a>
         <a href={instagram} rel="noreferrer noopener" target="_blank">
@@ -66,7 +66,7 @@ TeamCard.propTypes = {
   email: PropType.string,
   twitter: PropType.string,
   linkedin: PropType.string,
-  facebook: PropType.string,
+  github: PropType.string,
   instagram: PropType.string,
 };
 TeamCard.defaultProps = {
@@ -76,6 +76,6 @@ TeamCard.defaultProps = {
   email: 'email.examlpe@gmail.com',
   twitter: 'https://twitter.com/',
   linkedin: 'https://www.linkedin.com/',
-  facebook: 'https://www.facebook.com/',
+  github: 'https://www.github.com/',
   instagram: 'https://www.instagram.com/',
 };
