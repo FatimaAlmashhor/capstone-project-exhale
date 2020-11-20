@@ -20,6 +20,7 @@ const SelfAssessment = () => {
   const [displayIndex, setDisplayIndex] = useState(0);
   const [showResultModal, setShowResultModal] = useState(false);
   const [final, setFinal] = useState(0);
+  const [displayButton, setDisplayButton] = useState('hidden');
 
   const history = useHistory();
   const location = useLocation();
@@ -29,11 +30,12 @@ const SelfAssessment = () => {
     fire.auth().onAuthStateChanged((user) => {
       setisSignedIn(!!user);
     });
-  });
+    if (displayIndex === 0) setDisplayButton('hidden');
+  }, [isSignedIn, displayIndex]);
 
   const display = (index) => (index === displayIndex ? 'block' : 'hidden');
-
   const handleClick = (e) => {
+    setDisplayButton('none');
     // inset the result of answer
     if (displayIndex === Tasks.length - 1) {
       // avrage of the result
@@ -46,9 +48,9 @@ const SelfAssessment = () => {
     setResult((pre) => [...pre], (result[displayIndex] = e.target.dataset.rate));
     setDisplayIndex((pre) => (displayIndex === Tasks.length ? pre : pre + 1)); // move to next question
   };
-  const handleBackStep = () =>
+  const handleBackStep = () => {
     setDisplayIndex((pre) => (displayIndex === 0 ? pre : pre - 1));
-
+  };
   const TasksBicker = Tasks.map((element) => (
     <div key={element.id} className={`${display(element.id)}`}>
       <SelfAssessmentPanel task={element.task} onClick={handleClick} />
@@ -71,14 +73,14 @@ const SelfAssessment = () => {
       <div className="w-full h-6 my-12">
         <div
           onClick={handleBackStep}
-          className="h-full items-center align-center my-auto"
+          className={`h-full items-center align-center my-auto ${displayButton}`}
         >
           <FontAwesomeIcon
             icon={['fa', 'chevron-left']}
             className="h-full text-green-400"
             style={{ width: '50' }}
           />
-          <span className="text-xl cursor-pointer text-gray-600 pb-4 ">
+          <span className="text-xl cursor-pointer text-gray-600 pb-4">
             {t('back')}
           </span>
         </div>
