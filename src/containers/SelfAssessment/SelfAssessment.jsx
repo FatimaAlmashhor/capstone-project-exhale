@@ -73,16 +73,14 @@ const SelfAssessment = () => {
       <div className="w-full h-6 my-12">
         <div
           onClick={handleBackStep}
-          className={`h-full items-center align-center my-auto ${displayButton}`}
+          className={`h-full align-center my-auto flex items-start ${displayButton}`}
         >
           <FontAwesomeIcon
             icon={['fa', 'chevron-left']}
-            className="h-full text-green-400"
-            style={{ width: '50' }}
+            className="h-full text-green-400 mx-1"
+            style={{ width: '50', marginTop: '2px' }}
           />
-          <span className="text-xl cursor-pointer text-gray-600 pb-4">
-            {t('back')}
-          </span>
+          <span className="text-xl cursor-pointer text-gray-600">{t('back')}</span>
         </div>
       </div>
       {!isSignedIn ? (
