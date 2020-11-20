@@ -237,14 +237,14 @@ exports[`renders correctly 1`] = `
                 className="pt-6 font-sans text-lg font-bold text-gray-700"
               >
                 <h2>
-                  Muhanned Noman
+                  Muhanned
                 </h2>
               </div>
               <div
                 className="py-2 font-sans text-xs font-bold text-gray-600 "
               >
                 <h3>
-                  Team Leader
+                  majorOfMuhanned
                 </h3>
               </div>
               <p
@@ -376,14 +376,14 @@ exports[`renders correctly 1`] = `
                 className="pt-6 font-sans text-lg font-bold text-gray-700"
               >
                 <h2>
-                  Fatima Almashhor
+                  fatime
                 </h2>
               </div>
               <div
                 className="py-2 font-sans text-xs font-bold text-gray-600 "
               >
                 <h3>
-                  IT Engineer
+                  majorOffatima
                 </h3>
               </div>
               <p
@@ -515,14 +515,14 @@ exports[`renders correctly 1`] = `
                 className="pt-6 font-sans text-lg font-bold text-gray-700"
               >
                 <h2>
-                  Marwa Alaghbri
+                  marwa
                 </h2>
               </div>
               <div
                 className="py-2 font-sans text-xs font-bold text-gray-600 "
               >
                 <h3>
-                  IT Engineer
+                  majorOfmarwa
                 </h3>
               </div>
               <p
@@ -654,14 +654,14 @@ exports[`renders correctly 1`] = `
                 className="pt-6 font-sans text-lg font-bold text-gray-700"
               >
                 <h2>
-                  Dhiaa Alshamy
+                  dhia
                 </h2>
               </div>
               <div
                 className="py-2 font-sans text-xs font-bold text-gray-600 "
               >
                 <h3>
-                  CTO
+                  majorOfdhia
                 </h3>
               </div>
               <p
@@ -793,14 +793,14 @@ exports[`renders correctly 1`] = `
                 className="pt-6 font-sans text-lg font-bold text-gray-700"
               >
                 <h2>
-                  Somaia Al-Mekhlafi
+                  somia
                 </h2>
               </div>
               <div
                 className="py-2 font-sans text-xs font-bold text-gray-600 "
               >
                 <h3>
-                  Mechatronics Engineer
+                  majorOfsomia
                 </h3>
               </div>
               <p
@@ -932,14 +932,14 @@ exports[`renders correctly 1`] = `
                 className="pt-6 font-sans text-lg font-bold text-gray-700"
               >
                 <h2>
-                  Nuha Al-Sameai
+                  nuha
                 </h2>
               </div>
               <div
                 className="py-2 font-sans text-xs font-bold text-gray-600 "
               >
                 <h3>
-                  CS
+                  majorOfnuha
                 </h3>
               </div>
               <p

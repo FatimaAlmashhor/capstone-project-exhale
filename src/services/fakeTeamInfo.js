@@ -4,13 +4,14 @@ import somaia from '../asset/images/TeamPhotos/teamSomaia.jpg';
 import dhiaa from '../asset/images/TeamPhotos/teamDhiaa.jpg';
 import nuha from '../asset/images/TeamPhotos/teamNuha.jpg';
 import muhannad from '../asset/images/TeamPhotos/teamMuhannad.jpg';
+import i18n from '../i18next';
 
 export const members = [
   {
     id: 0,
     img: muhannad,
-    name: 'Muhanned Noman',
-    major: 'Team Leader',
+    name: i18n.t('Muhanned'),
+    major: i18n.t('majorOfMuhanned'),
     email: 'muhannad@re-coded.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
@@ -20,8 +21,8 @@ export const members = [
   {
     id: 1,
     img: fatima,
-    name: 'Fatima Almashhor',
-    major: 'IT Engineer',
+    name: i18n.t('fatime'),
+    major: i18n.t('majorOffatima'),
     email: 'fatima.almashhor@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com/in/fatima-almashhor-b89b841b1/',
@@ -31,8 +32,8 @@ export const members = [
   {
     id: 2,
     img: marwa,
-    name: 'Marwa Alaghbri',
-    major: 'IT Engineer',
+    name: i18n.t('marwa'),
+    major: i18n.t('majorOfmarwa'),
     email: 'marwaalaghbry@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com/in/marwa-alaghbri-728bb21b0',
@@ -42,8 +43,8 @@ export const members = [
   {
     id: 3,
     img: dhiaa,
-    name: 'Dhiaa Alshamy',
-    major: 'CTO',
+    name: i18n.t('dhia'),
+    major: i18n.t('majorOfdhia'),
     email: 'dhodhof@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
@@ -53,8 +54,8 @@ export const members = [
   {
     id: 4,
     img: somaia,
-    name: 'Somaia Al-Mekhlafi',
-    major: 'Mechatronics Engineer',
+    name: i18n.t('somia'),
+    major: i18n.t('majorOfsomia'),
     email: 'somia.abdullah3@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com/in/somaia-abdullah-3a9298b2/',
@@ -64,8 +65,8 @@ export const members = [
   {
     id: 5,
     img: nuha,
-    name: 'Nuha Al-Sameai',
-    major: 'CS',
+    name: i18n.t('nuha'),
+    major: i18n.t('majorOfnuha'),
     email: 'noha.pepeep1@gmail.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',
