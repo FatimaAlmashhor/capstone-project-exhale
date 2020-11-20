@@ -35,8 +35,8 @@ export const members = [
     major: 'IT Engineer',
     email: 'marwaalaghbry@gmail.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com',
-    github: 'https://www.github.com',
+    linkedin: 'https://www.linkedin.com/in/marwa-alaghbri-728bb21b0',
+    github: 'https://github.com/Marwa-k',
     instagram: 'https://www.instagram.com',
   },
   {
