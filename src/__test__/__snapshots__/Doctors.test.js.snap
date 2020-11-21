@@ -118,7 +118,7 @@ exports[`renders correctly 1`] = `
                         <div
                           className="text-sm font-medium leading-5 text-gray-900"
                         >
-                          Dr. Nabeel No'man
+                          DrNabeel
                         </div>
                         <div
                           className="text-sm leading-5 text-gray-500"
@@ -134,7 +134,7 @@ exports[`renders correctly 1`] = `
                     <div
                       className="text-sm leading-5 text-gray-900"
                     >
-                      Depression, Anxiety, Personality Disorders
+                      Nabeelspecialty
                     </div>
                   </td>
                   <td
@@ -143,7 +143,7 @@ exports[`renders correctly 1`] = `
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
-                      Saudi German Hospital
+                      Nabeelworkplace
                     </span>
                   </td>
                   <td
@@ -183,7 +183,7 @@ exports[`renders correctly 1`] = `
                         <div
                           className="text-sm font-medium leading-5 text-gray-900"
                         >
-                          Dr. Mohammed Abdulhabeeb Al-Khulaidi
+                          DrKulaidi
                         </div>
                         <div
                           className="text-sm leading-5 text-gray-500"
@@ -199,7 +199,7 @@ exports[`renders correctly 1`] = `
                     <div
                       className="text-sm leading-5 text-gray-900"
                     >
-                      Schizophrenia, Obsessive-Compulsive Disorder
+                      Kulaidispecialty
                     </div>
                   </td>
                   <td
@@ -208,7 +208,7 @@ exports[`renders correctly 1`] = `
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
-                      Dr. Mohammed Abdulhabeeb Al-Khulaidi Center
+                      Kulaidiworkplace
                     </span>
                   </td>
                   <td
@@ -248,7 +248,7 @@ exports[`renders correctly 1`] = `
                         <div
                           className="text-sm font-medium leading-5 text-gray-900"
                         >
-                          Dr. Belqees Mohammed Jabari
+                          DrBelgees
                         </div>
                         <div
                           className="text-sm leading-5 text-gray-500"
@@ -264,7 +264,7 @@ exports[`renders correctly 1`] = `
                     <div
                       className="text-sm leading-5 text-gray-900"
                     >
-                      Psychiatric and Neurological Consultant
+                      BMSpecialty
                     </div>
                   </td>
                   <td
@@ -273,7 +273,7 @@ exports[`renders correctly 1`] = `
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
-                      Family Counseling & Development Foundation 
+                      Belgeesworkplace
                     </span>
                   </td>
                   <td
@@ -313,7 +313,7 @@ exports[`renders correctly 1`] = `
                         <div
                           className="text-sm font-medium leading-5 text-gray-900"
                         >
-                          Dr. Mahfoodh Al-Khulaidi
+                          DrMahfoodh
                         </div>
                         <div
                           className="text-sm leading-5 text-gray-500"
@@ -329,7 +329,7 @@ exports[`renders correctly 1`] = `
                     <div
                       className="text-sm leading-5 text-gray-900"
                     >
-                      Psychiatric and Neurological Consultant 
+                      BMSpecialty
                     </div>
                   </td>
                   <td
@@ -338,7 +338,7 @@ exports[`renders correctly 1`] = `
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
-                      Dr. Mahfoodh Al-Khulaidi Hospital
+                      Mahfoodworkplace
                     </span>
                   </td>
                   <td
@@ -378,7 +378,7 @@ exports[`renders correctly 1`] = `
                         <div
                           className="text-sm font-medium leading-5 text-gray-900"
                         >
-                          Dr. Saif Al-Deen Al-Meeri
+                          DrSaif
                         </div>
                         <div
                           className="text-sm leading-5 text-gray-500"
@@ -394,7 +394,7 @@ exports[`renders correctly 1`] = `
                     <div
                       className="text-sm leading-5 text-gray-900"
                     >
-                      Psychiatric and Neurological Consultant
+                      BMSpecialty
                     </div>
                   </td>
                   <td
@@ -403,7 +403,7 @@ exports[`renders correctly 1`] = `
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
-                      Family Counseling & Development Foundation 
+                      Belgeesworkplace
                     </span>
                   </td>
                   <td
@@ -443,7 +443,7 @@ exports[`renders correctly 1`] = `
                         <div
                           className="text-sm font-medium leading-5 text-gray-900"
                         >
-                          Dr. Samah Talal Abdualmaged
+                          DrSamah
                         </div>
                         <div
                           className="text-sm leading-5 text-gray-500"
@@ -459,7 +459,7 @@ exports[`renders correctly 1`] = `
                     <div
                       className="text-sm leading-5 text-gray-900"
                     >
-                      Psychotherapist
+                      SamahSpecialty
                     </div>
                   </td>
                   <td
@@ -468,7 +468,7 @@ exports[`renders correctly 1`] = `
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
-                      Psychotherapy Clinic
+                      Samahworkplace
                     </span>
                   </td>
                   <td
@@ -508,7 +508,7 @@ exports[`renders correctly 1`] = `
                         <div
                           className="text-sm font-medium leading-5 text-gray-900"
                         >
-                          Dr. Abdullah Abdulwahhab Al-Shar'abi
+                          DrAlsharabi
                         </div>
                         <div
                           className="text-sm leading-5 text-gray-500"
@@ -524,7 +524,7 @@ exports[`renders correctly 1`] = `
                     <div
                       className="text-sm leading-5 text-gray-900"
                     >
-                      Psychiatric and Neurological Consultant
+                      BMSpecialty
                     </div>
                   </td>
                   <td
@@ -533,7 +533,7 @@ exports[`renders correctly 1`] = `
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
-                      Dr. Abdullah Abdulwahhab Al-Shar'abi Center
+                      Alsharabiworkplace
                     </span>
                   </td>
                   <td
@@ -573,7 +573,7 @@ exports[`renders correctly 1`] = `
                         <div
                           className="text-sm font-medium leading-5 text-gray-900"
                         >
-                          Dr. Abdulqader Al-Majed
+                          DrAbdulqader
                         </div>
                         <div
                           className="text-sm leading-5 text-gray-500"
@@ -589,7 +589,7 @@ exports[`renders correctly 1`] = `
                     <div
                       className="text-sm leading-5 text-gray-900"
                     >
-                      Psychiatric and Neurological Consultant
+                      BMSpecialty
                     </div>
                   </td>
                   <td
@@ -598,7 +598,7 @@ exports[`renders correctly 1`] = `
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
                     >
-                      Neuro Psychiarty Center
+                      Abdulqaderworkplac
                     </span>
                   </td>
                   <td

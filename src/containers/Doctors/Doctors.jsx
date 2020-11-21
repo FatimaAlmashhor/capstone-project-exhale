@@ -48,13 +48,13 @@ const Doctors = () => {
                   <thead className="bg-gray-200">
                     <tr>
                       <th className="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase bg-gray-50">
-                        Name
+                        {t('Name')}
                       </th>
                       <th className="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase bg-gray-50">
-                        specialty
+                        {t('specialty')}
                       </th>
                       <th className="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase bg-gray-50">
-                        workplace
+                        {t('workplace')}
                       </th>
                       <th className="px-6 py-3 bg-gray-50" />
                     </tr>
@@ -73,7 +73,7 @@ const Doctors = () => {
                             </div>
                             <div className="ml-4">
                               <div className="text-sm font-medium leading-5 text-gray-900">
-                                {el.name}
+                                {t(el.name)}
                               </div>
                               <div className="text-sm leading-5 text-gray-500">
                                 {el.email}
@@ -83,12 +83,12 @@ const Doctors = () => {
                         </td>
                         <td className="px-6 py-4 whitespace-no-wrap">
                           <div className="text-sm leading-5 text-gray-900">
-                            {el.specialty}
+                            {t(el.specialty)}
                           </div>
                         </td>
                         <td className="px-6 py-4 whitespace-no-wrap">
                           <span className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full">
-                            {el.workplace}
+                            {t(el.workplace)}
                           </span>
                         </td>
                         <td className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap">
@@ -99,7 +99,7 @@ const Doctors = () => {
                               setShow(true);
                             }}
                           >
-                            Contact
+                            {t('Contact')}
                           </button>
                         </td>
                       </tr>
