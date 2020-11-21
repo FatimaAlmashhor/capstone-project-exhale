@@ -41,7 +41,7 @@ function Navbar() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6">
         <div className="flex items-center justify-between py-4 lg:justify-start lg:space-x-10">
           <div className="lg:w-0 lg:flex-1">
-            <Link to={HOME_ROUTE} class="flex">
+            <Link to={HOME_ROUTE}>
               <h1 className="text-3xl font-medium transition duration-150 ease-in-out text-black-500">
                 <span className="text-4xl font-black text-blue-800">EX</span>
                 hale
@@ -94,7 +94,7 @@ function Navbar() {
             ) : (
               <>
                 <NavLink
-                  className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap  hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+                  className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
                   to={{
                     pathname: LOGIN_ROUTE,
                     state: { modal: location },
@@ -122,10 +122,12 @@ function Navbar() {
             <div className="px-5 pt-5 pb-6 space-y-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <h1 className="text-3xl font-medium transition duration-150 ease-in-out text-black-500">
-                    <span className="text-4xl font-black text-blue-800">EX</span>
-                    hale
-                  </h1>
+                  <Link to={HOME_ROUTE}>
+                    <h1 className="text-3xl font-medium transition duration-150 ease-in-out text-black-500">
+                      <span className="text-4xl font-black text-blue-800">EX</span>
+                      hale
+                    </h1>
+                  </Link>
                 </div>
                 <div className="-mr-2">
                   <button
