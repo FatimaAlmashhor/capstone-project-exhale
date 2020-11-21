@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="transition-all duration-100"
 >
   <div
-    className="flex-auto py-10 "
+    className="flex-auto h-64 py-10 lg:h-48"
   >
     <h1
       className=" text-4xl  text-center font-sans transition duration-500  transition-all duration-100 "
@@ -14,13 +14,13 @@ exports[`renders correctly 1`] = `
     </h1>
   </div>
   <div
-    className="flex-auto "
+    className="flex-auto pt-20 "
   >
     <div
       className=" flex mt-8 mx-auto justify-center transition duration-500"
     >
       <div
-        className=" flex flex-col justify-center self-center flex-1"
+        className="flex flex-col self-center justify-center flex-1 "
       >
         <button
           className=" p-6  mt-6 mx-auto md:p-10 bg-transparent border-2 border-gray-400 rounded-full focus:outline-none transition duration-500 "
@@ -30,13 +30,13 @@ exports[`renders correctly 1`] = `
           type="button"
         />
         <p
-          className="mx-auto text-gray-500  mt-3"
+          className="mx-auto mt-3 text-gray-500"
         >
           Never
         </p>
       </div>
       <div
-        className="flex justify-center self-center flex-1 "
+        className="flex self-center justify-center flex-1 "
       >
         <button
           className=" p-4  md:p-8 bg-transparent border-2 border-gray-400 rounded-full focus:outline-none transition duration-500 "
@@ -47,7 +47,7 @@ exports[`renders correctly 1`] = `
         />
       </div>
       <div
-        className=" flex justify-center self-center flex-1 "
+        className="flex self-center justify-center flex-1 "
       >
         <button
           className=" p-3  md:p-6 bg-transparent border-2 border-gray-400 rounded-full focus:outline-none transition duration-500"
@@ -58,7 +58,7 @@ exports[`renders correctly 1`] = `
         />
       </div>
       <div
-        className="flex justify-center self-center flex-1 "
+        className="flex self-center justify-center flex-1 "
       >
         <button
           className=" p-4  md:p-8 bg-transparent border-2 border-gray-400 rounded-full focus:outline-none transition duration-500 "
@@ -69,7 +69,7 @@ exports[`renders correctly 1`] = `
         />
       </div>
       <div
-        className=" flex flex-col justify-center self-center  flex-1"
+        className="flex flex-col self-center justify-center flex-1 "
       >
         <button
           className="p-6  mt-6 mx-auto md:p-10 bg-transparent border-2 border-gray-400 rounded-full focus:outline-none transition duration-500  "
