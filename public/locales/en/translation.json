@@ -121,5 +121,7 @@
   "somia": "Somaia Al-Mekhlafi",
   "majorOfsomia": "Mechatronics Engineer",
   "nuha": "Nuha Al-Sameai",
-  "majorOfnuha": "CS"
+  "majorOfnuha": "CS",
+  "specialty": "specialty",
+  "workplace": "workplace"
 }

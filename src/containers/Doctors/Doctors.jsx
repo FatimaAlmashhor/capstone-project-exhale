@@ -48,13 +48,13 @@ const Doctors = () => {
                   <thead className="bg-gray-200">
                     <tr>
                       <th className="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase bg-gray-50">
-                        Name
+                        {t('Name')}
                       </th>
                       <th className="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase bg-gray-50">
-                        specialty
+                        {t('specialty')}
                       </th>
                       <th className="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase bg-gray-50">
-                        workplace
+                        {t('workplace')}
                       </th>
                       <th className="px-6 py-3 bg-gray-50" />
                     </tr>
