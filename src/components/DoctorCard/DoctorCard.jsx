@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropType from 'prop-types';
 import '../../fontawesome';
+import { useTranslation } from 'react-i18next';
 
 export default function DoctorCard({
   name,
@@ -13,6 +14,7 @@ export default function DoctorCard({
   img,
   show,
 }) {
+  const { t } = useTranslation();
   return (
     <div className="max-w-screen-sm overflow-hidden md:max-w-xs lg:max-w-xs">
       <div className="w-40 mx-auto mt-5 border-4 border-blue-700 rounded-full">
@@ -20,28 +22,43 @@ export default function DoctorCard({
       </div>
       <div className="px-6 py-4 mx-auto">
         <div className="mx-auto mb-2 text-xl font-bold text-center">
-          <span>{name}</span>
+          <span>{t(name)}</span>
         </div>
         {show && (
           <>
             <p className="text-base text-center text-gray-700">
-              <span>Specialty :</span>
-              {specialty}
+              <span>
+                {t('specialty')}
+                <span>:</span>
+              </span>
+              {t(specialty)}
             </p>
             <p className="text-base text-center text-gray-700">
-              <span>Work Place :</span>
-              {workplace}
+              <span>
+                {t('workplace')}
+                <span>:</span>
+              </span>
+              {t(workplace)}
             </p>
             <p className="text-base text-center text-gray-700">
-              <span>Address :</span>
-              {address}
+              <span>
+                {t('adreess')}
+                <span>:</span>
+              </span>
+              {t(address)}
             </p>
             <p className="text-base text-center text-gray-700">
-              <span>Email :</span>
+              <span>
+                {t('Email')}
+                <span>:</span>
+              </span>
               {email}
             </p>
             <p className="text-base text-center text-gray-700">
-              <span>Phone :</span>
+              <span>
+                {t('Phone')}
+                <span>:</span>
+              </span>
               {phone}
             </p>
           </>
