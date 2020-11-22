@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="max-w-screen-sm overflow-hidden md:max-w-xs lg:max-w-xs"
+  className="max-w-screen-sm overflow-hidden md:max-w-xs lg:max-w-xs bg-background-primary "
 >
   <div
     className="w-40 mx-auto mt-5 border-4 border-blue-700 rounded-full"
@@ -17,7 +17,7 @@ exports[`renders correctly 1`] = `
     className="px-6 py-4 mx-auto"
   >
     <div
-      className="mx-auto mb-2 text-xl font-bold text-center w-64"
+      className="mx-auto mb-2 text-xl font-bold text-center  text-textColor-primary w-64"
     >
       <span>
          

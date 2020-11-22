@@ -1,29 +1,32 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import { doctors } from '../../services/fakeDoctorsServices';
 import DoctorCard from '../../components/DoctorCard';
 import Modal, { Body } from '../../components/common/Modal';
+import { ThemeContext } from '../../themContext';
 
 const Doctors = () => {
   const [show, setShow] = useState(false);
   const [doctorId, setDoctorId] = useState(-1);
   const { t } = useTranslation();
+  const { theme } = useContext(ThemeContext);
 
+  const bgTable = theme === 'dark' ? 'bg-gray-500' : 'bg-gray-50';
   return (
-    <div className="relative bg-gray-400 h-screan">
-      <div
-        className="top-0 flex-grow w-full h-64 py-64 Header "
-        style={{ backgroundColor: '#ADCCD2' }}
-      >
+    <div className="relative bg-gray-400 h-screan ">
+      <div className="top-0 flex-grow w-full h-64 py-64 Header bg-background-tertiary">
         <svg
           className="absolute w-full h-full buttom-0"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
         >
-          <polygon fill="white" points="0,100 100,0 100,100" />
+          <polygon
+            fill={theme === 'dark' ? 'black' : 'white'}
+            points="0,100 100,0 100,100"
+          />
         </svg>
       </div>
       <div
@@ -35,34 +38,34 @@ const Doctors = () => {
             <h2 className="text-4xl font-semibold text-blue-700">
               {t('ourpsychiatrists')}
             </h2>
-            <div className="box-content flex justify-center mt-4 mb-4 text-lg leading-relaxed text-gray-600 ">
+            <div className="box-content flex justify-center mt-4 mb-4 text-lg leading-relaxed text-textColor-secondary ">
               <p className="">{t('psychiatristsDetails')}</p>
             </div>
           </div>
         </div>
         <div className="flex flex-col">
-          <div className="-my-2 overflow-x-auto lg:overflow-hidden sm:-mx-6 lg:-mx-8">
-            <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+          <div className="-my-2overflow-x-auto xl:overflow-x-hidden  sm:-mx-6 lg:-mx-8">
+            <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-12">
               <div className="overflow-hidden border-b border-gray-200 shadow sm:rounded-lg">
                 <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-200">
+                  <thead className="bg-background-secondary">
                     <tr>
-                      <th className="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase bg-gray-50">
+                      <th className="px-2 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase bg-gray-50">
                         {t('Name')}
                       </th>
-                      <th className="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase bg-gray-50">
+                      <th className="px-2 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase bg-gray-50">
                         {t('specialty')}
                       </th>
-                      <th className="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase bg-gray-50">
+                      <th className="px-2 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase bg-gray-50">
                         {t('workplace')}
                       </th>
-                      <th className="px-6 py-3 bg-gray-50" />
+                      <th className="px-2 py-3 bg-gray-50" />
                     </tr>
                   </thead>
                   {doctors.map((el) => (
                     <tbody key={el.id} className="bg-white divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 whitespace-no-wrap">
+                        <td className={`px-6 py-4 whitespace-no-wrap ${bgTable}`}>
                           <div className="flex items-center">
                             <div className="flex-shrink-0 w-10 h-10">
                               <img
@@ -81,17 +84,19 @@ const Doctors = () => {
                             </div>
                           </div>
                         </td>
-                        <td className="px-6 py-4 whitespace-no-wrap">
+                        <td className={`px-3 py-4 whitespace-no-wrap ${bgTable}`}>
                           <div className="text-sm leading-5 text-gray-900">
                             {t(el.specialty)}
                           </div>
                         </td>
-                        <td className="px-6 py-4 whitespace-no-wrap">
+                        <td className={`px-3 py-4 whitespace-no-wrap ${bgTable}`}>
                           <span className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full">
                             {t(el.workplace)}
                           </span>
                         </td>
-                        <td className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap">
+                        <td
+                          className={`px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap ${bgTable}`}
+                        >
                           <button
                             className="text-indigo-600 hover:text-blue-500"
                             onClick={() => {
@@ -117,7 +122,7 @@ const Doctors = () => {
               setShow(false);
             }}
           >
-            <div>
+            <div className="bg-background-primary">
               <Body>
                 <div>
                   <DoctorCard
@@ -159,10 +164,7 @@ const Doctors = () => {
           </Modal>
         )}
       </div>
-      <div
-        className="block h-full py-64 mb-64 md:mb-32"
-        style={{ backgroundColor: '#F0EEF0' }}
-      />
+      <div className="block h-full py-64 mb-64 md:mb-32 bg-background-pinck" />
     </div>
   );
 };

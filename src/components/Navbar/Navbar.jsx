@@ -11,6 +11,7 @@ import {
   ABOUT_ROUTE,
 } from '../../routes';
 import fire from '../../firebase';
+import Toggle from '../Toggle';
 
 function Navbar() {
   const { t } = useTranslation();
@@ -35,14 +36,14 @@ function Navbar() {
   return (
     <div
       className={`${
-        scroll ? 'bg-transoarent py-4' : 'bg-white shadow-lg'
+        scroll ? 'bg-transoarent py-4' : 'bg-background-primary shadow-lg'
       } fixed w-full top-0 right-0 left-0 z-50  navbar-expand-lg transition-all duration-150`}
     >
       <div className="px-4 mx-auto max-w-7xl sm:px-6">
         <div className="flex items-center justify-between py-4 lg:justify-start lg:space-x-10">
           <div className="lg:w-0 lg:flex-1">
             <Link to={HOME_ROUTE} class="flex">
-              <h1 className="text-3xl font-medium transition duration-150 ease-in-out text-black-500">
+              <h1 className="text-3xl font-medium transition duration-150 ease-in-out text-textColor-primary">
                 <span className="text-4xl font-black text-blue-800">EX</span>
                 hale
               </h1>
@@ -51,36 +52,39 @@ function Navbar() {
           <nav className="hidden space-x-10 md:flex">
             <NavLink
               to={HOME_ROUTE}
-              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out border-white hover:text-gray-500 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out border-white hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-textColor-primary"
             >
               {t('HOME')}
             </NavLink>
 
             <NavLink
               to={DOCTORS_ROUTE}
-              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out border-white hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out border-white hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-textColor-primary"
             >
               {t('Doctors')}
             </NavLink>
 
             <NavLink
               to={ARTICLES_BASE_ROUTE}
-              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-textColor-primary"
             >
               {t('Articles')}
             </NavLink>
             <NavLink
               to={ABOUT_ROUTE}
-              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-textColor-primary"
             >
               {t('AboutUs')}
             </NavLink>
             <NavLink
               to={CONTACT_ROUTE}
-              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+              className="text-base font-medium leading-6 text-gray-600 transition duration-150 ease-in-out hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-textColor-primary"
             >
               {t('ContactUs')}
             </NavLink>
+            <div>
+              <Toggle />
+            </div>
           </nav>
           <div className="items-center justify-end hidden space-x-8 lg:flex lg:flex-1 lg:w-0">
             {isSignedIn ? (
@@ -94,7 +98,7 @@ function Navbar() {
             ) : (
               <>
                 <NavLink
-                  className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap  hover:text-gray-900 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+                  className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap  hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-textColor-primary"
                   to={{
                     pathname: LOGIN_ROUTE,
                     state: { modal: location },
@@ -118,16 +122,19 @@ function Navbar() {
 
       <div className="absolute inset-x-0 top-0 p-2 transition origin-top-right transform lg:hidden">
         <div className="rounded-lg shadow-lg">
-          <div className="bg-white divide-y-2 rounded-lg shadow-xs divide-gray-50">
+          <div className="bg-background-primary divide-y-2 rounded-lg shadow-xs divide-gray-50">
             <div className="px-5 pt-5 pb-6 space-y-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <h1 className="text-3xl font-medium transition duration-150 ease-in-out text-black-500">
+                  <h1 className=" text-3xl font-medium transition duration-150 ease-in-out ">
                     <span className="text-4xl font-black text-blue-800">EX</span>
-                    hale
+                    <span className="text-textColor-primary">hale</span>
                   </h1>
                 </div>
-                <div className="-mr-2">
+                <div className="-mr-2 flex felx-row">
+                  <div className="my-auto">
+                    <Toggle />
+                  </div>
                   <button
                     type="button"
                     onClick={() => toggleExpansion(!isExpanded)}
@@ -153,28 +160,39 @@ function Navbar() {
               <div className={`${isExpanded ? `block` : `hidden`}  font-medium`}>
                 <nav className="grid gap-y-8">
                   <NavLink
+                    onClick={() => toggleExpansion(false)}
                     to={HOME_ROUTE}
-                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md text-gray-500 hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('HOME')}
                   </NavLink>
 
                   <NavLink
+                    onClick={() => toggleExpansion(false)}
                     to={DOCTORS_ROUTE}
-                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md text-gray-500 hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('Doctors')}
                   </NavLink>
 
                   <NavLink
+                    onClick={() => toggleExpansion(false)}
                     to={ARTICLES_BASE_ROUTE}
-                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md text-gray-500 hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('Articles')}
                   </NavLink>
                   <NavLink
+                    onClick={() => toggleExpansion(false)}
+                    to={ABOUT_ROUTE}
+                    className="text-base font-medium leading-6 text-gray-500 transition duration-150 ease-in-out hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-gray-900"
+                  >
+                    {t('AboutUs')}
+                  </NavLink>
+                  <NavLink
+                    onClick={() => toggleExpansion(false)}
                     to={CONTACT_ROUTE}
-                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md text-gray-500 hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('ContactUs')}
                   </NavLink>
@@ -184,6 +202,7 @@ function Navbar() {
                       <div className="space-y-6">
                         <span className="flex w-full rounded-md shadow-sm">
                           <NavLink
+                            onClick={() => toggleExpansion(false)}
                             to={SELF_ASSESSMENT_ROUTE}
                             className="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
                           >
@@ -194,7 +213,9 @@ function Navbar() {
                       <button
                         className="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700 focus:outline-none focus:shadow-outline"
                         type="button"
-                        onClick={() => fire.auth().signOut()}
+                        onClick={() => {
+                          fire.auth().signOut();
+                        }}
                       >
                         {t('Logout')}
                       </button>
@@ -204,6 +225,7 @@ function Navbar() {
                       <div className="space-y-6">
                         <span className="flex w-full rounded-md shadow-sm">
                           <NavLink
+                            onClick={() => toggleExpansion(false)}
                             to={SELF_ASSESSMENT_ROUTE}
                             className="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
                           >

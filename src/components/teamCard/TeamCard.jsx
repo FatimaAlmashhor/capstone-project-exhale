@@ -21,7 +21,7 @@ export default function TeamCard({
         alt="team member"
       />
       <div className="px-6">
-        <div className="pt-6 font-sans text-lg font-bold text-gray-700">
+        <div className="pt-6 font-sans text-lg font-bold text-textColor-primary">
           <h2>{name}</h2>
         </div>
         <div className="py-2 font-sans text-xs font-bold text-gray-600 ">

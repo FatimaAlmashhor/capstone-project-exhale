@@ -3,7 +3,7 @@ import FullArticle from '../../components/FullArticle/Article';
 
 const Article = (artId) => {
   return (
-    <div>
+    <div className="bg-background-secondary">
       <FullArticle id={artId} />
     </div>
   );

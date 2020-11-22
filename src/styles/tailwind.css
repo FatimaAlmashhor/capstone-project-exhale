@@ -1,5 +1,28 @@
-@import "tailwindcss/base";
+.light {
+  --bg-background-primary: white;
+  --bg-background-secondary: #e2e8f0;
+  --bg-background-tertiary: #adccd2;
+  --bg-background-pinck: #f0eef0;
 
-@import "tailwindcss/components";
+  --text-textColor-primary: #2d3748;
+  --text-textColor-secondary: #4a5568;
 
-@import "tailwindcss/utilities";
+  --border-border-color-primary: white;
+}
+
+.dark {
+  --bg-background-primary: #0d2438;
+  --bg-background-secondary: #363946;
+  --bg-background-tertiary: #6ba4a1;
+  --bg-background-pinck: #aaa0aa;
+
+  --text-textColor-primary: #fafafa;
+  --text-textColor-secondary: #b7b7b7;
+
+  --border-border-color-primary: #1a202c;
+}
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';

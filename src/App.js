@@ -26,23 +26,26 @@ import Footer from './components/Footer'
 import ModalHolder from './components/common/ModalHolder/index.js';
 import Signup from './containers/Signup';
 import ScrollToTop from './scrollToTop'; 
+import {ThemeProvider} from './themContext'
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <div className="flex flex-col min-h-screen">
-        <div className="flex-auto">
-          <Navbar />
+    <ThemeProvider>
+      <Router>
+        <ScrollToTop />
+        <div className="flex flex-col min-h-screen">
+          <div className="flex-auto">
+            <Navbar />
+          </div>
+          <div className="flex-grow ">
+            <Routing />
+          </div>
+          <div className="flex-initial">
+            <Footer />
+          </div>
         </div>
-        <div className="flex-grow">
-          <Routing />
-        </div>
-        <div className="flex-initial">
-          <Footer />
-        </div>
-      </div>
-    </Router>
+      </Router>
+    </ThemeProvider>
   );
 }
 export default App;
