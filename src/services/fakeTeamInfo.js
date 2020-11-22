@@ -69,8 +69,8 @@ export const members = [
     major: i18n.t('majorOfnuha'),
     email: 'noha.pepeep1@gmail.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com',
-    github: 'https://www.github.com',
+    linkedin: 'https://www.linkedin.com/in/nuha-al-sameai-4ab0871b2/',
+    github: 'https://github.com/NohaPepeep',
     instagram: 'https://www.instagram.com',
   },
 ];

@@ -12,14 +12,10 @@ import excellence from '../../Lottie/engine.json';
 
 const About = () => {
   const { t } = useTranslation();
-  const [hoverLottie, setHoverLottie] = useState({
-    loop: false,
-    autoplay: false,
-    Animated: 0,
-  });
+  const [hoverLottie, setHoverLottie] = useState();
   const defaultOptions = (data) => {
     return {
-      loop: false,
+      loop: true,
       autoplay: hoverLottie,
       animationData: data,
     };
@@ -80,22 +76,22 @@ const About = () => {
             <h2 className="text-4xl font-semibold text-blue-700">
               {t('Our Values')}
             </h2>
-            <div className="flex flex-wrap justify-between mt-10 -mb-4">
-              <div>
-                <div className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center text-red-600 bg-white rounded-full shadow-lg ">
+            <div className="justify-between -mb-4 lg:flex lg:flex-wrap md:flex  m-8">
+              <div className="m-4">
+                <div className="inline-flex items-center justify-center w-20 h-20 p-2 mb-4 text-center text-red-600 bg-white rounded-full shadow-lg ">
                   <Lottie
                     isClickToPauseDisabled
                     options={defaultOptions(care)}
                     height="auto"
                     width="100%"
-                    onMouseOver={() => setHoverLottie({ autoplay: true })}
+                    onMouseOver={() => setHoverLottie({ loop: true })}
                   />
                 </div>
-                <p className="text-green-500">{t('Care Deeply')}</p>
+                <p className="text-green-600">{t('Care Deeply')}</p>
               </div>
 
-              <div>
-                <div className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center text-red-600 bg-white rounded-full shadow-lg ">
+              <div className="m-4">
+                <div className="inline-flex items-center justify-center w-20 h-20 p-2 mb-4 text-center text-red-600 bg-white rounded-full shadow-lg ">
                   <Lottie
                     isClickToPauseDisabled
                     options={defaultOptions(excellence)}
@@ -105,10 +101,10 @@ const About = () => {
                     onMouseOver={() => setHoverLottie(true)}
                   />
                 </div>
-                <p className="text-green-500">{t('Integrity')}</p>
+                <p className="text-green-600">{t('Integrity')}</p>
               </div>
-              <div>
-                <div className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center text-red-600 bg-white rounded-full shadow-lg ">
+              <div className="m-4">
+                <div className="inline-flex items-center justify-center w-20 h-20 p-2 mb-4 text-center text-red-600 bg-white rounded-full shadow-lg ">
                   <Lottie
                     isClickToPauseDisabled
                     options={defaultOptions(integrity)}
@@ -117,7 +113,7 @@ const About = () => {
                     onMouseOver={() => setHoverLottie(true)}
                   />
                 </div>
-                <p className="text-green-500">{t('Excllence')}</p>
+                <p className="text-green-600">{t('Excllence')}</p>
               </div>
             </div>
           </div>
