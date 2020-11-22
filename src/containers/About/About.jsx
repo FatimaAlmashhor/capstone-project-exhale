@@ -87,7 +87,7 @@ const About = () => {
                     onMouseOver={() => setHoverLottie({ loop: true })}
                   />
                 </div>
-                <p className="text-gray-600">{t('Care Deeply')}</p>
+                <p className="text-green-600">{t('Care Deeply')}</p>
               </div>
 
               <div className="m-4">
@@ -101,7 +101,7 @@ const About = () => {
                     onMouseOver={() => setHoverLottie(true)}
                   />
                 </div>
-                <p className="text-gray-600">{t('Integrity')}</p>
+                <p className="text-green-600">{t('Integrity')}</p>
               </div>
               <div className="m-4">
                 <div className="inline-flex items-center justify-center w-20 h-20 p-2 mb-4 text-center text-red-600 bg-white rounded-full shadow-lg ">
@@ -113,7 +113,7 @@ const About = () => {
                     onMouseOver={() => setHoverLottie(true)}
                   />
                 </div>
-                <p className="text-gray-600">{t('Excllence')}</p>
+                <p className="text-green-600">{t('Excllence')}</p>
               </div>
             </div>
           </div>
