@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="transition-all duration-100 bg-background-primary "
+  className="transition-all duration-100 bg-background-primary"
 >
   <div
     className="flex-auto h-64 py-10 lg:h-48"
