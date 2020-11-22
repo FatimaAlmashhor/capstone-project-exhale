@@ -105,11 +105,13 @@ exports[`renders correctly 1`] = `
           Our Values
         </h2>
         <div
-          className="flex flex-wrap justify-between mt-10 -mb-4"
+          className="justify-between -mb-4 lg:flex lg:flex-wrap md:flex  m-8"
         >
-          <div>
+          <div
+            className="m-4"
+          >
             <div
-              className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center text-red-600 bg-white rounded-full shadow-lg "
+              className="inline-flex items-center justify-center w-20 h-20 p-2 mb-4 text-center text-red-600 bg-white rounded-full shadow-lg "
             >
               <div
                 aria-label="animation"
@@ -129,14 +131,16 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <p
-              className="text-green-500"
+              className="text-green-600"
             >
               Care Deeply
             </p>
           </div>
-          <div>
+          <div
+            className="m-4"
+          >
             <div
-              className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center text-red-600 bg-white rounded-full shadow-lg "
+              className="inline-flex items-center justify-center w-20 h-20 p-2 mb-4 text-center text-red-600 bg-white rounded-full shadow-lg "
             >
               <div
                 aria-label="animation"
@@ -156,14 +160,16 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <p
-              className="text-green-500"
+              className="text-green-600"
             >
               Integrity
             </p>
           </div>
-          <div>
+          <div
+            className="m-4"
+          >
             <div
-              className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center text-red-600 bg-white rounded-full shadow-lg "
+              className="inline-flex items-center justify-center w-20 h-20 p-2 mb-4 text-center text-red-600 bg-white rounded-full shadow-lg "
             >
               <div
                 aria-label="animation"
@@ -183,7 +189,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <p
-              className="text-green-500"
+              className="text-green-600"
             >
               Excllence
             </p>
@@ -978,7 +984,7 @@ exports[`renders correctly 1`] = `
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/nuha-al-sameai-4ab0871b2/"
                 rel="noreferrer noopener"
                 target="_blank"
               >
@@ -1001,7 +1007,7 @@ exports[`renders correctly 1`] = `
                 </svg>
               </a>
               <a
-                href="https://www.github.com"
+                href="https://github.com/NohaPepeep"
                 rel="noreferrer noopener"
                 target="_blank"
               >
