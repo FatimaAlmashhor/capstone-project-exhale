@@ -20,8 +20,8 @@ export default function DoctorCard({
       <div className="w-40 mx-auto mt-5 border-4 border-blue-700 rounded-full">
         <img className="w-40 h-40 rounded-full" src={img} alt="Doctor" />
       </div>
-      <div className="px-6 py-4 mx-auto">
-        <div className="mx-auto mb-2 text-xl font-bold text-center  text-textColor-primary w-64">
+      <div className="px-4 py-4 mx-auto">
+        <div className="w-64 mx-auto mb-2 text-xl font-bold text-center md:w-48 lg:w-64">
           <span>{t(name)}</span>
         </div>
         {show && (

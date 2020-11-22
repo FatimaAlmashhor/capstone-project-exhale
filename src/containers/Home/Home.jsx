@@ -202,6 +202,14 @@ const Home = () => {
         </div>
         <div className="container px-4 mx-auto">
           <div className="flex flex-col items-center md:flex-row">
+            <div className="w-full px-4 my-0 overflow-hidden md:mr-4 md:w-7/12 md:pt-0">
+              <Lottie
+                isClickToPauseDisabled
+                options={defaultOptions(chckeList)}
+                width="70%"
+                height="auto"
+              />
+            </div>
             <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
               <div className="md:pr-4">
                 <h3 className="text-3xl font-semibold text-gray-200">
@@ -212,27 +220,11 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full px-4 my-0 overflow-hidden md:mr-4 md:w-7/12 md:pt-0">
-              <Lottie
-                isClickToPauseDisabled
-                options={defaultOptions(chckeList)}
-                width="70%"
-                height="auto"
-              />
-            </div>
           </div>
         </div>
 
         <div className="container px-4 mx-auto mb-20">
-          <div className="flex flex-col items-center md:flex-row-reverse">
-            <div className="w-full px-4 my-0 mr-auto overflow-hidden md:w-7/12 md:pt-0">
-              <Lottie
-                isClickToPauseDisabled
-                options={defaultOptions(result)}
-                width="40%"
-                height="auto"
-              />
-            </div>
+          <div className="flex flex-col-reverse items-center md:flex-row-reverse">
             <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
               <div className="md:pr-4">
                 <h3 className="text-3xl font-semibold text-gray-200">
@@ -243,11 +235,27 @@ const Home = () => {
                 </p>
               </div>
             </div>
+            <div className="w-full px-4 my-20 mr-auto overflow-hidden md:w-7/12 md:pt-0">
+              <Lottie
+                isClickToPauseDisabled
+                options={defaultOptions(result)}
+                width="50%"
+                height="auto"
+              />
+            </div>
           </div>
         </div>
 
         <div className="container px-4 mx-auto">
           <div className="flex flex-col items-center md:flex-row">
+            <div className="w-full px-4 my-6 mb-20 overflow-hidden md:mr-4 md:w-7/12 md:pt-0">
+              <Lottie
+                isClickToPauseDisabled
+                options={defaultOptions(doctorsTeam)}
+                width="70%"
+                height="auto"
+              />
+            </div>
             <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
               <div className="md:pr-4">
                 <h3 className="text-3xl font-semibold text-gray-200">
@@ -257,14 +265,6 @@ const Home = () => {
                   {t('detailstep3')}
                 </p>
               </div>
-            </div>
-            <div className="w-full px-4 my-0 overflow-hidden md:mr-4 md:w-7/12 md:pt-0">
-              <Lottie
-                isClickToPauseDisabled
-                options={defaultOptions(doctorsTeam)}
-                width="60%"
-                height="auto"
-              />
             </div>
           </div>
         </div>
@@ -297,7 +297,7 @@ const Home = () => {
             <div className="flex justify-center w-full">
               <Link
                 to={ARTICLES_BASE_ROUTE}
-                className="justify-center px-16 py-2 text-center text-green-500 transition-all duration-200 border-2 border-t-2 border-green-500 rounded-lg hover:shadow-sm hover:text-white hover:bg-green-400 hover:border-white"
+                className="justify-center px-16 py-2 mt-12 text-center text-green-500 transition-all duration-200 border-2 border-t-2 border-green-500 rounded-lg hover:shadow-sm hover:text-white hover:bg-green-400 hover:border-white"
               >
                 {t('seemore')}
               </Link>
