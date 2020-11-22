@@ -235,7 +235,8 @@ function Navbar() {
                           </NavLink>
                         </span>
                         <p className="text-base font-medium leading-6 text-center text-gray-500">
-                          Existing User?&nbsp;
+                          {t('Existing User')}
+                          &nbsp;
                           <NavLink
                             onClick={() => toggleExpansion(false)}
                             to={{
