@@ -23,7 +23,7 @@ const About = () => {
 
   return (
     <div>
-      <section className="relative pt-10 ">
+      <section className="relative pt-10 bg-background-primary">
         <div className="top-0 flex flex-wrap justify-center flex-grow w-full h-64 py-48 text-center Header ">
           <div className="w-full md:w-6/12 md:px-4">
             <h2 className="text-4xl font-semibold text-blue-700">{t('aboutus')}</h2>
@@ -70,7 +70,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="relative py-10 pb-20 mt-40 bg-gray-200">
+      <section className="relative py-10 pb-20 pt-20 bg-background-secondary">
         <div className="flex flex-wrap justify-center py-8 text-center">
           <div className=" md:w-6/12">
             <h2 className="text-4xl font-semibold text-blue-700">
@@ -120,7 +120,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="relative py-10 pb-20 m-auto mt-10 ">
+      <section className="relative py-10 pb-20 m-auto pt-10 bg-background-primary">
         <div className="flex flex-wrap justify-center py-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
             <h2 className="text-4xl font-semibold text-blue-700">{t('ourteam')}</h2>
@@ -130,7 +130,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="justify-center -mb-4 md:flex md:flex-wrap">
+        <div className="justify-center -mb-4 md:flex md:flex-wrap bg-background-primary">
           {members.map((doc) => (
             <div className="p-8 mb-4 sm:w-1/1 md:w-1/2 lg:w-1/3">
               <Card>

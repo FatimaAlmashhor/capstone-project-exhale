@@ -3,7 +3,7 @@
 exports[`renders correctly 1`] = `
 <div>
   <section
-    className="relative pt-10 "
+    className="relative pt-10 bg-background-primary"
   >
     <div
       className="top-0 flex flex-wrap justify-center flex-grow w-full h-64 py-48 text-center Header "
@@ -91,7 +91,7 @@ exports[`renders correctly 1`] = `
     </div>
   </section>
   <section
-    className="relative py-10 pb-20 mt-40 bg-gray-200"
+    className="relative py-10 pb-20 pt-20 bg-background-secondary"
   >
     <div
       className="flex flex-wrap justify-center py-8 text-center"
@@ -199,7 +199,7 @@ exports[`renders correctly 1`] = `
     </div>
   </section>
   <section
-    className="relative py-10 pb-20 m-auto mt-10 "
+    className="relative py-10 pb-20 m-auto pt-10 bg-background-primary"
   >
     <div
       className="flex flex-wrap justify-center py-8 text-center"
@@ -220,7 +220,7 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="justify-center -mb-4 md:flex md:flex-wrap"
+      className="justify-center -mb-4 md:flex md:flex-wrap bg-background-primary"
     >
       <div
         className="p-8 mb-4 sm:w-1/1 md:w-1/2 lg:w-1/3"
@@ -240,7 +240,7 @@ exports[`renders correctly 1`] = `
               className="px-6"
             >
               <div
-                className="pt-6 font-sans text-lg font-bold text-gray-700"
+                className="pt-6 font-sans text-lg font-bold text-textColor-primary"
               >
                 <h2>
                   Muhanned
@@ -379,7 +379,7 @@ exports[`renders correctly 1`] = `
               className="px-6"
             >
               <div
-                className="pt-6 font-sans text-lg font-bold text-gray-700"
+                className="pt-6 font-sans text-lg font-bold text-textColor-primary"
               >
                 <h2>
                   fatime
@@ -518,7 +518,7 @@ exports[`renders correctly 1`] = `
               className="px-6"
             >
               <div
-                className="pt-6 font-sans text-lg font-bold text-gray-700"
+                className="pt-6 font-sans text-lg font-bold text-textColor-primary"
               >
                 <h2>
                   marwa
@@ -657,7 +657,7 @@ exports[`renders correctly 1`] = `
               className="px-6"
             >
               <div
-                className="pt-6 font-sans text-lg font-bold text-gray-700"
+                className="pt-6 font-sans text-lg font-bold text-textColor-primary"
               >
                 <h2>
                   dhia
@@ -796,7 +796,7 @@ exports[`renders correctly 1`] = `
               className="px-6"
             >
               <div
-                className="pt-6 font-sans text-lg font-bold text-gray-700"
+                className="pt-6 font-sans text-lg font-bold text-textColor-primary"
               >
                 <h2>
                   somia
@@ -935,7 +935,7 @@ exports[`renders correctly 1`] = `
               className="px-6"
             >
               <div
-                className="pt-6 font-sans text-lg font-bold text-gray-700"
+                className="pt-6 font-sans text-lg font-bold text-textColor-primary"
               >
                 <h2>
                   nuha

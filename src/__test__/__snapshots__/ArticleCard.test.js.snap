@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="blog "
 >
   <div
-    className="container px-5 py-24 mx-auto"
+    className="container px-5 py-12 mx-auto"
   >
     <div
       className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4"
@@ -22,7 +22,7 @@ exports[`renders correctly 1`] = `
           }
         />
         <div
-          className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg "
+          className="p-5 -mt-10 overflow-hidden bg-background-primary rounded-lg shadow-sm "
         >
           <div
             className="inline-flex header-content"
@@ -34,16 +34,16 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="text-3xl title-post"
+            className="text-lg title-post"
           >
             <h2
-              className="text-blue-500 "
+              className="text-textColor-primary "
             >
                
             </h2>
           </div>
           <div
-            className="text-base text-justify summary-post text-1xl "
+            className="text-textColor-secondary text-justify summary-post text-sm "
           >
             <p>
                
@@ -96,7 +96,7 @@ exports[`renders correctly 2`] = `
           className="w-auto rounded overflow-hidden border hover:shadow-lg"
         >
           <div
-            className="p-6 m-auto -mt-10 overflow-hidden bg-white rounded-lg shadow-sm "
+            className="p-6 m-auto -mt-10 overflow-hidden bg-background-primary rounded-lg shadow-sm "
           >
             <div
               className="header-content "
@@ -111,7 +111,7 @@ exports[`renders correctly 2`] = `
               className="mt-5 text-lg title-post"
             >
               <h2
-                className="text-black "
+                className="text-textColor-primary "
               >
                  
               </h2>
