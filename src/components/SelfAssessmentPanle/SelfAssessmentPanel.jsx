@@ -21,16 +21,16 @@ export default function SelfAssessmentPanel({ task, onClick }) {
 
   return (
     <div className="transition-all duration-100">
-      <div className="flex-auto py-10 ">
+      <div className="flex-auto h-64 py-10 lg:h-48">
         <h1
           className={` text-4xl  text-center font-sans ${style.trans} ${style.hover} transition-all duration-100 `}
         >
           {t(task)}
         </h1>
       </div>
-      <div className="flex-auto ">
+      <div className="flex-auto pt-20 ">
         <div className={` flex mt-8 mx-auto justify-center ${style.trans}`}>
-          <div className=" flex flex-col justify-center self-center flex-1">
+          <div className="flex flex-col self-center justify-center flex-1 ">
             <button
               type="button"
               data-rate="20"
@@ -38,9 +38,9 @@ export default function SelfAssessmentPanel({ task, onClick }) {
               onClick={handleClick}
               onMouseEnter={handleHover}
             />
-            <p className="mx-auto text-gray-500  mt-3">{t('Never')}</p>
+            <p className="mx-auto mt-3 text-gray-500">{t('Never')}</p>
           </div>
-          <div className="flex justify-center self-center flex-1 ">
+          <div className="flex self-center justify-center flex-1 ">
             <button
               type="button"
               data-rate="40"
@@ -49,7 +49,7 @@ export default function SelfAssessmentPanel({ task, onClick }) {
               onMouseEnter={handleHover}
             />
           </div>
-          <div className=" flex justify-center self-center flex-1 ">
+          <div className="flex self-center justify-center flex-1 ">
             <button
               type="button"
               data-rate="60"
@@ -58,7 +58,7 @@ export default function SelfAssessmentPanel({ task, onClick }) {
               onMouseEnter={handleHover}
             />
           </div>
-          <div className="flex justify-center self-center flex-1 ">
+          <div className="flex self-center justify-center flex-1 ">
             <button
               type="button"
               data-rate="80"
@@ -67,7 +67,7 @@ export default function SelfAssessmentPanel({ task, onClick }) {
               onMouseEnter={handleHover}
             />
           </div>
-          <div className=" flex flex-col justify-center self-center  flex-1">
+          <div className="flex flex-col self-center justify-center flex-1 ">
             <button
               type="button"
               data-rate="100"
