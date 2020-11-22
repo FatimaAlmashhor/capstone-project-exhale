@@ -156,6 +156,7 @@ function Navbar() {
                 <nav className="grid gap-y-8">
                   <NavLink
                     to={HOME_ROUTE}
+                    onClick={() => toggleExpansion(!isExpanded)}
                     className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('HOME')}
@@ -163,6 +164,7 @@ function Navbar() {
 
                   <NavLink
                     to={DOCTORS_ROUTE}
+                    onClick={() => toggleExpansion(!isExpanded)}
                     className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('Doctors')}
@@ -170,12 +172,21 @@ function Navbar() {
 
                   <NavLink
                     to={ARTICLES_BASE_ROUTE}
+                    onClick={() => toggleExpansion(!isExpanded)}
                     className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('Articles')}
                   </NavLink>
                   <NavLink
+                    to={ABOUT_ROUTE}
+                    onClick={() => toggleExpansion(!isExpanded)}
+                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                  >
+                    {t('AboutUs')}
+                  </NavLink>
+                  <NavLink
                     to={CONTACT_ROUTE}
+                    onClick={() => toggleExpansion(!isExpanded)}
                     className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-50 hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('ContactUs')}
@@ -187,6 +198,7 @@ function Navbar() {
                         <span className="flex w-full rounded-md shadow-sm">
                           <NavLink
                             to={SELF_ASSESSMENT_ROUTE}
+                            onClick={() => toggleExpansion(!isExpanded)}
                             className="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
                           >
                             {t('Checkup')}
@@ -196,7 +208,10 @@ function Navbar() {
                       <button
                         className="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700 focus:outline-none focus:shadow-outline"
                         type="button"
-                        onClick={() => fire.auth().signOut()}
+                        onClick={() => {
+                          fire.auth().signOut();
+                          toggleExpansion(!isExpanded);
+                        }}
                       >
                         {t('Logout')}
                       </button>
@@ -207,6 +222,7 @@ function Navbar() {
                         <span className="flex w-full rounded-md shadow-sm">
                           <NavLink
                             to={SELF_ASSESSMENT_ROUTE}
+                            onClick={() => toggleExpansion(!isExpanded)}
                             className="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-800 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700"
                           >
                             {t('Checkup')}
