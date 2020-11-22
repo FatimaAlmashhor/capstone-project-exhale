@@ -18,7 +18,7 @@ const Doctors = () => {
     <div className="relative bg-gray-400 h-screan bg-background-primary">
       <div className="top-0 flex-grow w-full h-64 py-64 Header bg-background-tertiary">
         <svg
-          className="absolute w-full h-54 buttom-0 "
+          className="absolute w-full h-full buttom-0 "
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
