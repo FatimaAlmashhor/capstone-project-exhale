@@ -11,7 +11,7 @@ const ArticleCard = ({ id, title, paragraph, time, img }) => {
 
   return (
     <section className="blog ">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-12 mx-auto">
         <div className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4">
           <div className="flex flex-col items-center justify-center p-5 mx-auto mb-6 md:mb-0">
             {img && (
@@ -20,16 +20,16 @@ const ArticleCard = ({ id, title, paragraph, time, img }) => {
                 style={{ backgroundImage: `url(${img}` }}
               />
             )}
-            <div className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg ">
+            <div className="p-5 -mt-10 overflow-hidden bg-background-primary rounded-lg shadow-sm ">
               <div className="inline-flex header-content">
                 <div className="flex-1 text-sm text-gray-400 category-title">
                   {time}
                 </div>
               </div>
-              <div className="text-3xl title-post">
-                <h2 className="text-blue-500 ">{title}</h2>
+              <div className="text-lg title-post">
+                <h2 className="text-textColor-primary ">{title}</h2>
               </div>
-              <div className="text-base text-justify summary-post text-1xl ">
+              <div className="text-textColor-secondary text-justify summary-post text-sm ">
                 <p>{paragraph}</p>
 
                 <button
@@ -85,14 +85,14 @@ export const HorizontalArticleCard = ({
               />
             )}
             <Card>
-              <div className="p-6 m-auto -mt-10 overflow-hidden bg-white rounded-lg shadow-sm ">
+              <div className="p-6 m-auto -mt-10 overflow-hidden bg-background-primary rounded-lg shadow-sm ">
                 <div className="header-content ">
                   <div className="flex-1 w-full mt-10 text-sm text-gray-400 category-title">
                     {time}
                   </div>
                 </div>
                 <div className="mt-5 text-lg title-post">
-                  <h2 className="text-black ">{title}</h2>
+                  <h2 className="text-textColor-primary ">{title}</h2>
                 </div>
                 <div className="pt-2 text-base text-justify text-gray-500 summary-post text-md ">
                   <p>{paragraph}</p>

@@ -67,22 +67,25 @@ const SelfAssessment = () => {
   });
 
   return (
-    <div className="flex flex-col w-4/5 mx-auto mt-56 mb-16 md:w-8/12 lg:w-6/12 transition-all duration-100">
-      <ProgressBar showLabel max={Tasks.length} now={displayIndex} />
-      {TasksBicker}
-      <div className="w-full h-6 my-12">
-        <div
-          onClick={handleBackStep}
-          className={`h-full align-center my-auto flex items-start ${displayButton}`}
-        >
-          <FontAwesomeIcon
-            icon={['fa', 'chevron-left']}
-            className="h-full text-green-400 mx-1"
-            style={{ width: '50', marginTop: '2px' }}
-          />
-          <span className="text-xl cursor-pointer text-gray-600">{t('back')}</span>
+    <div className="flex flex-col  mx-auto pt-56 pb-16  transition-all duration-100 bg-background-primary">
+      <div className=" w-4/5 md:w-8/12 lg:w-6/12 mx-auto">
+        <ProgressBar showLabel max={Tasks.length} now={displayIndex} />
+        {TasksBicker}
+        <div className="w-full h-6 my-12">
+          <div
+            onClick={handleBackStep}
+            className={`h-full align-center my-auto flex items-start ${displayButton}`}
+          >
+            <FontAwesomeIcon
+              icon={['fa', 'chevron-left']}
+              className="h-full text-green-400 mx-1"
+              style={{ width: '50', marginTop: '2px' }}
+            />
+            <span className="text-xl cursor-pointer text-gray-600">{t('back')}</span>
+          </div>
         </div>
       </div>
+
       {!isSignedIn ? (
         <>
           <Modal

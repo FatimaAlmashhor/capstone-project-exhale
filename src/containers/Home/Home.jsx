@@ -60,14 +60,14 @@ const Home = () => {
     };
   };
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <section
-        className="relative flex items-center h-screen pt-56 my-20 md:my-10 header md:pt-10 "
+        className="relative bg-background-primary flex items-center  h-screen  py-64 md:py-20 header md:pt-10 "
         style={{ maxHeight: '660px' }}
       >
         <div className="container px-4 mx-auto my-10 ">
           <div className="flex flex-col-reverse items-center md:flex-row-reverse">
-            <div className="w-full px-4 my-16 ml-auto mr-auto overflow-hidden md:w-5/12 md:my-0">
+            <div className="w-full px-4  ml-auto mr-auto overflow-hidden md:w-5/12 md:my-0">
               <Lottie
                 isClickToPauseDisabled
                 options={defaultOptions(Hero)}
@@ -75,12 +75,12 @@ const Home = () => {
                 height="auto"
               />
             </div>
-            <div className="w-full px-4 ml-auto mr-auto md:w-6/12">
+            <div className="w-full pt-64 md:pt-3 mt-20 md:mt-0 px-4 ml-auto mr-auto md:w-6/12">
               <div className="pt-0 md:pt-16">
-                <h2 className="text-4xl font-semibold text-gray-700">
+                <h2 className="text-4xl font-semibold text-textColor-primary">
                   {t('HereHelpYou')}
                 </h2>
-                <p className="mt-4 text-lg leading-relaxed text-gray-600">
+                <p className=" text-lg leading-relaxed  text-textColor-secondary">
                   {t('HowHelp')}
                 </p>
                 <div>
@@ -95,12 +95,17 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="relative py-10 pb-20 mt-10 bg-gray-200 md:px-14">
-        <SeparatorSVG />
+      <section className="relative bg-background-secondary py-20 pb-20   md:px-14">
+        <SeparatorSVG
+          buttomColor="background-secondary"
+          topColor="background-primary"
+        />
         <div className="flex flex-wrap justify-center py-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
-            <h2 className="text-4xl font-semibold">{t('whyexhal')}</h2>
-            <p className="mt-4 text-lg leading-relaxed text-gray-600">
+            <h2 className="text-4xl font-semibold text-textColor-primary">
+              {t('whyexhal')}
+            </h2>
+            <p className="mt-4 text-lg leading-relaxed text-textColor-secondary">
               {t('ReasonsUseExhale')}
             </p>
           </div>
@@ -118,8 +123,10 @@ const Home = () => {
             </div>
             <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
               <div className="md:pr-4">
-                <h3 className="text-3xl font-semibold">{t('checkupservice')}</h3>
-                <p className="mt-4 text-lg leading-relaxed text-gray-600">
+                <h3 className="text-3xl font-semibold text-textColor-primary">
+                  {t('checkupservice')}
+                </h3>
+                <p className="mt-4 text-lg leading-relaxed text-textColor-secondary">
                   {t('detailcheckup')}
                 </p>
               </div>
@@ -139,8 +146,10 @@ const Home = () => {
             </div>
             <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
               <div className="md:pr-4">
-                <h3 className="text-3xl font-semibold">{t('tackcarofurself')}</h3>
-                <p className="mt-4 text-lg leading-relaxed text-gray-600">
+                <h3 className="text-3xl font-semibold text-textColor-primary ">
+                  {t('tackcarofurself')}
+                </h3>
+                <p className="mt-4 text-lg leading-relaxed text-textColor-secondary ">
                   {t('detailTackare')}
                 </p>
               </div>
@@ -148,12 +157,17 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="relative py-10 pb-20 bg-white ">
-        <SeparatorSVG color="white" />
+      <section className=" bg-background-primary relative py-10 pb-20 bg-white ">
+        <SeparatorSVG
+          topColor="background-secondary"
+          buttomColor="background-primary"
+        />
         <div className="flex flex-wrap justify-center py-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
-            <h2 className="text-4xl font-semibold">{t('meetdoctor')}</h2>
-            <p className="mt-4 mb-4 text-lg leading-relaxed text-gray-600">
+            <h2 className="text-4xl font-semibold text-textColor-primary">
+              {t('meetdoctor')}
+            </h2>
+            <p className="mt-4 mb-4 text-lg leading-relaxed text-textColor-secondary">
               {t('psychiatristsDetails')}
             </p>
           </div>
@@ -175,7 +189,7 @@ const Home = () => {
         </div>
       </section>
       <section className="relative py-10 pb-20 bg-blue-800">
-        <SeparatorSVG color="blue-800" />
+        <SeparatorSVG buttomColor="blue-800" topColor="background-primary" />
         <div className="flex flex-wrap justify-center py-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
             <h2 className="text-4xl font-semibold text-white">
@@ -263,12 +277,14 @@ const Home = () => {
           </button>
         </div>
       </section>
-      <section className="relative py-10 pb-20 bg-white">
-        <SeparatorSVG color="white" />
+      <section className=" bg-background-primary relative py-10 pb-20">
+        <SeparatorSVG buttomColor="background-primary" />
         <div className="flex flex-wrap justify-center py-8 mt-8 text-center">
           <div className="w-full px-12 md:w-6/12 md:px-4">
-            <h2 className="text-4xl font-semibold">{t('helpfulread')}</h2>
-            <p className="mt-4 text-lg leading-relaxed text-gray-600">
+            <h2 className="text-4xl font-semibold text-textColor-primary">
+              {t('helpfulread')}
+            </h2>
+            <p className="mt-4 text-lg leading-relaxed text-textColor-secondary">
               {t('detailarticlesHome')}
             </p>
           </div>
@@ -295,14 +311,14 @@ const Home = () => {
 
 export default Home;
 
-export const SeparatorSVG = ({ color }) => {
+export const SeparatorSVG = ({ buttomColor, topColor }) => {
   return (
     <div
       className="absolute top-0 left-0 right-0 bottom-auto w-full -mt-20"
       style={{ height: '80px', transform: 'translateZ(0px)' }}
     >
       <svg
-        className="absolute bottom-0 overflow-hidden"
+        className={`absolute bottom-0 overflow-hidden bg-${topColor}`}
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
         version="1.1"
@@ -311,7 +327,7 @@ export const SeparatorSVG = ({ color }) => {
         y="0"
       >
         <polygon
-          className={`text-${color} fill-current`}
+          className={`text-${buttomColor} fill-current`}
           points="2560 0 2560 100 0 100"
         />
       </svg>
@@ -319,8 +335,10 @@ export const SeparatorSVG = ({ color }) => {
   );
 };
 SeparatorSVG.propTypes = {
-  color: PropTypes.string,
+  buttomColor: PropTypes.string,
+  topColor: PropTypes.string,
 };
 SeparatorSVG.defaultProps = {
-  color: 'gray-200',
+  buttomColor: 'background-secondary',
+  topColor: 'bg-background-primary',
 };

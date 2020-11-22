@@ -16,6 +16,23 @@ module.exports = {
       width: {
         70: '20rem',
       },
+      colors: {
+        background: {
+          primary: 'var(--bg-background-primary)',
+          secondary: 'var(--bg-background-secondary)',
+          tertiary: 'var(--bg-background-tertiary)',
+          pinck: 'var(--bg-background-pinck)',
+        },
+
+        textColor: {
+          primary: 'var(--text-textColor-primary)',
+          secondary: 'var(--text-textColor-secondary)',
+        },
+
+        'border-color': {
+          primary: 'var(--border-border-color-primary)',
+        },
+      },
     },
   },
   variants: {},
