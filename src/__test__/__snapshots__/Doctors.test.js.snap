@@ -2,19 +2,19 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="relative bg-gray-400 h-screan "
+  className="relative bg-gray-400 h-screan bg-background-primary"
 >
   <div
     className="top-0 flex-grow w-full h-64 py-64 Header bg-background-tertiary"
   >
     <svg
-      className="absolute w-full h-full buttom-0"
+      className="absolute w-full h-54 buttom-0 "
       preserveAspectRatio="none"
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg"
     >
       <polygon
-        fill="black"
+        fill="white"
         points="0,100 100,0 100,100"
       />
     </svg>
@@ -53,7 +53,7 @@ exports[`renders correctly 1`] = `
       className="flex flex-col"
     >
       <div
-        className="-my-2overflow-x-auto xl:overflow-x-hidden  sm:-mx-6 lg:-mx-8"
+        className="-my-2 overflow-x-auto xl:overflow-x-hidden  sm:-mx-6 lg:-mx-8"
       >
         <div
           className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-12"
@@ -93,7 +93,7 @@ exports[`renders correctly 1`] = `
               >
                 <tr>
                   <td
-                    className="px-6 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="flex items-center"
@@ -124,7 +124,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="text-sm leading-5 text-gray-900"
@@ -133,7 +133,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
@@ -142,7 +142,7 @@ exports[`renders correctly 1`] = `
                     </span>
                   </td>
                   <td
-                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-50"
                   >
                     <button
                       className="text-indigo-600 hover:text-blue-500"
@@ -158,7 +158,7 @@ exports[`renders correctly 1`] = `
               >
                 <tr>
                   <td
-                    className="px-6 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="flex items-center"
@@ -189,7 +189,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="text-sm leading-5 text-gray-900"
@@ -198,7 +198,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
@@ -207,7 +207,7 @@ exports[`renders correctly 1`] = `
                     </span>
                   </td>
                   <td
-                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-50"
                   >
                     <button
                       className="text-indigo-600 hover:text-blue-500"
@@ -223,7 +223,7 @@ exports[`renders correctly 1`] = `
               >
                 <tr>
                   <td
-                    className="px-6 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="flex items-center"
@@ -254,7 +254,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="text-sm leading-5 text-gray-900"
@@ -263,7 +263,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
@@ -272,7 +272,7 @@ exports[`renders correctly 1`] = `
                     </span>
                   </td>
                   <td
-                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-50"
                   >
                     <button
                       className="text-indigo-600 hover:text-blue-500"
@@ -288,7 +288,7 @@ exports[`renders correctly 1`] = `
               >
                 <tr>
                   <td
-                    className="px-6 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="flex items-center"
@@ -319,7 +319,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="text-sm leading-5 text-gray-900"
@@ -328,7 +328,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
@@ -337,7 +337,7 @@ exports[`renders correctly 1`] = `
                     </span>
                   </td>
                   <td
-                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-50"
                   >
                     <button
                       className="text-indigo-600 hover:text-blue-500"
@@ -353,7 +353,7 @@ exports[`renders correctly 1`] = `
               >
                 <tr>
                   <td
-                    className="px-6 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="flex items-center"
@@ -384,7 +384,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="text-sm leading-5 text-gray-900"
@@ -393,7 +393,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
@@ -402,7 +402,7 @@ exports[`renders correctly 1`] = `
                     </span>
                   </td>
                   <td
-                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-50"
                   >
                     <button
                       className="text-indigo-600 hover:text-blue-500"
@@ -418,7 +418,7 @@ exports[`renders correctly 1`] = `
               >
                 <tr>
                   <td
-                    className="px-6 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="flex items-center"
@@ -449,7 +449,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="text-sm leading-5 text-gray-900"
@@ -458,7 +458,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
@@ -467,7 +467,7 @@ exports[`renders correctly 1`] = `
                     </span>
                   </td>
                   <td
-                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-50"
                   >
                     <button
                       className="text-indigo-600 hover:text-blue-500"
@@ -483,7 +483,7 @@ exports[`renders correctly 1`] = `
               >
                 <tr>
                   <td
-                    className="px-6 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="flex items-center"
@@ -514,7 +514,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="text-sm leading-5 text-gray-900"
@@ -523,7 +523,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
@@ -532,7 +532,7 @@ exports[`renders correctly 1`] = `
                     </span>
                   </td>
                   <td
-                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-50"
                   >
                     <button
                       className="text-indigo-600 hover:text-blue-500"
@@ -548,7 +548,7 @@ exports[`renders correctly 1`] = `
               >
                 <tr>
                   <td
-                    className="px-6 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="flex items-center"
@@ -579,7 +579,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <div
                       className="text-sm leading-5 text-gray-900"
@@ -588,7 +588,7 @@ exports[`renders correctly 1`] = `
                     </div>
                   </td>
                   <td
-                    className="px-3 py-4 whitespace-no-wrap bg-gray-500"
+                    className="px-3 py-4 whitespace-no-wrap bg-gray-50"
                   >
                     <span
                       className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 roNot provided yetd-full"
@@ -597,7 +597,7 @@ exports[`renders correctly 1`] = `
                     </span>
                   </td>
                   <td
-                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-500"
+                    className="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap bg-gray-50"
                   >
                     <button
                       className="text-indigo-600 hover:text-blue-500"
@@ -615,7 +615,11 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="block h-full py-64 mb-64 md:mb-32 bg-background-pinck"
-  />
+    className="block h-full py-64  bg-background-pinck z-20"
+  >
+    <div
+      className=" mb-56 md:mb-32"
+    />
+  </div>
 </div>
 `;

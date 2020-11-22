@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <polygon
-        fill="#0d2438"
+        fill="white"
         points="0,100 100,0 100,100"
       />
     </svg>

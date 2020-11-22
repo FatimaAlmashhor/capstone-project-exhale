@@ -3,11 +3,9 @@
   --bg-background-secondary: #e2e8f0;
   --bg-background-tertiary: #adccd2;
   --bg-background-pinck: #f0eef0;
-  --bg-background-form: white;
   --text-textColor-primary: #2d3748;
   --text-textColor-secondary: #4a5568;
-  --text-textColor-tertiary: #ffffff;
-  --border-border-color-primary: white;
+  --border-border-color-primary: rgb(133, 133, 133);
 }
 
 .dark {
@@ -15,11 +13,9 @@
   --bg-background-secondary: #363946;
   --bg-background-tertiary: #6ba4a1;
   --bg-background-pinck: #aaa0aa;
-  --bg-background-form: #1a202c;
   --text-textColor-primary: #fafafa;
   --text-textColor-secondary: #b7b7b7;
-  --text-textColor-tertiary: #2d3748;
-  --border-border-color-primary: #1a202c;
+  --border-border-color-primary: #ececec;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1729,10 +1725,6 @@ video {
   border-color: var(--bg-background-pinck);
 }
 
-.divide-background-form > :not(template) ~ :not(template) {
-  border-color: var(--bg-background-form);
-}
-
 .divide-textColor-primary > :not(template) ~ :not(template) {
   border-color: var(--text-textColor-primary);
 }
@@ -2441,10 +2433,6 @@ video {
   background-color: var(--bg-background-pinck);
 }
 
-.bg-background-form {
-  background-color: var(--bg-background-form);
-}
-
 .bg-textColor-primary {
   background-color: var(--text-textColor-primary);
 }
@@ -3033,10 +3021,6 @@ video {
   background-color: var(--bg-background-pinck);
 }
 
-.hover\:bg-background-form:hover {
-  background-color: var(--bg-background-form);
-}
-
 .hover\:bg-textColor-primary:hover {
   background-color: var(--text-textColor-primary);
 }
@@ -3623,10 +3607,6 @@ video {
 
 .focus\:bg-background-pinck:focus {
   background-color: var(--bg-background-pinck);
-}
-
-.focus\:bg-background-form:focus {
-  background-color: var(--bg-background-form);
 }
 
 .focus\:bg-textColor-primary:focus {
@@ -4265,12 +4245,6 @@ video {
     var(--gradient-to-color, rgba(255, 255, 255, 0));
 }
 
-.from-background-form {
-  --gradient-from-color: var(--bg-background-form);
-  --gradient-color-stops: var(--gradient-from-color),
-    var(--gradient-to-color, rgba(255, 255, 255, 0));
-}
-
 .from-textColor-primary {
   --gradient-from-color: var(--text-textColor-primary);
   --gradient-color-stops: var(--gradient-from-color),
@@ -4877,12 +4851,6 @@ video {
     var(--gradient-to-color, rgba(255, 255, 255, 0));
 }
 
-.via-background-form {
-  --gradient-via-color: var(--bg-background-form);
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
-    var(--gradient-to-color, rgba(255, 255, 255, 0));
-}
-
 .via-textColor-primary {
   --gradient-via-color: var(--text-textColor-primary);
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
@@ -5291,10 +5259,6 @@ video {
 
 .to-background-pinck {
   --gradient-to-color: var(--bg-background-pinck);
-}
-
-.to-background-form {
-  --gradient-to-color: var(--bg-background-form);
 }
 
 .to-textColor-primary {
@@ -5893,12 +5857,6 @@ video {
 
 .hover\:from-background-pinck:hover {
   --gradient-from-color: var(--bg-background-pinck);
-  --gradient-color-stops: var(--gradient-from-color),
-    var(--gradient-to-color, rgba(255, 255, 255, 0));
-}
-
-.hover\:from-background-form:hover {
-  --gradient-from-color: var(--bg-background-form);
   --gradient-color-stops: var(--gradient-from-color),
     var(--gradient-to-color, rgba(255, 255, 255, 0));
 }
@@ -6509,12 +6467,6 @@ video {
     var(--gradient-to-color, rgba(255, 255, 255, 0));
 }
 
-.hover\:via-background-form:hover {
-  --gradient-via-color: var(--bg-background-form);
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
-    var(--gradient-to-color, rgba(255, 255, 255, 0));
-}
-
 .hover\:via-textColor-primary:hover {
   --gradient-via-color: var(--text-textColor-primary);
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
@@ -6923,10 +6875,6 @@ video {
 
 .hover\:to-background-pinck:hover {
   --gradient-to-color: var(--bg-background-pinck);
-}
-
-.hover\:to-background-form:hover {
-  --gradient-to-color: var(--bg-background-form);
 }
 
 .hover\:to-textColor-primary:hover {
@@ -7525,12 +7473,6 @@ video {
 
 .focus\:from-background-pinck:focus {
   --gradient-from-color: var(--bg-background-pinck);
-  --gradient-color-stops: var(--gradient-from-color),
-    var(--gradient-to-color, rgba(255, 255, 255, 0));
-}
-
-.focus\:from-background-form:focus {
-  --gradient-from-color: var(--bg-background-form);
   --gradient-color-stops: var(--gradient-from-color),
     var(--gradient-to-color, rgba(255, 255, 255, 0));
 }
@@ -8141,12 +8083,6 @@ video {
     var(--gradient-to-color, rgba(255, 255, 255, 0));
 }
 
-.focus\:via-background-form:focus {
-  --gradient-via-color: var(--bg-background-form);
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
-    var(--gradient-to-color, rgba(255, 255, 255, 0));
-}
-
 .focus\:via-textColor-primary:focus {
   --gradient-via-color: var(--text-textColor-primary);
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
@@ -8555,10 +8491,6 @@ video {
 
 .focus\:to-background-pinck:focus {
   --gradient-to-color: var(--bg-background-pinck);
-}
-
-.focus\:to-background-form:focus {
-  --gradient-to-color: var(--bg-background-form);
 }
 
 .focus\:to-textColor-primary:focus {
@@ -9289,10 +9221,6 @@ video {
   border-color: var(--bg-background-pinck);
 }
 
-.border-background-form {
-  border-color: var(--bg-background-form);
-}
-
 .border-textColor-primary {
   border-color: var(--text-textColor-primary);
 }
@@ -9881,10 +9809,6 @@ video {
   border-color: var(--bg-background-pinck);
 }
 
-.hover\:border-background-form:hover {
-  border-color: var(--bg-background-form);
-}
-
 .hover\:border-textColor-primary:hover {
   border-color: var(--text-textColor-primary);
 }
@@ -10471,10 +10395,6 @@ video {
 
 .focus\:border-background-pinck:focus {
   border-color: var(--bg-background-pinck);
-}
-
-.focus\:border-background-form:focus {
-  border-color: var(--bg-background-form);
 }
 
 .focus\:border-textColor-primary:focus {
@@ -14437,10 +14357,6 @@ video {
   color: var(--bg-background-pinck);
 }
 
-.placeholder-background-form::placeholder {
-  color: var(--bg-background-form);
-}
-
 .placeholder-textColor-primary::placeholder {
   color: var(--text-textColor-primary);
 }
@@ -15027,10 +14943,6 @@ video {
 
 .focus\:placeholder-background-pinck:focus::placeholder {
   color: var(--bg-background-pinck);
-}
-
-.focus\:placeholder-background-form:focus::placeholder {
-  color: var(--bg-background-form);
 }
 
 .focus\:placeholder-textColor-primary:focus::placeholder {
@@ -15938,10 +15850,6 @@ video {
   color: var(--bg-background-pinck);
 }
 
-.text-background-form {
-  color: var(--bg-background-form);
-}
-
 .text-textColor-primary {
   color: var(--text-textColor-primary);
 }
@@ -16530,10 +16438,6 @@ video {
   color: var(--bg-background-pinck);
 }
 
-.hover\:text-background-form:hover {
-  color: var(--bg-background-form);
-}
-
 .hover\:text-textColor-primary:hover {
   color: var(--text-textColor-primary);
 }
@@ -17120,10 +17024,6 @@ video {
 
 .focus\:text-background-pinck:focus {
   color: var(--bg-background-pinck);
-}
-
-.focus\:text-background-form:focus {
-  color: var(--bg-background-form);
 }
 
 .focus\:text-textColor-primary:focus {
@@ -21713,10 +21613,6 @@ video {
     border-color: var(--bg-background-pinck);
   }
 
-  .sm\:divide-background-form > :not(template) ~ :not(template) {
-    border-color: var(--bg-background-form);
-  }
-
   .sm\:divide-textColor-primary > :not(template) ~ :not(template) {
     border-color: var(--text-textColor-primary);
   }
@@ -22425,10 +22321,6 @@ video {
     background-color: var(--bg-background-pinck);
   }
 
-  .sm\:bg-background-form {
-    background-color: var(--bg-background-form);
-  }
-
   .sm\:bg-textColor-primary {
     background-color: var(--text-textColor-primary);
   }
@@ -23017,10 +22909,6 @@ video {
     background-color: var(--bg-background-pinck);
   }
 
-  .sm\:hover\:bg-background-form:hover {
-    background-color: var(--bg-background-form);
-  }
-
   .sm\:hover\:bg-textColor-primary:hover {
     background-color: var(--text-textColor-primary);
   }
@@ -23607,10 +23495,6 @@ video {
 
   .sm\:focus\:bg-background-pinck:focus {
     background-color: var(--bg-background-pinck);
-  }
-
-  .sm\:focus\:bg-background-form:focus {
-    background-color: var(--bg-background-form);
   }
 
   .sm\:focus\:bg-textColor-primary:focus {
@@ -24249,12 +24133,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .sm\:from-background-form {
-    --gradient-from-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .sm\:from-textColor-primary {
     --gradient-from-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color),
@@ -24861,12 +24739,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .sm\:via-background-form {
-    --gradient-via-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .sm\:via-textColor-primary {
     --gradient-via-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
@@ -25275,10 +25147,6 @@ video {
 
   .sm\:to-background-pinck {
     --gradient-to-color: var(--bg-background-pinck);
-  }
-
-  .sm\:to-background-form {
-    --gradient-to-color: var(--bg-background-form);
   }
 
   .sm\:to-textColor-primary {
@@ -25877,12 +25745,6 @@ video {
 
   .sm\:hover\:from-background-pinck:hover {
     --gradient-from-color: var(--bg-background-pinck);
-    --gradient-color-stops: var(--gradient-from-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
-  .sm\:hover\:from-background-form:hover {
-    --gradient-from-color: var(--bg-background-form);
     --gradient-color-stops: var(--gradient-from-color),
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
@@ -26493,12 +26355,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .sm\:hover\:via-background-form:hover {
-    --gradient-via-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .sm\:hover\:via-textColor-primary:hover {
     --gradient-via-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
@@ -26907,10 +26763,6 @@ video {
 
   .sm\:hover\:to-background-pinck:hover {
     --gradient-to-color: var(--bg-background-pinck);
-  }
-
-  .sm\:hover\:to-background-form:hover {
-    --gradient-to-color: var(--bg-background-form);
   }
 
   .sm\:hover\:to-textColor-primary:hover {
@@ -27509,12 +27361,6 @@ video {
 
   .sm\:focus\:from-background-pinck:focus {
     --gradient-from-color: var(--bg-background-pinck);
-    --gradient-color-stops: var(--gradient-from-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
-  .sm\:focus\:from-background-form:focus {
-    --gradient-from-color: var(--bg-background-form);
     --gradient-color-stops: var(--gradient-from-color),
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
@@ -28125,12 +27971,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .sm\:focus\:via-background-form:focus {
-    --gradient-via-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .sm\:focus\:via-textColor-primary:focus {
     --gradient-via-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
@@ -28539,10 +28379,6 @@ video {
 
   .sm\:focus\:to-background-pinck:focus {
     --gradient-to-color: var(--bg-background-pinck);
-  }
-
-  .sm\:focus\:to-background-form:focus {
-    --gradient-to-color: var(--bg-background-form);
   }
 
   .sm\:focus\:to-textColor-primary:focus {
@@ -29273,10 +29109,6 @@ video {
     border-color: var(--bg-background-pinck);
   }
 
-  .sm\:border-background-form {
-    border-color: var(--bg-background-form);
-  }
-
   .sm\:border-textColor-primary {
     border-color: var(--text-textColor-primary);
   }
@@ -29865,10 +29697,6 @@ video {
     border-color: var(--bg-background-pinck);
   }
 
-  .sm\:hover\:border-background-form:hover {
-    border-color: var(--bg-background-form);
-  }
-
   .sm\:hover\:border-textColor-primary:hover {
     border-color: var(--text-textColor-primary);
   }
@@ -30455,10 +30283,6 @@ video {
 
   .sm\:focus\:border-background-pinck:focus {
     border-color: var(--bg-background-pinck);
-  }
-
-  .sm\:focus\:border-background-form:focus {
-    border-color: var(--bg-background-form);
   }
 
   .sm\:focus\:border-textColor-primary:focus {
@@ -34421,10 +34245,6 @@ video {
     color: var(--bg-background-pinck);
   }
 
-  .sm\:placeholder-background-form::placeholder {
-    color: var(--bg-background-form);
-  }
-
   .sm\:placeholder-textColor-primary::placeholder {
     color: var(--text-textColor-primary);
   }
@@ -35011,10 +34831,6 @@ video {
 
   .sm\:focus\:placeholder-background-pinck:focus::placeholder {
     color: var(--bg-background-pinck);
-  }
-
-  .sm\:focus\:placeholder-background-form:focus::placeholder {
-    color: var(--bg-background-form);
   }
 
   .sm\:focus\:placeholder-textColor-primary:focus::placeholder {
@@ -35925,10 +35741,6 @@ video {
     color: var(--bg-background-pinck);
   }
 
-  .sm\:text-background-form {
-    color: var(--bg-background-form);
-  }
-
   .sm\:text-textColor-primary {
     color: var(--text-textColor-primary);
   }
@@ -36517,10 +36329,6 @@ video {
     color: var(--bg-background-pinck);
   }
 
-  .sm\:hover\:text-background-form:hover {
-    color: var(--bg-background-form);
-  }
-
   .sm\:hover\:text-textColor-primary:hover {
     color: var(--text-textColor-primary);
   }
@@ -37107,10 +36915,6 @@ video {
 
   .sm\:focus\:text-background-pinck:focus {
     color: var(--bg-background-pinck);
-  }
-
-  .sm\:focus\:text-background-form:focus {
-    color: var(--bg-background-form);
   }
 
   .sm\:focus\:text-textColor-primary:focus {
@@ -41668,10 +41472,6 @@ video {
     border-color: var(--bg-background-pinck);
   }
 
-  .md\:divide-background-form > :not(template) ~ :not(template) {
-    border-color: var(--bg-background-form);
-  }
-
   .md\:divide-textColor-primary > :not(template) ~ :not(template) {
     border-color: var(--text-textColor-primary);
   }
@@ -42380,10 +42180,6 @@ video {
     background-color: var(--bg-background-pinck);
   }
 
-  .md\:bg-background-form {
-    background-color: var(--bg-background-form);
-  }
-
   .md\:bg-textColor-primary {
     background-color: var(--text-textColor-primary);
   }
@@ -42972,10 +42768,6 @@ video {
     background-color: var(--bg-background-pinck);
   }
 
-  .md\:hover\:bg-background-form:hover {
-    background-color: var(--bg-background-form);
-  }
-
   .md\:hover\:bg-textColor-primary:hover {
     background-color: var(--text-textColor-primary);
   }
@@ -43562,10 +43354,6 @@ video {
 
   .md\:focus\:bg-background-pinck:focus {
     background-color: var(--bg-background-pinck);
-  }
-
-  .md\:focus\:bg-background-form:focus {
-    background-color: var(--bg-background-form);
   }
 
   .md\:focus\:bg-textColor-primary:focus {
@@ -44204,12 +43992,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .md\:from-background-form {
-    --gradient-from-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .md\:from-textColor-primary {
     --gradient-from-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color),
@@ -44816,12 +44598,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .md\:via-background-form {
-    --gradient-via-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .md\:via-textColor-primary {
     --gradient-via-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
@@ -45230,10 +45006,6 @@ video {
 
   .md\:to-background-pinck {
     --gradient-to-color: var(--bg-background-pinck);
-  }
-
-  .md\:to-background-form {
-    --gradient-to-color: var(--bg-background-form);
   }
 
   .md\:to-textColor-primary {
@@ -45832,12 +45604,6 @@ video {
 
   .md\:hover\:from-background-pinck:hover {
     --gradient-from-color: var(--bg-background-pinck);
-    --gradient-color-stops: var(--gradient-from-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
-  .md\:hover\:from-background-form:hover {
-    --gradient-from-color: var(--bg-background-form);
     --gradient-color-stops: var(--gradient-from-color),
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
@@ -46448,12 +46214,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .md\:hover\:via-background-form:hover {
-    --gradient-via-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .md\:hover\:via-textColor-primary:hover {
     --gradient-via-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
@@ -46862,10 +46622,6 @@ video {
 
   .md\:hover\:to-background-pinck:hover {
     --gradient-to-color: var(--bg-background-pinck);
-  }
-
-  .md\:hover\:to-background-form:hover {
-    --gradient-to-color: var(--bg-background-form);
   }
 
   .md\:hover\:to-textColor-primary:hover {
@@ -47464,12 +47220,6 @@ video {
 
   .md\:focus\:from-background-pinck:focus {
     --gradient-from-color: var(--bg-background-pinck);
-    --gradient-color-stops: var(--gradient-from-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
-  .md\:focus\:from-background-form:focus {
-    --gradient-from-color: var(--bg-background-form);
     --gradient-color-stops: var(--gradient-from-color),
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
@@ -48080,12 +47830,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .md\:focus\:via-background-form:focus {
-    --gradient-via-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .md\:focus\:via-textColor-primary:focus {
     --gradient-via-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
@@ -48494,10 +48238,6 @@ video {
 
   .md\:focus\:to-background-pinck:focus {
     --gradient-to-color: var(--bg-background-pinck);
-  }
-
-  .md\:focus\:to-background-form:focus {
-    --gradient-to-color: var(--bg-background-form);
   }
 
   .md\:focus\:to-textColor-primary:focus {
@@ -49228,10 +48968,6 @@ video {
     border-color: var(--bg-background-pinck);
   }
 
-  .md\:border-background-form {
-    border-color: var(--bg-background-form);
-  }
-
   .md\:border-textColor-primary {
     border-color: var(--text-textColor-primary);
   }
@@ -49820,10 +49556,6 @@ video {
     border-color: var(--bg-background-pinck);
   }
 
-  .md\:hover\:border-background-form:hover {
-    border-color: var(--bg-background-form);
-  }
-
   .md\:hover\:border-textColor-primary:hover {
     border-color: var(--text-textColor-primary);
   }
@@ -50410,10 +50142,6 @@ video {
 
   .md\:focus\:border-background-pinck:focus {
     border-color: var(--bg-background-pinck);
-  }
-
-  .md\:focus\:border-background-form:focus {
-    border-color: var(--bg-background-form);
   }
 
   .md\:focus\:border-textColor-primary:focus {
@@ -54376,10 +54104,6 @@ video {
     color: var(--bg-background-pinck);
   }
 
-  .md\:placeholder-background-form::placeholder {
-    color: var(--bg-background-form);
-  }
-
   .md\:placeholder-textColor-primary::placeholder {
     color: var(--text-textColor-primary);
   }
@@ -54966,10 +54690,6 @@ video {
 
   .md\:focus\:placeholder-background-pinck:focus::placeholder {
     color: var(--bg-background-pinck);
-  }
-
-  .md\:focus\:placeholder-background-form:focus::placeholder {
-    color: var(--bg-background-form);
   }
 
   .md\:focus\:placeholder-textColor-primary:focus::placeholder {
@@ -55880,10 +55600,6 @@ video {
     color: var(--bg-background-pinck);
   }
 
-  .md\:text-background-form {
-    color: var(--bg-background-form);
-  }
-
   .md\:text-textColor-primary {
     color: var(--text-textColor-primary);
   }
@@ -56472,10 +56188,6 @@ video {
     color: var(--bg-background-pinck);
   }
 
-  .md\:hover\:text-background-form:hover {
-    color: var(--bg-background-form);
-  }
-
   .md\:hover\:text-textColor-primary:hover {
     color: var(--text-textColor-primary);
   }
@@ -57062,10 +56774,6 @@ video {
 
   .md\:focus\:text-background-pinck:focus {
     color: var(--bg-background-pinck);
-  }
-
-  .md\:focus\:text-background-form:focus {
-    color: var(--bg-background-form);
   }
 
   .md\:focus\:text-textColor-primary:focus {
@@ -61623,10 +61331,6 @@ video {
     border-color: var(--bg-background-pinck);
   }
 
-  .lg\:divide-background-form > :not(template) ~ :not(template) {
-    border-color: var(--bg-background-form);
-  }
-
   .lg\:divide-textColor-primary > :not(template) ~ :not(template) {
     border-color: var(--text-textColor-primary);
   }
@@ -62335,10 +62039,6 @@ video {
     background-color: var(--bg-background-pinck);
   }
 
-  .lg\:bg-background-form {
-    background-color: var(--bg-background-form);
-  }
-
   .lg\:bg-textColor-primary {
     background-color: var(--text-textColor-primary);
   }
@@ -62927,10 +62627,6 @@ video {
     background-color: var(--bg-background-pinck);
   }
 
-  .lg\:hover\:bg-background-form:hover {
-    background-color: var(--bg-background-form);
-  }
-
   .lg\:hover\:bg-textColor-primary:hover {
     background-color: var(--text-textColor-primary);
   }
@@ -63517,10 +63213,6 @@ video {
 
   .lg\:focus\:bg-background-pinck:focus {
     background-color: var(--bg-background-pinck);
-  }
-
-  .lg\:focus\:bg-background-form:focus {
-    background-color: var(--bg-background-form);
   }
 
   .lg\:focus\:bg-textColor-primary:focus {
@@ -64159,12 +63851,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .lg\:from-background-form {
-    --gradient-from-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .lg\:from-textColor-primary {
     --gradient-from-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color),
@@ -64771,12 +64457,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .lg\:via-background-form {
-    --gradient-via-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .lg\:via-textColor-primary {
     --gradient-via-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
@@ -65185,10 +64865,6 @@ video {
 
   .lg\:to-background-pinck {
     --gradient-to-color: var(--bg-background-pinck);
-  }
-
-  .lg\:to-background-form {
-    --gradient-to-color: var(--bg-background-form);
   }
 
   .lg\:to-textColor-primary {
@@ -65787,12 +65463,6 @@ video {
 
   .lg\:hover\:from-background-pinck:hover {
     --gradient-from-color: var(--bg-background-pinck);
-    --gradient-color-stops: var(--gradient-from-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
-  .lg\:hover\:from-background-form:hover {
-    --gradient-from-color: var(--bg-background-form);
     --gradient-color-stops: var(--gradient-from-color),
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
@@ -66403,12 +66073,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .lg\:hover\:via-background-form:hover {
-    --gradient-via-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .lg\:hover\:via-textColor-primary:hover {
     --gradient-via-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
@@ -66817,10 +66481,6 @@ video {
 
   .lg\:hover\:to-background-pinck:hover {
     --gradient-to-color: var(--bg-background-pinck);
-  }
-
-  .lg\:hover\:to-background-form:hover {
-    --gradient-to-color: var(--bg-background-form);
   }
 
   .lg\:hover\:to-textColor-primary:hover {
@@ -67419,12 +67079,6 @@ video {
 
   .lg\:focus\:from-background-pinck:focus {
     --gradient-from-color: var(--bg-background-pinck);
-    --gradient-color-stops: var(--gradient-from-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
-  .lg\:focus\:from-background-form:focus {
-    --gradient-from-color: var(--bg-background-form);
     --gradient-color-stops: var(--gradient-from-color),
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
@@ -68035,12 +67689,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .lg\:focus\:via-background-form:focus {
-    --gradient-via-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .lg\:focus\:via-textColor-primary:focus {
     --gradient-via-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
@@ -68449,10 +68097,6 @@ video {
 
   .lg\:focus\:to-background-pinck:focus {
     --gradient-to-color: var(--bg-background-pinck);
-  }
-
-  .lg\:focus\:to-background-form:focus {
-    --gradient-to-color: var(--bg-background-form);
   }
 
   .lg\:focus\:to-textColor-primary:focus {
@@ -69183,10 +68827,6 @@ video {
     border-color: var(--bg-background-pinck);
   }
 
-  .lg\:border-background-form {
-    border-color: var(--bg-background-form);
-  }
-
   .lg\:border-textColor-primary {
     border-color: var(--text-textColor-primary);
   }
@@ -69775,10 +69415,6 @@ video {
     border-color: var(--bg-background-pinck);
   }
 
-  .lg\:hover\:border-background-form:hover {
-    border-color: var(--bg-background-form);
-  }
-
   .lg\:hover\:border-textColor-primary:hover {
     border-color: var(--text-textColor-primary);
   }
@@ -70365,10 +70001,6 @@ video {
 
   .lg\:focus\:border-background-pinck:focus {
     border-color: var(--bg-background-pinck);
-  }
-
-  .lg\:focus\:border-background-form:focus {
-    border-color: var(--bg-background-form);
   }
 
   .lg\:focus\:border-textColor-primary:focus {
@@ -74331,10 +73963,6 @@ video {
     color: var(--bg-background-pinck);
   }
 
-  .lg\:placeholder-background-form::placeholder {
-    color: var(--bg-background-form);
-  }
-
   .lg\:placeholder-textColor-primary::placeholder {
     color: var(--text-textColor-primary);
   }
@@ -74921,10 +74549,6 @@ video {
 
   .lg\:focus\:placeholder-background-pinck:focus::placeholder {
     color: var(--bg-background-pinck);
-  }
-
-  .lg\:focus\:placeholder-background-form:focus::placeholder {
-    color: var(--bg-background-form);
   }
 
   .lg\:focus\:placeholder-textColor-primary:focus::placeholder {
@@ -75835,10 +75459,6 @@ video {
     color: var(--bg-background-pinck);
   }
 
-  .lg\:text-background-form {
-    color: var(--bg-background-form);
-  }
-
   .lg\:text-textColor-primary {
     color: var(--text-textColor-primary);
   }
@@ -76427,10 +76047,6 @@ video {
     color: var(--bg-background-pinck);
   }
 
-  .lg\:hover\:text-background-form:hover {
-    color: var(--bg-background-form);
-  }
-
   .lg\:hover\:text-textColor-primary:hover {
     color: var(--text-textColor-primary);
   }
@@ -77017,10 +76633,6 @@ video {
 
   .lg\:focus\:text-background-pinck:focus {
     color: var(--bg-background-pinck);
-  }
-
-  .lg\:focus\:text-background-form:focus {
-    color: var(--bg-background-form);
   }
 
   .lg\:focus\:text-textColor-primary:focus {
@@ -81578,10 +81190,6 @@ video {
     border-color: var(--bg-background-pinck);
   }
 
-  .xl\:divide-background-form > :not(template) ~ :not(template) {
-    border-color: var(--bg-background-form);
-  }
-
   .xl\:divide-textColor-primary > :not(template) ~ :not(template) {
     border-color: var(--text-textColor-primary);
   }
@@ -82290,10 +81898,6 @@ video {
     background-color: var(--bg-background-pinck);
   }
 
-  .xl\:bg-background-form {
-    background-color: var(--bg-background-form);
-  }
-
   .xl\:bg-textColor-primary {
     background-color: var(--text-textColor-primary);
   }
@@ -82882,10 +82486,6 @@ video {
     background-color: var(--bg-background-pinck);
   }
 
-  .xl\:hover\:bg-background-form:hover {
-    background-color: var(--bg-background-form);
-  }
-
   .xl\:hover\:bg-textColor-primary:hover {
     background-color: var(--text-textColor-primary);
   }
@@ -83472,10 +83072,6 @@ video {
 
   .xl\:focus\:bg-background-pinck:focus {
     background-color: var(--bg-background-pinck);
-  }
-
-  .xl\:focus\:bg-background-form:focus {
-    background-color: var(--bg-background-form);
   }
 
   .xl\:focus\:bg-textColor-primary:focus {
@@ -84114,12 +83710,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .xl\:from-background-form {
-    --gradient-from-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .xl\:from-textColor-primary {
     --gradient-from-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color),
@@ -84726,12 +84316,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .xl\:via-background-form {
-    --gradient-via-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .xl\:via-textColor-primary {
     --gradient-via-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
@@ -85140,10 +84724,6 @@ video {
 
   .xl\:to-background-pinck {
     --gradient-to-color: var(--bg-background-pinck);
-  }
-
-  .xl\:to-background-form {
-    --gradient-to-color: var(--bg-background-form);
   }
 
   .xl\:to-textColor-primary {
@@ -85742,12 +85322,6 @@ video {
 
   .xl\:hover\:from-background-pinck:hover {
     --gradient-from-color: var(--bg-background-pinck);
-    --gradient-color-stops: var(--gradient-from-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
-  .xl\:hover\:from-background-form:hover {
-    --gradient-from-color: var(--bg-background-form);
     --gradient-color-stops: var(--gradient-from-color),
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
@@ -86358,12 +85932,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .xl\:hover\:via-background-form:hover {
-    --gradient-via-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .xl\:hover\:via-textColor-primary:hover {
     --gradient-via-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
@@ -86772,10 +86340,6 @@ video {
 
   .xl\:hover\:to-background-pinck:hover {
     --gradient-to-color: var(--bg-background-pinck);
-  }
-
-  .xl\:hover\:to-background-form:hover {
-    --gradient-to-color: var(--bg-background-form);
   }
 
   .xl\:hover\:to-textColor-primary:hover {
@@ -87374,12 +86938,6 @@ video {
 
   .xl\:focus\:from-background-pinck:focus {
     --gradient-from-color: var(--bg-background-pinck);
-    --gradient-color-stops: var(--gradient-from-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
-  .xl\:focus\:from-background-form:focus {
-    --gradient-from-color: var(--bg-background-form);
     --gradient-color-stops: var(--gradient-from-color),
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
@@ -87990,12 +87548,6 @@ video {
       var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
-  .xl\:focus\:via-background-form:focus {
-    --gradient-via-color: var(--bg-background-form);
-    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
-      var(--gradient-to-color, rgba(255, 255, 255, 0));
-  }
-
   .xl\:focus\:via-textColor-primary:focus {
     --gradient-via-color: var(--text-textColor-primary);
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color),
@@ -88404,10 +87956,6 @@ video {
 
   .xl\:focus\:to-background-pinck:focus {
     --gradient-to-color: var(--bg-background-pinck);
-  }
-
-  .xl\:focus\:to-background-form:focus {
-    --gradient-to-color: var(--bg-background-form);
   }
 
   .xl\:focus\:to-textColor-primary:focus {
@@ -89138,10 +88686,6 @@ video {
     border-color: var(--bg-background-pinck);
   }
 
-  .xl\:border-background-form {
-    border-color: var(--bg-background-form);
-  }
-
   .xl\:border-textColor-primary {
     border-color: var(--text-textColor-primary);
   }
@@ -89730,10 +89274,6 @@ video {
     border-color: var(--bg-background-pinck);
   }
 
-  .xl\:hover\:border-background-form:hover {
-    border-color: var(--bg-background-form);
-  }
-
   .xl\:hover\:border-textColor-primary:hover {
     border-color: var(--text-textColor-primary);
   }
@@ -90320,10 +89860,6 @@ video {
 
   .xl\:focus\:border-background-pinck:focus {
     border-color: var(--bg-background-pinck);
-  }
-
-  .xl\:focus\:border-background-form:focus {
-    border-color: var(--bg-background-form);
   }
 
   .xl\:focus\:border-textColor-primary:focus {
@@ -94286,10 +93822,6 @@ video {
     color: var(--bg-background-pinck);
   }
 
-  .xl\:placeholder-background-form::placeholder {
-    color: var(--bg-background-form);
-  }
-
   .xl\:placeholder-textColor-primary::placeholder {
     color: var(--text-textColor-primary);
   }
@@ -94876,10 +94408,6 @@ video {
 
   .xl\:focus\:placeholder-background-pinck:focus::placeholder {
     color: var(--bg-background-pinck);
-  }
-
-  .xl\:focus\:placeholder-background-form:focus::placeholder {
-    color: var(--bg-background-form);
   }
 
   .xl\:focus\:placeholder-textColor-primary:focus::placeholder {
@@ -95790,10 +95318,6 @@ video {
     color: var(--bg-background-pinck);
   }
 
-  .xl\:text-background-form {
-    color: var(--bg-background-form);
-  }
-
   .xl\:text-textColor-primary {
     color: var(--text-textColor-primary);
   }
@@ -96382,10 +95906,6 @@ video {
     color: var(--bg-background-pinck);
   }
 
-  .xl\:hover\:text-background-form:hover {
-    color: var(--bg-background-form);
-  }
-
   .xl\:hover\:text-textColor-primary:hover {
     color: var(--text-textColor-primary);
   }
@@ -96972,10 +96492,6 @@ video {
 
   .xl\:focus\:text-background-pinck:focus {
     color: var(--bg-background-pinck);
-  }
-
-  .xl\:focus\:text-background-form:focus {
-    color: var(--bg-background-form);
   }
 
   .xl\:focus\:text-textColor-primary:focus {

@@ -35,7 +35,7 @@ const Toggle = () => {
           </svg>
         </label>
         <input
-          className="toggle"
+          className="toggle border-border-color-primary"
           id="cb1"
           type="checkbox"
           checked={isDark()}

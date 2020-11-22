@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export default function ProgressBar({ now, max, showLabel }) {
   return (
     <div className="relative pt-1">
-      {showLabel && <p>{`${now}\\${max}`}</p>}
+      {showLabel && <p className="text-textColor-primary">{`${now}\\${max}`}</p>}
       <div className="overflow-hidden  h-2 mb-4 text-xs flex rounded bg-blue-200">
         <div
           style={{ width: `${7 * now}%` }}

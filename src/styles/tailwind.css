@@ -7,7 +7,7 @@
   --text-textColor-primary: #2d3748;
   --text-textColor-secondary: #4a5568;
 
-  --border-border-color-primary: white;
+  --border-border-color-primary: rgb(133, 133, 133);
 }
 
 .dark {
@@ -19,7 +19,7 @@
   --text-textColor-primary: #fafafa;
   --text-textColor-secondary: #b7b7b7;
 
-  --border-border-color-primary: #1a202c;
+  --border-border-color-primary: #ececec;
 }
 @import 'tailwindcss/base';
 

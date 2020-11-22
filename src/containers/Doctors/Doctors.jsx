@@ -15,16 +15,16 @@ const Doctors = () => {
 
   const bgTable = theme === 'dark' ? 'bg-gray-500' : 'bg-gray-50';
   return (
-    <div className="relative bg-gray-400 h-screan ">
+    <div className="relative bg-gray-400 h-screan bg-background-primary">
       <div className="top-0 flex-grow w-full h-64 py-64 Header bg-background-tertiary">
         <svg
-          className="absolute w-full h-full buttom-0"
+          className="absolute w-full h-54 buttom-0 "
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
         >
           <polygon
-            fill={theme === 'dark' ? 'black' : 'white'}
+            fill={theme === 'dark' ? '#b7b7b7' : 'white'}
             points="0,100 100,0 100,100"
           />
         </svg>
@@ -44,7 +44,7 @@ const Doctors = () => {
           </div>
         </div>
         <div className="flex flex-col">
-          <div className="-my-2overflow-x-auto xl:overflow-x-hidden  sm:-mx-6 lg:-mx-8">
+          <div className="-my-2 overflow-x-auto xl:overflow-x-hidden  sm:-mx-6 lg:-mx-8">
             <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-12">
               <div className="overflow-hidden border-b border-gray-200 shadow sm:rounded-lg">
                 <table className="min-w-full divide-y divide-gray-200">
@@ -164,7 +164,9 @@ const Doctors = () => {
           </Modal>
         )}
       </div>
-      <div className="block h-full py-64 mb-64 md:mb-32 bg-background-pinck" />
+      <div className="block h-full py-64  bg-background-pinck z-20">
+        <div className=" mb-56 md:mb-32" />
+      </div>
     </div>
   );
 };

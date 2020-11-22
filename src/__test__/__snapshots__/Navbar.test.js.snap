@@ -118,8 +118,8 @@ Array [
                   </svg>
                 </label>
                 <input
-                  checked={true}
-                  className="toggle"
+                  checked={false}
+                  className="toggle border-border-color-primary"
                   id="cb1"
                   onChange={[Function]}
                   type="checkbox"
@@ -255,8 +255,8 @@ Array [
                         </svg>
                       </label>
                       <input
-                        checked={true}
-                        className="toggle"
+                        checked={false}
+                        className="toggle border-border-color-primary"
                         id="cb1"
                         onChange={[Function]}
                         type="checkbox"

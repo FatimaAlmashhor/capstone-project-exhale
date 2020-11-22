@@ -1,6 +1,4 @@
-/* Created By Joseph Shenton @TeamiHackify 
-
-Please feel free to use this toggle if you like. But I request that you give credit to me thank you */
+/* Created By Joseph Shenton @TeamiHackify */
 
 body {
   background: #25272a;
@@ -73,7 +71,6 @@ body {
   height: 1.5em;
   position: relative;
   cursor: pointer;
-  border: 2px solid #333;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -105,14 +102,15 @@ body {
   padding: 2px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  border: 2px solid rgba(156, 174, 192, 0.27);
+  border-style: solid;
+  border-width: 2px;
   border-radius: 2em;
 }
 
 .toggle + .toggle-button:after {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background: rgba(156, 174, 192, 0.27);
+  background: var(--bg-background-secondary);
   content: '';
   border-radius: 1em;
 }
