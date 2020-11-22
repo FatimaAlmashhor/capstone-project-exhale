@@ -98,7 +98,7 @@ function Navbar() {
             ) : (
               <>
                 <NavLink
-                  className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap  hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-textColor-primary"
+                  className="text-base font-medium leading-6 text-gray-600 whitespace-no-wrap hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500 focus:outline-none focus:text-textColor-primary"
                   to={{
                     pathname: LOGIN_ROUTE,
                     state: { modal: location },
@@ -122,16 +122,18 @@ function Navbar() {
 
       <div className="absolute inset-x-0 top-0 p-2 transition origin-top-right transform lg:hidden">
         <div className="rounded-lg shadow-lg">
-          <div className="bg-background-primary divide-y-2 rounded-lg shadow-xs divide-gray-50">
+          <div className="divide-y-2 rounded-lg shadow-xs bg-background-primary divide-gray-50">
             <div className="px-5 pt-5 pb-6 space-y-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <h1 className=" text-3xl font-medium transition duration-150 ease-in-out ">
-                    <span className="text-4xl font-black text-blue-800">EX</span>
-                    <span className="text-textColor-primary">hale</span>
-                  </h1>
+                  <Link to={HOME_ROUTE} onClick={() => toggleExpansion(!isExpanded)}>
+                    <h1 className="text-3xl font-medium transition duration-150 ease-in-out ">
+                      <span className="text-4xl font-black text-blue-800">EX</span>
+                      <span className="text-textColor-primary">hale</span>
+                    </h1>
+                  </Link>
                 </div>
-                <div className="-mr-2 flex felx-row">
+                <div className="flex -mr-2 felx-row">
                   <div className="my-auto">
                     <Toggle />
                   </div>
@@ -162,7 +164,7 @@ function Navbar() {
                   <NavLink
                     onClick={() => toggleExpansion(false)}
                     to={HOME_ROUTE}
-                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md text-gray-500 hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium text-gray-500 transition duration-150 ease-in-out rounded-md hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('HOME')}
                   </NavLink>
@@ -170,7 +172,7 @@ function Navbar() {
                   <NavLink
                     onClick={() => toggleExpansion(false)}
                     to={DOCTORS_ROUTE}
-                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md text-gray-500 hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium text-gray-500 transition duration-150 ease-in-out rounded-md hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('Doctors')}
                   </NavLink>
@@ -178,7 +180,7 @@ function Navbar() {
                   <NavLink
                     onClick={() => toggleExpansion(false)}
                     to={ARTICLES_BASE_ROUTE}
-                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md text-gray-500 hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium text-gray-500 transition duration-150 ease-in-out rounded-md hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('Articles')}
                   </NavLink>
@@ -192,7 +194,7 @@ function Navbar() {
                   <NavLink
                     onClick={() => toggleExpansion(false)}
                     to={CONTACT_ROUTE}
-                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium transition duration-150 ease-in-out rounded-md text-gray-500 hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
+                    className="flex items-center p-3 pb-2 -m-3 space-x-3 font-medium text-gray-500 transition duration-150 ease-in-out rounded-md hover:text-textColor-primary hover:border-b hover:pb-2 hover:border-gray-500 focus:border-gray-500"
                   >
                     {t('ContactUs')}
                   </NavLink>
