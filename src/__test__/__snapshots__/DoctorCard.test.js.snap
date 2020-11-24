@@ -10,7 +10,7 @@ exports[`renders correctly 1`] = `
     <img
       alt="Doctor"
       className="w-40 h-40 rounded-full"
-      src="https://www.shareicon.net/data/512x512/2016/08/18/813849_people_512x512.png"
+      src="Male Doctor - Default img.png"
     />
   </div>
   <div

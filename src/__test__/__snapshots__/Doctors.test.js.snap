@@ -104,7 +104,7 @@ exports[`renders correctly 1`] = `
                         <img
                           alt=""
                           className="w-10 h-10 rounded-full roNot provided yetd-full"
-                          src="http://www.sghsanaa.com/imgs/doctors/nabil_1.jpg"
+                          src="Dr. Nabil Nouman.jpg"
                         />
                       </div>
                       <div
@@ -169,7 +169,7 @@ exports[`renders correctly 1`] = `
                         <img
                           alt=""
                           className="w-10 h-10 rounded-full roNot provided yetd-full"
-                          src="http://ye-mj.net/userimages/2019/06/1560527133blobid0.jpg"
+                          src="Dr. Mohammed AlKolaidi.jpg"
                         />
                       </div>
                       <div
@@ -234,7 +234,7 @@ exports[`renders correctly 1`] = `
                         <img
                           alt=""
                           className="w-10 h-10 rounded-full roNot provided yetd-full"
-                          src="http://fcdf-ye.org/Uploads/637016382831266987.jpg"
+                          src="Dr. Belqees.jpg"
                         />
                       </div>
                       <div
@@ -299,7 +299,7 @@ exports[`renders correctly 1`] = `
                         <img
                           alt=""
                           className="w-10 h-10 rounded-full roNot provided yetd-full"
-                          src="https://scontent.fsah1-1.fna.fbcdn.net/v/t1.0-9/52699376_2246048215615990_963345539401777152_n.jpg?_nc_cat=110&ccb=2&_nc_sid=85a577&_nc_ohc=06Mm3DZq_HEAX-OjfVA&_nc_ht=scontent.fsah1-1.fna&oh=c07b0d89314177dcbc6a6afae001a634&oe=5FDA6EB6"
+                          src="Dr. Mahfoodh.jpg"
                         />
                       </div>
                       <div
@@ -364,7 +364,7 @@ exports[`renders correctly 1`] = `
                         <img
                           alt=""
                           className="w-10 h-10 rounded-full roNot provided yetd-full"
-                          src="http://fcdf-ye.org/Uploads/636528748345104319.jpg"
+                          src="Dr. Saif AlDeen.jpg"
                         />
                       </div>
                       <div
@@ -429,7 +429,7 @@ exports[`renders correctly 1`] = `
                         <img
                           alt=""
                           className="w-10 h-10 rounded-full roNot provided yetd-full"
-                          src="https://www.shareicon.net/data/512x512/2016/08/18/813849_people_512x512.png"
+                          src="Female Doctor - Default img.png"
                         />
                       </div>
                       <div
@@ -494,7 +494,7 @@ exports[`renders correctly 1`] = `
                         <img
                           alt=""
                           className="w-10 h-10 rounded-full roNot provided yetd-full"
-                          src="https://www.shareicon.net/data/512x512/2016/08/18/813844_people_512x512.png"
+                          src="Male Doctor - Default img.png"
                         />
                       </div>
                       <div
@@ -559,7 +559,7 @@ exports[`renders correctly 1`] = `
                         <img
                           alt=""
                           className="w-10 h-10 rounded-full roNot provided yetd-full"
-                          src="https://www.shareicon.net/data/512x512/2016/08/18/813844_people_512x512.png"
+                          src="Male Doctor - Default img.png"
                         />
                       </div>
                       <div
