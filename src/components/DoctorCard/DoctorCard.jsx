@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropType from 'prop-types';
 import '../../fontawesome';
 import { useTranslation } from 'react-i18next';
+import MaleDefault from '../../asset/images/Male Doctor - Default img.png';
 
 export default function DoctorCard({
   name,
@@ -102,5 +103,5 @@ DoctorCard.defaultProps = {
   email: 'dose not add email yet',
   phone: 555555555555,
   show: false,
-  img: 'https://www.shareicon.net/data/512x512/2016/08/18/813849_people_512x512.png',
+  img: MaleDefault,
 };
